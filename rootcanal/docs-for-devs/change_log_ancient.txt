@@ -1,0 +1,98 @@
+﻿2009.10.12
+Modified TableKit so hitting Escape or clicking outside will cancel.
+TableKit's edit-in-place now superimposes a textarea over the cell.
+Re-writing all the scripts using CGI::Application, Template Toolkit,
+	and associated plugins. This is a major rewrite and refactoring,
+	and the end result should be prettier and more easily maintained code.
+	Perl, HTML, CSS, and javascript are all separated nicely now.
+The front end (HTML/CSS/js) takes care of the following:
+	- field labels
+	- editable?
+		### some (all) fields should let you hit return to go straight down,
+			maybe when holding down shift?
+	- transforms for each field (e.g. turning into links)
+		(some might need to be suppressed for printing)
+	- paging
+	- other magical interface utilities like
+		click-to-tag
+		changing all tags X to Y in a column
+		renumbering
+	- periodically checking for updated data
+		We can do this easily by keeping a simple "changes" table
+		with table, column, old and new values, and mod time.
+		The page asks the server for all changes since the last time it checked
+		and updates accordingly.
+The back end (perl) does the rest. For each table, we need to keep track of
+	- fields (i.e. columns to retrieve from the database)
+	- joins (the "FROM" clause)
+	- the key field
+	- field order
+	- editable?
+	- search transforms (how to construct "WHERE" for each field)
+	- save hooks (special things to do when saving)
+	- how to add records
+	- how to properly delete things
+"editable" is in both lists, but there's really no reasonable way around that.
+	The server has to know which fields are user-modifiable, and it's too
+	tedious to send over the whole list every time.
+Meanwhile, the search interface should also undergo an overhaul. Instead of
+	a zillion search fields, there will be one, and the interface will just
+	Do What You Mean. There will be auto-complete lists that popup while
+	you're typing, for language names, protoglosses, etc.
+Also, the lexicon/"tagger" page (should these be distinct?) should group the
+	languages into bands by the STEDT language groups.
+
+2008.04.30
+Notes editor now has in-place preview. Just click the "Save" button for some javascript magic!
+Notes can be reordered using drag and drop (using scriptaculous Sortable).
+
+2008.04.27
+Fixed over 700 items whose lgid had been set to 0 accidentally
+	in the mysql migration. This is because either the srcabbr or lgabbr
+	had funny characters in it.
+Factored out common code into TableEdit.pm.
+Fixed various bugs and made various improvements in the process.
+Counting rows is now accurate; hopefully speed is improved.
+Also added ability to create records.
+Now using TableKit 1.3b, to refresh table after adding rows.
+Sorting columns by javascript now goes ascending first:
+	TableKit.options.defaultSort = 1;
+Made width of edit-in-place match the table cells, under edit : function(cell)
+	field.setStyle({'width': cell.getWidth() + 'px'});
+
+2007.08.11
+implemented searching by arbitrary SQL WHERE clause in notes editor
+
+2007.06.10
+ability to sort columns in lexicon view
+
+2007.06.02
+fixed srcid field in lexicon table
+fixed grpno field in languagegroups table
+fixed rebuild_hashes script (was incorrectly excluding certain lexicon records due to operator precedence carelessness(?))
+
+2007.04.01
+more etyma cleanup. got rid of duplicate records, tag numbers are now unique.
+added HPTB table and cgi script, removed those from etyma.
+hptb.pl can search for all potentially equivalent hptb forms
+  (based on protoglosses and etyma tags) given a chapter number.
+
+2007.03.31
+cleaned up etyma table. migrated overlooked data from FileMaker.
+cleaned up notes table. got rid of bitrot (AN, GL, RE were used as overflow in FoxPro!). Fixed encoding issues on over a hundred glosses (probably not too important, but whatever).
+now use comma to search for a list of things (OR search)
+added chapters.pl
+finished notes.pl, now it converts XML to a handier markup format
+
+2006.10.30
+- implemented our own sorting to work around mysql bug
+- printing lex items
+
+2006.03.19
+fixed - now encodes < > & " as HTML entities in non-form items (CGI.pm automatically does this for form items); cf rn 148315
+added protolanguage popup menu
+now limits the number of results for each page (100) so your browser doesn't choke if you accidentally try to download the whole database; click the buttons to go to the next/prev pages
+printing etyma now pops up a new window with up to 2000 items
+fixed potential problem in analysis field search if spaces are present (used to assume tags had no space chars next to them, only commas)
+you can now type '0' to search for non-tagged items in the lexicon
+added subgroup popup menu

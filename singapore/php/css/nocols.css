@@ -1,0 +1,84 @@
+body { margin:10px 10px 0px 10px;
+       /* background:#46607a; */
+       background:#fff;
+       font-family: Arial, Helvetica, sans;
+       }
+
+#banner { background:#fff;
+          height:54px;
+        }
+
+h1 { font-size:32px;
+     float:left;
+     padding:2px;
+     margin:0px;
+     margin-left: 10px;
+     border-bottom: none;
+   }
+
+h2 { font-size:12px;
+     float:left;
+     color:white;
+     background:black;
+   }
+
+img#logo { 
+    float:left;
+    height:48px; 
+    padding:2px;
+}
+
+p { 
+    padding:10px 10px 10px 10px;
+  }
+
+
+#instructions li { padding:10px 10px 10px 10px; }
+
+#content { 
+	   width:1100px;
+	   padding: 0px;
+	   margin:0 auto;
+	   height:100%;
+         }
+
+#content td,th { width: 20%; vertical-align: middle; }
+
+#content p,li,h1,h2 { margin-right:10px }
+
+#content table { width:100%; padding:0px 10px 10px 10px; }
+
+#button {
+    margin-top: 4px;
+    float:right;
+    width:90px;
+    height:100%;
+}
+
+#thesaurusTop {
+    margin-top: 10px;
+    float:left;
+    width:100%;
+    height:40px;
+}
+
+#data {
+    width: 1000px;
+}
+
+.short { width: 100px; text-align: left }
+
+/* override jQuery #tabs css a little */
+.ui-tabs .ui-tabs-panel { padding: 0px; min-height:120px; }
+
+button {
+    font-size: 150%;
+    width:85px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover {
+  color: #FFF;
+  background: #900;
+}

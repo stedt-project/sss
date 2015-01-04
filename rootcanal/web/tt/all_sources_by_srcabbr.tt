@@ -1,0 +1,17 @@
+[% PROCESS header.tt title="Source Bibliography - STEDT Database" %]
+
+<p>Sources for the data in the STEDT database ([% sources.size %] total):</p>
+
+<table class="hangindent sortable">
+<tr><th>srcabbr</th><th>languages</th><th>records</th><th>Reference</tr>
+[% FOREACH sources -%]
+<tr>
+	<td><a href="[% self_url %]/source/[% srcabbr %]" target="stedt_src">[% srcabbr %]</a></td>
+	<td>[% num_lgs %]</td>
+	<td>[% num_recs %]</td>
+	<td>[% author %][% author.search('\.$') ? '' : '.' %] [% year %][% year.search('\.$') ? '' : '.' %] <cite>[% title %]</cite>[% title.search('[\.\?]$') ? '' : '.' %][% IF imprint %] [% imprint %][% imprint.search('\.$') ? '' : '.' %][% END %]</td>
+</tr>
+[% END -%]
+</table>
+</body>
+</html>

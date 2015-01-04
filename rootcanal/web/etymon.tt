@@ -1,0 +1,171 @@
+[% PROCESS header.tt title="STEDT Etymon #" _ etyma.0.tag cognates=[etyma.0.tag] -%]
+<a name="[% etyma.0.tag %]"></a>
+[% lexicon_id = 1 %]
+
+<p>
+[%- IF etyma.0.allofams.size > 1 -%]
+<div class="right" id="allofambox">
+<b>Allofams:</b>
+<ul>
+[% FOREACH e2 IN etyma.0.allofams -%]
+<li>[% IF e2.tag != etyma.0.tag %]<a href="[% self_url %]/etymon/[% e2.tag %]">[% ELSE %]<b>[% END -%]
+[% e2.sequence %] #[% e2.tag %] *[% e2.protoform %] [% e2.protogloss %]
+[%- IF e2.tag != etyma.0.tag %]</a>[% ELSE %]</b>[% END %]</li>
+[% END -%]
+</ul>
+</div>
+[%- END -%]
+[% FOREACH b IN breadcrumbs %][% IF loop.last %]<a href=[% self_url %]/chap/[% b.0 %]>[% b.0 %] <b>[% b.1 %]</b></a>
+[%- ELSE %][% b.0 %] <b>[% b.1 %]</b> &gt; [% END #IF %][% END #FOREACH %]</p>
+
+[% IF c.has_privs(2) %]
+[% stedt_count %] records <span class="r[% etyma.0.tag %]">tagged by <b>stedt</b></span> under this etymon.
+[% IF selected_uid %]
+<form name="selectuser" method="POST" style="display:inline">
+Reflexes <span class="u[% etyma.0.tag %]">tagged by <select name="DDMenu" onchange="location.href=(form.DDMenu.options[form.DDMenu.selectedIndex].value)">
+[% FOREACH u IN users %]
+<option value="[% self_url %]/etymon/[% etyma.0.tag %]/[% u.uid %]" [% IF selected_uid == u.uid %]selected[% END %] >[% u.username %] ([% u.count %] tagged forms)</option>
+[% END -%]
+</select>
+</span></form>
+[% ELSE %]
+(No user tagging for this etymon.)
+[% END # selected_uid %]
+[% END # has_privs 2 %]
+
+[% FOREACH e IN etyma -%]
+<table><tr><td style="padding: 10px; ">
+<h1>[% IF c.has_privs(2) %]<a href="[% self_url %]/edit/etyma?etyma.tag=[% e.tag %]" target="edit_etyma">[% END %]
+#[% e.tag %][% IF c.has_privs(2) %]</a>[% END %] [% e.plg %] [% e.protoform %] [% e.protogloss %]
+[%- IF e.uid != 8 && c.has_privs(2) %] <span class="u[% etyma.0.tag %]">(added by [% e.username %])</span>[% END -%]
+[%- IF !e.public %] <span id="prov_heading" style="color:red; cursor:help; font-size:medium">(provisional)</span> [% END -%]
+</h1></td>
+[% IF c.has_privs(8) # make_meso button for approvers only %]
+[% IF e.plg != '' && e.plg != 'PTB' && e.plg != 'PST' -%]
+<td style="background-color: lightgoldenrodyellow;  padding: 10px; vertical-align: middle; text-align: center;">
+<form action="[% self_url %]/tags/make_meso" method="post" onsubmit="if (!parseInt(this.newtag.value,10)) {alert('Please specify a tag number.'); return false};return confirm('Are you sure you want to migrate all tags to #' + this.newtag.value + '? This action cannot be undone!')">
+<input style="font-size:18pt;" name="btn" type="submit" value="Move all tags and make this a mesoreconstruction of:"><br/>
+#<input type="text" name="newtag" id="make_meso_input" size="40" maxlength="80">
+<div id="autocomplete_choices" class="autocomplete"></div>
+<input type="hidden" name="oldtag" value="[% e.tag %]">
+</form></td>
+[% END # e.plg %]
+</tr></table>
+[% ELSIF c.has_privs(2) # if no make_meso button, read-only users and taggers need some vertical space here %]
+<br><br>
+[% END # has_privs 8 -%]
+</tr></table>
+[%- IF e.mesoroots.size %]
+Reconstructed mesoroots below:
+<ul class="mesolist">
+[% FOREACH e2 IN e.mesoroots -%]
+<li><a href="#[% e2.grpno %]">[% e2.plg %] *[% e2.form %] [% e2.gloss %]</a></li>
+[% END -%]
+</ul>
+[%- END %]
+
+[% IF c.has_privs(2) # if registered user, show note properties -%]
+<div id="allnotes[% e.tag %]" class="container" style="clear:right">[%# clear the allofams list  %]
+<p class="edit">
+[% IF c.has_privs(8) %]<label><input type="checkbox" value="off" class="reordcheckbox"[% IF e.notes.size < 2 %] disabled[% END %]>Drag to reorder</label>[% END %]
+[% IF c.has_privs(1) %]<a href="#" onclick="return showaddform('E',[% e.tag %])">Add a note...</a>[% END %]
+</p>
+[% FOREACH n IN e.notes -%]
+[% PROCESS notes_etyma.tt -%]
+[% END -%]
+</div>
+[% ELSE # if user is not registered, just show text of note -%]
+[% FOREACH n IN e.notes -%]
+<div class="notepreview"><p>[% n.text %]</p></div>
+[% END # foreach -%]
+[% END # registered user privs check -%]
+
+[% IF e.records -%]
+[% IF selected_uid && c.has_privs(8) %]
+<form action="[% self_url %]/tags/accept" method="post" onsubmit="return confirm('Are you sure you want to approve all the tagging by [% selected_username %] for tag #[% e.tag %]? Any conflicting tags will be clobbered!')" class="u[% etyma.0.tag %]" style="display:inline; padding:3px">
+<input name="tag" value="[% e.tag %]" type="hidden">
+<input name="uid" value="[% selected_uid %]" type="hidden">
+<input type="submit" value="Accept tagging by [% selected_username %] for tag #[% e.tag %]">
+</form>
+[% END # has_privs 8 %]
+<table id="lexicon[% lexicon_id %]" tag="[% e.tag %]" class="hangindent">[% lexicon_id = lexicon_id+1 %]
+<thead><tr>
+[%- FOREACH fld IN fields -%]
+<th id="[% fld %]">[% fld.replace('^.*?\.','') %]</th>
+[%- END -%]
+[%- IF c.has_privs(1) -%]
+<th width="16">HIST.</th>
+[%- END -%]
+</tr></thead>
+<tbody>
+[% FOREACH row IN e.records -%]
+<tr>
+[%- FOREACH col IN row -%]
+<td>[% col | html %]</td>
+[%- END -%]
+[%- IF c.has_privs(1) -%]
+<td><a href="[% self_url %]/admin/changes?t=lexicon&id=[% row.0 %]"><img src="[% self_base %]img/clock.png" width="16" height="16"></a></td>
+[%- END -%]
+</tr>
+[% END -%]
+</tbody>
+</table>
+[% END -%]
+
+[% IF e.comparanda.size || c.has_privs(8) -%]
+[% label = 'Chinese comparand' _ (e.comparanda.size == 1 ? 'um' : 'a') -%]
+<h2>[% label %]</h2>
+[% IF c.has_privs(8) # can edit comparanda notes -%]
+<div id="allcomparanda[% e.tag %]" class="container">
+<p class="edit">
+[% IF c.has_privs(8) # can reorder/add comparanda notes %]
+<label><input type="checkbox" value="off" class="reordcheckbox"[% IF e.comparanda.size < 2 %] disabled[% END %]>Drag to reorder</label>
+<a href="#" onclick="return showaddform('F',[% e.tag %])">Add a Chinese comparandum...</a>
+[% END # reordering/adding notes %]
+</p>
+[% FOREACH n IN e.comparanda -%]
+[% PROCESS notes_comparanda.tt -%]
+[% END -%]
+</div>[% ELSE # if user is less than approver -%]
+[% FOREACH n IN e.comparanda -%]
+<p>[% n.text %]</p>
+[% END -%]
+[% END # if has_privs(8) -%]
+[% END # if comparanda -%]
+[% END # foreach etyma %]
+
+<br>
+[% fncounter = 0 -%]
+[% FOREACH n IN footnotes -%]
+[% IF n.super || (n.uid != c.param('uid') && !c.has_privs(8)) %]
+[% fncounter = fncounter+1 -%]
+<div class="footnote[% IF n.super %] fnote-[% n.super %][% END %]" id="foot[% fncounter %]">
+<a href="#toof[% fncounter %]" class="left">^ [% fncounter %].</a>
+<div class="notepreview">[% n.text %][% IF c.has_privs(2) && !n.super && n.uid!=8 %] [[% n.username %]][% END %]</div></div>
+[% ELSIF n.spec == 'E' -%]
+[% PROCESS notes_et_subgroup.tt -%]
+[% ELSE -%]
+[% PROCESS notes_lex.tt -%]
+[% END -%]
+[% END -%]
+
+[% IF c.has_privs(1) -%]
+[% PROCESS addnoteform.tt -%]
+<div id="edit_meso_form" style="display:none"></div>
+[% END -%]
+
+<script>
+var footnote_counter = [% footnotes.size %];
+skipped_roots[[% etyma.0.tag %]]=true;
+num_tables=[% lexicon_id %];
+var stedt_other_username = '[% selected_username || '' %]';
+var uid2 = '[% selected_uid %]';
+var mesoroots = [% etyma.0.mesorootsjson %];
+var subgroupnotes = [% etyma.0.subgroupnotesjson %];
+var all_subgroups = [% all_grps_json %];
+if ($('make_meso_input')) new Ajax.Autocompleter("make_meso_input", "autocomplete_choices", baseRef + 'autosuggest/tags', {parameters:'ignore=[% etyma.0.tag %]'});
+</script>
+<script src="[% self_base %]js/etymon.js"></script>
+<script src="[% self_base %]js/notes.js"></script>
+</body>
+</html>

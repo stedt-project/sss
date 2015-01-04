@@ -1,0 +1,180 @@
+Row,Reel,Side,File,Start,End,Duration,NID,Title,DisType,TapeDuration,Translation Available?,Status,,,Comments,Prob?,TapeStart,TapeEnd,TapeLength,StartD,EndD,DurD,Ratio
+1,1,1,1_1,00:00,02:09,02:09,1,Remarks on the Lahu,monologue,013-030,,Entered,x,1,Background noise,,13,30,17,0.0,129.0,129.0,0.13
+2,1,1,1_1,02:12,03:46,01:34,2,The Lahu way of life,monologue,033-045,,Entered,x,2,Barely audible at beginning,,33,45,12,132.0,226.0,94.0,0.13
+3,1,1,1_1,03:50,04:44,00:54,3,Lahu writing,monologue,046-053,,Entered,x,3,Partly erased by mistake,,46,53,7,230.0,284.0,54.0,0.13
+4,1,1,1_1,04:45,12:55,08:10,4,Elicitation of individual vocabulary items,,055-124,,Entered,x,4,each item pronounced 3 times,,55,124,69,285.0,775.0,490.0,0.14
+5,1,1,1_1,12:56,19:25,06:29,5,Bible reading (Mark 1:1-17),,125-182,,Entered,x,5,,,125,182,57,776.0,1165.0,389.0,0.15
+6,1,1,1_3,00:04,04:41,04:37,6,Bible reading (I Corinthians 13:1-13),,210-254,,Defer,x,,,,210,254,44,4.0,281.0,277.0,0.16
+7,1,1,1_3,04:44,07:55,03:11,7,Candid conversation,,255-286,,Unusable,x,,Inaudible until 262,,255,286,31,284.0,475.0,191.0,0.16
+8,1,1,1_3,07:56,12:29,04:33,8,A Lahu hunting expedition,playlet,287-333,Y,Entered,x,8,Also Lh. fair copy,,287,333,46,476.0,749.0,273.0,0.17
+9,1,1,1_3,12:33,24:14,11:41,9,Agriculture and livelihood,discussion,334-413,Y,Entered,x,9,Also Lh. fair copy,x,334,413,79,753.0,1454.0,701.0,0.11
+10,1,1,1_3,24:16,27:07,02:51,11,Hymn,,482-516,,Defer,x,,,,482,516,34,1456.0,1627.0,171.0,0.20
+11,1,1,1_3,27:07,31:02,03:55,12,The Widow and the Pharisees,sermon,517-567,Y,Entered,x,12,Also with fair Lh. copy; with relevant Bible passage added,,517,567,50,1627.0,1862.0,235.0,0.21
+12,1,1,1_3,31:02,32:42,01:40,13,"Hymn: ""Jesus Save Us""",,568-590,,Defer,x,,,,568,590,22,1862.0,1962.0,100.0,0.22
+13,1,1,1_3,32:43,36:35,03:52,14,The Widow and Pharisees (cont'd),,591-646,Y,Combine,,,Also with fair Lh. copy; with relevant Bible passage added,,591,646,55,1963.0,2195.0,232.0,0.24
+14,1,1,1_3,36:35,40:25,03:50,15,Preventive medicine,lecture,647-704,Y,Entered,x,15,Also with fair Lh. copy,,647,704,57,2195.0,2425.0,230.0,0.25
+15,1,1,1_3,40:30,41:34,01:04,16,Traditional Lahu poetry,,707-724,,Defer,x,,,,707,724,17,2430.0,2494.0,64.0,0.27
+16,1,1,1_3,41:34,43:27,01:53,17,Lahu animism,lecture,726-754,Y,Entered,x,17,"""Spirits that bite and those that don't""; Also with fair Lh. copy",,726,754,28,2494.0,2607.0,113.0,0.25
+17,1,1,1_3,43:27,44:34,01:07,18,Incantation to the spirits,,758-776,,Entered,x,18,In ancient ritual language,,758,776,18,2607.0,2674.0,67.0,0.27
+18,1,1,1_3,44:34,44:50,00:16,19,"Song:  ""Wake up!""",,777-782,Y,Entered,x,19,Also Lh. fair copy,,777,782,5,2674.0,2690.0,16.0,0.31
+19,1,1,1_3,45:01,48:06,03:05,20,How the villagers fled from Burma,narrative,783-842,Y,Defer,x,,Also Lh. fair copy; on LACITO archive,,783,842,59,2701.0,2886.0,185.0,0.32
+20,1,1,1_3,48:12,49:58,01:46,21,Traditional poetry; Lahu cosmogony,,845-881,,Entered,x,21,,,845,881,36,2892.0,2998.0,106.0,0.34
+21,1,2,2_1,00:00,10:15,10:15,22,Gospel phonograph records,,008-092,,Unusable,x,,Poor quality recording,,8,92,84,0.0,615.0,615.0,0.14
+22,1,2,2_1,10:16,13:30,03:14,23,Candid conversation,,093-120,,Entered,x,23,,,93,120,27,616.0,810.0,194.0,0.14
+23,1,2,2_1,13:31,22:30,08:59,24,Building a house and feasting,playlet,121-201,,Entered,x,24,,,121,201,80,811.0,1350.0,539.0,0.15
+24,1,2,2_2,00:00,03:18,03:18,25,Going fishing,women's dialogue,205-235,,Entered,x,25,aka Talking about Fishing,,205,235,30,0.0,198.0,198.0,0.15
+25,1,2,2_2,03:20,03:49,00:29,26,Incantation to the spirits,,236-240,,Entered,x,26,In Akha,,236,240,4,200.0,229.0,29.0,0.14
+26,1,2,2_2,03:58,07:01,03:03,27,In unity there is strength,moral tale,242-271,,Defer,x,,"Same story as no. 35, but told by a different speaker",,242,271,29,238.0,421.0,183.0,0.16
+27,1,2,2_2,07:07,10:01,02:54,28,The blind man and the cripple,story,272-301,,Entered,x,28,,,272,301,29,427.0,601.0,174.0,0.17
+28,1,2,2_2,10:02,12:11,02:09,29,The potter and the laundryman,story,302-323,,Entered,x,29,,,302,323,21,602.0,731.0,129.0,0.16
+29,1,2,2_2,12:12,13:47,01:35,30,The blind men and the elephant,parable,324-340,,Entered,x,30,,,324,340,16,732.0,827.0,95.0,0.17
+30,1,2,2_3,00:00,14:10,14:10,31,Marriage and divorce,discussion,347-509,Y,Entered,x,31,,,347,509,162,0.0,850.0,850.0,0.19
+31,1,2,2_3,14:11,17:05,02:54,32,How woman got her clitoris through penis-envy,myth,511-547,,Entered,x,32,,,511,547,36,851.0,1025.0,174.0,0.21
+32,1,2,2_3,17:09,21:25,04:16,33,The merchant and the widow's daughter,story,549-602,,Entered,x,33,Cf. no. 114,,549,602,53,1029.0,1285.0,256.0,0.21
+33,1,2,2_3,21:25,26:54,05:29,33a,Hymn,,605-689,,Defer,x,#N/A,,x,605,689,84,1285.0,1614.0,329.0,0.26
+34,4,2,3_1,00:00,00:51,00:51,34,Farting and playing tag,joke,005-012,,Entered,x,34,,,5,12,7,0.0,51.0,51.0,0.14
+35,4,2,3_1,00:52,03:13,02:21,35,In unity there is strength,moral tale,013-032,,Entered,x,35,Same story as no. 27,x,13,32,19,52.0,193.0,141.0,0.13
+36,4,2,3_1,03:14,04:57,01:43,36,Blessing in the name of the spirits,,034-048,,Defer,x,,Incantatory style,,34,48,14,194.0,297.0,103.0,0.14
+37,4,2,3_1,04:58,06:23,01:25,37,The song of reconciliation of the brother and sister,folk tale,048-061,,Entered,x,37,,,48,61,13,298.0,383.0,85.0,0.15
+38,4,2,3_1,06:24,07:31,01:07,38,The Trickster and the merchant,story,061-070,,Entered,x,38,There are no pauses between 38/39,,61,70,9,384.0,451.0,67.0,0.13
+39,4,2,3_1,07:31,08:31,01:00,39,The Trickster's spear and the merchants,story,070-080,,Entered,x,39,There are no pauses between 38/39,,70,80,10,451.0,511.0,60.0,0.17
+40,4,2,3_1,08:32,15:25,06:53,40,The Trickster and the village women,story,081-143,,Entered,x,40,There are no pauses between 40/41; same story as nos. 44 and 76,,81,143,62,512.0,925.0,413.0,0.15
+41,4,2,3_1,15:25,16:43,01:18,41,Two songs,,143-156,,Defer,x,,There are no pauses between 40/41,,143,156,13,925.0,1003.0,78.0,0.17
+42,4,2,3_1,16:45,18:17,01:32,42,Traditional love-song,,157-171,,Defer,x,,There are no pauses between 42/43,,157,171,14,1005.0,1097.0,92.0,0.15
+43,4,2,3_1,18:17,18:45,00:28,43,Song (modern),,171-175,,Defer,x,,There are no pauses between 42/43,,171,175,4,1097.0,1125.0,28.0,0.14
+44,4,2,3_2,00:00,03:34,03:34,44,The Trickster and the village women,story,176-211,Y,Defer,x,,"In BLS; in Yellow Lahu, but the same story as nos. 40 and 76",,176,211,35,0.0,214.0,214.0,0.16
+45,4,2,3_2,03:35,05:20,01:45,45,Edifying text,,212-229,,Defer,x,,Yellow Lahu,,212,229,17,215.0,320.0,105.0,0.16
+46,4,2,3_2,05:24,08:10,02:46,46,Same edifying text,,230-259,,Defer,x,,"In Black Lahu, but with a Yellow accent",,230,259,29,324.0,490.0,166.0,0.17
+47,4,1,3_3,00:10,00:42,00:32,46a,Welcome to the village of Shatodu,,266-273,,Entered,x,46a,First 10 seconds of audio are missing,,266,273,7,10.0,42.0,32.0,0.22
+48,4,1,3_3,00:43,04:18,03:35,47,Traditional love-songs,,274-311,,Entered,x,47,"two songs, close together (partially transcribed)",x,274,311,37,43.0,258.0,215.0,0.17
+49,4,1,3_3,04:19,06:01,01:42,47a,Hunting song,,332-346,,Defer,x,,,x,332,346,14,259.0,361.0,102.0,0.14
+50,4,1,3_3,06:02,07:23,01:21,47b,Love-song,,332-346,,Defer,x,,,x,332,346,14,362.0,443.0,81.0,0.17
+51,4,1,3_3,07:24,07:52,00:28,47c,Kachin song,,348-352,,Defer,x,,Sung by Matisoff,,348,352,4,444.0,472.0,28.0,0.14
+52,4,1,3_3,07:53,09:11,01:18,48,"Edifying thoughts on God, parents, and village",,353-368,,Entered,x,48,,,353,368,15,473.0,551.0,78.0,0.19
+53,4,1,3_3,09:13,10:32,01:19,49,"Modern song:  ""Granny falls into the mud""",,368-383,,Defer,x,,,,368,383,15,553.0,632.0,79.0,0.19
+54,4,1,3_3,10:33,11:38,01:05,50,Hunting scene,playlet,384-398,,Entered,x,50,Marked by long internal pauses,,384,398,14,633.0,698.0,65.0,0.22
+55,4,1,3_3,11:45,13:02,01:17,51,Two Christian songs,,399-414,,Entered,x,51,first song not transcribed,,399,414,15,705.0,782.0,77.0,0.19
+56,4,1,3_3,13:04,14:24,01:20,52,Hunting jungle fowl,playlet,415-434,,Entered,x,52,,,415,434,19,784.0,864.0,80.0,0.24
+57,4,1,3_3,14:30,17:04,02:34,53,Monkey-hunting,including a hunting song,433-465,,Entered,x,53,,,433,465,32,870.0,1024.0,154.0,0.21
+58,4,1,3_3,17:05,18:38,01:33,54,Traditional love-song,,466-485,,Defer,x,,,,466,485,19,1025.0,1118.0,93.0,0.20
+59,4,1,3_4,00:00,03:56,03:56,55,The dhole and the tiger,story,486-540,Y,Entered,x,55,,,486,540,54,0.0,236.0,236.0,0.23
+60,4,1,3_4,04:00,05:16,01:16,56,Antiphonal love-poem,,541-559,,Entered,x,56,,,541,559,18,240.0,316.0,76.0,0.24
+61,4,1,3_4,05:18,06:50,01:32,57,About the general conference of Christian Lahu at Shatodu,,560-587,,Entered,x,57,,,560,587,27,318.0,410.0,92.0,0.29
+62,4,1,3_4,06:53,08:10,01:17,58,Two hymns,,588-603,,Entered,x,58,,,588,603,15,413.0,490.0,77.0,0.19
+63,4,1,3_4,08:11,09:20,01:09,59,Lecture for Lahu Christian youth,,604-620,,Entered,x,59,,,604,620,16,491.0,560.0,69.0,0.23
+64,4,1,3_4,09:27,11:19,01:52,60,The six stupid men and the gophers,story,622-652,,Entered,x,60,,,622,652,30,567.0,679.0,112.0,0.27
+65,4,1,3_4,11:20,14:40,03:20,61,The orphan and the tigers,story,654-716,,Entered,x,61,,,654,716,62,680.0,880.0,200.0,0.31
+66,4,2,4_1,00:00,07:32,07:32,62,News broadcast in Lahu from Burmese radio,,004-096,,Unusable,x,,Poor quality,x,4,96,92,0.0,452.0,452.0,0.20
+67,4,2,4_1,07:33,10:32,02:59,63,Two songs,,004-096,,Defer,x,,,,4,96,92,453.0,632.0,179.0,0.51
+68,4,2,4_1,10:35,12:11,01:36,64,Welcome to the village and hymn,,101-116,,Entered,x,64,,,101,116,15,635.0,731.0,96.0,0.16
+69,4,2,4_1,12:13,17:59,05:46,65,Visiting the village's fields,monologue,116-184,,Entered,x,65,,,116,184,68,733.0,1079.0,346.0,0.20
+70,4,2,4_1,17:59,28:27,10:28,66,Candid conversation,,184-275,,Entered,x,66,,,184,275,91,1079.0,1707.0,628.0,0.14
+71,4,2,4_2,00:00,10:44,10:44,67,A day hunting and talking,dialogue,284-407,Y,Entered,x,67,,,284,407,123,0.0,644.0,644.0,0.19
+72,4,2,4_2,10:47,17:19,06:32,68,The rabbit and the tiger,story,408-491,,Entered,x,68,,,408,491,83,647.0,1039.0,392.0,0.21
+73,4,2,4_3,00:00,10:23,10:23,69,Picking tea,conversa-tion,505-659,Partial,Entered,x,69,Only beginning translated,,505,659,154,0.0,623.0,623.0,0.25
+74,4,2,4_3,10:24,19:06,08:42,70,Wooing the maidens,discussion,661-827,Y,Entered,x,70,Continued in no. 77a,,661,827,166,624.0,1146.0,522.0,0.32
+75,7,2,5_1,00:00,04:25,04:25,71,Obscene taunts,,011-046,,Defer,x,,Marked by several pauses; in Red Lahu,,11,46,35,0.0,265.0,265.0,0.13
+76,7,2,5_1,04:39,07:01,02:22,72,Hunting tale,,047-069,,Defer,x,,In Red Lahu,,47,69,22,279.0,421.0,142.0,0.15
+77,7,2,5_1,07:05,07:47,00:42,73,"The Trickster, the barking-deer, and the swallowed berries",story,069-076,,Defer,x,,In Red Lahu; cf. no. 98,,69,76,7,425.0,467.0,42.0,0.17
+78,7,2,5_1,07:53,10:28,02:35,74,Creation myth:  The first man emerges from the primeval gourd,,077-098,,Defer,x,,In Red Lahu; cf. no. 137,,77,98,21,473.0,628.0,155.0,0.14
+79,7,2,5_1,10:36,11:36,01:00,75,"The Trickster, the horse, and the pumpkin",story,100-126,,Defer,x,,In Red Lahu,,100,126,26,636.0,696.0,60.0,0.43
+80,7,2,5_1,11:37,15:23,03:46,76,The Trickster and the village women,,127-142,,Defer,x,,In Red Lahu; same story as nos. 40 and 44,x,127,142,15,697.0,923.0,226.0,0.07
+81,7,2,5_2,00:00,00:56,00:56,77,Jews harp music,,149-157,,Entered,x,77,,,149,157,8,0.0,56.0,56.0,0.14
+82,7,2,5_2,01:01,03:44,02:43,77a,Wooing the maidens,,159-184,,Entered,x,77a,Continuation of no. 70; not translated,,159,184,25,61.0,224.0,163.0,0.15
+83,7,2,5_2,03:45,18:15,14:30,78,Political discussion:  The government offers us new land,,185-330,Y,Entered,x,78,,,185,330,145,225.0,1095.0,870.0,0.17
+84,7,2,5_3,00:00,02:47,02:47,79,Sermon fragment,,409-442,,Defer,x,,,x,409,442,33,0.0,167.0,167.0,0.20
+85,7,2,5_3,02:49,14:31,11:42,80,Christmas time and the New Rice Festival,discussion,443-596,,Entered,x,80,,,443,596,153,169.0,871.0,702.0,0.22
+86,7,2,5_3,14:33,15:53,01:20,81,The buffalo bugger and the rabbit-hunters,story,597-616,Y,Entered,x,81,No pauses from 81-83,,597,616,19,873.0,953.0,80.0,0.24
+87,7,2,5_3,16:00,20:01,04:01,82,Going courting,discussion,619-679,Y,Entered,x,82,No pauses from 81-83,,619,679,60,960.0,1201.0,241.0,0.25
+88,7,2,5_3,20:01,22:19,02:18,82a,The smoker and the non-smoker dispute a pipe,story,679-718,Y,Entered,x,82a,No pauses from 81-83; cf. no. 121,,679,718,39,1201.0,1339.0,138.0,0.28
+89,7,2,5_3,22:15,25:12,02:57,83,The three lazy men and the princess,story,718-769,Y,Entered,x,83,Continued in no. 120,,718,769,51,1335.0,1512.0,177.0,0.29
+90,3,2,6_1,00:00,02:10,02:10,84,Hymn,,008-026,,Defer,x,,,,8,26,18,0.0,130.0,130.0,0.14
+91,3,2,6_1,02:00,11:20,09:20,85,Sermon:  The recent disharmony in our village,,026-102,,Entered,x,85,A hymn is sung first,,26,102,76,120.0,680.0,560.0,0.14
+92,3,2,6_1,11:12,13:22,02:10,86,Headman's communication,,103-122,,Entered,x,86,,,103,122,19,672.0,802.0,130.0,0.15
+93,3,2,6_1,13:23,18:00,04:37,86a,Hymn,,122-164,,Defer,x,,,,122,164,42,803.0,1080.0,277.0,0.15
+94,3,2,6_1,18:01,24:27,06:26,86b,Sermon (cont'd),,164-224,,Defer,x,,,,164,224,60,1081.0,1467.0,386.0,0.16
+95,3,2,6_2,00:00,01:29,01:29,87,Candid conversation,,234-247,,Entered,x,87,,,234,247,13,0.0,89.0,89.0,0.15
+96,3,2,6_2,01:30,22:30,21:00,88,Building an airstrip,discussion,248-475,Y,Entered,x,88,,,248,475,227,90.0,1350.0,1260.0,0.18
+97,3,2,6_3,00:21,02:44,02:23,89,We sinners are like pigs,,487-516,,Entered,x,89,,,487,516,29,21.0,164.0,143.0,0.20
+98,3,2,6_3,02:45,03:44,00:59,90,Proverbs,,517-529,,Entered,x,90,,,517,529,12,165.0,224.0,59.0,0.20
+99,3,2,6_3,03:45,06:24,02:39,91,Laying up riches in heaven,story,530-566,,Entered,x,91,,,530,566,36,225.0,384.0,159.0,0.23
+100,3,2,6_3,06:26,09:16,02:50,92,The Trickster and the old bonze,story,567-607,,Entered,x,92,,,567,607,40,386.0,556.0,170.0,0.24
+101,3,2,6_3,09:28,10:22,00:54,93,"Hymn: ""Changeless Jesus""",,611-623,,Defer,x,,,,611,623,12,568.0,622.0,54.0,0.22
+102,3,2,6_3,10:25,12:49,02:24,94,The fingerless lord,story,624-661,,To Do,,,,,624,661,37,625.0,769.0,144.0,0.26
+103,3,2,6_3,12:50,16:17,03:27,95,Further adventures of the Trickster,stories,662-722,,To Do,,,,,662,722,60,770.0,977.0,207.0,0.29
+104,3,2,6_3,16:18,17:48,01:30,96,The little crabs who walked zig-zag,fable,724-747,Y,Entered,x,96,Published in book of fables,,724,747,23,978.0,1068.0,90.0,0.26
+105,3,2,6_3,17:48,19:55,02:07,97,The lion and the frog,fable,749-788,Y,Entered,x,97,,,749,788,39,1068.0,1195.0,127.0,0.31
+106,4,1,7_1,00:03,02:07,02:04,98,The barking-deer and the berries,,007-023,,Entered,x,98,Cf. no. 73,,7,23,16,3.0,127.0,124.0,0.13
+107,4,1,7_1,02:13,03:09,00:56,99,The Shan thinks 'tobacco' is a 'tiger',anecdote,024-030,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,24,30,6,133.0,189.0,56.0,0.11
+108,4,1,7_1,03:09,03:37,00:28,100,Shan-Lahu anecdote,,031-035,Y,Defer,x,,"Unfinished because of laughter; published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,31,35,4,189.0,217.0,28.0,0.14
+109,4,1,7_1,03:38,04:39,01:01,101,Rice without curry (Shan-Lahu anecdote),,035-043,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,35,43,8,218.0,279.0,61.0,0.13
+110,4,1,7_1,04:41,05:54,01:13,102,The stupid son-in-law traps a bonze,,044-054,,Defer,x,,,,44,54,10,281.0,354.0,73.0,0.14
+111,4,1,7_1,05:55,06:53,00:58,103,The ferocious elephant (Black-Yellow anecdote),,054-061,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,54,61,7,355.0,413.0,58.0,0.12
+112,4,1,7_1,06:53,08:11,01:18,104,The son-in-law eats his father-in-law's shit,,062-073,,Defer,x,,Poorly told joke,,62,73,11,413.0,491.0,78.0,0.14
+113,4,1,7_1,08:15,09:17,01:02,105,Monkey-meat (Shan-Lahu anecdote),,073-081,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,73,81,8,495.0,557.0,62.0,0.13
+114,4,1,7_1,09:17,10:27,01:10,106,"Song:  ""Dawn breaks over the weary travellers""",,082-091,,Defer,x,,,,82,91,9,557.0,627.0,70.0,0.13
+115,4,1,7_1,10:29,15:00,04:31,107,Burning fingers on the cabbage,anecdote,092-204,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia; Yellow Lahu",,92,204,112,629.0,900.0,271.0,0.41
+116,4,1,7_1,15:01,16:29,01:28,108,"The son-in-law, the red ants, and the rice packet",story,131-144,,Entered,x,108,,,131,144,13,901.0,989.0,88.0,0.15
+117,4,1,7_1,16:30,18:00,01:30,109,Two anecdotes,,145-157,,Unusable,x,,Poorly told,,145,157,12,990.0,1080.0,90.0,0.13
+118,4,1,7_1,18:03,19:52,01:49,110,The empty coconuts (Shan-Lahu),,159-174,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,159,174,15,1083.0,1192.0,109.0,0.14
+119,10,2,7_2,00:00,02:37,02:37,111,"Hymn:  ""Ananias came to grief""",,200-224,,Defer,x,,,,200,224,24,0.0,157.0,157.0,0.15
+120,4,1,7_2,02:38,04:02,01:24,112,"Song:  ""God keeps me company""",,225-237,,Defer,x,,,,225,237,12,158.0,242.0,84.0,0.14
+121,4,1,7_2,04:03,04:50,00:47,113,Hymn,,238-245,,Defer,x,,,,238,245,7,243.0,290.0,47.0,0.15
+122,4,1,7_2,04:51,08:17,03:26,114,The merchant and the widow's daughter,story,246-279,,Entered,x,114,Cf. no. 33,,246,279,33,291.0,497.0,206.0,0.16
+123,4,1,7_2,08:18,17:10,08:52,115,Dividing a slaughtered pig fairly,discussion,280-370,,Entered,x,115,,,280,370,90,498.0,1030.0,532.0,0.17
+124,4,1,7_2,17:10,18:58,01:47,116,"The coward ""kills"" a bear and a deer",story,371-390,,Entered,x,116,,,371,390,19,1030.0,1138.0,107.0,0.18
+125,4,1,7_2,18:58,20:02,01:05,117,Trapping a deer in a tree,,390-401,,Entered,x,117,,x,390,401,11,1138.0,1202.0,65.0,0.17
+126,4,1,7_2,20:03,21:06,01:03,118,A Lahu sells wasp larvae to a Shan,anecdote,402-413,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,402,413,11,1203.0,1266.0,63.0,0.17
+127,4,1,7_2,21:07,22:36,01:29,119,A Lahu gives a Shan a good cursing,anecdote,413-428,Y,Defer,x,,"Published in ""Lahu bilingual humor"" in Acta Linguistica Hafniensia",,413,428,15,1267.0,1356.0,89.0,0.17
+128,4,1,7_3,00:00,02:49,02:49,120,The three lazy men and the princess,story,438-470,,Entered,x,120,"Same speaker, same story as no. 83",,438,470,32,0.0,169.0,169.0,0.19
+129,4,1,7_3,02:50,04:30,01:40,121,The smoker and the non-smoker dispute a pipe,,471-490,Y,Entered,x,121,Cf. no. 82a,,471,490,19,170.0,270.0,100.0,0.19
+130,4,1,7_3,04:31,15:41,11:10,122,Church service,,491-636,,Entered,x,122,,,491,636,145,271.0,941.0,670.0,0.22
+131,4,1,8_1,00:00,14:17,14:17,123,The institution of the village headman,discussion,638-903,,Unusable,x,,Badly recorded from 835 to end; re-recorded by collector and chief informant (835-890),x,638,903,265,0.0,857.0,857.0,0.31
+132,4,2,8_2,00:00,16:37,16:37,124,Discussion of Lahu customs; hill-life vs. life in the plains,,009-147,Y,Unusable,x,,Badly recorded,,9,147,138,0.0,997.0,997.0,0.14
+133,4,2,8_2,16:38,18:47,02:09,125,Headman's welcome to the New Rice Festival,,148-167,,Entered,x,125,,,148,167,19,998.0,1127.0,129.0,0.15
+134,4,2,8_2,18:50,30:33,11:43,126,Playing ball and spinning the top,playlets,167-276,Y,Unusable,x,,Poorly recorded,,167,276,109,1130.0,1833.0,703.0,0.16
+135,4,2,8_3,00:00,11:27,11:27,127,Founding a new village,,292-412,,Unusable,x,,Badly recorded,,292,412,120,0.0,687.0,687.0,0.17
+136,4,2,8_3,11:30,13:36,02:06,128,The widow and the head child,story,413-447,,Entered,x,128,,,413,447,34,690.0,816.0,126.0,0.27
+137,4,2,8_3,14:37,15:30,00:53,129,The boastful cock and the hawk,fable,447-458,Y,Entered,x,129,PLB fable,,447,458,11,877.0,930.0,53.0,0.21
+138,4,2,8_3,15:35,16:05,00:30,130,Hunting crabs with granny,,459-464,,Entered,x,130,,,459,464,5,935.0,965.0,30.0,0.17
+139,4,2,8_3,16:08,21:12,05:04,131,Harvesting rice and catching crabs,women's dialogue,465-525,,Entered,x,131,,,465,525,60,968.0,1272.0,304.0,0.20
+140,4,2,9_1,00:00,01:55,01:55,132,The widow with a snake for a son-in-law,story,526-550,Y,Entered,,132,See nos. 133 and 141a,,526,550,24,0.0,115.0,115.0,0.21
+141,4,2,9_1,01:56,05:04,03:08,133,Retelling of No. 132,,551-592,Y,Defer,x,,Retold by Paul with Lahu fair copy; also cf. 141a,,551,592,41,116.0,304.0,188.0,0.22
+142,4,1,9_2,00:00,02:57,02:57,134,"Song:  ""I remember thee, Jerusalem""",,008-031,,Defer,x,,,,8,31,23,0.0,177.0,177.0,0.13
+143,4,1,9_2,02:58,09:42,06:44,135,Sermon,,032-090,,Entered,x,135,,,32,90,58,178.0,582.0,404.0,0.14
+144,4,1,9_2,09:44,13:37,03:53,137,Man escapes from the primeval gourd,myth,091-125,,Entered,x,137,Cf. no. 74,,91,125,34,584.0,817.0,233.0,0.15
+145,4,1,9_2,13:40,16:20,02:40,138,Hymn,,126-151,,Defer,x,,,,126,151,25,820.0,980.0,160.0,0.16
+146,4,1,9_2,16:22,22:46,06:24,139,God struggles with the titan,myth,151-213,,Entered,x,139,,,151,213,62,982.0,1366.0,384.0,0.16
+147,4,1,9_3,00:00,01:23,01:23,140,The pig and the dog,,279-293,,Defer,x,,Yellow Lahu,,279,293,14,0.0,83.0,83.0,0.17
+148,4,1,9_3,01:27,02:01,00:34,141,The flea and the louse,,294-300,,Defer,x,,Yellow Lahu,,294,300,6,87.0,121.0,34.0,0.18
+149,4,1,9_3,02:04,15:58,13:54,141a,The widow with a snake for a son-in-law,story,301-469,Partial,Defer,x,#N/A,Only beginning is transcribed; same story as 133,,301,469,168,124.0,958.0,834.0,0.20
+150,4,1,10_1,00:00,02:17,02:17,142,Folk medicine,monologue,519-549,,Defer,x,,Red Lahu,,519,549,30,0.0,137.0,137.0,0.22
+151,4,1,10_1,02:18,03:35,01:17,143,New Year's celebrations,monologue,550-568,,Defer,x,,Red Lahu,,550,568,18,138.0,215.0,77.0,0.23
+152,4,1,10_1,03:37,05:15,01:38,144,New Year's (cont'd),monologue,569-593,,Defer,x,,Red Lahu,,569,593,24,217.0,315.0,98.0,0.24
+153,4,1,10_1,05:20,06:07,00:47,145,Cleaning up the village after New Year's,monologue,594-605,,Defer,x,,Red Lahu,,594,605,11,320.0,367.0,47.0,0.23
+154,4,1,10_1,06:13,07:00,00:47,146,Driving away the spirit of illness,monologue,607-618,,Defer,x,,Red Lahu,,607,618,11,373.0,420.0,47.0,0.23
+155,4,1,10_1,07:01,08:02,01:01,147,Getting married,monologue,619-635,,Defer,x,,Red Lahu,,619,635,16,421.0,482.0,61.0,0.26
+156,4,1,10_1,08:03,10:19,02:16,148,Building a house,monologue,636-649,,Defer,x,,Red Lahu,,636,649,13,483.0,619.0,136.0,0.10
+157,4,1,10_1,10:19,11:07,00:48,149,Household utensils,monologue,650-686,,Defer,x,,Red Lahu,,650,686,36,619.0,667.0,48.0,0.75
+158,4,1,10_1,11:08,11:56,00:48,150,Going fishing,monologue,687-700,,Defer,x,,Red Lahu,,687,700,13,668.0,716.0,48.0,0.27
+159,4,1,10_1,11:57,12:42,00:45,151,Going hunting,monologue,701-714,,Defer,x,,Red Lahu,,701,714,13,717.0,762.0,45.0,0.29
+160,4,1,10_1,12:43,14:04,01:21,152,Jews harp music,,715-739,,Defer,x,,Red Lahu,,715,739,24,763.0,844.0,81.0,0.30,
+161,4,1,10_1,14:05,15:49,01:44,153,Courtship songs,,740-772,,Defer,x,,Red Lahu,,740,772,32,845.0,949.0,104.0,0.31,
+162,4,1,10_1,15:50,16:32,00:42,154,Courting a girl,monologue,773-788,,Defer,x,,Red Lahu,,773,788,15,950.0,992.0,42.0,0.36,
+163,4,1,10_1,16:33,18:27,01:54,155,Love-songs,,789-827,,Defer,x,,Red Lahu,,789,827,38,993.0,1107.0,114.0,0.33,
+164,4,1,10_1,18:30,20:32,02:02,156,Dialogue,,828-876,,Defer,x,,Red Lahu,,828,876,48,1110.0,1232.0,122.0,0.39,
+165,5,2,10_2,00:00,01:40,01:40,156a,Continuation of No. 156,,241-268,,Defer,x,#N/A,Red Lahu,,241,268,27,0.0,100.0,100.0,0.27,estimated
+166,5,2,10_2,01:41,02:30,00:49,157,I'm feeling sad,monologue,011-017,,Defer,x,,Red Lahu; chanting style,,11,17,6,101.0,150.0,49.0,0.12,
+167,5,2,10_2,02:31,15:17,12:46,158,Conversation:  Problems of slash-and-burn agriculture in modern Thailand,,037-153,Y,Entered,x,158,From 128-148 singing is audible in the background,,37,153,116,151.0,917.0,766.0,0.15,
+168,5,2,10_2,15:17,24:51,09:34,159,The Lahu agricultural cycle,discussion,154-240,Y,Defer,x,,,,154,240,86,917.0,1491.0,574.0,0.15,
+169,5,2,11_1,00:00,09:35,09:35,160,Ten traditional love songs,,268-369,,Entered,x,160,Some in Yellow Lahu,,268,369,101,0.0,575.0,575.0,0.18,
+170,5,2,11_1,09:38,14:00,04:22,161,Hunting tales,,371-424,,Entered,,161,,,371,424,53,578.0,840.0,262.0,0.20,
+171,5,2,11_2,00:06,02:14,02:08,162,"The blind man, the cripple, and the turtles",,424-450,,Entered,,162,,,424,450,26,6.0,134.0,128.0,0.20,
+172,5,2,11_2,02:18,07:10,04:52,163,The orphan and the magic frog,story,451-524,,Entered,,163,Inaudible from 493 to 524,,451,524,73,138.0,430.0,292.0,0.25,
+173,5,2,11_2,07:15,09:00,01:45,164,"The blind man, the cripple, and the treasure trove",,525-550,,Entered,,164,,,525,550,25,435.0,540.0,105.0,0.24,
+174,5,2,11_3,00:16,04:07,03:51,165,The orphan's riddles and the traders,story,570-627,,Entered,x,165,,,570,627,57,16.0,247.0,231.0,0.25,
+175,5,2,11_3,04:10,10:51,06:41,166,The wicked older brother and the good younger brother,story,626-742,,Entered,x,166,,,626,742,116,250.0,651.0,401.0,0.29,
+176,5,2,11_3,10:57,12:08,01:11,167,Two modern love songs,,745-764,,Entered,x,167,,,745,764,19,657.0,728.0,71.0,0.27
+177,5,2,11_3,12:10,13:30,01:20,168,Jews harp music,,768-793,,Defer,x,,,,768,793,25,730.0,810.0,80.0,0.31
+178,5,2,11_3,13:35,14:21,00:46,169,Song,,797-811,,Entered,x,169,,,797,811,14,815.0,861.0,46.0,0.30
+179,5,2,11_3,14:22,15:06,00:44,170,Jews harp music,,813-827,,Defer,x,,,,813,827,14,862.0,906.0,44.0,0.32

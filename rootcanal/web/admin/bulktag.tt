@@ -1,0 +1,41 @@
+[% PROCESS header.tt title="STEDT Database: Bulk Tag" %]
+<body>
+<p><b>Directions</b></p>
+<ul>
+<li>Enter or paste a list of one or more record numbers to be "bulk-tagged".</li>
+<li>Enter a tag. Must be an existing tag.</li>
+<li>Select a user from the dropdown who will be credited with these taggings.</li>
+<li>Click the Tag button, wait for the list of records tagged to be drawn.</li>
+</ul>
+<hr/>
+<p>record numbers (rns) to tag, separated by commas:</p>
+<p><textarea name="rns" id="rns" rows="15" cols="80"></textarea></p>
+<p>Tag: <input name="tag" id="tag">
+<p><input type="button" value="Tag" onclick="tag();">
+<select id="uid" name="uid">
+[% FOREACH u IN users %]
+<option value="[% u.1 %]" [% IF selected_uid == u.1 %]selected[% END %] >[% u.0 %]</option>[% END -%]
+</select>
+</form>
+</body>
+<script>
+var baseRef = '../';
+function tag() {
+	var rnstr = document.getElementById('rns').value;
+	var rns = rnstr.split(',');
+	var uid = document.getElementById('uid').value;
+	$(document.body).insert('<p><b>Results for user ' + uid + ':</b> </p><ol id="ajax1_results"></ol><ol id="ajax2_results"></ol>');
+	var cur_tag;
+	for(var i=0; i < rns.length; i++) {
+		cur_rn = rns[i]; 
+		$('ajax1_results').insert('<li>Sending: #'  + cur_rn + '...</li>');
+		new Ajax.Request(baseRef + 'xxx/accept', {
+			method: 'get',
+			parameters: { 'rn' : cur_rn, 'uid' : uid },
+			onSuccess: function(transport){ $('ajax2_results').insert('<li>Done:  ' + transport.statusText); },
+			onFailure: function(transport){ $('ajax2_results').insert('<li>Error: ' + transport.responseText); }
+		});
+	}
+}
+</script>
+</html>

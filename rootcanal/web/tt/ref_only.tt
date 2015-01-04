@@ -1,0 +1,14 @@
+[% PROCESS header.tt title="References - STEDT Database" %]
+
+<p>List of references (not used as data sources):</p>
+
+<table class="hangindent">
+<tr><th>Reference</tr>
+[% FOREACH sources -%]
+<tr>
+	<td>[% author %][% author.search('\.$') ? '' : '.' %] [% year %][% year.search('\.$') ? '' : '.' %] <cite>[% title %]</cite>[% title.search('[\.\?]$') ? '' : '.' %][% IF imprint %] [% imprint %][% imprint.search('\.$') ? '' : '.' %][% END %]</td>
+</tr>
+[% END -%]
+</table>
+</body>
+</html>

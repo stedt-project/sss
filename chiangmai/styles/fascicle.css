@@ -1,0 +1,17 @@
+table { 
+        width: 90%;}
+
+html { 
+       font-family: STEDTU,"TITUS Cyberbit
+             Basic",SILDoulosUnicodeIPA,Gentium,Thryomanes,Cardo,
+             "Arial Unicode MS","Lucida Sans Unicode";
+       }
+
+hr { width: 100%;
+     text-align: left; }
+
+th { text-align: left;
+     font-weight: bold;
+     color: white;
+     background: black;
+     font-size: 120%; }

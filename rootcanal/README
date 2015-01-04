@@ -1,0 +1,39 @@
+Notes: STEDT web interface
+This file contains tips on setting up the STEDT web interface (YMMV).
+
+Requirements:
+	MySQL 5.1+
+	Perl (developed on 5.10+)
+	Apache 2+ or some other http server (Linux: install libapache2-mod-perl for perl scripts to work with apache)
+	The STEDT MySQL database (in a database called 'stedt')
+	A number of Perl modules (see below)
+
+Perl modules required (there may be more):
+
+	CGI::Application::Dispatch
+	CGI::Application::Plugin:TT
+	CGI::Application::Plugin:Session
+	CGI::Application::Plugin:AutoRunmode
+	CGI::Application::Plugin:DBH
+	CGI::Application::Plugin:ConfigAuto
+	CGI::Application::Plugin:Redirect
+	CGI::Application::Plugin::ValidateRM
+	CGI::Session::ExpireSessions
+	Data::FormValidator::Constraints
+	DBD::mysql (on linux, you also need libmysqlclient-dev before cpan will install DBD::mysql)
+	Mail::Sendmail
+	JSON
+
+Steps:
+	- extract rootcanals folder to directory served by http server
+	- move rootcanal.pl from rootcanal/ to rootcanal/web/ folder
+	- modify rootcanal.conf w/ MySQL login info and set ignore_ssl to 1 (if not using ssl)
+		- note that some links that redirect to https pages don't work when ssl is not used (but no real functionality is lost)
+	- modify rootcanal/web/rootcanal.pl:
+		2: use lib '../perl';
+		...
+		16: cfg_file => '../rootcanal.conf' # path to rootcanal.conf file
+	- can also move perl/ folder somewhere else and update rootcanal.pl accordignly (in line 2 or BEGIN block)
+
+	- run 'perl rootcanal.pl' to identify any any missing modules
+	- access rootcanal.pl with http server and watch Apache error log for any other missing modules

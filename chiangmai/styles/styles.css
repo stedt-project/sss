@@ -1,0 +1,45 @@
+	  table { 
+	    padding-left: 12pt;
+	    width: 100%; }
+
+	  html,td, input { 
+	    font-family: "Charis SIL", Gentium, "STEDTU", 
+              "Doulos SIL", "TITUS Cyberbit Basic", SILDoulosUnicodeIPA, 
+              Thryomanes,Cardo, "Arial Unicode MS", 
+              "Lucida Sans Unicode"; }
+	    font-size: 10pt;
+
+	  hr, input { 
+	    width: 100%;
+	    text-align: left; }
+
+	  th {
+	    text-align: left;
+	    color: white;
+	    background-color: DarkBlue;
+	    font-family: Arial, Helvetica, sans;
+	    font-weight: normal; }
+
+	  h1 {
+	    font-family: Arial, Helvetica, sans;
+	    font-size: 18pt;
+	    font-weight: bold; }
+
+	  h2 {
+	    text-align: center;
+	    font-size: 16pt;
+	    font-weight: bold;
+	    margin-left: 12pt;
+	    }
+
+	  h3 {
+	    font-family: Arial, Helvetica, sans;
+	    font-size: 14pt;
+	    font-weight: bold;
+	    margin-left: 16pt; }
+
+	  h4 {
+	    font-family: Arial, Helvetica, sans;
+	    font-size: 12pt;
+	    font-weight: normal;
+	    margin-left: 18pt; }

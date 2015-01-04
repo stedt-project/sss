@@ -1,0 +1,38 @@
+body { background: #FFFFFF; }
+
+h1,h2,h3,h4,h5 { margin:0px 10px 10px 10px;
+                 font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans;
+               }
+h3,h4,h5 { font-size:100% }
+
+h1 { 
+     font-size:14px;
+     border-bottom:thin solid #92c9ff;
+     padding-top:10px;
+     }
+
+h2 { font-size:12px;
+     color:white;
+     background:black;
+     padding-left:2px}
+
+h4 { font-weight:normal }
+
+h5 { font-weight:normal }
+
+p { margin:0px 10px 10px 10px; }
+
+p,li,dt,dd,td,ol,ul {
+       font-family: Georgia, "Times New Roman", Times, serif;
+       }
+
+dl { margin:10px 10px 10px 10px; }
+dt { font-weight:bold }
+a:link { color:#46607a;}
+a:visited { color:gray }
+a:hover { color:#46607a }
+
+a:link, a:visited, a:active { text-decoration: none }
+
+p.more { text-decoration:none;
+             font-size:12px; }

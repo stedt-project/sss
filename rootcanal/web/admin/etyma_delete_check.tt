@@ -1,0 +1,93 @@
+[% PROCESS header.tt title="Etyma Delete Check" %]
+
+[% IF newtag -%]
+<p><b>Mesoroot successfully migrated to #[% newtag %]!</b>
+Please make update any notes as appropriate, then soft-delete this etyma record.</p>
+[% END -%]
+
+<table>
+<tr><th>tag</th><td>[% tag %]</td></tr>
+<tr><th>plg</th><td>[% plg %]</td></tr>
+<tr><th>protoform</th><td>[% protoform %]</td></tr>
+<tr><th>protogloss</th><td>[% protogloss %]</td></tr>
+<tr><th>records tagged</th><td>[% num_recs %]</td></tr>
+<tr><th>mesoroots</th><td>[% num_mesoroots %]</td></tr>
+<tr><th>notes</th><td>[% num_notes %]</td></tr>
+</table>
+
+<form id="addnoteform" style="display:none"></form>[% # just so notes.js doesn't complain %]
+<form action="[% self_url %]/tags/soft_delete" method="post" id="delete_form">
+<input name="tag" type="hidden" value="[% tag %]">
+Merge with #<input name="merge_tag" type="text" size="4"[% IF newtag %] value="[% newtag %]"[% END %]>
+<input name="btn" type="submit" value="Delete Record"[% UNLESS allow_delete %] disabled[% END %]>
+[% IF allow_delete -%]
+&lt;-- Click here to delete this record.[% IF !newtag %] If appropriate, specify the tag this is being merged with.[% END %]
+[% ELSE -%]
+&lt;-- (Disabled because there are still tagged records/mesoroots/notes.)
+[% END -%]
+</form>
+
+[% IF other_notes || xref_notes -%]
+<p>Notes that refer (or possibly refer) to this tag are listed below. Correct any references before deleting.</p>
+
+<div id="some_notes" class="container">
+[% PROCESS addnoteform.tt -%]
+[% FOREACH n IN notes -%]
+[% SWITCH n.spec -%]
+[% CASE 'L' -%]
+<p>a note for lexicon rn:<a href="[% self_url %]/edit/lexicon?lexicon.rn=[% n.rn %]">[% n.rn %]</a></p>
+[% PROCESS admin/notes_lex_for_delete_check.tt -%]
+[% CASE 'E' -%]
+<p>a note for tag <a href="[% self_url %]/edit/etyma?etyma.tag=[% n.tag %]">#[% n.tag %]</a></p>
+[% PROCESS notes_etyma.tt -%]
+[% CASE 'C' -%]
+<p>a note for chapter <a href="[% self_url %]/chap/[% n.id %]">[% n.id %]</a></p>
+[% PROCESS notes_chapter.tt -%]
+[% CASE 'S' -%]
+<p>a note for the source <a href="[% self_url %]/source/[% n.id %]">[% n.id %]</a></p>
+[% PROCESS notes_source.tt -%]
+[% CASE -%]
+<p>oops, bad spec [% n.spec %] for noteid [% n.noteid %]</p>
+[% END # SWITCH -%]
+[% END # FOREACH -%]
+</div>
+
+[% fncounter = 0 -%]
+[% FOREACH n IN footnotes -%]
+[% fncounter = fncounter+1 -%]
+<div class="footnote fnote-[% n.super %]" id="foot[% fncounter %]">
+<a href="#toof[% fncounter %]" class="left">^ [% fncounter %].</a>
+<div class="notepreview">[% n.text %]</div></div>
+[% END -%]
+[% END # other_notes %]
+
+<script>
+[% IF other_notes || xref_notes -%]
+var footnote_counter = [% footnotes.size %];
+$('some_notes').on('click', 'a.elink', show_tag);
+[% END -%]
+$('delete_form').on('submit', function (e) {
+	if (!confirm('Are you sure you want to delete this record?')) {e.stop(); return}
+	if (opener) e.stop();
+	new Ajax.Request(baseRef + 'tags/soft_delete', {
+		parameters: $('delete_form').serialize({hash:true}),
+		onSuccess: function(transport) {
+			if (!opener) return;
+			var t = opener.$('etyma_resulttable').down('tbody');
+			var pfx = t.down('tr').id.substring(0,3);
+			var tr = opener.$(pfx + [% tag %]);
+			t.deleteRow(tr.sectionRowIndex);
+			opener.TableKit.reload();
+			window.close();
+		},
+		onFailure: function(transport) {
+			alert(transport.responseText);
+		}
+	});
+});
+</script>
+[% IF other_notes || xref_notes -%]
+<script src="[% self_base %]js/notes.js"></script>
+[% END -%]
+</body>
+</html>

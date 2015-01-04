@@ -1,0 +1,67 @@
+[% PROCESS header.tt title="Change Log - STEDT Database" %]
+<p>[% changes.size %] most recent changes:</p>
+
+<table class="sortable resizable hangindent" width="100%" style="table-layout:fixed">
+<col style="width:6em">
+<col style="width:5em">
+<col style="width:3em">
+<col style="width:7em">
+<col style="width:5em">
+<col style="width:7em">
+<col style="width:auto">
+<col style="width:auto">
+<col style="width:6em">
+<col style="width:10em">
+<tr>
+	<th>username</th>
+	<th>type</th>
+	<th>#</th>
+	<th>table</th>
+	<th>id</th>
+	<th>field</th>
+	<th>old value</th>
+	<th>new value</th>
+	<th>owner</th>
+	<th>time</th>
+</tr>
+[% FOREACH row IN changes -%]
+[% SWITCH row.3	# determine which table has been edited in order to set links correctly %]
+[% CASE 'etyma' %]
+	[% tbl_key = 'tag' %]
+[% CASE 'lexicon' %]
+	[% tbl_key = 'rn' %]
+[% CASE 'hptb' %]
+	[% tbl_key = 'hptbid' %]
+[% CASE 'languagenames' %]
+	[% tbl_key = 'lgid' %]
+[% CASE 'srcbib' %]
+	[% tbl_key = 'srcabbr' %]
+[% CASE 'notes' %]
+	[% tbl_key = 'noteid' %]
+[% CASE # in most cases it's just 'id' %]
+	[% tbl_key = 'id' %]
+[% END %]
+<tr>
+<td>[% row.0 | html %]</td>
+<td>[% row.1 | html %]</td>
+<td>[% row.2 | html %]</td>
+<td>[% row.3 | html %]</td>
+<td>
+[% # if user is not approver or above, don't make a link for projects table %]
+[% IF !c.has_privs(8) && (row.3 == 'projects') %]
+[% row.4 | html %]
+[% ELSE # otherwise, fine to make a link %]
+<a href="[% self_url %]/edit/[% row.3 %]?[% row.3 %].[% tbl_key %]=[% row.4 %]" target="change_viewer">[% row.4 | html %]</a>
+[% END %]
+</td>
+<td>[% row.5 | html %]</td>
+<td>[% row.6 | html %]</td>
+<td>[% row.7 | html %]</td>
+<td>[% row.8 | html %]</td>
+<td>[% row.9 | html %]</td>
+</tr>
+[% END -%]
+</table>
+
+</body>
+</html>

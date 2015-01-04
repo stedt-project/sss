@@ -1,0 +1,88 @@
+﻿[% PROCESS header.tt title="STEDT Chapter Browser" -%]
+
+<h1>Chapters</h1>
+
+Volumes:
+<ol>
+[% FOREACH v IN vols -%]
+<li><a href="#[% v.0 | uri %]">[% v.1 %]</a></li>
+[% END -%]
+</ol>
+
+<p>[% ch.size %] nodes (took [% time_elapsed %] seconds to retrieve)</p>
+<table id="ch" class="sortable resizable hangindent" style="table-layout:fixed">
+<thead><tr>
+	<th id="chapters.semkey">semkey</th>
+	<th id="chapters.chaptertitle">Title</th>
+	[% IF c.has_privs(1) %]<th>public</th>[% END %]
+	<th>num. etyma</th><th>notes</th><th>flowchart?</th>
+	<th id="chapters.indent">indent</th>
+	<th id="chapters.id">id</th>
+</tr></thead>
+<tbody>
+[% FOREACH r IN ch -%]
+<tr>
+<td><a name="[% r.0 | uri %]"></a><a target="notes" href="[% self_url %]/chap/[% r.0 | uri %]">[% r.0 %]</a></td>
+<td>[% IF r.8 %]<b>[% ELSIF r.9 %]<i>[% END %][% r.1 | html %][% IF r.8 %]</b>[% ELSIF r.9 %]</i>[% END %]</td>
+[%- IF c.has_privs(1) %]<td>[% r.2 || '' %]</td>[% END -%]
+<td>[% IF r.3 %][%- IF c.has_privs(1) %]<a target="edit_etyma" href="[% self_url %]/edit/etyma?etyma.chapter=[% r.0 | uri %]">[% r.3 %][% ELSE %][% r.3 %][% END # privs check %][% END # r.3 check %]</td>
+<td>[% r.4 || '' %]</td><td>[% IF r.5 %]✓[% END %]</td>
+<td id='indent_[% r.7 %]'>[% r.10 %]</td>
+<td>[% r.7 %]</td>
+</tr>
+[% END -%]
+</tbody>
+</table>
+
+[% IF c.has_privs(8) -%]
+<h2>Undefined chapters:</h2>
+<p>[% e.size %] nodes</p>
+
+<table id="e">
+<tr><th>Ch.</th><th>public</th><th>etyma</th><td width="80%"></td></tr>
+[% FOREACH r IN e -%]
+<tr><td>[% r.0 %]</td><td>[% r.1 %]</td>
+<td><a target="edit_etyma" href="[% self_url %]/edit/etyma?etyma.chapter=[% r.0 | uri %]">[% r.2 %] etym[% r.2 == 1 ? 'on' : 'a' %]</a></td></tr>
+[% END -%]
+</table>
+
+<h2>Orphaned notes:</h2>
+<p>[% n.size %] orphans</p>
+[% FOREACH r IN n -%]
+<p>[% r.0 %]: <a target="notes" href="[% self_url %]/chap/[% r.0 | uri %]">[% r.1 %] note(s)</a>;
+[% r.2 %] etyma</p>
+[% END -%]
+[% END -%]
+
+<script src="[% self_base %]js/tbl/chapters.js"></script>
+<script>
+TableKit.Raw.init('ch', 'chapters', setup['chapters'][% IF c.has_privs(8) %], '[% self_url %]/update'[% END %]);
+
+// indentation of semkey and title
+var brows_table = $('ch').getElementsByTagName('tbody')[0];
+
+// get value of indent level and setup spaces
+for (var i = 0, row; row = brows_table.rows[i]; i++) {
+	var row_id = $('ch').getElementsByTagName('tbody')[0].rows[i].cells[$('ch').getElementsByTagName('tbody')[0].rows[i].cells.length-1].textContent;
+	var indent_level = $('indent_'+row_id).textContent;
+	var spaces = '';
+	for (var j = 0; j < indent_level; j++) {
+		spaces += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+	}
+
+// don't indent x.x row
+if ($('ch_'+row_id).children[0].lastChild.innerHTML === 'x.x') {
+	spaces = '';
+}
+
+// indent semkey
+$('ch_'+row_id).children[0].lastChild.innerHTML = spaces + $('ch_'+row_id).children[0].lastChild.innerHTML;
+
+// indent title
+$('ch_'+row_id).children[1].innerHTML = spaces + $('ch_'+row_id).children[1].innerHTML;
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+﻿[% PROCESS header.tt title="Edit " _ t.table _ " - STEDT Database" -%]
+<form id="search_form">
+<table class="[% t.table %]_edit_table" width="100%">
+<tr>[% FOREACH col IN t.searchable %]<th id="[% col %]_search">[% col %]</th>[% END -%]</tr>
+<tr>
+[% FOREACH col IN t.searchable -%]
+<td style="padding-left:0px;padding-right:5px;text-indent:0px;">
+[%- sub = t.search_form_items(col) %]
+[%- IF t.search_form_items(col) %]
+[%- sub(c.query) %]
+[%- ELSE -%]
+<input type="text" name="[% col %]"[% IF c.query.param(col).defined %] value="[% c.query.param(col) %]"[% END %] style="width:100%">
+[%- END %]</td>
+[% END -%]
+</tr>
+</table>
+<table>
+<tr><td>
+<input name="search" type="submit" value="Search">
+<input type="button" value="Clear [Esc]" onclick="clear_form(this.form)">
+<input type="reset" value="Reset [Esc]²">
+<input name="download" type="submit" value="Download" title="By clicking this button you agree to use the downloaded data for non-commercial, research purposes only.">
+[% IF t.table == "lexicon" %]
+View tagging by [% IF c.has_privs(1) %](A) [% END %]<select id="uid1" name="uid1" onchange="document.location = '?' + Form.serializeElements(this.up('form').select('input:not(:button,:submit,:reset),select').findAll(Form.Element.getValue));" [% IF !c.has_privs(1) %]style="display:none;"[% END %]>
+<option value=""[% IF uid1 == 8 %] selected[% END %]>stedt</option>
+[% FOREACH u IN users -%]
+[% UNLESS u.uid == 8 -%]
+<option value="[% u.uid %]"[% IF uid1 == u.uid %] selected[% END %]>[% u.username %] (id:[% u.uid %])</option>
+[% END -%]
+[% END -%]
+</select>
+[% # if user is not a tagger, the uid1 box is hidden and 'and (B)' is not necessary %]
+[% IF c.has_privs(1) %]and (B)[% END %]
+<select id="uid2" name="uid2" onchange="document.location = '?' + Form.serializeElements(this.up('form').select('input:not(:button,:submit,:reset),select').findAll(Form.Element.getValue));">
+<option value=""[% IF uid2 == c.param('uid') %] selected[% END %]>[% c.param('user') %]</option>
+[% FOREACH u IN users -%]
+[% UNLESS u.uid == c.param('uid') -%]
+<option value="[% u.uid %]"[% IF uid2 == u.uid %] selected[% END %]>[% u.username %] (id:[% u.uid %])</option>
+[% END -%]
+[% END -%]
+</select>
+[% END # if "lexicon" -%]
+</td>
+[% IF message %]<td>[% message %]</td>[% END -%]
+</tr>
+</table>
+</form>
+
+[% IF result.data.size -%]
+<form target="tableedit_print" method="post">
+[% result.data.size %] found. (WHERE [% result.debug | html %]; [% time_elapsed %]s[% IF c.has_privs(16) %]; js:<span id="time_elapsed_js"></span>s[% END %].)
+[%- FOREACH col IN t.searchable -%]
+[%- IF c.query.param(col) %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) %]">[% END -%]
+[%- END -%]
+[%# <input name="print" type="submit" value="Print"> %]
+</form>
+
+[%- IF manual -%]
+<form method="post" id="manual_paging_f1">
+[% FOREACH col IN t.searchable.merge(['sortkey']) -%]
+[%- IF c.query.param(col).defined %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) %]">[% END -%]
+[%- END -%]
+<input name="pagenum" type="hidden" value="[% pagenum %]">
+[% IF t.table == "lexicon" -%]
+<input name="uid1" type="hidden" value="[% uid1 %]">
+<input name="uid2" type="hidden" value="[% uid2 %]">
+[% END # lexicon %]
+[% UNLESS pagenum == 0 %]<input name="prev" type="submit" value="Previous Page">[% END %]
+Displaying items [% a %]-[% b %] of [% result.data.size %].
+[% UNLESS b == result.data.size %]<input name="next" type="submit" value="Next Page">[% END %]
+</form>
+[%- END -%]
+[%- ELSE -%]
+No records found. (WHERE [% result.debug | html %])
+[% END # result.data.size -%]
+
+<form>
+<table id="[% t.table %]_resulttable" class="[% IF !manual %]sortable [% END %]resizable editable [% t.table %]_edit_table hangindent" width="100%" style="table-layout:fixed;">
+<thead><tr>
+[%- FOREACH col IN result.fields %]
+<th id="[% col %]">
+[%- IF manual %]
+<a href="[% sortlinks.$col %]" style="text-decoration:none; color:white;">[% col.replace('^.*\.','') %]</a>
+[%- ELSE %]
+[%- col.replace('^.*\.','') %]
+[%- END -%]
+</th>
+[%- END %]
+[% IF c.has_privs(1) && t.table != 'etymologies' -%]
+<th width="16">HIST.</th>
+[% END -%]
+[% IF c.has_privs(16) -%]
+<th width="16">EDIT</th>[% # 16 pixels is the width of the images %]
+[% END -%]
+</tr></thead>
+<tbody>
+[% IF result.data.size -%]
+[% FOREACH row IN result.data.slice(a - 1, b - 1) -%]
+<tr>
+[%- FOREACH s IN row -%]
+<td>[% s | html %]</td>
+[%- END -%]
+[% IF c.has_privs(1) && t.table != 'etymologies' -%]
+<td><a href="[% self_url %]/admin/changes?t=[% t.table %]&id=[% row.$key_index %]" target="stedt_changelog"><img src="[% self_base %]img/clock.png" width="16" height="16"></a></td>
+[% END -%]
+[% IF c.has_privs(16) -%]
+<td><a href="[% self_url %]/edit/[% t.table %]/[% row.$key_index %]"><img src="[% self_base %]img/b_edit.png" width="16" height="16"></a></td>
+[% END -%]
+</tr>
+[% END # FOREACH row -%]
+[% END # IF -%]
+</tbody>
+</table>
+</form>
+
+[%- IF manual -%]
+<form method="post" align="right">
+[% FOREACH col IN t.searchable.merge(['sortkey']) -%]
+[%- IF c.query.param(col) %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) %]">[% END -%]
+[%- END -%]
+<input name="pagenum" type="hidden" value="[% pagenum %]">
+[% UNLESS pagenum == 0 %]<input name="prev" type="submit" value="Previous Page">[% END %]
+Displaying items [% a %]-[% b %] of [% result.data.size %].
+[% UNLESS b == result.data.size %]<input name="next" type="submit" value="Next Page">[% END %]
+</form>
+[%- END -%]
+
+[% IF c.has_privs(t.table == 'etyma' ? 1 : 16) && t.table != 'hptb' && t.table != 'mesoroots' && t.table != 'etymologies' && t.table != 'notes'%]
+<a href="#" onclick="$('add_form_span').toggle(); scrollEnd(); return false;">Add a record...</a>
+<span id="add_form_span" style="display:none">
+<form id="add_form" onsubmit="add_record(); return false;">
+<table border=0>
+[%- FOREACH fld IN t.addable %]
+<tr><th>[% fld.replace('^.*\.','') %]</th><td>
+[%- sub = t.add_form_items(fld) %]
+[%- IF t.add_form_items(fld) %]
+[%- sub(c.query) %]
+[%- ELSE %]
+<input name="[% fld %]" type="text" class="add_reset" [% IF t.table=='srcbib' %]style="width:250%;"[% END %]>
+[%- END %]
+</td></tr>
+[%- END %]
+</table>
+<input name="btn" type="submit" value="Add Record">
+</form>
+</span>
+[% END %]
+
+[% IF footnotes -%]
+[% fncounter = 0 -%]
+[% FOREACH n IN footnotes -%]
+[% IF n.super || (n.uid != c.param('uid') && !c.has_privs(8)) %]
+[% fncounter = fncounter+1 -%]
+<div class="footnote[% IF n.super %] fnote-[% n.super %][% END %]" id="foot[% fncounter %]">
+<a href="#toof[% fncounter %]" class="left">^ [% fncounter %].</a>
+<div class="notepreview">[% n.text %][% IF n.uid != 8 %] [[% n.username %]][% END %]</div></div>
+[% ELSE -%]
+[% PROCESS notes_lex.tt -%]
+[% END -%]
+[% END -%]
+
+[% IF c.has_privs(1) -%]
+[% PROCESS addnoteform.tt -%]
+[% END -%]
+
+<script>
+var footnote_counter = [% footnotes.size %];
+</script>
+<script src="[% self_base %]js/notes.js"></script>
+[% END # if footnotes -%]
+
+<script src="[% self_base %]js/tbl/[% t.table %].js"></script>
+<script>
+var tablename = '[% t.table %]';
+$('search_form').select('th').each(function (c) {
+	var s = c.innerHTML;
+	if (s === 'analysis') {
+		// leave as-is
+	} else if (setup[tablename][s] && setup[tablename][s]['label']) {
+		c.innerHTML = setup[tablename][s]['label'];
+	} else {
+		c.innerHTML = s.replace(/^.*?\./,'');
+	}
+});
+TableKit.Raw.init(tablename + '_resulttable', tablename, setup[tablename], '[% self_url %]/update');
+[% IF t.table == "lexicon" -%]
+TableKit.tables[tablename + '_resulttable'].editAjaxExtraParams += '&uid1=' + [% uid1 %] + '&uid2=' + [% uid2 %];
+[% ELSIF t.table == "etyma" -%]
+TableKit.Editable.selectInput('etyma.grpid',{},[% plgs %]);
+[% END # lexicon -%]
+[%- IF manual # tablekit only stripes the rows for sortable, so manually do it here %]
+TableKit.Rows.stripe($(tablename + '_resulttable'));
+[%- END %]
+[%- IF c.has_privs(16) %]
+if($('time_elapsed_js')) { $('time_elapsed_js').insert((Date.now()-rootcanal_t0)/1000); }
+[%- END %]
+</script>
+<script src="[% self_base %]js/edit.js"></script>
+</body>
+</html>

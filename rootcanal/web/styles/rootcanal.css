@@ -1,0 +1,367 @@
+/* custom font for allofam symbol
+extracted from STEDTU.ttf, converted to various formats using:
+http://www.fontsquirrel.com/fontface/generator */
+@font-face {
+	font-family: myAllofam;
+	/* try local versions before providing one for download */
+	src: local("STEDTU"), local("Segoe UI Symbol");
+	src: url('allofam.eot');
+	src: url('allofam.eot?#iefix') format('embedded-opentype'),
+		url('allofam.woff') format('woff'),
+		url('allofam.ttf') format('truetype'),
+		url('allofam.svg#allofam') format('svg');
+	unicode-range: U+2AA4; /* restrict to allofam symbol codepoint */
+}
+
+/* make sure monospace allofam symbol shows up in notes editing text areas */
+textarea[name="xmlnote"] {
+	font-family: monospace, "Everson Mono", unifont, myAllofam;
+	font-size: smaller;
+}
+
+@media print {
+	thead { display: table-header-group; }
+	div#etyma { position: static; }
+	div#lexicon { position: static; }
+	div#dragger { display: none; }
+	div#info { display:none; }
+	form#etyma_search, form#lexicon_search, form.noteform, .edit { display:none; }
+	input.note_edit_toggle { display: none; }
+}
+
+@media screen { 
+	div#etyma { position:fixed; overflow:auto; top:3em; height:12em; width:100%; left:0px; } 
+	div#lexicon { position:fixed; overflow:auto; top:15.6em; bottom: 0px; width:100%; left:0px; }
+	div#etyma.vert { height:auto; bottom:0px; width:27em; } 
+	div#lexicon.vert { width:auto; top:3em; right: 0px; left:27.6em; }
+	div#dragger { cursor:n-resize;
+		position:fixed; top: 15em; height: 0.5em;
+		background-color:silver;
+		background-image: url("gripper_horz.png");
+		background-repeat: no-repeat;
+		background-position:center;
+		border: 1px solid black;
+		width:100%; left: 0px; right: 0px;
+	}
+	div#dragger.vert {  cursor:e-resize; top:3em; bottom:0px;
+		height:auto; width:0.5em; left: 27em; right: auto;
+		background-image: url("gripper_vert.png");
+		border: 1px solid black;
+	 }
+	 div#dragger:hover {
+	 	background-color:DimGray;
+	 }
+
+}
+
+/* style the links */
+a[href] {text-decoration:none;}  /* no underline on links */
+a[href]:hover {color:#C8B133;}   /* change color on link mouseover */
+
+div#info
+{
+	display: block;
+	position: absolute;
+	z-index: 100;
+	height: auto; width: auto; max-width:50%;
+	background-image: url("triangle.png"); background-repeat: no-repeat;
+	margin-top: 1.5em; margin-left: 0.5em;
+}
+div#info>div
+{
+	font-family: myAllofam, Times, "Times New Roman", "Doulos SIL Compact", "Charis SIL Compact", STEDTU;
+	margin-top: 15px;
+	background-color: white;
+	padding: 1ex 1ex 1ex 1ex;
+	border-width: 0px 2px 2px 2px;
+	border-style: solid;
+}
+
+/* for the groups page */
+div#lgtree { position:fixed; overflow:auto; top:5em; bottom:0px; left:0px; width:18em; }
+div#lginfo { position:fixed; overflow:auto; top:3em; bottom:0px; right:0px; left:19em; } 
+table#lgtreehead {position:fixed; top:3em; left:0px; width:18em; height:2em;}
+
+tr { vertical-align: top; }
+table.hangindent td { text-indent: -1em; padding-left: 1em; }
+
+td.grid { text-indent: 0; padding: 2px;}
+
+div.outer { 
+    position: relative;
+    background-color: lightgray;
+    height: 4em; 
+    line-height:100%;
+    padding: 2px;
+}
+
+div.chapterlabel { 
+    position: relative;
+    text-align: center;
+    color: navy;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+div.lowerleft {   
+    font-size: smaller; 
+    position: absolute; bottom: 1px;
+    text-align: left; 
+    bottom:2px;
+    left:2px;
+    width: 40px;
+}
+
+div.lowerright {   
+    font-size: smaller; 
+    position: absolute; bottom: 1px;
+    text-align: right; 
+    bottom:2px;
+    right:2px;
+    width: 40px;
+}
+
+/* various sss style rules */
+div.footer {
+	background-color: white;
+	position: fixed;
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0px;
+	padding-bottom: 5%;
+}
+
+div.panetitle {
+	float: left;
+	margin: 0pt 3pt 2pt 2pt;
+	font-size: larger;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+td, .editable-cell-form textarea
+/* table cells and their editable versions should look the same */
+/* (looks like we're only using textareas, not text inputs) */
+{
+	font-family: "Doulos SIL", "Charis SIL", "Gentium", "SILDoulosUnicodeIPA", "Thryomanes",
+		"Cardo", "Lucida Grande", "Arial Unicode MS", "Lucida Sans Unicode","STEDTU", "myAllofam";
+	font-size: medium;
+}
+
+.cognate {
+	background-color:yellow; /* #99ff99*/
+}
+
+.approve-ignore { background-color: gray; text-indent:0px; margin-left:-1em; }
+.approve-replacing { background-color: magenta; text-indent:0px; margin-left:-1em; }
+.approve-conflict { background-color:magenta; }
+
+.left
+{
+	float: left;
+	padding: 0 1em 0 0;
+}
+
+.right
+{
+	float: right;
+	padding: 0 0 1ex 1em;
+}
+
+.dropdown {
+	padding: 0 1em 0 0;
+}
+
+.notepreview
+{
+	/* make sure allofam and IPA characters will appear correctly in notes;
+	note that listing Doulos and Charis SIL Compact first resolves some spacing issues in Chromium */
+	font-family: myAllofam, "Doulos SIL Compact", "Charis SIL Compact", Times, "Times New Roman", STEDTU;
+	line-height: 1.25;
+	overflow/**/: auto;
+	height: 1%;
+}
+/* overflow: auto establishes a new block formatting context.
+1% is a hack for IE.
+see http://www.pupinc.com/boxflowhack/ */
+
+div#allofambox {
+	font-family: myAllofam, Times, "Times New Roman", "Doulos SIL Compact", "Charis SIL Compact", STEDTU;
+	border: 1px solid gray;
+	padding:1ex 1ex 0 1ex;
+	line-height: 1.25;
+}
+
+.mesolist {
+	font-family: myAllofam, Times, "Times New Roman", "Doulos SIL Compact", "Charis SIL Compact", STEDTU;
+	line-height: 1.25;
+}
+
+.footnote { font-size: smaller; }
+
+th {
+	text-align: left;
+	color: white;
+	background-color: navy;
+	font-family: "Gill Sans MT", "Gill Sans", Futura, Helvetica, Arial, sans-serif;
+	/*font-size: smaller;*/
+	font-weight: normal;
+	overflow: hidden;
+}
+
+.etyma_edit_table th { background-color: #C93; }
+.srcbib_edit_table th { background-color: gray; }
+.languagenames_edit_table th { background-color: black; }
+.hptb_edit_table th { background-color: green; }
+.mesoroots_edit_table th { background-color: maroon; }
+.chapters_edit_table th { background-color: purple; }
+.glosswords_edit_table th { background-color: olive; }
+
+/* highlight the lexicon and etyma side of the etymologies viewer with different colors */
+.etymologies_edit_table th[id^="etyma"] { background-color: #C93; }
+.etymologies_edit_table th#Egrps\.plg { background-color: #C93; }
+
+th A:link     		{ color: white; }
+th A:visited   		{ color: white; }
+th A:hover   		{ color: teal; text-decoration: underline; }
+
+h1 {
+     font-family: Helvetica, Arial, sans-serif, myAllofam, STEDTU;
+     font-weight: bold; }
+
+h2 {
+     font-weight: bold;
+     margin-left: 12pt;
+     }
+
+h3 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     margin-left: 16pt;
+}
+
+h4 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 10pt;
+     font-weight: normal;
+     margin-left: 18pt; }
+
+/* TableKit styles */
+tr.rowodd { background-color: #FFFFFF; }
+tr.roweven { background-color: #F2F2F2; }
+.sortcol {
+	cursor: pointer;
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.sortasc {
+	background-color: blue;
+	background-image: url("up.gif");
+}
+.sortdesc
+{
+	background-color: blue;
+	background-image: url("down.gif");
+}
+.nosort {
+	cursor: default;
+}
+
+/* resizing */
+th.resize-handle-active { cursor: e-resize; }
+div.resize-handle {
+	cursor: e-resize;
+	width: 2px;
+	border-right: 1px dashed #1E90FF;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+th.moveOnHandle { cursor: move; }
+div.move-handle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fc6;
+	cursor: move;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+}
+
+/* Editable Cells */ 
+
+.editable-cell-form
+{
+	position: absolute;
+	z-index: 5;		/* stick the form on top of the table in another layer! */
+	background-color: silver;
+	border: 1px;
+} 
+
+.editable-cell-form textarea
+{
+	padding: 0px;
+	width: 100%;	/* same width as the form, which was set in tablekit.js */
+	/* height is set in tablekit */
+	margin-left: -1px;
+	margin-top: -1px;
+} 
+
+
+.hoverdrop { background-color : yellow; }
+
+.lggroup { background-color : #E6E6E6; }
+.lggroup td { font-weight: bold; }
+
+#addnoteform
+{
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	height: 60%;
+	background-color: white;
+	border: 5pt solid black;
+	padding: 5pt;
+	z-index:1;
+}
+
+#notes_markup_cheatsheet, #edit_meso_form
+{
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	width: 40%;
+	height: 50%;
+	background-color: white;
+	border: 3pt solid black;
+	padding: 5pt;
+	z-index:1;
+}
+
+div.autocomplete {
+  position:absolute;
+  width:250px;
+  background-color:white;
+  border:1px solid #888;
+  margin:0;
+  padding:0;
+  font-size: xx-small;
+}
+div.autocomplete ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+div.autocomplete ul li.selected { background-color: #ffb;}
+div.autocomplete ul li {
+  list-style-type:none;
+  display:block;
+  margin:0;
+  padding:2px;
+  height:32px;
+  cursor:pointer;
+}

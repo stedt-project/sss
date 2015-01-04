@@ -1,0 +1,807 @@
+chapter	chaptertitle	chapterabbr	v	f	c	s1	s2	s3	semcat	old_chapter	old_subchapter					Old semcat (#2)	Old V.F (#2)	Old chptr (#2)	Note
+1.0	The Body		1	0	0	0	0	0	Nbp	1a						Vbp	1b		
+1.1	Body Parts		1	1	0	0	0	0	Nbp	1a	1								
+1.1.1	Body		1	1	1	0	0	0	Nbp	1a	1.1					Vbp	1b	1.1	
+1.1.1.1	Flesh/Meat		1	1	1	1	0	0	Nbp	1a	1.1.1								
+1.1.1.2	Lean (Meat)		1	1	1	2	0	0	Nbp	1a	1.1.2								No lexicon records
+1.1.2	Life/Breathe/Exist		1	1	2	0	0	0	Nbp	1a	1.2								
+1.1.2.1	Life/Live/Alive		1	1	2	1	0	0	Nbp	1a	1.2.1					Vbp	1b	1.2.1	
+1.1.2.2	Breath/Breathe		1	1	2	2	0	0	Nbp	1a	1.2.2					Vbp	1b	1.2.2	
+1.1.2.3	Existence		1	1	2	3	0	0	Nbp	1a	1.2.3								
+1.1.2.4	Be able		1	1	2	4	0	0	Vbp	1b	1.2.3								
+1.1.3	Hungry		1	1	3	0	0	0	Nbp	1a	1.3					Vbp	1b	1.3	
+1.1.3.1	Thirsty		1	1	3	1	0	0	Nbp	1a	1.3.1					Vbp	1b	1.3.1	
+1.1.3.2	Satiated/Full/Enough		1	1	3	2	0	0	Nbp	1a	1.3.2					Vbp	1b	1.3.2	
+1.1.4	Wake/Conscious/Alert		1	1	4	0	0	0	Vbp	1b	1.4					Nbp	1a	1.4	
+1.1.4.1	Sleep/Be asleep		1	1	4	1	0	0	Nbp	1a	1.4.1					Vbp	1b	1.4.1	
+1.1.4.2	Dream		1	1	4	2	0	0	Nbp	1a	1.4.2								
+1.1.5	Strength		1	1	5	0	0	0	Nbp	1a	1.5					Vbp	1b	1.5	
+1.1.5.1	Sick/Hurt/Ache		1	1	5	1	0	0	Nbp	1a	1.5.1					Vbp	1b	1.5.1	
+1.1.5.2	Swollen/Swell/Bloated		1	1	5	2	0	0	Nbp	1a	1.5.2					Vbp	1b	1.5.2	
+1.1.6	Die/Deathly		1	1	6	0	0	0	Nbp	1a	1.6					Vbp	1b	1.6	
+1.1.6.1	Carcass/Dead Body		1	1	6	1	0	0	Nbp	1a	1.6.1								
+1.2	Head and Face		1	2	0	0	0	0	Nbp	1a	2								
+1.2.1	Head/Headed		1	2	1	0	0	0	Nbp	1a	2.1					Vbp	1b	2.1	
+1.2.1.1	Skull		1	2	1	1	0	0	Nbp	1a	2.1.1								
+1.2.1.2	Crown/Pate		1	2	1	2	0	0	Nbp	1a	2.1.2								
+1.2.1.3	Fontanel		1	2	1	3	0	0	Nbp	1a	2.1.3								
+1.2.1.4	Caul		1	2	1	4	0	0	Nbp	1a	2.1.4								No lexicon records
+1.2.1.5	Scalp		1	2	1	5	0	0	Nbp	1a	2.1.5								
+1.2.2	Horn(ed)/Antler		1	2	2	0	0	0	Nbp	1a	2.2					Vbp	1b	2.2	
+1.2.2.1	Comb/Crest		1	2	2	1	0	0	Nbp	1a	2.2.1								
+1.2.2.2	Comb (Hair)		1	2	2	2	0	0											
+1.2.3	Hair of Head		1	2	3	0	0	0	Nbp	1a	2.3								
+1.2.3.1	Cowlick/Flexure		1	2	3	1	0	0	Nbp	1a	2.3.1								
+1.2.3.2	Queue/Braid		1	2	3	2	0	0	Nbp	1a	2.3.2								
+1.2.3.3	Long-haired		1	2	3	3	0	0	Vbp	1b	2.3								
+1.2.3.4	Bald		1	2	3	4	0	0	Nbp	1a	2.3.3					Vbp	1b	2.3.3	
+1.2.4	Brain		1	2	4	0	0	0	Nbp	1a	2.4								
+1.2.5	Face		1	2	5	0	0	0	Nbp	1a	2.5								
+1.2.5.1	Forehead/Temples		1	2	5	1	0	0	Nbp	1a	2.5.1								
+1.2.5.2	Jaw/Cheek		1	2	5	2	0	0	Nbp	1a	2.5.2								
+1.2.5.3	Chin		1	2	5	3	0	0	Nbp	1a	2.5.3								
+1.2.5.4	Dimple		1	2	5	4	0	0											Lexicon items glossed as 'dimple' appear to be categorized as 'Face' (Nbp 1a/2.5)
+1.2.5.5	Beard/Moustache/Facial Hair		1	2	5	5	0	0	Nbp	1a	2.5.5					Vbp	1b	2.5	BP Verb was "Bearded Vbp 1b/2.5"
+1.2.6	Eye		1	2	6	0	0	0	Nbp	1a	2.6					Vbp	1b	2.6	
+1.2.6.1	Eyeball		1	2	6	1	0	0	Nbp	1a	2.6.1								
+1.2.6.2	Iris/Pupil		1	2	6	2	0	0	Nbp	1a	2.6.2								
+1.2.6.2.1	Dilate		1	2	6	2	1	0	Vbp	1b	2.6.2								
+1.2.6.3	White of Eye		1	2	6	3	0	0	Nbp	1a	2.6.3								
+1.2.6.4	Eyelid		1	2	6	4	0	0	Nbp	1a	2.6.4								
+1.2.6.5	Eyelash		1	2	6	5	0	0	Nbp	1a	2.6.5								
+1.2.6.6	Eyebrow		1	2	6	6	0	0	Nbp	1a	2.6.6								
+1.2.6.7	Tears		1	2	6	7	0	0	Nbp	1a	2.6.7								also exists in 1.8.8.3 (under Secretions and Somatophonics)
+1.2.6.8	Eye Sand		1	2	6	8	0	0	Nbp	1a	2.6.8								
+1.2.6.9	Watch		1	2	6	9	0	0	Vbp	1b	2.6.7								
+1.2.6.10	See/Look		1	2	6	10	0	0	Nbp	1a	2.6.9								
+1.2.6.11	Behold		1	2	6	11	0	0	Vbp	1b	2.6.9								
+1.2.6.12	Blink/Wink		1	2	6	12	0	0	Nbp	1a	2.6.10								
+1.2.6.13	Squint		1	2	6	13	0	0	Vbp	1b	2.6.10								
+1.2.6.14	Eye Illness		1	2	6	14	0	0	Nbp	1a	2.6.11								
+1.2.6.14.1	Cross-eyed		1	2	6	14	1	0	Vbp	1b	2.6.11								
+1.2.6.14.2	Blind		1	2	6	14	2	0	Vbp	1b	2.6.11.								Lexicon records have truncated category (should be 2.6.11.1)
+1.2.6.14.3	Sty of Eye		1	2	6	14	3	0	Nbp										
+1.2.7	Ear		1	2	7	0	0	0	Nbp	1a	2.7								
+1.2.7.1	Earlobe		1	2	7	1	0	0	Nbp	1a	2.7.1								
+1.2.7.2	Eardrum		1	2	7	2	0	0	Nbp	1a	2.7.2								
+1.2.7.3	Earwax		1	2	7	3	0	0	Nbp	1a	2.7.3								
+1.2.7.4	Hear/Listen		1	2	7	4	0	0	Nbp	1a	2.7.4					Vbp	1b	2.7.4	BP Verb was "Audible"
+1.2.7.5	Deaf		1	2	7	5	0	0	Nbp	1a	2.7.5								
+1.2.8	Nose		1	2	8	0	0	0	Nbp	1a	2.8								
+1.2.8.1	Nostril		1	2	8	1	0	0	Nbp	1a	2.8.1								
+1.2.8.2	Alae Nasi		1	2	8	2	0	0	Nbp	1a	2.8.2								
+1.2.8.3	Snout		1	2	8	3	0	0	Nbp										
+1.2.8.4	Snot: See Secretions		1	2	8	4	0	0											delete?
+1.2.8.5	Smell		1	2	8	5	0	0	Vbp	1b	2.8.5								
+1.3	Mouth and Throat		1	3	0	0	0	0	Nbp	1a	3								
+1.3.1	Mouth		1	3	1	0	0	0	Nbp	1a	3.1								
+1.3.1.1	Palate		1	3	1	1	0	0	Nbp	1a	3.1.1								
+1.3.1.2	Beak/Bill		1	3	1	2	0	0	Nbp	1a	3.1.2								
+1.3.1.3	Yawn/Gape		1	3	1	3	0	0	Nbp	1a	3.1.3					Vbp	1b	3.1	
+1.3.1.4	Blow		1	3	1	4	0	0	Vbp	1b	3.1.4								
+1.3.2	Lip		1	3	2	0	0	0	Nbp	1a	3.2								
+1.3.2.1	Suck/Suckle		1	3	2	1	0	0	Nbp	1a	3.2.1					Vbp	1b	3.2.1	
+1.3.2.2	Kiss		1	3	2	2	0	0	Nbp	1a	3.2.2								
+1.3.3	Tongue		1	3	3	0	0	0	Nbp	1a	3.3								
+1.3.3.1	Lick		1	3	3	1	0	0	Vbp	1b	3.3.1								
+1.3.4	Tooth		1	3	4	0	0	0	Nbp	1a	3.4								
+1.3.4.1	Eyetooth/Tusk/Canine Tooth		1	3	4	1	0	0	Nbp	1a	3.4.1								
+1.3.4.2	Molar		1	3	4	2	0	0	Nbp	1a	3.4.2								
+1.3.4.3	Gums		1	3	4	3	0	0	Nbp	1a	3.4.3								
+1.3.4.4	Bite/Hold in Mouth		1	3	4	4	0	0	Vbp	1b	3.4.4								
+1.3.4.5	Chew		1	3	4	5	0	0	Vbp	1b	3.4.5					Nbp	1a	3.4.5	Some forms in lexicon table are categorized as 1a/3.4.5 (Nbp)
+1.3.5	Throat/Pharanx		1	3	5	0	0	0	Nbp	1a	3.5								
+1.3.5.1	Uvula		1	3	5	1	0	0	Nbp	1a	3.5.1								
+1.3.5.2	Windpipe/Trachea		1	3	5	2	0	0	Nbp	1a	3.5.2								
+1.3.5.3	Gill		1	3	5	3	0	0	Nbp	1a	3.5.3								
+1.3.5.4	Adam's Apple/Larynx		1	3	5	4	0	0	Nbp	1a	3.5.4								
+1.3.5.5	Gullet/Esophagus		1	3	5	5	0	0	Nbp	1a	3.5.5								
+1.3.5.6	Swallow		1	3	5	6	0	0	Vbp										
+1.3.5.7	Choke		1	3	5	7	0	0	Vbp	1b	3.5.6								
+1.3.5.8	Eat/Devour		1	3	5	8	0	0	Vbp	1b	3.5.7								
+1.3.5.9	Drink		1	3	5	9	0	0	Vbp	1b	3.5.8					Nbp	1a	3.5.8	BP Noun was "Drunkedness Nbp 1a/3.5.8"
+1.4	Torso		1	4	0	0	0	0	Nbp	1a	4								
+1.4.1	Torso/Trunk		1	4	1	0	0	0	Nbp	1a	4.1								
+1.4.2	Neck		1	4	2	0	0	0	Nbp	1a	4.2					Vbp	1b	4.2	BP Verb was "Neck-shaped"
+1.4.2.1	Nape of Neck		1	4	2	1	0	0	Nbp	1a	4.2.1								
+1.4.2.2	Goiter		1	4	2	2	0	0	Nbp	1a	4.2.2								
+1.4.3	Shoulder		1	4	3	0	0	0	Nbp	1a	4.3								
+1.4.3.1	Collarbone/Clavicle		1	4	3	1	0	0	Nbp	1a	4.3.1								
+1.4.3.2	Shoulderblade/Scapula		1	4	3	2	0	0	Nbp	1a	4.3.2								
+1.4.3.3	Carry on shoulder		1	4	3	3	0	0	Vbp	1b	4.3								
+1.4.4	Front		1	4	4	0	0	0	Nbp	1a	4.4								
+1.4.4.1	Folded		1	4	4	1	0	0	Vbp	1b	4.4.1								Should this be moved?
+1.4.4.2	Bosom/Lap		1	4	4	2	0	0	Nbp	1a	4.4.1								
+1.4.4.3	Chest		1	4	4	3	0	0	Nbp	1a	4.4.2								
+1.4.4.4	Ribs/Ribcage		1	4	4	4	0	0	Nbp	1a	4.4.3								
+1.4.4.5	Chest Hair		1	4	4	5	0	0	Nbp	1a	4.4.4								
+1.4.5	Sides		1	4	5	0	0	0	Nbp	1a	4.5								
+1.4.6	Waist		1	4	6	0	0	0	Nbp	1a	4.6								
+1.4.7	Belly/Abdomen		1	4	7	0	0	0	Nbp	1a	4.7								
+1.4.8	Back		1	4	8	0	0	0	Nbp	1a	4.8					Vbp	1b	4.8	BP Verb was "Spinal"
+1.4.8.1	Lower Back/Small of Back		1	4	8	1	0	0	Nbp	1a	4.8.1								
+1.4.8.2	Spine/Backbone		1	4	8	2	0	0	Nbp	1a	4.8.2								
+1.4.8.3	Hunchback		1	4	8	3	0	0	Nbp	1a	4.8.3								
+1.4.8.4	Crouch		1	4	8	4	0	0	Vbp	1b	4.8.3								
+1.4.9	Loins/Groin		1	4	9	0	0	0	Nbp	1a	4.9								
+1.4.9.1	Crotch/Fork		1	4	9	1	0	0	Nbp	1a	4.9.1					Vbp	1b	4.9	
+1.4.9.2	Hips/Pelvis/Haunches		1	4	9	2	0	0	Nbp	1a	4.9.2								
+1.4.10	Buttocks/Rump		1	4	10	0	0	0	Nbp	1a	4.10								
+1.4.10.1	Tail		1	4	10	1	0	0	Nbp	1a	4.10.1								
+1.4.10.1.1	Short-tailed		1	4	10	1	1	0	Vbp	1b	4.10.1								
+1.4.10.2	Anus/Rectum		1	4	10	2	0	0	Nbp	1a	4.10.2								
+1.5	Limbs, Joints, & Body Measures		1	5	0	0	0	0	Nbp	1a	5.								Forms in lexicon table are categorized as 1a/5. with trailing dot (for some unknown reason)
+1.5.1	Hand, Arm, Wing		1	5	1	0	0	0											
+1.5.1.1	Hand		1	5	1	1	0	0	Nbp	1a	5.1								
+1.5.1.1.1	Fist		1	5	1	1	1	0	Nbp	1a	5.1.1								
+1.5.1.1.2	Back of Hand		1	5	1	1	2	0											
+1.5.1.1.3	Four-handed		1	5	1	1	3	0	Vbp	1b	5.1								
+1.5.1.2	Arm		1	5	1	2	0	0	Nbp	1a	5.8								
+1.5.1.2.1	Bicep/Upper Arm		1	5	1	2	1	0	Nbp	1a	5.8.1								
+1.5.1.2.2	Forearm		1	5	1	2	2	0	Nbp	1a	5.8.2								
+1.5.1.2.3	Underarm/Armpit		1	5	1	2	3	0	Nbp	1a	5.8.3								
+1.5.1.2.4	Tickle		1	5	1	2	4	0	Nbp	1a	5.8.4								
+1.5.1.3	Wing		1	5	1	3	0	0	Nbp	1a	5.10								
+1.5.1.3.1	Fin		1	5	1	3	1	0	Nbp	1a	5.10.1								
+1.5.2	Foot		1	5	2	0	0	0	Nbp	1a	5.2					Vbp	1b	5.2	
+1.5.2.1	Heel		1	5	2	1	0	0	Nbp	1a	5.2.1								
+1.5.2.2	Instep		1	5	2	2	0	0	Nbp	1a	5.2.2								
+1.5.2.3	Arch		1	5	2	3	0	0	Nbp	1a	5.2.3								
+1.5.2.4	Ball of Foot		1	5	2	4	0	0	Nbp										
+1.5.2.5	Footprint		1	5	2	5	0	0	Nbp	1a	5.2.5								
+1.5.3	Hands and Feet/Arms and Legs		1	5	3	0	0	0	Nbp	1a	5.3								
+1.5.3.1	Limb/Branch		1	5	3	1	0	0	Nbp	1a	5.3.1								
+1.5.3.2	Five		1	5	3	2	0	0											
+1.5.3.3	Bandy-legged		1	5	3	3	0	0	Vbp	1b	5.3								
+1.5.4	Hoof/Paw		1	5	4	0	0	0	Nbp	1a	5.4								
+1.5.5	Palm/Sole		1	5	5	0	0	0	Nbp	1a	5.6								
+1.5.6	Finger/Toe		1	5	6	0	0	0	Nbp	1a	5.7								
+1.5.6.1	Thumb/Big Toe		1	5	6	1	0	0	Nbp	1a	5.7.1								
+1.5.6.2	Other Specific Digits		1	5	6	2	0	0	Nbp	1a	5.7.2								
+1.5.6.3	Fingerprint		1	5	6	3	0	0	Nbp	1a	5.7.3								No lexicon records
+1.5.7	Leg		1	5	7	0	0	0	Nbp	1a	5.9								
+1.5.7.1	Thigh		1	5	7	1	0	0	Nbp	1a	5.9.1								
+1.5.7.2	Shin/Tibia		1	5	7	2	0	0	Nbp	1a	5.9.2								
+1.5.7.3	Calf		1	5	7	3	0	0	Nbp	1a	5.9.3								No lexicon records
+1.5.7.4	Lower Leg		1	5	7	4	0	0	Nbp										
+1.5.8	Joint		1	5	8	0	0	0	Nbp	1a	5.11								
+1.5.8.1	Wrist		1	5	8	1	0	0	Nbp	1a	5.11.1								
+1.5.8.2	Ankle		1	5	8	2	0	0	Nbp	1a	5.11.2								
+1.5.8.3	Elbow		1	5	8	3	0	0	Nbp	1a	5.11.3								
+1.5.8.4	Knee		1	5	8	4	0	0	Nbp	1a	5.11.4								
+1.5.8.4.1	Knee-deep		1	5	8	4	1	0	Vbp	1b	5.11.4								
+1.5.8.5	Knuckle/Phalanx		1	5	8	5	0	0	Nbp	1a	5.11.5								
+1.5.9	Body Measures		1	5	9	0	0	0											
+1.5.9.1	Right		1	5	9	1	0	0											
+1.5.9.2	Left		1	5	9	2	0	0											
+1.5.9.3	Cubit		1	5	9	3	0	0	Nbp	1a	5.14								
+1.5.9.4	Span/Handspan		1	5	9	4	0	0	Nbp	1a	5.15								
+1.5.9.5	Fathom/Cord		1	5	9	5	0	0	Nbp	1a	5.16								
+1.5.10	Nail		1	5	10	0	0	0	Nbp	1a	5.17								
+1.5.10.1	Fingernail		1	5	10	1	0	0	Nbp	1a	5.17.1								
+1.5.10.2	Toenail		1	5	10	2	0	0	Nbp	1a	5.17.2								
+1.5.10.3	Cuticle		1	5	10	3	0	0	Nbp	1a	5.17.3								
+1.5.10.4	Claw/Talon/Pincer		1	5	10	4	0	0	Nbp	1a	5.17.4								
+1.5.11	Numb/Paralyzed		1	5	11	0	0	0	Nbp	1a	5.18					Vbp	1b	5.18	
+1.5.12	Lame/Limp		1	5	12	0	0	0	Nbp	1a	5.19					Vbp	1b	5.19	
+1.6	Diffuse Organs		1	6	0	0	0	0	Nbp	1a	6.0								Chapter has trailing zero for some reason
+1.6.1	Body Hair/Fur		1	6	1	0	0	0	Nbp	1a	6.1								
+1.6.1.1	Feather		1	6	1	1	0	0	Nbp	1a	6.1.1								
+1.6.1.2	Mane		1	6	1	2	0	0	Nbp										
+1.6.1.3	Wool		1	6	1	3	0	0	Nbp	1a	6.1.3								
+1.6.1.4	Bristle		1	6	1	4	0	0	Vbp	1b	6.1								
+1.6.2	Blood/Bleed		1	6	2	0	0	0	Nbp	1a	6.2					Vbp	1b	6.2	
+1.6.2.1	Blood Vessel/Vein/Artery		1	6	2	1	0	0	Nbp	1a	6.2.1								
+1.6.3	Bone		1	6	3	0	0	0	Nbp	1a	6.3								
+1.6.3.1	Skeleton		1	6	3	1	0	0	Nbp	1a	6.3.1					Vbp	1b	6.3	
+1.6.3.2	Breastbone/Sternum		1	6	3	2	0	0	Nbp	1a	6.3.2								
+1.6.3.3	Spine/Backbone		1	6	3	3	0	0	Nbp	1a	6.3.3								
+1.6.3.4	Cartilage/Gristle		1	6	3	4	0	0	Nbp	1a	6.3.4								
+1.6.3.5	Marrow		1	6	3	5	0	0	Nbp	1a	6.3.5								
+1.6.4	Fat/Be fat		1	6	4	0	0	0	Nbp	1a	6.4					Vbp	1b	6.4	BP verb was "Chubby"
+1.6.4.1	Oil/Grease		1	6	4	1	0	0	Nbp	1a	6.4.1								
+1.6.5	Skin		1	6	5	0	0	0	Nbp	1a	6.5								
+1.6.5.1	Hide/Leather		1	6	5	1	0	0	Nbp	1a	6.5.1								
+1.6.5.2	Scale (of fish, snake)		1	6	5	2	0	0	Nbp	1a	6.5.2								
+1.6.5.3	Skin Blemish/Freckle		1	6	5	3	0	0	Nbp	1a	6.5.3								
+1.6.5.4	Blistered		1	6	5	4	0	0	Vbp	1b	6.5.3								
+1.6.5.4.1	Boil (n.)		1	6	5	4	1	0	Nbp										
+1.6.5.5	Itch/Scratch		1	6	5	5	0	0	Nbp	1a	6.5.4					Vbp	1b	6.5.4	
+1.6.5.6	Molt		1	6	5	6	0	0	Vbp	1b	6.5								
+1.6.6	Obscure Internal Channels		1	6	6	0	0	0	Nbp	1a	6.6								No lexicon records (at this level)
+1.6.6.1	Sinew/Tendon/Ligament		1	6	6	1	0	0	Nbp	1a	6.6.1								
+1.6.6.2	Muscle		1	6	6	2	0	0	Nbp	1a	6.6.2								
+1.6.6.2.1	Cramped		1	6	6	2	1	0	Vbp	1b	6.6.2								
+1.6.6.3	Nerve		1	6	6	3	0	0	Nbp	1a	6.6.3								
+1.6.6.4	Lymph		1	6	6	4	0	0	Nbp	1a	6.6.4								
+1.7	Internal Organs		1	7	0	0	0	0	Nbp	1a	7.0								Chapter has trailing zero for some reason
+1.7.1	Heart		1	7	1	0	0	0	Nbp	1a	7.1								
+1.7.1.1	Heartbeat/Pulse		1	7	1	1	0	0	Nbp	1a	7.1.1								
+1.7.2	Lung		1	7	2	0	0	0	Nbp	1a	7.2								
+1.7.2.1	Tuberculosis		1	7	2	1	0	0	Nbp	1a	7.2.1								
+1.7.3	Liver		1	7	3	0	0	0	Nbp	1a	7.3								
+1.7.3.1	Gall/Bile		1	7	3	1	0	0	Nbp	1a	7.3.1					Vbp	1b	7.3	
+1.7.4	Spleen		1	7	4	0	0	0	Nbp	1a	7.4								
+1.7.4.1	Swollen Spleen		1	7	4	1	0	0	Nbp										
+1.7.5	Kidney		1	7	5	0	0	0	Nbp	1a	7.5								
+1.7.6	Stomach		1	7	6	0	0	0	Nbp	1a	7.6								
+1.7.6.1	Gizzard/Crop		1	7	6	1	0	0	Nbp	1a	7.6.1								
+1.7.6.2	Digest		1	7	6	2	0	0	Vbp	1b	7.6								
+1.7.7	Intestines/Bowels/Guts		1	7	7	0	0	0	Nbp	1a	7.7								
+1.7.7.1	Appendix		1	7	7	1	0	0	Nbp										
+1.7.7.2	Pancreas		1	7	7	2	0	0	Nbp										
+1.7.7.3	Constipated		1	7	7	3	0	0	Vbp	1b	7.7								
+1.7.8	Bladder		1	7	8	0	0	0	Nbp	1a	7.8								
+1.8	Secretions and Somatophonics		1	8	0	0	0	0	Nbp	1a	8								
+1.8.1	Sweat/Perspire		1	8	1	0	0	0	Nbp	1a	8.2					Vbp	1b	8.2	
+1.8.1.1	Pore		1	8	1	1	0	0	Nbp	1a	8.2.1								
+1.8.1.2	Body Dirt		1	8	1	2	0	0	Nbp	1a	8.2.2								
+1.8.2	Snot/Nasal Mucus		1	8	2	0	0	0	Nbp	1a	8.3								
+1.8.2.1	Sneeze		1	8	2	1	0	0	Nbp	1a	8.3.1								
+1.8.2.2	Snore		1	8	2	2	0	0	Nbp	1a	8.3.2								
+1.8.3	Spit/Saliva		1	8	3	0	0	0	Nbp	1a	8.4								
+1.8.3.1	Phlegm		1	8	3	1	0	0	Nbp										
+1.8.3.2	Vomit		1	8	3	2	0	0	Nbp	1a	8.4.2								
+1.8.3.3	Cough		1	8	3	3	0	0	Vbp	1b	8.4								
+1.8.3.4	Belch/Burp		1	8	3	4	0	0	Vbp	1b	8.4.4								
+1.8.3.5	Hiccup		1	8	3	5	0	0	Nbp	1a	8.4.5								
+1.8.4	Urine/Piss		1	8	4	0	0	0	Nbp	1a	8.5					Vbp	1b	8	
+1.8.5	Feces/Shit/Dung/Filth/Excrement		1	8	5	0	0	0	Nbp	1a	8.6								
+1.8.5.1	Meconium		1	8	5	1	0	0	Nbp										
+1.8.5.2	Fart		1	8	5	2	0	0	Nbp	1a	8.6.2								
+1.8.5.3	Flatulate		1	8	5	3	0	0	Vbp	1b	8.6.2								
+1.8.5.4	Defecate		1	8	5	4	0	0	Vbp	1b	8.6								
+1.8.6	Discharge		1	8	6	0	0	0	Vbp	1b	8.7								
+1.8.6.1	Pus/Gleet		1	8	6	1	0	0	Nbp	1a	8.7								
+1.8.6.2	Abcess/Ulcer		1	8	6	2	0	0	Nbp	1a	8.7.1								
+1.8.7	Speak/Say/Tell		1	8	7	0	0	0	Nbp	1a	8.8								
+1.8.7.1	Mute/Dumb		1	8	7	1	0	0	Vbp	1b	8.8								
+1.8.7.2	Stutter/Stammer		1	8	7	2	0	0	Nbp	1a	8.8.2								
+1.8.8	Emotional Somatophonics		1	8	8	0	0	0											
+1.8.8.1	Laugh/Smile		1	8	8	1	0	0	Nbp	1a	8.9					Vbp	1b	8.9	BP Verb was "Chuckle"
+1.8.8.2	Cry/Weep		1	8	8	2	0	0	Vbp	1b	8.9.1								
+1.8.8.3	Tears		1	8	8	3	0	0	Nbp	1a	2.6.7								also exists in 1.2.6.7
+1.8.8.4	Whistle		1	8	8	4	0	0	Vbp										
+1.9	Reproductive System		1	9	0	0	0	0	Nbp	1a	9.0					Vbp	1b	9.0	Vbp chapter has trailing zero; no forms in lexicon table categorized as 1a/9(.0)
+1.9.1	Egg		1	9	1	0	0	0	Nbp	1a	9.1								
+1.9.1.1	Bred		1	9	1	1	0	0	Vbp	1b	9.1.1								
+1.9.1.2	Brood on egg		1	9	1	2	0	0	Vbp	1b	9.3.3								
+1.9.2	Birth		1	9	2	0	0	0	Nbp	1a	1.2					Vbp	1b	1.2	
+1.9.2.1	Sterile		1	9	2	1	0	0	Vbp	1b	9.2.2								
+1.9.2.2	Circumcise		1	9	2	2	0	0	Vbp	1b	9.2.1.1								
+1.9.2.3	Castrate		1	9	2	3	0	0	Vbp	1b	9.2.2.4								
+1.9.3	Navel		1	9	3	0	0	0	Nbp	1a	9.3								
+1.9.3.1	Umbilical Cord		1	9	3	1	0	0											Lexicon table has 'umbilical cord' records as 1a/9.3
+1.9.4	Breast		1	9	4	0	0	0	Nbp	1a	9.4					Vbp	1b	9.3	
+1.9.4.1	Milk		1	9	4	1	0	0											
+1.9.4.2	Wean		1	9	4	2	0	0											
+1.9.5	Vagina		1	9	5	0	0	0	Nbp	1a	9.5								
+1.9.5.1	Vulva/Labia		1	9	5	1	0	0											
+1.9.5.2	Clitoris		1	9	5	2	0	0											
+1.9.6	Womb		1	9	6	0	0	0	Nbp	1a	9.6								
+1.9.6.1	Pregnant		1	9	6	1	0	0	Nbp	1a	9.2								
+1.9.6.2	Barren		1	9	6	2	0	0	Vbp	1b	9.3.4.1								
+1.9.6.3	Amniotic sac/Amniotic fluid		1	9	6	3	0	0											
+1.9.6.4	Placenta/Afterbirth		1	9	6	4	0	0											
+1.9.6.5	Fertility		1	9	6	5	0	0	Nbp	1a	9.9.5								Can't seem to locate this category outside of the lexicon table
+1.9.7	Penis		1	9	7	0	0	0	Nbp	1a	9.7								
+1.9.7.1	Testicle		1	9	7	1	0	0	Nbp	1a	9.7.1								
+1.9.7.2	Scrotum/Pouch		1	9	7	2	0	0											
+1.9.7.3	Foreskin/Prepuce		1	9	7	3	0	0											
+1.9.7.4	Glans penis		1	9	7	4	0	0											
+1.9.8	Copulate		1	9	8	0	0	0	Nbp	1a	9.8								
+1.9.9	Body Fluids		1	9	9	0	0	0	Nbp										
+1.9.9.1	Sperm/Semen		1	9	9	1	0	0											
+1.9.9.2	Ejaculate		1	9	9	2	0	0											
+1.9.10	Genitals/Pudenda		1	9	10	0	0	0											see glosses for 1a/9.1 Egg
+1.9.11	Menstruation		1	9	11	0	0	0											
+1.9.11.1	Menstrual		1	9	11	1	0	0	Vbp	1b	9.3.4								
+1.9.12	Female		1	9	12	0	0	0	Nbp	1a	9.9.3								
+1.9.12.1	Female Pubic Hair		1	9	12	1	0	0											
+1.9.13	Male		1	9	13	0	0	0	Nbp	1a	9.9.4								
+1.9.13.1	Male Pubic Hair		1	9	13	1	0	0											
+1.9.14	Other Reproductive System		1	9	14	0	0	0	Nbp	1a	xxx								
+1.10	Mind		1	10	0	0	0	0	Nbp	1a	10.0								Chapter has a trailing zero for some reason
+2.0	Animals and Animal Verbs		2	0	0	0	0		Nanim	2						Nanim	2a.1		
+2.1	Bovine		2	1	0	0	0	0	Nanim	2a.1	1								
+2.2	Equine		2	2	0	0	0	0	Nanim	2a.1	2								
+2.3	Porcine		2	3	0	0	0	0	Nanim	2a.1	3								
+2.4	Ovine and Hircine		2	4	0	0	0	0	Nanim	2a.1	4								
+2.5	Pachyderms		2	5	0	0	0	0	Nanim	2a.1	5								
+2.6	Canine		2	6	0	0	0	0	Nanim	2a.1	6								
+2.6.1	Bark (of dog)		2	6	1	0	0	0	Vbp	1b	8.9.4								
+2.7	Feline		2	7	0	0	0	0	Nanim	2a.1	7								
+2.8	Cervidae		2	8	0	0	0	0	Nanim	2a.1	8								
+2.9	Ursine		2	9	0	0	0	0	Nanim	2a.1	9								
+2.10	Simian		2	10	0	0	0	0	Nanim	2a.1	10								
+2.11	Birds (in general)		2	11	0	0	0	0	Nanim	2a.1	11								
+2.11.1	Fowl (i.e. Domestic Birds)		2	11	1	0	0	0	Nanim	2a.1	11.1								
+2.11.2	Particular birds		2	11	2	0	0	0	Nanim	2a.1	11.2								
+2.12	Reptiles and Amphibians		2	12	0	0	0	0	Nanim	2a.1	12								
+2.13	Fish & Mollusks		2	13	0	0	0	0	Nanim	2a.1	13								
+2.14	Insects, Arachnids, & Worm		2	14	0	0	0	0	Nanim	2a.1	14								
+2.15	Other Mammals		2	15	0	0	0	0	Nanim	2a.1	15								
+2.16	Rodents		2	16	0	0	0	0	Nanim	2a.1	16								glosses need to be split among this (Rodents) and new Lagomorphs chapter
+2.17	Lagomorphs		2	17	0	0	0	0											
+2.18	Dragon		2	18	0	0	0	0	Nanim	2a.1	17								Glosses that aren't "dragon" need to be put into "Other Mythical Animals"
+2.19	Other Mythical Animals		2	19	0	0	0	0											
+2.20	Associated Animal Terms		2	20	0	0	0	0	Nanim	2a.1	18								
+2.21	Animate verbs		2	21	0	0	0	0	Vanim	2a.2									
+2.21.1	Caponize		2	21	1	0	0	0	Vanim	2a.2	11.1								
+2.21.2	Sting		2	21	2	0	0	0	Vanim	2a.2	14								
+2.21.3	Animal Qualities		2	21	3	0	0	0	Vanim	2a.2	18								
+2.21.4	Peck		2	21	4	0	0	0		2a.2	11								
+3.0	Natural Objects, Plants, Foods		3	0	0	0	0		Nveg	2b	1.1								No actual lexicon records categorized as 2b/1.1
+3.1	Plants		3	1	0	0	0	0											
+3.1.1	Names of trees and shrubs		3	1	1	0	0	0	Nveg	2b.1	1.1								
+3.1.2	Plant parts and types		3	1	2	0	0	0	Nveg	2b.1	1.2								
+3.1.3	Leaves		3	1	3	0	0	0	Nveg	2b.1	3.4								
+3.1.4	Seeds and flowers, nuts		3	1	4	0	0	0	Nveg	2b.1	3.1								
+3.1.5	Fruits and vegetables		3	1	5	0	0	0	Nveg	2b.1	3.2								
+3.1.5.1	Leafy vegetables		3	1	5	1	0	0	Nveg	2b.1	3.2.1								
+3.1.6	Extracts and processed forms		3	1	6	0	0	0	Nveg	2b.1	3.3								
+3.1.6.1	Spices		3	1	6	1	0	0	Nveg	2b.1	3.3.1								
+3.1.6.2	Other ground and milled food		3	1	6	2	0	0	Nveg	2b.1	3.3.2								
+3.1.6.3	Juices, beers, etc.		3	1	6	3	0	0	Nveg	2b.1	3.3.3								
+3.1.6.4	Building, Non-edible		3	1	6	4	0	0	Nveg	2b.1	3.3.4								
+3.1.7	Fungi		3	1	7	0	0	0	Nveg	2b.1	4.1								
+3.1.8	Other wild plants		3	1	8	0	0	0	Nveg	2b.1	4.2								
+3.1.9	Vegetative/Agricultural activity		3	1	9	0	0	0	Nveg	2b.1	5								
+3.1.10	Verbs involving plants		3	1	10	0	0	0	Vveg	2b.2									
+3.2	Natural Objects		3	2	0	0	0	0	Nnat	2c									
+3.2.1	Weather and seasons		3	2	1	0	0	0	Nnat	2c.1	1								
+3.2.2	Planets/Meteorological objects/Sky		3	2	2	0	0	0	Nnat	2c.1	3								
+3.2.3	Water and other liquids		3	2	3	0	0	0	Nnat	2c.1	4								
+3.2.4	Elements, metals, alloys		3	2	4	0	0	0	Nnat	2c.1	5								
+3.2.5	Landforms and geographical features		3	2	5	0	0	0	Nnat	2c.1	6								
+3.2.6	Natural disasters		3	2	6	0	0	0	Nnat	2c.1	7								
+3.2.7	Cracks/Chasms/Crevices		3	2	7	0	0	0	Nnat	2c.1	8								
+3.2.8	Organic matter/Organic compounds		3	2	8	0	0	0	Nnat	2c.1	9								
+3.2.9	Rocks and minerals		3	2	9	0	0	0	Nnat	2c.1	10								
+3.2.10	Light or lack of light		3	2	10	0	0	0	Nnat	2c.1	11								
+3.2.11	Ground/Earth/Soil/Dirt		3	2	11	0	0	0	Nnat	2c.1	12								
+3.3	Burn, illuminate		3	3	0	0	0	0	Vburn	2c.2									
+3.3.1	Objects associated with fire		3	3	1	0	0	0	Nfire	2c.3	1								
+3.3.2	Fire, flames, and burnt things		3	3	2	0	0	0	Nfire	2c.3	3.3								
+4.0	Kinship Terms, Ethnonyms, Social Roles		4	0	0	0	0												
+4.1	Pronouns		4	1	0	0	0	0	Nhum	3a	2								
+4.2	Roles		4	2	0	0	0	0	Nhum	3a	3								
+4.2.1	Occupations		4	2	1	0	0	0	Nhum	3a	3.1								
+4.2.1.1	Agriculture/Husbandry/Hunting		4	2	1	1	0	0	Nhum	3a	3.1.1								
+4.2.1.2	Commercial Roles		4	2	1	2	0	0	Nhum	3a	3.1.2								
+4.2.1.3	?		4	2	1	3	0	0											
+4.2.1.4	Artists and Artisans		4	2	1	4	0	0	Nhum	3a	3.1.4								
+4.2.1.5	Health-care		4	2	1	5	0	0	Nhum	3a	3.1.5								
+4.2.1.6	Ceremonial		4	2	1	6	0	0	Nhum	3a	3.1.6								
+4.2.1.7	General		4	2	1	7	0	0	Nhum	3a	3.1.7								
+4.2.2	Teacher-Student roles		4	2	2	0	0	0	Nhum	3a	3.2								
+4.2.3	General roles		4	2	3	0	0	0	Nhum	3a	3.3								
+4.2.4	Religious Roles		4	2	4	0	0	0	Nhum	3a	4								
+4.2.5	Nobility		4	2	5	0	0	0	Nhum	3a	5								
+4.2.5.1	Titles		4	2	5	1	0	0	Nhum	3a	5.1.2								
+4.2.5.2	Civil leaders		4	2	5	2	0	0	Nhum	3a	5.2								
+4.2.5.3	Owners		4	2	5	3	0	0	Nhum	3a	5.4								
+4.2.6	Military roles		4	2	6	0	0	0	Nhum	3a	6								
+4.2.7	Challenged		4	2	7	0	0	0	Nhum	3a	7.1								
+4.2.8	Marital roles		4	2	8	0	0	0	Nhum	3a	7.2								
+4.2.9	Sporting		4	2	9	0	0	0	Nhum	3a	8								
+4.2.10	Servants		4	2	10	0	0	0	Nhum	3a	10								
+4.2.11	Stages of growth		4	2	11	0	0	0	Nhum	3a	9.1								
+4.2.12	Pejorative/Deprecated Roles		4	2	12	0	0	0											
+4.2.12.1	Criminals		4	2	12	1	0	0	Nhum	3a	11.1								
+4.2.12.2	Scary things		4	2	12	2	0	0	Nhum	3a	11.2								
+4.2.12.3	Insulting names		4	2	12	3	0	0	Nhum	3a	11.3								
+4.3	People		4	3	0	0	0	0	Nhum	3a	9.2								Not sure where to put this
+4.4	Groups		4	4	0	0	0	0	Nhum	3a	12								
+4.4.1	Generic person terms		4	4	1	0	0	0		3a									Should this go under "Groups"?
+4.4.2	Clans and neighbors		4	4	2	0	0	0	Nhum	3a	12.2								
+4.4.3	Outsiders		4	4	3	0	0	0	Nhum	3a	12.3								
+4.4.4	Friends and Acquaintances		4	4	4	0	0	0	Nhum	3a	12.4								No lexicon records with this category
+4.5	Other Collective terms		4	5	0	0	0	0	Nhum	3a	13								
+4.6	Ethnonyms/Place names		4	6	0	0	0	0	Nhum	3a	1								
+4.7	Kinship Terms		4	7	0	0	0	0	Nkin	3b	0								
+4.7.1	Previous generation		4	7	1	0	0	0	Nkin	3b	1								
+4.7.2	Same generation		4	7	2	0	0	0	Nkin	3b	2								
+4.7.3	Later generation		4	7	3	0	0	0	Nkin	3b	3								
+4.7.4	Related by marriage		4	7	4	0	0	0	Nkin	3b	4								
+4.7.5	General		4	7	5	0	0	0	Nkin	3b	5								
+5.0	Culture, Artifacts, Religion		5	0	0	0	0												
+5.1	Waste products		5	1	0	0	0	0	Nwast	9a									
+5.2	Writing Implements		5	2	0	0	0	0	Nwrit	9a									
+5.3	Diseases		5	3	0	0	0	0	Nmed	9a	1								
+5.4	Instruments and therapies		5	4	0	0	0	0	Nmed	9a	2								
+5.5	Cooking Implements		5	5	0	0	0	0	Ncook	9b									
+5.6	Culinary nouns		5	6	0	0	0	0	Nfood	9b									
+5.7	Culinary verbs		5	7	0	0	0	0	Vfood	9b									
+5.8	Religion		5	8	0	0	0	0	Nrel	9d									
+5.8.1	?		5	8	1	0	0	0											
+5.8.1.1	Deities/Spiritual Beings		5	8	1	1	0	0	Nrel	9d	1.1								
+5.8.1.2	Spiritual Beings		5	8	1	2	0	0	Nrel	9d	1.2								
+5.8.1.3	General/Other Religious		5	8	1	3	0	0	Nrel	9d	1.3								
+5.8.2	Categories of people ?		5	8	2	0	0	0	Nrel	9d	2								
+5.8.2.1	Occupations		5	8	2	1	0	0	Nrel	9d	2.1								
+5.8.2.2	Group appellation		5	8	2	2	0	0	Nrel	9d	2.2								
+5.8.2.3	Religious persons/things		5	8	2	3	0	0	Nrel	9d	2.3								
+5.8.3	?		5	8	3	0	0	0											
+5.8.3.1	Religious Events		5	8	3	1	0	0	Nrel	9d	3.1								
+5.8.3.2	Magical		5	8	3	2	0	0	Nrel	9d	3.2								
+5.8.4	Heaven/Hell		5	8	4	0	0	0	Nrel	9d	4								
+5.8.5	Sin ?		5	8	5	0	0	0	Nrel	9d	8.2								
+5.9	Monetary Tems		5	9	0	0	0	0	N$	9d									
+5.10	Items of Culture		5	10	0	0	0	0	Ncult	9d									
+5.11	Artifacts (unclassified as yet)		5	11	0	0	0	0	Nart	9f									
+5.11.1	Containers		5	11	1	0	0	0	Ncont	9a									
+5.11.2	Conveyances		5	11	2	0	0	0	Nconv	9a									
+5.11.3	Musical objects		5	11	3	0	0	0	Nmus	9a									
+5.11.4	Rope		5	11	4	0	0	0	Nrope	9a									
+5.11.5	Tools		5	11	5	0	0	0	Ntool	9a									
+5.11.5.1	Agricultural use		5	11	5	1	0	0	Ntool	9a	1								
+5.11.5.2	Home/Non-specialized use		5	11	5	2	0	0	Ntool	9a	2								
+5.11.5.3	Cutting/Boring		5	11	5	3	0	0	Ntool	9a	3								
+5.11.5.4	Workshop use/Equipment		5	11	5	4	0	0	Ntool	9a	4								
+5.11.5.6	Equipment		5	11	5	6	0	0	Ntool	9a	6								
+5.11.6	Textile		5	11	6	0	0	0	Ntxtl	9a									
+5.11.7	Ornaments		5	11	7	0	0	0	Norn	9d									
+5.11.8	Ornamentation		5	11	8	0	0	0	Vorn	9d									
+5.11.8.1	Footwear		5	11	8	1	0	0	Npers	3c	1					Npers	3c		
+5.11.8.2	?		5	11	8	2	0	0											
+5.11.8.2.1	Clothes (general)		5	11	8	2	1	0	Npers	3c	2.1								
+5.11.8.2.1.1	Head		5	11	8	2	1	1	Npers	3c	2.1.1								
+5.11.8.2.1.2	Upper body		5	11	8	2	1	2	Npers	3c	2.1.2								
+5.11.8.2.1.3	Lower body		5	11	8	2	1	3	Npers	3c	2.1.3								
+5.11.8.2.2	Special clothes and equipment		5	11	8	2	2	0	Npers	3c	2.2								
+5.11.8.2.3	Parts of clothing		5	11	8	2	3	0	Npers	3c	2.3								
+5.11.8.3	Jewelry and Accessories		5	11	8	3	0	0	Npers	3c	3								
+5.11.8.4	Toiletries		5	11	8	4	0	0	Npers	3c	4								
+5.11.9	Dwellings		5	11	9	0	0	0	Ndwel	9c									
+5.11.9.1	Kinds of dwellings		5	11	9	1	0	0	Ndwel	9c	1								
+5.11.9.2	Rooms		5	11	9	2	0	0	Ndwel	9c	2								
+5.11.9.3	Parts of the structure		5	11	9	3	0	0	Ndwel	9c	3								
+5.11.9.3.1	Internal		5	11	9	3	1	0	Ndwel	9c	3.1								
+5.11.9.3.2	External		5	11	9	3	2	0	Ndwel	9c	3.2								
+5.11.9.4	Furnishings		5	11	9	4	0	0	Ndwel	9c	4								
+5.11.9.5	Outdoor/Temporary structures		5	11	9	5	0	0	Ndwel	9c	5								
+5.11.9.6	General		5	11	9	6	0	0	Ndwel	9c	6								
+5.11.10	Fasteners		5	11	10	0	0	0	Nfast	9c									
+5.11.11	Construction		5	11	11	0	0	0	Ncstr	9c									
+5.12	Leisure		5	12	0	0	0	0	Nleis	9d									
+5.13	Social interactions		5	13	0	0	0	0	Nsoc	9d									
+5.14	Husbandry		5	14	0	0	0	0	Nhusb	9e									
+5.15	War and violence		5	15	0	0	0	0	Nwar	9e									
+6.0	Verbs of Motion, of Manipulation, and of Production		6	0	0	0	0												
+6.1	?		6	1	0	0	0	0											
+6.1.1	Affect		6	1	1	0	0	0	Vact	4a	1								
+6.1.1.1	To do/act		6	1	1	1	0	0	Vact	4a	1.1								
+6.1.1.1.1	Redo, repeat		6	1	1	1	1	0	Vact	4a	1.1.2								
+6.1.1.3	Play		6	1	1	3	0	0	Vact	4a	1.3								
+6.1.1.4	Lie		6	1	1	4	0	0	Vact	4a	1.4								
+6.1.1.4.1	Sit		6	1	1	4	1	0	Vact	4a	1.4.1								
+6.1.1.4.1.1	Sprawl		6	1	1	4	1	1	Vact	4a	1.4.2.1								
+6.1.1.4.2	Fall		6	1	1	4	2	0	Vact	4a	1.4.4								
+6.1.1.5	Hang		6	1	1	5	0	0	Vact	4a	1.5								
+6.1.1.6	Wait		6	1	1	6	0	0	Vact	4a	1.6								
+6.2	Action Verbs with Patient		6	2	0	0	0	0	Vact	4a									
+6.2.2	?		6	2	2	0	0	0											
+6.2.2.1	Assorted action verbs		6	2	2	1	0	0	Vact	4a	2.1								
+6.2.2.2	Move an object		6	2	2	2	0	0	Vact	4a	2.2								
+6.2.2.2.1	Carry		6	2	2	2	1	0	Vact	4a	2.2.1								
+6.2.2.2.2	Bring		6	2	2	2	2	0	Vact	4a	2.2.3								
+6.2.2.3	?		6	2	2	3	0	0											
+6.2.2.3.1	Push		6	2	2	3	1	0	Vact	4a	2.3.1								
+6.2.2.3.2	Pull		6	2	2	3	2	0	Vact	4a	2.3.2								
+6.2.2.3.3	Kick		6	2	2	3	3	0	Vact	4a	2.3.4								
+6.2.2.5	?		6	2	2	5	0	0											
+6.2.2.5.1	Clear		6	2	2	5	1	0	Vact	4a	2.5.1								
+6.2.2.5.2	Wash (v.i./v.t.)		6	2	2	5	2	0	Vact	4a	2.5.2								
+6.2.2.5.3	Sweep		6	2	2	5	3	0	Vact	4a	2.5.3								
+6.2.2.6	?		6	2	2	6	0	0											
+6.2.2.6.1	Open		6	2	2	6	1	0	Vact	4a	2.6.1								
+6.2.2.6.2	Close		6	2	2	6	2	0	Vact	4a	2.6.2								
+6.2.2.7	?		6	2	2	7	0	0											
+6.2.2.7.1	Use		6	2	2	7	1	0	Vact	4a	2.7.1								
+6.2.2.7.2	Practice		6	2	2	7	2	0	Vact	4a	2.7.2								
+6.2.2.8	Show		6	2	2	8	0	0	Vact	4a	2.8								
+6.2.2.9	?		6	2	2	9	0	0											
+6.2.2.9.1	Write		6	2	2	9	1	0	Vact	4a	2.9.1								
+6.2.2.9.2	Draw		6	2	2	9	2	0	Vact	4a	2.9.2								
+6.2.2.9.3	Read		6	2	2	9	3	0	Vact	4a	2.9.3								
+6.3	Friction		6	3	0	0	0	0	Vrub	4a.2									
+6.4	Harm		6	4	0	0	0	0	Vharm	4b.1									
+6.5	Fighting		6	5	0	0	0	0	Vfigh	4b.2									
+6.5.1	Opposition		6	5	1	0	0	0		4b.2	8								
+6.6	Verbs requiring liquids		6	6	0	0	0	0	Vliq	4b.3									
+6.6.1	Float		6	6	1	0	0	0	Vliq	4b.3	5								
+6.6.2	Dissolve		6	6	2	0	0	0	Vliq	4b.3	9								
+6.7	?		6	7	0	0	0	0											
+6.7.1	Inward		6	7	1	0	0	0	Vmot	4b.4	1								
+6.7.2	Outward		6	7	2	0	0	0	Vmot	4b.4	2								
+6.7.3	Awkwardly, Irregularly		6	7	3	0	0	0	Vmot	4b.4	3								
+6.7.4	Regular, Cyclic, Smoothly		6	7	4	0	0	0	Vmot	4b.4	4								
+6.7.5	Medium Primary (e.g. air)		6	7	5	0	0	0	Vmot	4b.4	5								
+6.7.6	Circularly		6	7	6	0	0	0	Vmot	4b.4	6								
+6.7.7	Up, etc.		6	7	7	0	0	0	Vmot	4b.4	7								
+6.7.8	Downward		6	7	8	0	0	0	Vmot	4b.4	8								
+6.7.9	Manner is primary		6	7	9	0	0	0	Vmot	4b.4	9								
+6.7.10	Move with something else		6	7	10	0	0	0	Vmot	4b.4	10								
+6.7.11	Movement (general)		6	7	11	0	0	0	Vmot	4b.4	11								
+6.8	Striking, hitting verbs		6	8	0	0	0	0	Vhit	4c.1									
+6.9	Undoing		6	9	0	0	0	0	Vundo	4c.5									
+6.9.1	Peel		6	9	1	0	0	0		4c.4									
+6.9.2	Carve, shave		6	9	2	0	0	0	Vcut	4c.4	1								
+6.9.3	Chop, slice		6	9	3	0	0	0	Vcut	4c.4	2								
+6.9.4	Mince, shred		6	9	4	0	0	0	Vcut	4c.4	3								
+6.10	Loss, separation		6	10	0	0	0	0	Vsep	4c.7									
+6.10.1	Unintentional loss -Misplace		6	10	1	0	0	0	Vsep	4c.7	1.1								
+6.10.2	Intentional loss - Abandon		6	10	2	0	0	0	Vsep	4c.7	1.2								
+6.10.3	Wide separation - Scatter		6	10	3	0	0	0	Vsep	4c.7	2								
+6.10.4	Intentional separation - Sort		6	10	4	0	0	0	Vsep	4c.7	4								
+6.11	Digging, excavation		6	11	0	0	0	0	Vdig	4c.8									
+6.12	Throwing		6	12	0	0	0	0	Vthrw	4c.9									
+6.13	Convergence		6	13	0	0	0	0	Vjoin	4d.2									
+6.13.1	Tying		6	13	1	0	0	0	Vjoin	4d.2	1.1								
+6.13.2	Adhesion		6	13	2	0	0	0	Vjoin	4d.2	1.2								
+6.13.3	With Tools		6	13	3	0	0	0	Vjoin	4d.2	1.3								
+6.13.4	Mix		6	13	4	0	0	0	Vjoin	4d.2	3								
+6.13.5	Join (general)		6	13	5	0	0	0	Vjoin	4d.2	5								
+6.14	Construction		6	14	0	0	0	0	Vmake	4d.3									
+6.15	Repair		6	15	0	0	0	0	Vmend	4d.4									
+6.16	Holding		6	16	0	0	0	0	Vhold	4e.2									
+6.17	Putting		6	17	0	0	0	0	Vput	4e.3									
+6.18	Possession		6	18	0	0	0	0	Vhave	4e.4									
+6.19	Social action		6	19	0	0	0	0	Vsoc	4f.1									
+6.20	Helping		6	20	0	0	0	0	Vhelp	4f.2									
+6.21	Acquisitions		6	21	0	0	0	0	Vacq	4f.3									
+6.22	Exchanges		6	22	0	0	0	0	Vexch	4f.4									
+6.23	Giving		6	23	0	0	0	0	Vgive	4f.5									
+7.0	Adjectival Verbs		7	0	0	0	0												
+7.1	Adjectives and attributives		7	1	0	0	0	0	Vadj	5c									
+7.1.1	Emotive		7	1	1	0	0	0	Vadj	5c	1								
+7.1.2	?		7	1	2	0	0	0											
+7.1.2.1	Quantity - general		7	1	2	1	0	0	Vadj	5c	2.1								
+7.1.2.2	Degree		7	1	2	2	0	0	Vadj	5c	2.2								
+7.1.2.3	Temperature		7	1	2	3	0	0	Vadj	5c	2.4								
+7.1.3	?		7	1	3	0	0	0											
+7.1.3.1	General - other than appearance		7	1	3	1	0	0	Vadj	5c	3.1								
+7.1.3.2	Appearance		7	1	3	2	0	0	Vadj	5c	3.2								
+7.1.4	?		7	1	4	0	0	0											
+7.1.4.1	Sight		7	1	4	1	0	0	Vadj	5c	4.1								
+7.1.4.2	Feel/Tactile/Texture		7	1	4	2	0	0	Vadj	5c	4.2								
+7.1.4.3	Hear		7	1	4	3	0	0	Vadj	5c	4.3								
+7.1.4.4	Taste		7	1	4	4	0	0	Vadj	5c	4.4								
+7.1.4.5	Smell		7	1	4	5	0	0	Vadj	5c	4.5								
+7.1.5	?		7	1	5	0	0	0											
+7.1.5.1	General - form		7	1	5	1	0	0	Vadj	5c	5.1								
+7.1.5.2	Texture		7	1	5	2	0	0	Vadj	5c	5.2								
+7.1.5.3	Position - high/low		7	1	5	3	0	0	Vadj	5c	5.3								
+7.1.5.4	Position - front/back/side-side		7	1	5	4	0	0	Vadj	5c	5.4								
+7.1.6	?		7	1	6	0	0	0											
+7.1.6.1	Single/part/few		7	1	6	1	0	0	Vadj	5c	6.1								
+7.1.6.2	Accompanied/whole/many		7	1	6	2	0	0	Vadj	5c	6.2								
+7.1.7	?		7	1	7	0	0	0											
+7.1.7.1	Unique/important/special		7	1	7	1	0	0	Vadj	5c	7.1								
+7.1.7.2	Mundane/unimportant/same/routine		7	1	7	2	0	0	Vadj	5c	7.2								
+7.1.8	?		7	1	8	0	0	0											
+7.1.8.1	Positive term		7	1	8	1	0	0	Vadj	5c	8.1								
+7.1.8.2	Negative term		7	1	8	2	0	0	Vadj	5c	8.2								
+7.1.8.3	Neutral term		7	1	8	3	0	0	Vadj	5c	8.3								
+7.1.10	Abruptly		7	1	10	0	0	0	Vadj	5c	10								
+7.1.11	?		7	1	11	0	0	0											
+7.1.11.1	Light		7	1	11	1	0	0	Vadj	5c	11.1								
+7.1.11.2	Dark		7	1	11	2	0	0	Vadj	5c	11.2								
+8.0	Abstract Nouns and Verbs, Psychological Verbs, Verbs of Utterance		8	0	0	0	0												
+8.1	Abstract Entities		8	1	0	0	0	0	Nabst	5a									
+8.2	Abstract verbs		8	2	0	0	0	0	Vabst	5b									
+8.2.1	Be		8	2	1	0	0	0	Vabst	5b	1.2.3								
+8.3	Psychological verbs		8	3	0	0	0	0	Vpsi	5d									
+8.3.1	?		8	3	1	0	0	0											
+8.3.1.1	?		8	3	1	1	0	0											
+8.3.1.1.1	Like		8	3	1	1	1	0	Vpsi	5d	1.1.1								
+8.3.1.1.2	Dislike		8	3	1	1	2	0	Vpsi	5d	1.1.2								
+8.3.1.1.3	Satisfied		8	3	1	1	3	0	Vpsi	5d	1.1.3								
+8.3.1.2	?		8	3	1	2	0	0											
+8.3.1.2.1	Accept		8	3	1	2	1	0	Vpsi	5d	1.2.1								
+8.3.1.3	Commend		8	3	1	3	0	0	Vpsi	5d	1.3								
+8.3.1.3.1	Blame		8	3	1	3	1	0	Vpsi	5d	1.3.2								
+8.3.1.4	?		8	3	1	4	0	0											
+8.3.1.4.1	Agree		8	3	1	4	1	0	Vpsi	5d	1.4.1								
+8.3.1.5	?		8	3	1	5	0	0											
+8.3.1.5.1	Happy		8	3	1	5	1	0	Vpsi	5d	1.5.1								
+8.3.1.5.1.1	Grief		8	3	1	5	1	1	Vpsi	5d	1.5.2.2								
+8.3.1.5.2	Sad		8	3	1	5	2	0	Vpsi	5d	1.5.2								
+8.3.1.5.3	Emotional		8	3	1	5	3	0	Vpsi	5d	1.5.3								
+8.3.1.5.4	Enthusiastic		8	3	1	5	4	0	Vpsi	5d	1.5.4								
+8.3.1.5.5	Excited		8	3	1	5	5	0	Vpsi	5d	1.5.6								
+8.3.1.5.6	Frustrated		8	3	1	5	6	0	Vpsi	5d	1.5.7								
+8.3.1.6	?		8	3	1	6	0	0											
+8.3.1.6.1	Angry		8	3	1	6	1	0	Vpsi	5d	1.6.1					Vpsi	5d	1	
+8.3.1.6.2	Distress		8	3	1	6	2	0	Vpsi	5d	1.6.2								
+8.3.1.7	Procrastinate?		8	3	1	7	0	0	Vpsi	5d	1.7								Only one gloss for this category
+8.3.1.7.1	Positive		8	3	1	7	1	0	Vpsi	5d	1.7.1								
+8.3.1.7.2	Negative (e.g. dread)		8	3	1	7	2	0	Vpsi	5d	1.7.2								
+8.3.1.7.3	Neutral or ambiguous		8	3	1	7	3	0	Vpsi	5d	1.7.3								
+8.3.1.7.4	Relieved		8	3	1	7	4	0	Vpsi	5d	1.7.5								
+8.3.1.8	?		8	3	1	8	0	0											
+8.3.1.8.1	Willing		8	3	1	8	1	0	Vpsi	5d	1.8.3								
+8.3.1.9	?		8	3	1	9	0	0											
+8.3.1.9.1	Surprised		8	3	1	9	1	0	Vpsi	5d	1.9.1								
+8.3.1.9.2	Worry		8	3	1	9	2	0	Vpsi	5d	1.9.2								
+8.3.1.10	?		8	3	1	10	0	0											
+8.3.1.10.1	Fear		8	3	1	10	1	0	Vpsi	5d	1.10.2								
+8.3.1.10.2	?		8	3	1	10	2	0											
+8.3.1.10.2.1	Positive		8	3	1	10	2	1	Vpsi	5d	1.10.4.								Category is truncated in lexicon table (should be 1.10.4.1)
+8.3.1.10.3	Hesitate		8	3	1	10	3	0	Vpsi	5d	1.10.5								
+8.3.1.11	?		8	3	1	11	0	0											
+8.3.1.11.1	Alert		8	3	1	11	1	0	Vpsi	5d	1.11.1								
+8.3.1.11.2	Tired		8	3	1	11	2	0	Vpsi	5d	1.11.10								
+8.3.1.11.3	Thrilled, Dizzy		8	3	1	11	3	0	Vpsi	5d	1.11.11								
+8.3.1.12	?		8	3	1	12	0	0											
+8.3.1.12.1	Know, Believe		8	3	1	12	1	0	Vpsi	5d	1.12.1								
+8.3.1.13	Think/plan		8	3	1	13	0	0	Vpsi	5d	1.13								
+8.3.1.13.1	Think		8	3	1	13	1	0	Vpsi	5d	1.13.1								
+8.3.1.13.2	Plan		8	3	1	13	2	0	Vpsi	5d	1.13.2								
+8.3.1.13.3	Imagination		8	3	1	13	3	0	Vpsi	5d	1.13.8								
+8.3.1.14	?		8	3	1	14	0	0											
+8.3.1.14.1	Longing		8	3	1	14	1	0	Vpsi	5d	1.14.1								
+8.3.1.14.2	Avarice		8	3	1	14	2	0	Vpsi	5d	1.14.2								
+8.3.1.14.3	Desirable		8	3	1	14	3	0	Vpsi	5d	1.14.3								
+8.3.1.15	Awe		8	3	1	15	0	0	Vpsi	5d	1.15								
+8.3.1.16	?		8	3	1	16	0	0											
+8.3.1.16.1	Forget		8	3	1	16	1	0	Vpsi	5d	1.16.1								
+8.3.2	?		8	3	2	0	0	0											
+8.3.2.1	?		8	3	2	1	0	0											
+8.3.2.1.1	Friendly		8	3	2	1	1	0	Vpsi	5d	2.1.1								
+8.3.2.2	?		8	3	2	2	0	0											
+8.3.2.2.1	Appease		8	3	2	2	1	0	Vpsi	5d	2.2.1								
+8.3.2.3	?		8	3	2	3	0	0											
+8.3.2.3.1	Comfort		8	3	2	3	1	0	Vpsi	5d	2.3.1								
+8.3.2.3.2	Pity		8	3	2	3	2	0	Vpsi	5d	2.3.2								
+8.3.2.3.3	Encourage		8	3	2	3	3	0	Vpsi	5d	2.3.3								
+8.3.2.4	Conspire		8	3	2	4	0	0	Vpsi	5d	2.4								
+8.3.2.5	?		8	3	2	5	0	0											
+8.3.2.5.1	Defer		8	3	2	5	1	0	Vpsi	5d	2.5.1								
+8.3.2.5.2	Honor		8	3	2	5	2	0	Vpsi	5d	2.5.2								
+8.3.2.5.3	Flatter		8	3	2	5	3	0	Vpsi	5d	2.5.3								
+8.3.2.5.4	Tolerate		8	3	2	5	4	0	Vpsi	5d	2.5.4								
+8.3.2.5.5	Ignore		8	3	2	5	5	0	Vpsi	5d	2.5.5								
+8.3.2.5.6	Disobedient		8	3	2	5	6	0	Vpsi	5d	2.5.6								
+8.3.2.5.7	Trust		8	3	2	5	7	0	Vpsi	5d	2.5.7								
+8.3.2.6	?		8	3	2	6	0	0											
+8.3.2.6.1	Admire		8	3	2	6	1	0	Vpsi	5d	2.6.1								
+8.3.2.6.2	Envy		8	3	2	6	2	0	Vpsi	5d	2.6.2								
+8.3.2.7	?		8	3	2	7	0	0											
+8.3.2.7.1	Flirt, seduce		8	3	2	7	1	0	Vpsi	5d	2.7.1								
+8.3.2.7.2	Entice, tempt		8	3	2	7	2	0	Vpsi	5d	2.7.2								
+8.3.2.8	Grudge		8	3	2	8	0	0	Vpsi	5d	2.8								
+8.3.2.9	?		8	3	2	9	0	0											
+8.3.2.9.1	Forgive		8	3	2	9	1	0	Vpsi	5d	2.9.1								
+8.3.3	?		8	3	3	0	0	0											
+8.3.3.1	Conscience/Vengeance		8	3	3	1	0	0	Vpsi	5d	3.1								3 lexical items in db with this SemCat
+8.3.3.2	?		8	3	3	2	0	0											
+8.3.3.2.1	Kind		8	3	3	2	1	0	Vpsi	5d	3.2.1								
+8.3.3.2.2	Cruel		8	3	3	2	2	0	Vpsi	5d	3.2.2								
+8.3.3.3	?		8	3	3	3	0	0											
+8.3.3.3.1	Discern		8	3	3	3	1	0	Vpsi	5d	3.3.1								
+8.3.3.4	?		8	3	3	4	0	0											
+8.3.3.4.1	Honest		8	3	3	4	1	0	Vpsi	5d	3.4.1								
+8.3.3.4.2	Earnest/sincere		8	3	3	4	2	0	Vpsi	5d	3.4.3								
+8.3.3.4.3	Deceive		8	3	3	4	3	0	Vpsi	5d	3.4.4								
+8.3.3.4.3.1	Positive/neutral		8	3	3	4	3	1	Vpsi	5d	3.4.4.1								
+8.3.3.4.3.2	Negative		8	3	3	4	3	2	Vpsi	5d	3.4.4.2								
+8.3.3.5	?		8	3	3	5	0	0											
+8.3.3.6	?		8	3	3	6	0	0											
+8.3.3.6.1	Guilty		8	3	3	6	1	0	Vpsi	5d	3.6.2								
+8.3.3.7	?		8	3	3	7	0	0											
+8.3.3.8	Pride		8	3	3	8	0	0	Vpsi	5d	3.8								
+8.3.3.8.1	Modest		8	3	3	8	1	0	Vpsi	5d	3.8.1								
+8.3.3.8.2	Ashamed		8	3	3	8	2	0	Vpsi	5d	3.8.3								
+8.3.3.9	Correct		8	3	3	9	0	0	Vpsi	5d	3.10								
+8.4	Feeling		8	4	0	0	0	0	Vfeel	5e									
+8.5	Utterance		8	5	0	0	0	0	Vutt	5f									
+8.5.1	Scold		8	5	1	0	0	0	Vutt	5f	1								
+8.5.2	?		8	5	2	0	0	0											
+8.5.2.1	Complain		8	5	2	1	0	0	Vutt	5f	2.1								
+8.5.2.2	Complement, praise		8	5	2	2	0	0	Vutt	5f	2.2								
+8.5.3	Declare		8	5	3	0	0	0	Vutt	5f	3								
+8.5.4	?		8	5	4	0	0	0											
+8.5.4.1	Loud		8	5	4	1	0	0	Vutt	5f	4.1								
+8.5.4.2	Soft		8	5	4	2	0	0	Vutt	5f	4.2								
+8.5.4.3	Accented		8	5	4	3	0	0	Vutt	5f	4.3								
+8.5.4.4	Glottal sound		8	5	4	4	0	0	Vutt	5f	4.6								
+8.5.4.5	Choppy		8	5	4	5	0	0	Vutt	5f	4.7								
+8.5.5	Sounds		8	5	5	0	0	0	Vutt	5f	5								
+8.5.6	Answer		8	5	6	0	0	0	Vutt	5f	6								
+8.5.7	Bid		8	5	7	0	0	0	Vutt	5f	7								
+8.5.7.1	Ask		8	5	7	1	0	0	Vutt	5f	7.1								
+8.5.7.2	Implore/Coax		8	5	7	2	0	0	Vutt	5f	7.2								
+8.5.7.3	Coax		8	5	7	3	0	0	Vutt	5f	7.3								
+8.5.8	Banter/Discourse		8	5	8	0	0	0	Vutt	5f	8								
+8.5.9	Jest		8	5	9	0	0	0	Vutt	5f	9								
+8.5.10	?		8	5	10	0	0	0											
+8.5.10.1	Talk, say		8	5	10	1	0	0	Vutt	5f	10.1								
+8.5.10.2	Garrulosity, verbosity		8	5	10	2	0	0	Vutt	5f	10.2								
+8.5.10.3	Talk with purpose of convincing		8	5	10	3	0	0	Vutt	5f	10.3								
+8.5.10.4	Falsehood		8	5	10	4	0	0	Vutt	5f	10.4								
+8.5.11	Formulaic		8	5	11	0	0	0	Vutt	5f	11								
+8.5.11.1	Introduction		8	5	11	1	0	0	Vutt	5f	11.2								
+8.5.11.2	Farewells		8	5	11	2	0	0	Vutt	5f	11.3								
+8.5.11.3	Apology/excuse		8	5	11	3	0	0	Vutt	5f	11.5								
+8.5.11.4	Invite		8	5	11	4	0	0	Vutt	5f	11.6								
+8.5.13	Beckon		8	5	13	0	0	0	Vutt	5f	13								
+8.5.14	?		8	5	14	0	0	0											
+8.5.14.1	Spread information, present ideas		8	5	14	1	0	0	Vutt	5f	14.1								
+8.5.14.2	Reveal or give information		8	5	14	2	0	0	Vutt	5f	14.2								
+8.5.14.3	Explain		8	5	14	3	0	0	Vutt	5f	14.3								
+8.5.15	Boast		8	5	15	0	0	0	Vutt	5f	15								
+8.5.16	Dedicate		8	5	16	0	0	0	Vutt	5f	16								
+9.0	Shape, Size, Color, Measure, Number, Time, Space		9	0	0	0	0												
+9.1	Time		9	1	0	0	0	0											
+9.1.1	Adverbial uses		9	1	1	0	0	0	Ntime	6i									
+9.1.2	Months and Years		9	1	2	0	0	0	Ntime	6i	1								
+9.1.3	Days		9	1	3	0	0	0	Ntime	6i	2								
+9.1.4	Hours		9	1	4	0	0	0	Ntime	6i	3								
+9.1.5	Other Intervals		9	1	5	0	0	0	Ntime	6i	4								
+9.1.6	Years		9	1	6	0	0	0	Ntime	6i	5								
+9.2	Spatial terms		9	2	0	0	0	0	Spat	6j									
+9.2.1	Up		9	2	1	0	0	0	Spat	6j	1								
+9.2.2	Down		9	2	2	0	0	0	Spat	6j	2								
+9.2.3	Sideways		9	2	3	0	0	0	Spat	6j	3								
+9.2.4	Apart		9	2	4	0	0	0	Spat	6j	4								
+9.2.5	Amid		9	2	5	0	0	0	Spat	6j	5								
+9.2.6	Around		9	2	6	0	0	0	Spat	6j	6								
+9.2.7	Extent		9	2	7	0	0	0	Spat	6j	7								
+9.2.8	Directions		9	2	8	0	0	0	Spat	6j	8								
+9.3	Sounds		9	3	0	0	0	0	Sound	6a									
+9.4	Colors		9	4	0	0	0	0	Col	6b									
+9.5	Change of state		9	5	0	0	0	0	Vcos	6c									
+9.6	Qualities		9	6	0	0	0	0											
+9.6.1	Positive/Desirable qualities		9	6	1	0	0	0	Vqual	6d	1								
+9.6.2	Neutral and Negative qualities		9	6	2	0	0	0	Vqual	6d	2								
+9.7	Shape/Size		9	7	0	0	0	0											
+9.7.1	Shape and size		9	7	1	0	0	0	Nshiz	6e									
+9.7.2	Verbs referring to size/shape		9	7	2	0	0	0	Vshiz	6f									
+9.8	Measure Words		9	8	0	0	0	0	Meas	6g									
+9.9	Numbers and numeric expression		9	9	0	0	0	0	Num	6h									
+9.10	Locations		9	10	0	0	0	0											
+9.10.1	Roads and Ways		9	10	1	0	0	0	Nloc	6k	1								
+9.10.2	Waterways/Having to do with water		9	10	2	0	0	0	Nloc	6k	2								
+9.10.3	Governable units (towns, parts of towns)		9	10	3	0	0	0	Nloc	6k	3								
+9.10.4	Farm/Agricultural places		9	10	4	0	0	0	Nloc	6k	4								
+9.10.5	Places in general, countries		9	10	5	0	0	0	Nloc	6k	4.0								Chapter has trailing zero (records don't seem to be totally consistent with this, though)
+9.10.6	Functional buildings/places		9	10	6	0	0	0	Nloc	6k	5								
+10.0	Grammatical Words		10	0	0	0	0		G	8									
+10.1	Ontological		10	1	0	0	0	0	G	8	1								
+10.1.1	Prepositions		10	1	1	0	0	0	G	8	1.1								
+10.1.2	?		10	1	2	0	0	0											
+10.1.2.1	Compound		10	1	2	1	0	0	G	8	1.2.1								
+10.1.2.2	Subordination		10	1	2	2	0	0	G	8	1.2.2								
+10.1.3	Classifiers		10	1	3	0	0	0	G	8	1.3								
+10.2	Articles		10	2	0	0	0	0	G	8	2								
+10.2.1	Grammatical identifiers		10	2	1	0	0	0	G	8	2.1								
+10.2.1.1	Phonological entities		10	2	1	1	0	0	G	8	2.1.1								
+10.2.2	Morphological identifiers		10	2	2	0	0	0	G	8	2.2								
+10.2.3	?		10	2	3	0	0	0											
+10.2.3.1	Nominative-accusative		10	2	3	1	0	0	G	8	2.3.1								
+10.2.3.2	Possessive		10	2	3	2	0	0	G	8	2.3.2								
+10.4	Affixes		10	4	0	0	0	0	G	8	4								
+10.4.1	?		10	4	1	0	0	0											
+10.4.1.1	Grammatical case		10	4	1	1	0	0	G	8	4.1.1								
+10.4.1.2	Animacy		10	4	1	2	0	0	G	8	4.1.2								
+10.4.1.3	Diminutivizer, intensifier, etc.		10	4	1	3	0	0	G	8	4.1.3								
+10.4.1.4	Person, #, gender		10	4	1	4	0	0	G	8	4.1.4								
+10.4.2	Verbal		10	4	2	0	0	0	G	8	4.2								
+10.4.2.1	Mood		10	4	2	1	0	0	G	8	4.2.1								
+10.4.2.4	Aspect, (in)transitivity, ergativity, ca		10	4	2	4	0	0	G	8	4.2.4								Category name appears to have been truncated
+10.4.2.6	Participles, gerunds, etc.		10	4	2	6	0	0	G	8	4.2.6								
+10.4.2.7	Nominalizers		10	4	2	7	0	0	G	8	4.2.7								
+10.4.3	?		10	4	3	0	0	0											
+10.4.3.1	Degrees of comparison		10	4	3	1	0	0	G	8	4.3.1								
+10.4.3.2	Demonstrators		10	4	3	2	0	0	G	8	4.3.2								
+10.5	?		10	5	0	0	0	0											
+10.5.1	Structuring Words		10	5	1	0	0	0	G	8	5.1								
+10.5.2	Grammatical functions		10	5	2	0	0	0	G	8	5.2								
+10.5.3	WH words		10	5	3	0	0	0	G	8	6.1								
+10.6	Not, yes ?		10	6	0	0	0	0	G	8	7								
+10.6.1	Affirmative		10	6	1	0	0	0	G	8	7.1								No lexicon records
+10.6.2	Negative		10	6	2	0	0	0	G	8	7.2								
+10.7	Ejaculations		10	7	0	0	0	0	G	8	8								
+x.x	Errors and apocrypha		11	0	0	0	0	0	Error	x									

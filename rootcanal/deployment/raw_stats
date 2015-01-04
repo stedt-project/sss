@@ -1,0 +1,13 @@
+STEDT Database Statistics 	Sat Oct 18 00:35:55 2014
+
+
+Statistic	Number	Notes	
+Cognate sets in D-T:	3973	(i.e. distinct tags in use)
+Sequenced etyma with support:	4017	(should be the same as above)
+Number of supporting forms:	163104	(morphemes which have been tagged, and so appear in the D-T)
+Languages and dialects:	503	Count of "normalized" language names of supporting forms, i.e. in lgsort column
+Number of "usable" Etyma:	4017	i.e. not soft-deleted, with or without supporting forms
+Weakly attested sets:	811	(5 or fewer supporting forms)
+Strongly attested sets:	3162	(greater that 5 supporting forms)
+Forms with no tags:	381013	... at all
+

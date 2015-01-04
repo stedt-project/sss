@@ -1,0 +1,12 @@
+[% PROCESS header.tt title=t.table _ ":" _ id -%]
+<form action="[% self_url %]/edit/[% t.table %]/[% id %]" method="post">
+<table>
+[% FOREACH val IN result -%]
+[%- n = loop.index -%]
+<tr><th>[% cols.$n %]</th><td><input type="text" size="40" name="[% cols.$n %]" value="[% val | html %]" [%IF cols.$n == key -%]disabled[%- END %]></td></tr>
+[% END -%]
+</table>
+<input name="rootcanal_btn" type="submit" value="Save">
+</form>
+</body>
+</html>

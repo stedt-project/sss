@@ -1,0 +1,69 @@
+[%# logic:
+	show just mesoroots (with no heading): if mesoroots exist AND no co-allofams
+	show just allofams (with heading): if no mesoroots AND co-allofams exist
+	show mesoroots/allofam switcher: if mesoroots exist AND co-allofams exist
+%]
+
+
+[% counter = 0 # counter to determine correct placement of horizontal line %]
+
+[% FOREACH etyma -%]
+
+[% counter=counter+1 %]
+[% IF counter==2 %]<hr>[% END # put a line between etyma tagged by different users %]
+
+<p><a href="[% c.query.url('-absolute',1) %]/etymon/[% tag %]" target="stedt_etymon">#[% tag %]:</a> [% plg %] <b>[% pform %]</b> [% pgloss %]</p>
+[% IF mesoroots.size -%]
+
+[%# if co-allofams exist, show tabs to switch between mesoroots and allofams %]
+[% IF allofams.size > 1 -%]
+
+[%# (messy!) code to toggle the divs and headings: %]
+<a href="#" onclick="$('allo_div_[% tag %]').hide();
+$('meso_div_[% tag %]').show();
+$('meso_link_[% tag %]').hide();
+$('meso_head_[% tag %]').show();
+$('allo_head_[% tag %]').hide();
+$('allo_link_[% tag %]').show();
+return false;">
+<span id="meso_link_[% tag %]" style="display:none;">Mesoroots</span></a><span id="meso_head_[% tag %]"><b>Mesoroots:</b></span> | 
+<a href="#" onclick="$('meso_div_[% tag %]').hide();
+$('allo_div_[% tag %]').show();
+$('meso_head_[% tag %]').hide();
+$('meso_link_[% tag %]').show();
+$('allo_link_[% tag %]').hide();
+$('allo_head_[% tag %]').show();
+return false;">
+<span id="allo_link_[% tag %]">Allofams</span></a><span id="allo_head_[% tag %]" style="display:none;"><b>Allofams:</b></span>
+[% END # check for allofams and privs -%]
+
+<div id="meso_div_[% tag %]">
+<ul>
+[% FOREACH mesoroots -%]
+<li><a href="[% c.query.url('-absolute',1) %]/etymon/[% tag %]#[% grpno %]" target="stedt_etymon">[% plg %]</a> <b>*[% form %]</b> [% gloss %]
+[% END # mesoroots loops -%]
+</ul>
+</div>
+[% END # mesoroots size check -%]
+
+[% IF allofams.size > 1 # if co-allofams exist -%]
+
+[% IF !mesoroots.size # if there are no mesoroots, just show allofams with a static heading -%]
+<b>Allofams:</b>
+<div id="allo_div_[% tag %]">
+[% ELSE # otherwise, if mesoroots do exist, hide this div until the user clicks on the switcher %]
+<div id="allo_div_[% tag %]" style="display:none;">
+[% END # mesoroot size check %]
+<ul>
+[% FOREACH e2 IN allofams -%]
+
+<li>[% IF e2.tag != tag %]<a href="[% c.query.url('-absolute',1) %]/etymon/[% e2.tag %]" target="stedt_etymon">[% ELSE %]<b>[% END -%]
+[% e2.sequence %] #[% e2.tag %] [% e2.plg %] *[% e2.protoform %] [% e2.protogloss %]
+[%- IF e2.tag != etyma.0.tag %]</a>[% ELSE %]</b>[% END %]</li>
+
+[% END # allofam loops -%]
+</ul>
+[% END # allofam size check -%]
+</div>
+
+[% END # etyma loop -%]

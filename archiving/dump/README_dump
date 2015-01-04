@@ -1,0 +1,65 @@
+Notes: STEDT MySQL database dump
+
+OVERVIEW
+
+The included sql file contains MySQL commands for recreating the STEDT database in a database called 'stedt'. It's a large file that may choke graphical MySQL clients, so executing it on the command line with the 'mysql' utility is recommended.
+
+All relevant tables (and some irrelevant ones) have been included.
+
+The database is most easily navigated and manipulated using the web interface provided in the 'rootcanal' project code.
+
+Inactive users were cleared before the dump, so the only remaining users in the 'users' table have their user id's (uid) associated with information elsewhere in the database (etyma, notes, changes, etc.). The password for user 'guest' remains 'guest', while all other user passwords have been reset to 'pass'.
+
+GENERAL STRUCTURE
+
+The STEDT database consists of the following tables (primary key in [square brackets]).
+
+ - changelog: Log of changes made via web interface to various elements (notes, etyma, lexicon records, etc.). [N/A]
+ - chapters: Hierarchical semantic classification system for lexical items and etyma. [id]
+ - et_hptb_hash (defunct): Associative array linking etyma tag numbers with hptb id's. [N/A]
+ - etyma: Records pf PTB (and other proto-language) reconstructions. [tag]
+ - etymologies: A VIEW combining records from the etyma, lexicon, and lx_et_hash tables to create a list of all etymologies established by users. [N/A]
+ - glosswords: Associations between single glosses and their appropriate positions in the semantic hierarchy (semkey). [id]
+ - hptb: All reconstructions from the Handbook of Proto-Tibeto-Burman (Matisoff 2003). [N/A]
+ - languagegroups: Stammbaum utilized for classifying (proto-)languages. [grpid]
+ - languagenames: Language entries for lexical records in lexicon table. [lgid]
+ - lexicon: Lexical records from various sources. [rn]
+ - lx_et_hash: Associative array linking user-tagged morphemes in lexicon records with entries in the etyma table. [N/A]
+ - majorcats: XYZ
+ - mesoroots: Meso-reconstructions associated with higher-level etyma. [id]
+ - morphemes (prototype): Algorithmically extracted morphemes from lexicon records.
+ - notes: Annotations of various elements (lexicon items, etyma, subgroups, chapters, and sources). [noteid]
+ - otherchapters: XYZ
+ - pi: Associative array linking languagename entries with page numbers in STEDT Monograph #3 (Phonological Inventories). [N/A]
+ - projects: Progress-tracking for a few tagging projects. [id]
+ - querylog: Log of queries to public-facing ("simple search") interface. [N/A]
+ - searchwords: XYZ
+ - sessions: HTTP session log for web interface. [id]
+ - soundlaws (prototype): XYZ
+ - soundlawsupport (prototype): XYZ
+ - srcbib: Bibliography of sources providing lexical data. [srcabbr]
+ - users: User logins for web interace. [uid]
+
+TABLE ASSOCIATIONS
+
+The STEDT database was created before MySQL 5.5 and uses MyISAM for the table engines. There are therefore no foreign keys, but the web interface code creates and utilizes various associations among the tables. Below are some of the major table associations, with the linking field in square brackets:
+
+	lexicon <--[lgid]--> languagenames <--[srcabbr]--> srcbib
+	lexicon <--[rn]--> lx_et_hash <--[tag]--> etyma
+
+	etyma <--[grpid]--> languagegroups
+	etyma <--[uid]--> users
+
+	languagenames <--[grpid]--> languagegroups
+
+In general, if a particular field appears in any table, it can be interpreted as follows:
+
+	chapter (legacy field): refers to position in the semantic hierarchy (semkey) from the chapters table
+	grpid: refers to a subgroup in the languagegroups table
+	id: usually the primary key for that table
+	lgid: refers to a language entry in the languagenames table
+	rn: refers to a lexicon item in the lexicon table
+	semkey: refers to a position in the semantic hierarchy from the chapters table
+	srcabbr: refers to a bibliographic source in the srcbib table
+	tag: refers to a reconstruction in the etyma table
+	uid: refers to a user in the users table

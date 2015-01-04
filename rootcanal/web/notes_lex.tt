@@ -1,0 +1,33 @@
+[% fncounter = fncounter+1 # the value must be incremented in this file because it is called both from etymon.tt and from Notes.pm -%]
+<div class="lexnote" id="reorddiv_[% n.noteid %]">[%# this is not actually sortable, but we need the id for deleting purposes %]
+<a href="#toof[% fncounter %]" id="foot[% fncounter %]" class="left footnote">^ [% fncounter %].</a>
+<form id="form[% n.noteid %]" class="noteform right" style="display:none">
+<input type="hidden" name="noteid" value="[% n.noteid %]">
+<input type="hidden" name="mod" value="[% n.lastmod %]">
+notetype:<select name="notetype">
+[% IF c.has_privs(8) %]<option [% IF n.type=='T' %]selected="selected" [% END %]value="T">Text</option>[% END %]
+<option [% IF n.type=='I' %]selected="selected" [% END %]value="I">Internal</option>
+[% IF c.has_privs(8) %]<option [% IF n.type=='O' %]selected="selected" [% END %]value="O">Orig/src-DON'T MODIFY</option>[% END %]
+</select>
+last mod: <span id="lastmod[% n.noteid %]"><a href="[% self_url %]/admin/changes?t=notes&id=[% n.noteid %]" target="stedt_changelog">[% n.lastmod %]</a></span>
+<br>
+<textarea name="xmlnote" rows="[% n.num_lines %]" cols="54">
+[%- n.markup -%]
+</textarea>
+<br>
+<input type="submit" value="Save Note">
+<input type="button" name="delete_btn" value="Delete Note">
+[% IF c.has_privs(8) %](tag: <input name="id" type="text" value="[% n.id %]" size="4">)[% END %]
+[% IF c.has_privs(8) && n.uid != 8 -%]
+user: <select name="uid">
+<option value="8">stedt</option>
+<option selected="selected" value="[% n.uid %]">[% n.username %]</option>
+</select>
+[% END -%]
+<a href="#" class="cheatsheet_link">markup</a>
+</form>
+<div id="preview[% n.noteid %]" class="notepreview footnote">
+[%- n.text -%]
+[% IF n.uid != 8 %] [[% n.username %]][% END %]
+ <input type="button" value="Edit" class="note_edit_toggle">
+</div><br class="edit" clear="right"></div>

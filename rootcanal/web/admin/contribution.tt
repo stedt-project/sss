@@ -1,0 +1,80 @@
+[% PROCESS header.tt title="STEDT Database: Contribution" %]
+<form action="[% self_url %]/contribution" method="post" enctype="multipart/form-data">
+<input type="hidden" name="filename" value="[% filename %]">
+<input type="hidden" name="lgid" value="[% lgid %]">
+<input type="hidden" name="srcabbrsave" value="[% srcabbrsave %]">
+<input type="hidden" name="step" value="[% step %]">
+[%- IF step == 'thanks' -%]
+<h2>Step 3: Your file has been uploaded!</h2>
+<h3>Thank you for your contribution!</h3>
+[% FOREACH message IN messages -%]
+<h4>[% message %]</h4>
+[% END %]
+<table>
+<tr><th>Description</th><th>Value</th></tr>
+[% FOREACH k IN provided.keys -%]
+<tr><td>[% k %]</td><td>[% provided.$k %]</td></tr>
+[% END %]
+</table>
+<table>
+<tr><th>Messages</th></tr>
+[% FOREACH v IN validation -%]
+<tr><td>[% v %]</td></tr>
+[% END %]
+</table>
+<p><i>Please </i><a target="check" href="[% self_url %]/edit/lexicon?lexicon.lgid=[% lgid %]">click here</a><i> to open a new window to check your data.<br>
+Click <b>Undo</b> below to erase your data if you feel you need to try again.</i></p>
+<p><input name="btn" type="submit" value="Undo"></p>
+[% ELSE %]
+[%- IF step == 'upload' || step == 'filefailure' -%]
+[% FOREACH message IN messages -%]
+<h4>[% message %]</h4>
+[% END %]
+[%- IF step == 'filefailure' -%]
+<p>[% length(validation) %]</p>
+<table>
+<tr><th>Item</th></tr>
+[% FOREACH v IN validation -%]
+<tr><td>[% v %]</td></tr>
+[% END %]
+[% END %]
+</table>
+<h2>Step 1: Upload your data file.</h2>
+<p><i>Please select your delimited file to upload, then click the <b>Upload</b> button:</i>
+<input type="file" name="contribution" /></p>
+<p><input name="btn" type="submit" value="Upload"></p>
+[% ELSIF step == 'metadatafailure' || step == 'metadata' -%]
+<h2>Step 1a: Validation Results</h2>
+<h3>file: [% file %]</h3>
+[% FOREACH message IN messages -%]
+<h4>[% message %]</h4>
+[% END %]
+<table>
+<tr><th>Messages</th></tr>
+[% FOREACH v IN validation -%]
+<tr><td>[% v %]</td></tr>
+[% END %]
+</table>
+[% END %]
+[% IF step == 'metadata' -%]
+<hr/>
+<h2>Step 2: Metadata</h2><p><i>Enter "metadata" (identifying information) for your file.</i></p>
+<table>
+<tr><th>Description</th><th>Value</th></tr>
+[% FOREACH k IN metadata -%]
+<tr><td>[% k %]</td><td><input type="text" size="40" name="[% k %]" maxlength="200"></td></tr>
+[% END %]
+</table>
+<p>Please select a language group, if you can:</p>
+<select id="grpid" name="grpid">
+<option value="X.2">Default, i.e. "Unevaluated"</option>
+[% FOREACH g IN grpids %]
+<option value="[% g.0 %]">[% g.1 %] [% g.2 %]</option>[% END -%]
+</select>
+<p><input name="btn" type="submit" value="Commit"></p>
+</form>
+[% END %]
+[% END %]
+</form>
+</body>
+</html>

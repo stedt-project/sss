@@ -1,0 +1,30 @@
+﻿[% PROCESS header.tt title="STEDT Semantic Grid" -%]
+<h1>STEDT Semantic Grid</h1>
+<table id="ch" class="resizable" style="table-layout:fixed">
+<col><colgroup span="10" style="width:15em">
+<thead><tr><th>Fascicle</th>
+[% FOREACH title IN vols -%]
+<th>[% loop.count %]<br>[% title %]</th>
+[% END -%]
+</tr></thead>
+<tbody>
+[% FOREACH f IN [1..23] -%]
+<tr><th>[% f %]</th>
+[% FOREACH v IN [1..10] -%]
+<td class="grid"><div class="outer">
+[% IF ch.first.0 == v && ch.first.1 == f # check to see if the next semkey belongs in this cell -%]
+[% r = ch.shift -%]
+<div class="chapterlabel">[% r.0 _ '.' _ r.1 %]<br>[% r.2 %]</div>
+[% IF r.4 %]<div class="lowerright" title="chapters">
+<a target="edit_chapters" href="[% self_url %]/edit/chapters?chapters.v=[% v %]&chapters.f=[% f %]">[% r.4 %]</a>
+</div>[% END # r.4 %]
+[% IF r.3 %]<div class="lowerleft" title="etyma"><a target="edit_etyma" href="[% self_url %]/edit/etyma?etyma.chapter=[% v _ '.' _ f _ '%' %]">[% r.3 %]</a></div>[% END -%]
+[% END # v.f -%]
+</div></td>
+[% END # 1..10 -%]
+</tr>
+[% END # 1..23 -%]
+</tbody>
+</table>
+</body>
+</html>

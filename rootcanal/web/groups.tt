@@ -1,0 +1,85 @@
+[% PROCESS header.tt title="Language Groups - STEDT Database" %]
+<table id="lgtreehead">
+<tr><th style="width:4em">Group #</th><th>Group Name</th></tr>
+</table>
+<div id="lgtree">
+<table>
+[% FOREACH row IN grps -%]
+<tr[% IF row.0 == grpid %] bgcolor="#FFFF99" id="showme"[% END %]>
+	<td>[% row.1 %]</td>
+	<td><a href="[% self_url %]/group/[% row.0 %]">[% row.2 %]</a></td>
+</tr>
+[% END -%]
+</table>
+</div>
+<div id="lginfo">
+[% IF lg_index.defined -%]
+[% row = lgs.$lg_index; lg_code = row.2 -%]
+<p>Language information for <b>[% row.1 %]</b>
+from source <a href="[% self_url %]/source/[% row.3 %]" target="stedt_src">[% row.4 %]</a>:</p>
+<table>
+<tr><th title="Language name from source OR abbreviated name" style="cursor:help;">Short Lg Name</th><td>[% row.8 %]</td></tr>
+<tr><th>ISO 639-3</th><td>[% IF row.0 %]<a href="http://www.ethnologue.com/show_language.asp?code=[% row.0 %]" target="stedt_ethnologue">[% row.0 %]</a>[% ELSE %]n/a[% END %]</td></tr>
+<tr><th>num. of records</th><td><a href="[% self_url %]/gnis?lexicon.lgid=[% row.5 %]" target="stedt_sss">[% row.6 %]</a></td></tr>
+[% IF row.7!=0 %]<tr><th title="from Namkung, ed. 1996 (STEDT Monograph #3)" style="cursor:help;">Phon. Inventory</th><td><a href="[% self_base %]phon_inv.html?page=[% row.7 + pi_pdf_offset %]" target="stedt_pi" title="Namkung, ed. 1996">p.[% row.7 %]</a></td></tr>[% END %]
+</table>
+[% CALL lgs.splice(lg_index, 1) -%]
+[% # now, collect all the languages with the same language code -%]
+[% other_lgs = [] -%]
+[% FOREACH row IN lgs -%]
+[% IF row.2 == lg_code; other_lgs.push(row); END -%]
+[% END -%]
+[% IF other_lgs.size %]
+<p>Other sources which include this language:</p>
+
+<table class="hangindent">
+<tr><th>Language Name</th><th>Source</th><th title="Language name from source OR abbreviated name" style="cursor:help;">Short Lg Name</th><th>num. of records</th><th title="from Namkung, ed. 1996 (STEDT Monograph #3)" style="cursor:help;">Phon. Inventory</th></tr>
+[% FOREACH row IN other_lgs -%]
+<tr>
+	<td>[% row.1 %]</td>
+	<td><a href="[% self_url %]/source/[% row.3 %]" target="stedt_src">[% row.4 %]</a></td>
+	<td>[% row.8 %]</td>
+	<td><a href="[% self_url %]/gnis?lexicon.lgid=[% row.5 %]" target="stedt_sss">[% row.6 %]</a></td>
+	<td>[% IF row.7!=0 %]<a href="[% self_base %]phon_inv.html?page=[% row.7 + pi_pdf_offset %]" target="stedt_pi" title="Namkung, ed. 1996">p.[% row.7 %]</a>[% END %]</td>
+</tr>
+[% END -%]
+</table>
+[% ELSE -%]
+(No other sources with this language.)
+[% END -%]
+
+<p>Other languages in <b>[% grpno %] [% grpname %]</b>:</p>
+[% ELSIF grpno.defined -%]
+<p>Languages in <b>[% grpno %] [% grpname %]</b></p>
+[% END -%]
+[% IF grpno.defined -%]
+<table>
+<tr>
+	<th>ISO 639-3</th>
+	<th>Language Name</th>
+	<th>Source</th>
+	<th title="Language name from source OR abbreviated name" style="cursor:help;">Short Lg Name</th>
+	<th>num. of records</th>
+	<th title="from Namkung, ed. 1996 (STEDT Monograph #3)" style="cursor:help;">Phon. Inventory</th>
+</tr>
+[% FOREACH row IN lgs -%]
+[% NEXT IF row.2 == lg_code -%]
+<tr>
+	<td>[% IF row.0 %]<a href="http://www.ethnologue.com/show_language.asp?code=[% row.0 %]" target="stedt_ethnologue">[% row.0 %]</a>[% ELSE %]n/a[% END %]</td>
+	<td><a href="[% self_url %]/group/[% grpid %]/[% row.5 %]" target="_self">[% row.1 %]</a></td>
+	<td><a href="[% self_url %]/source/[% row.3 %]" target="stedt_src">[% row.4 %]</a></td>
+	<td>[% row.8 %]</td>
+	<td><a href="[% self_url %]/gnis?lexicon.lgid=[% row.5 %]" target="stedt_sss">[% row.6 %]</a></td>
+	<td>[% IF row.7!=0 %]<a href="[% self_base %]phon_inv.html?page=[% row.7 + pi_pdf_offset %]" target="stedt_pi" title="Namkung, ed. 1996">p.[% row.7 %]</a>[% END %]</td>
+</tr>
+[% END -%]
+[% ELSE -%]
+Bad grpid!!!
+[% END -%]
+</table>
+</div>
+<script>
+$('lgtree').scrollTop = Math.max(0, $('showme').offsetTop - document.viewport.getHeight()*1/3);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+Notes: STEDT denormalized tables
+
+These two csv files consitute a semi-denormalized version of the most relevant portions of the STEDT database. (A full dump of the MySQL database is provided in the sql file.)
+
+ETYMA
+
+The etyma csv file contains the following fields for each reconstruction:
+
+	tag: Unique id for the etymon.
+	plg: Proto-language abbreviation.
+	protoform: Reconstructed form.
+	protogloss: Reconstructed gloss(es).
+	notes: Some scattered notes on the etymon.
+	semkey: Position in the semantic hierarchy.
+
+LEXICON
+
+The lexicon csv file contains the following fields for each lexical item:
+
+	rn: "record number" - Unique id for the lexicon record.
+	language: Language of the lexical item.
+	form: Transcribed form (including STEDT delimiters: ◦ [inserts morpheme break] and | [overrides original morpheme break]).
+	gloss: English gloss.
+	gfn: Grammatical category of the record.
+	semkey: Position in the semantic hierarchy.
+	analysis: Etymological analysis for each morpheme (#=etyma tag, m=morpheme, s=suffix, p=prefix, b=borrowing, bLANGUAGE=borrowing from LANGUAGE)
+	subgroup: Group number and name of subgroup to which language belongs.
+	srcabbr: Abbreviation for bibliographic source of lexical item.
+	citation: Short citation form of bibliographic source.
+	srcid: Location of lexical item in source (set number/page number/etc.).

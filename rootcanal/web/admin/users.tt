@@ -1,0 +1,124 @@
+[% PROCESS header.tt title="Users on STEDT Database" %]
+<p>[% users.size %] users:</p>
+
+[% IF c.has_privs(16) -%]
+<form action="[% self_url %]/account/update_all" method="POST">
+[% END -%]
+<table>
+<tr>
+	<th>username</th>
+	<th>uid</th>
+[% IF c.has_privs(8) # only show advanced information to approvers and above %]
+	<th>email</th>
+	<th>user (2)</th>
+	<th>tagger (1)</th>
+	<th>approver (8)</th>
+	<th>superuser (16)</th>
+[% END # privs8 check -%]
+[% IF c.has_privs(16) -%]
+	<th>NEW password</th>
+[% END # privs16 check -%]
+</tr>
+[% FOREACH row IN users -%]
+[% SET uid = row.1 %]
+<tr>
+<td>[% row.0 %]</td>
+<td>[% uid %]</td>
+[% IF c.has_privs(8) # only show advanced information to approvers and above %]
+<td>[% row.2 %]</td>
+<td><input name="priv2_[% uid %]" type="checkbox"[% row.3 ? ' checked' : '' %][% c.has_privs(16) ? '' : ' disabled' %]></td>
+<td><input name="priv1_[% uid %]" type="checkbox"[% row.4 ? ' checked' : '' %][% c.has_privs(16) ? '' : ' disabled' %]></td>
+<td><input name="priv8_[% uid %]" type="checkbox"[% row.5 ? ' checked' : '' %][% c.has_privs(16) ? '' : ' disabled' %]></td>
+<td><input name="priv16_[% uid %]" type="checkbox"[% row.6 ? ' checked' : '' %][% c.has_privs(16) ? '' : ' disabled' %]></td>
+[% END # privs8 check -%]
+[% IF c.has_privs(16) -%]
+<td><input name="password_[% uid %]" type="text" size="31" maxlength="63"></td>
+[% END -%]
+</tr>
+[% END -%]
+[% IF c.has_privs(16) -%]
+<tr>
+<td><input name="username_00" type="text" size="15" maxlength="15"></td>
+<td>ADD</td>
+<td><input name="email_00" type="text" size="31" maxlength="63"></td>
+<td><input name="priv2_00" type="checkbox" checked></td>
+<td><input name="priv1_00" type="checkbox"></td>
+<td><input name="priv8_00" type="checkbox"></td>
+<td><input name="priv16_00" type="checkbox"></td>
+<td><input name="password_00" type="text" size="31" maxlength="63"></td>
+</tr>
+</table>
+<input name="button" type="submit" value="Save changes">
+</form>
+
+<p>If adding a user, make sure username, email and password are non-empty!
+Otherwise the whole row will be ignored.</p>
+
+[% ELSE -%]
+</table>
+[% END # privs16 check -%]
+
+[% IF c.has_privs(8) # only show privileges information to approvers and above -%]
+<h2>Privileges cheat sheet</h2>
+
+<h3>2 - registered</h3>
+<ul>
+	<li>all users should have priv 2 'user' set to true</li>
+	<li>download data by source on each source page</li>
+	<li>see (limited) admin page</li>
+	<li>see some of the edit/&lt;TABLE&gt; interfaces</li>
+	<li>see other people's tags</li>
+</ul>
+
+<h3>1 - tagger</h3>
+<ul>
+	<li>see list of users</li>
+	<li>see (limited) admin page</li>
+	<li>see changelog</li>
+	<li>see querylog</li>
+	<li>see progress/detail pages</li>
+	<li>see owners of non-"public" (i.e., provisional) etyma</li>
+	<li>see/use some of the edit/&lt;TABLE&gt; interfaces</li>
+	<li>add/modify their own etyma</li>
+	<li>add, modify, and delete their own notes</li>
+	<li>add, modify, and delete their own mesoroots</li>
+	<li>see internal notes</li>
+	<li>add/delete delimiters in lexicon.reflex</li>
+	<li>see other people's tags</li>
+</ul>
+
+<h3>8 - approver</h3>
+<ul>
+	<li>edit other people's tags (including approved STEDT tags)</li>
+	<li>approve tags</li>
+	<li>modify any etyma</li>
+	<li>modify/delete any mesoroots</li>
+	<li>use soft-deletion interface for etyma</li>
+	<li>modify/delete any notes</li>
+	<li>reorder notes</li>
+	<li>run the sequencer (on etyma in a "chapter")</li>
+	<li>edit "chapters" table</li>
+	<li>edit and add records to languagegroups table</li>
+	<li>update projects</li>
+</ul>
+
+<h3>16 - superuser</h3>
+<ul>
+	<li>modify users</li>
+	<li>expire sessions</li>
+	<li>list "public" etyma</li>
+	<li>add new records to any table</li>
+	<li>use "single record" mode</li>
+	<li>arbitrarily modify lexicon.reflex</li>
+	<li>edit source notes</li>
+	<li>[disabled/unimplemented: show "advanced search"]</li>
+</ul>
+[% END # privs8 check -%]
+
+[% IF c.has_privs(16) -%]
+<p>See also <tt>field_visible_privs</tt>, <tt>field_editable_privs</tt> in the Table.pm subclasses
+and <tt>stedtuserprivs</tt> in the javascripts.</p>
+[% END -%]
+
+</body>
+</html>

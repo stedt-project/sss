@@ -1,0 +1,16 @@
+td {
+    padding: 0px 0px 0px 0px;
+}
+td.gloss {
+    font-family: Helvetica, Arial, sans;
+    font-style: italic;
+    font-size: medium;
+}
+td.lg {
+    font-family: Helvetica, Arial, sans;
+    font-size: medium;
+}
+td.reflex {
+    font-family: "Charis SIL", "Gentium", "Arial Unicode MS", "Lucida Sans Unicode";
+    font-size: medium;
+}

@@ -1,0 +1,11 @@
+[% IF current # another user is still logged in -%]
+[% PROCESS header.tt title="STEDT Database: Create Account" -%]
+[% msg %] You are still logged in as [% current %].
+[% ELSE -%]
+<html><head><title>STEDT Account Creation</title>
+<meta http-equiv="Refresh" content="5; URL=[% c.query.url %]">
+</head><body>[% msg %]
+You will be redirected to the main page shortly. Or click this link:
+<a href="[% c.query.url %]">[% c.query.url | html %]</a>
+[% END -%]
+</body></html>

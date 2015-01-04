@@ -1,0 +1,83 @@
+﻿[% PROCESS header.tt title="STEDT Chapter " _ chap -%]
+<p>[Back to the <a href="[% self_url %]/chapters">Chapter Browser</a>]</p>[% # eventually replace this with links to as yet nonexistent "Volume Browser" and "Fascicle Browser" %]
+<h1>[% chap %] [% chaptitle %]</h1>
+[% IF c.has_privs(2) # if registered user, show note properties -%]
+<div id="allnotes" class="container">
+<p class="edit">
+[% IF c.has_privs(8) %]<label><input type="checkbox" value="off" class="reordcheckbox"[% IF notes.size < 2 %] disabled[% END %]>Drag to reorder</label>
+<a href="#" onclick="return showaddform('C','[% chap %]')">Add a note...</a>[% END %]
+</p>
+[% FOREACH n IN notes -%]
+[% PROCESS notes_chapter.tt -%]
+[% END -%]
+</div>
+[% ELSE # public user -%]
+[% FOREACH n IN notes -%]
+[% IF n.type == 'G' -%]
+<div><a href="[% self_base %]pdf/[% n.noteid %].pdf">
+<img src="http://docs.google.com/viewer?url=[% c.query.url.replace('[^/]+$', '') %]pdf/[% n.noteid %].pdf&a=bi&pagenumber=1">
+</a></div>
+[% ELSE -%]
+<p>[% n.text %]</p>
+[% END # notetype -%]
+[% END # foreach -%]
+[% END # registered user privs check -%]
+
+[% IF result.data.size -%]
+<h2>Etyma in this chapter</h2>
+<table id="etyma_resulttable" class="resizable hangindent" width="100%" style="table-layout:fixed;">
+<thead><tr>
+[%- FOREACH col IN result.fields %]
+<th id="[% col %]">
+[%- col.replace('^.*\.','') %]
+</th>
+[%- END %]
+</tr></thead>
+<tbody>
+[% FOREACH row IN result.data -%]
+<tr>
+[%- FOREACH s IN row -%]
+<td>[% s | html %]</td>
+[%- END -%]
+</tr>
+[% END -%]
+</tbody>
+</table>
+[% END -%]
+
+<br>
+[% FOREACH n IN footnotes -%]
+<div class="footnote[% IF n.super %] fnote-[% n.super %][% END %]" id="foot[% loop.count %]">
+<a href="#toof[% loop.count %]" class="left">^ [% loop.count %].</a> <div class="notepreview">[% n.text %]</div></div>
+[% END -%]
+
+[% IF c.has_privs(8) -%]
+[% PROCESS addnoteform.tt -%]
+[% END -%]
+
+<script src="[% self_base %]js/tbl/etyma.js"></script>
+<script>
+var footnote_counter = [% footnotes.size %];
+[% # hide some extraneous columns in chapter view -%]
+$w('u_recs o_recs etyma.exemplary etyma.chapter etyma.notes etyma.xrefs etyma.possallo etyma.allofams users.username etyma.semkey etyma.status etyma.prefix etyma.initial etyma.rhyme etyma.tone').each(function (col) {
+	setup['etyma'][col].hide = true;
+});
+setup['etyma']['etyma.protoform'].transform = function (v, key, rec, n) {
+						// if public field is 1, don't add 'provisional' note
+						if (rec[$('etyma.public').cellIndex] === '1') return v;
+						return v + ' <span style="color:red;">[provisional]</span>';
+				  	};
+setup['etyma']['etyma.public'] = {
+	noedit: !(stedtuserprivs & 16),
+	hide: !(stedtuserprivs & 16),
+	size: 15,
+};
+
+[% IF result.data.size # can't init the table if there's no data -%]
+TableKit.Raw.init('etyma_resulttable', 'etyma', setup['etyma'][% IF c.has_privs(8) %], '[% self_url %]/update'[% END %]);
+TableKit.Rows.stripe('etyma_resulttable');
+[% END -%]
+</script>
+<script src="[% self_base %]js/notes.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+[% PROCESS header.tt title="STEDT Database: Bulk Approval" %]
+<body>
+<p><b>Directions</b></p>
+<ul>
+<li>Enter or paste a list of one or more tags to be "bulk-approved".</li>
+<li>Select a user from the dropdown whose tagging for the tags in the list will be approved.</li>
+<li>Click the Approve button, wait for the list of approved tags to be drawn.</li>
+</ul>
+<hr/>
+<p>Tags to approve, separated by commas:</p>
+<p><textarea name="tags" id="tags" rows="15" cols="80"></textarea></p>
+<p><input type="button" value="Approve" onclick="approve_tags();"> <select id="uid" name="uid">
+[% FOREACH u IN users %]
+<option value="[% u.1 %]" [% IF selected_uid == u.1 %]selected[% END %] >[% u.0 %]</option>[% END -%]
+</select>
+</form>
+</body>
+<script>
+var baseRef = '../';
+function approve_tags() {
+	//var tagElement = document.getElementById('tags');
+	var tagstr = document.getElementById('tags').value;
+	var tags = tagstr.split(',');
+	var uid = document.getElementById('uid').value;
+	$(document.body).insert('<p><b>Results for user ' + uid + ':</b> </p><ol id="ajax1_results"></ol><ol id="ajax2_results"></ol>');
+	var cur_tag;
+	for(var i=0; i < tags.length; i++) {
+		cur_tag = tags[i]; 
+		$('ajax1_results').insert('<li>Sending: #'  + cur_tag + '...</li>');
+		new Ajax.Request(baseRef + 'tags/accept', {
+			method: 'get',
+			parameters: { 'tag' : cur_tag, 'uid' : uid },
+			onSuccess: function(transport){ $('ajax2_results').insert('<li>Done:  ' + transport.statusText); },
+			onFailure: function(transport){ $('ajax2_results').insert('<li>Error: ' + transport.responseText); }
+		});
+	}
+}
+</script>
+</html>

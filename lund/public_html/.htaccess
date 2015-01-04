@@ -1,0 +1,4 @@
+<FilesMatch "\.pm$">
+    Deny from all
+</FilesMatch>
+

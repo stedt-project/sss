@@ -1,0 +1,83 @@
+[% PROCESS header.tt title="STEDT Database (Beta)" vert_tog=1 %]
+<div id="etyma" class="vert">
+<div class="panetitle">Etyma</div>
+<div align="center">[% # search div %]
+<form id="etyma_search" method="post">
+<table>
+<tr><th>proto-form</th><th>proto-gloss</th></tr>
+<tr><td><input type="text" title="Type a proto-form" name="f" id="etyma_searchform" size="15" maxlength="128"></td>
+<td><input name="s" type="text" title="Type an English word" size="20" id="etyma_searchgloss" [% IF c.query.param('t').defined %] value="[% c.query.param('t') %]"[% END %] maxlength="128"></td>
+<td><input name="btn" type="submit" value="Search"></td></tr></table>
+[%- IF 0 && c.has_privs(16) %]<a href="#" onclick="return show_advanced_search('etyma')">Advanced Search</a>[% END %]
+</form>
+</div>
+<div id="etyma_status">[% etyma.data.size ? (etyma.data.size > 4 ? (etyma.data.size _ ' records found.') : '') : 'No records found.' %]</div>
+<div id="etyma_results"></div>
+[% IF etyma.data.size %]
+<table id="etyma_resulttable" class="hangindent sortable resizable[% IF c.has_privs(1) %] editable[% END %]" width="100%" style="table-layout:fixed;">
+<thead><tr>
+[%- FOREACH col IN etyma.fields %]
+<th id="[% col %]">[%- col.replace('^.*\.','') %]</th>
+[%- END %]
+</tr></thead>
+<tbody>
+[% FOREACH row IN etyma.data -%]
+<tr>
+[%- FOREACH s IN row -%]
+<td>[% s | html %]</td>
+[%- END -%]
+</tr>
+[% END # FOREACH row -%]
+</tbody>
+</table>
+[% END %]
+<div id="addform"></div>
+<div id="debug"></div>
+</div>
+
+<div id="dragger" class="vert"></div>
+
+<div id="lexicon" class="vert">
+<div class="panetitle"><b>Lexicon</b></div>
+<div align="center">
+<form id="lexicon_search" method="post">
+<table>
+<tr><th>form</th><th>gloss</th><th>language</th><th>language group</th></tr>
+<tr><td><input type="text" name="f" title="Type a linguistic form" id="lexicon_searchform" size="24" maxlength="128"></td>
+<td><input name="s" title="Type an English word" type="text" size="24" maxlength="128" id="lexicon_searchgloss"></td>
+<td><input name="lg" title="Type a language name" type="text" size="32" maxlength="96" id="lexicon_searchlg" ></td>
+<td><select name="lggrp" title="Choose a subgroup" id="lexicon_searchlggrp">
+<option selected="selected" value=""></option>
+[% FOREACH row IN grps -%]
+<option value="[% row.0 %]">[% row.0 %] [% row.1 %]</option>
+[% END -%]
+</select>
+</td>
+<td><input name="btn" type="submit" value="Search"><input type="button" name="clear" value="Clear" onclick="this.form.reset(); $('as-values-lg-auto').value='';jQuery('.as-selection-item').remove()"></td></tr></table>
+</form>
+</div>
+<div id="lexicon_status">[% lexicon.data.size ? (lexicon.data.size > 4 ? (lexicon.data.size _ ' records found.') : '') : 'No records found.' %]</div>
+<div id="lexicon_results"></div>
+[% IF lexicon.data.size %]
+<table id="lexicon_resulttable" class="hangindent sortable resizable[% IF c.has_privs(1) %] editable[% END %]" width="100%" style="table-layout:fixed;">
+<thead><tr>
+[%- FOREACH col IN lexicon.fields %]
+<th id="[% col %]">[%- col.replace('^.*\.','') %]</th>
+[%- END %]
+</tr></thead>
+<tbody>
+[% FOREACH row IN lexicon.data -%]
+<tr>
+[%- FOREACH s IN row -%]
+<td>[% s | html %]</td>
+[%- END -%]
+</tr>
+[% END # FOREACH row -%]
+</tbody>
+</table>
+[% END %]
+</div>
+
+<script src="[% self_base %]js/simplesearch.js"></script>
+</body>
+</html>

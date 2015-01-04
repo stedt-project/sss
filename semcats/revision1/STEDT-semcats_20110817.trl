@@ -1,0 +1,5572 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="STEDT-semcats_20110817.xsl"?>
+<ROOT item="y" tlversion="1.4.0"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y">STEDT Semantic Categorization</Name>
+<VOLUME item="y"
+line0="Volume {*Number_DWB*}: {*Label*}"
+line1="Volume {*Number_DWB*}: {*Label*}"
+line2="Cat1 (old): {*Semcat_old1*} {*V.F_old1*}/{*Chapter_old1*}"
+line3="Cat2 (old): {*Semcat_old2*} {*V.F_old2*}/{*Chapter_old2*}"
+line4="Note: {*Note*}"
+childtype="DEFAULT">
+<Number_DWB type="Text">1</Number_DWB>
+<Label type="Text">The Body</Label>
+<Num_auto type="Text"></Num_auto>
+<Semcat_old1 type="Text">Nbp</Semcat_old1>
+<V.F_old1 type="Text" ref="y">1a</V.F_old1>
+<Chapter_old1 type="Text"></Chapter_old1>
+<Note type="Text"></Note>
+<Semcat_old2 type="Text">Vbp</Semcat_old2>
+<V.F_old2 type="Text">1b</V.F_old2>
+<Chapter_old2 type="Text"></Chapter_old2>
+<DEFAULT item="y"
+line0="{*Number_DWB*} {*Label*}"
+line1="{*Number_DWB*}. {*Label*}"
+line2="Cat1 (old): {*Semcat_old1*} {*V.F_old1*}/{*Chapter_old1*}"
+line3="Cat2 (old): {*Semcat_old2*} {*V.F_old2*}/{*Chapter_old2*}"
+line4="Note: {*Note*}"
+childtype="DEFAULT">
+<Number_DWB type="Text">1.1</Number_DWB>
+<Label type="Text">Body Parts</Label>
+<Num_auto type="Text"></Num_auto>
+<Semcat_old1 type="Text">Nbp</Semcat_old1>
+<V.F_old1 type="Text" ref="y">1a</V.F_old1>
+<Chapter_old1 type="Text">1</Chapter_old1>
+<Note type="Text"></Note>
+<Semcat_old2 type="Text"></Semcat_old2>
+<V.F_old2 type="Text"></V.F_old2>
+<Chapter_old2 type="Text"></Chapter_old2>
+<DEFAULT item="y">
+<Number_DWB>1.1.1</Number_DWB>
+<Label>Body</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+<Semcat_old2>Vbp</Semcat_old2>
+<V.F_old2>1b</V.F_old2>
+<Chapter_old2>1.1</Chapter_old2>
+<DEFAULT item="y">
+<Number_DWB>1.1.1.1</Number_DWB>
+<Label>Flesh/Meat</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.1.2</Number_DWB>
+<Label>Lean (Meat)</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.1.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.2</Number_DWB>
+<Label>Born/Birth/Give Birth</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.2</Chapter_old1>
+<Note>moved to 9.2?</Note>
+<Semcat_old2>Vbp</Semcat_old2>
+<V.F_old2>1b</V.F_old2>
+<Chapter_old2>1.2</Chapter_old2>
+<DEFAULT item="y">
+<Number_DWB>1.1.2.1</Number_DWB>
+<Label>Life/Live/Alive</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.2.1</Chapter_old1>
+<Semcat_old2>Vbp</Semcat_old2>
+<V.F_old2>1b</V.F_old2>
+<Chapter_old2>1.2.1</Chapter_old2>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.2.2</Number_DWB>
+<Label>Breath/Breathe</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.2.2</Chapter_old1>
+<Semcat_old2>Vbp</Semcat_old2>
+<V.F_old2>1b</V.F_old2>
+<Chapter_old2>1.2.2</Chapter_old2>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.2.3</Number_DWB>
+<Label>Existence</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.2.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.2.3</Number_DWB>
+<Label>Be able</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.2.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.3</Number_DWB>
+<Label>Hungry</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.3</Chapter_old1>
+<Semcat_old2>Vbp</Semcat_old2>
+<V.F_old2>1b</V.F_old2>
+<Chapter_old2>1.3</Chapter_old2>
+<DEFAULT item="y">
+<Number_DWB>1.1.3.1</Number_DWB>
+<Label>Thirsty</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.3.1</Number_DWB>
+<Label>Be thirsty</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.3.2</Number_DWB>
+<Label>Satiated/Full</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.3.2</Number_DWB>
+<Label>Enough</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.4</Number_DWB>
+<Label>Wake/Conscious</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.4</Number_DWB>
+<Label>Alert</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.1.4.1</Number_DWB>
+<Label>Sleep</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.4.1</Number_DWB>
+<Label>Be asleep</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.4.2</Number_DWB>
+<Label>Dream</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.4.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.5</Number_DWB>
+<Label>Strength</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.5</Number_DWB>
+<Label>Get</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.5</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.1.5.1</Number_DWB>
+<Label>Sick/Hurt</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.5.1</Number_DWB>
+<Label>Ache</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.5.2</Number_DWB>
+<Label>Swollen/Swell</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.5.2</Number_DWB>
+<Label>Bloated</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.5.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.6</Number_DWB>
+<Label>Die</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.1.6</Number_DWB>
+<Label>Deathly</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>1.6</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.1.6.1</Number_DWB>
+<Label>Carcass/Dead Body</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.6.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2</Number_DWB>
+<Label>Head and Face</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.1</Number_DWB>
+<Label>Head</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.1</Number_DWB>
+<Label>Headed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.1.1</Number_DWB>
+<Label>Skull</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.1.2</Number_DWB>
+<Label>Crown/Pate</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.1.3</Number_DWB>
+<Label>Fontanel</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.1.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.1.4</Number_DWB>
+<Label>Caul</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.1.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.1.5</Number_DWB>
+<Label>Scalp</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.1.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.2</Number_DWB>
+<Label>Horn/Antler</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.2</Number_DWB>
+<Label>Horned</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.2.1</Number_DWB>
+<Label>Comb/Crest</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.2.2</Number_DWB>
+<Label>Comb (Hair)</Label>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.3</Number_DWB>
+<Label>Hair of Head</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.3</Number_DWB>
+<Label>Long-haired</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.3.1</Number_DWB>
+<Label>Cowlick/Flexure</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.3.2</Number_DWB>
+<Label>Queue/Braid</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.3.3</Number_DWB>
+<Label>Bald</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.3.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.3.3</Number_DWB>
+<Label>Bald</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.3.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.4</Number_DWB>
+<Label>Brain</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.5</Number_DWB>
+<Label>Face</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.5</Number_DWB>
+<Label>Bearded</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.5</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.5.1</Number_DWB>
+<Label>Forehead/Temples</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.5.2</Number_DWB>
+<Label>Jaw/Cheek</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.5.3</Number_DWB>
+<Label>Chin</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.5.4</Number_DWB>
+<Label>Dimple</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.5.5</Number_DWB>
+<Label>Beard/Moustache/Facial Hair</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.5.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6</Number_DWB>
+<Label>Eye</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6</Number_DWB>
+<Label>Eyed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.1</Number_DWB>
+<Label>Eyeball</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.2</Number_DWB>
+<Label>Iris/Pupil</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.2</Number_DWB>
+<Label>Dilate</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.3</Number_DWB>
+<Label>White of Eye</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.4</Number_DWB>
+<Label>Eyelid</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.5</Number_DWB>
+<Label>Eyelash</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.6</Number_DWB>
+<Label>Eyebrow</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.7</Number_DWB>
+<Label>Tears</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.7</Chapter_old1>
+<Note>also exists in 1.8.9.2</Note>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.7</Number_DWB>
+<Label>Watch</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6.7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.8</Number_DWB>
+<Label>Eye Sand</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.9</Number_DWB>
+<Label>See/Look</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.9</Number_DWB>
+<Label>Behold</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6.9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.10</Number_DWB>
+<Label>Blink/Wink</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.10</Number_DWB>
+<Label>Squint</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6.10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.11</Number_DWB>
+<Label>Eye Illness</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.11</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.11</Number_DWB>
+<Label>Cross-eyed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6.11</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.11.1</Number_DWB>
+<Label>Blind</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.6.11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.6.11.2</Number_DWB>
+<Label>Sty of Eye</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.7</Number_DWB>
+<Label>Ear</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.7</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.7.1</Number_DWB>
+<Label>Earlobe</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.7.2</Number_DWB>
+<Label>Eardrum</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.7.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.7.3</Number_DWB>
+<Label>Earwax</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.7.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.7.4</Number_DWB>
+<Label>Hear/Listen</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.7.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.7.4</Number_DWB>
+<Label>Audible</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.7.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.7.5</Number_DWB>
+<Label>Deaf</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.7.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.8</Number_DWB>
+<Label>Nose</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.8</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.2.8.1</Number_DWB>
+<Label>Nostril</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.8.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.8.2</Number_DWB>
+<Label>Alae Nasi</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.8.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.8.3</Number_DWB>
+<Label>Snout</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.8.4</Number_DWB>
+<Label>Snot: See Secretions</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.2.8.5</Number_DWB>
+<Label>Smell</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>2.8.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3</Number_DWB>
+<Label>Mouth and Throat</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.3.1</Number_DWB>
+<Label>Mouth</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.1</Number_DWB>
+<Label>Gape</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.3.1.1</Number_DWB>
+<Label>Palate</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.1.2</Number_DWB>
+<Label>Beak/Bill</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.1.3</Number_DWB>
+<Label>Yawn/Gape</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.1.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.1.4</Number_DWB>
+<Label>Blow</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.1.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.2</Number_DWB>
+<Label>Lip</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.3.2.1</Number_DWB>
+<Label>Suck/Suckle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.2.1</Number_DWB>
+<Label>Sucker</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.2.2</Number_DWB>
+<Label>Kiss</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.3</Number_DWB>
+<Label>Tongue</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.3.3.1</Number_DWB>
+<Label>Lick</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.3.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.4</Number_DWB>
+<Label>Tooth</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.3.4.1</Number_DWB>
+<Label>Eyetooth/Tusk/Canine Tooth</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.4.2</Number_DWB>
+<Label>Molar</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.4.3</Number_DWB>
+<Label>Gums</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.4.4</Number_DWB>
+<Label>Bite/Hold in Mouth</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.4.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.4.5</Number_DWB>
+<Label>Chew</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.4.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5</Number_DWB>
+<Label>Throat/Pharanx</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.1</Number_DWB>
+<Label>Uvula</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.2</Number_DWB>
+<Label>Windpipe/Trachea</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.3</Number_DWB>
+<Label>Gill</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.4</Number_DWB>
+<Label>Adam's Apple/Larynx</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.5</Number_DWB>
+<Label>Gullet/Esophagus</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.6</Number_DWB>
+<Label>Swallow</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.6</Number_DWB>
+<Label>Choke</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.5.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.7</Number_DWB>
+<Label>Eat/Devour</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.5.7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.8</Number_DWB>
+<Label>Drink</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>3.5.8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.3.5.8</Number_DWB>
+<Label>Drunkedness</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>3.5.8</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4</Number_DWB>
+<Label>Torso</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.1</Number_DWB>
+<Label>Torso/Trunk</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.2</Number_DWB>
+<Label>Neck</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.2</Number_DWB>
+<Label>Neck-shaped</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>4.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.2.1</Number_DWB>
+<Label>Nape of Neck</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.2.2</Number_DWB>
+<Label>Goiter</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.3</Number_DWB>
+<Label>Shoulder</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.3</Number_DWB>
+<Label>Carry on shoulder</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>4.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.3.1</Number_DWB>
+<Label>Collarbone/Clavicle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.3.2</Number_DWB>
+<Label>Shoulderblade/Scapula</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.4</Number_DWB>
+<Label>Front</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.4.1</Number_DWB>
+<Label>Bosom/Lap</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.4.1</Number_DWB>
+<Label>Folded</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>4.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.4.2</Number_DWB>
+<Label>Chest</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.4.3</Number_DWB>
+<Label>Ribs/Ribcage</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.4.4</Number_DWB>
+<Label>Chest Hair</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.4.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.5</Number_DWB>
+<Label>Sides</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.6</Number_DWB>
+<Label>Waist</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.7</Number_DWB>
+<Label>Belly/Abdomen</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.8</Number_DWB>
+<Label>Back</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.8</Number_DWB>
+<Label>Spinal</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>4.8</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.8.1</Number_DWB>
+<Label>Lower Back/Small of Back</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.8.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.8.2</Number_DWB>
+<Label>Spine/Backbone</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.8.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.8.3</Number_DWB>
+<Label>Hunchback</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.8.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.8.3</Number_DWB>
+<Label>Crouch</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>4.8.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.9</Number_DWB>
+<Label>Loins/Groin</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.9</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.9.1</Number_DWB>
+<Label>Crotch/Fork</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.9.2</Number_DWB>
+<Label>Hips/Pelvis/Haunches</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.9.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.10</Number_DWB>
+<Label>Buttocks/Rump</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.10</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.4.10.1</Number_DWB>
+<Label>Tail</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.10.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.10.1</Number_DWB>
+<Label>Short-tailed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>4.10.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.4.10.2</Number_DWB>
+<Label>Anus/Rectum</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>4.10.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5</Number_DWB>
+<Label>Limbs, Joints, &amp; Body Measures</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.1</Number_DWB>
+<Label>Hand</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.1</Number_DWB>
+<Label>Four-handed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>5.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.1.1</Number_DWB>
+<Label>Fist</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.1.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.2</Number_DWB>
+<Label>Foot</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.2</Number_DWB>
+<Label>Footed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>5.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.2.1</Number_DWB>
+<Label>Heel</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.2.2</Number_DWB>
+<Label>Instep</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.2.3</Number_DWB>
+<Label>Arch</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.2.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.2.4</Number_DWB>
+<Label>Ball of Foot</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.2.5</Number_DWB>
+<Label>Footprint</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.2.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.3</Number_DWB>
+<Label>Hands and Feet/Arms and Legs</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.3</Number_DWB>
+<Label>Bandy-legged</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>5.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.3.1</Number_DWB>
+<Label>Limb/Branch</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.3.2</Number_DWB>
+<Label>Five</Label>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.4</Number_DWB>
+<Label>Paw</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.5</Number_DWB>
+<Label>Hoof</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.6</Number_DWB>
+<Label>Palm/Sole</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.7</Number_DWB>
+<Label>Finger/Toe</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.7</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.7.1</Number_DWB>
+<Label>Thumb/Big Toe</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.7.2</Number_DWB>
+<Label>Other Specific Digits</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.7.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.7.3</Number_DWB>
+<Label>Fingerprint</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.7.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.8</Number_DWB>
+<Label>Arm</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.8</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.8.1</Number_DWB>
+<Label>Bicep/Upper Arm</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.8.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.8.2</Number_DWB>
+<Label>Forearm</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.8.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.8.3</Number_DWB>
+<Label>Underarm/Armpit</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.8.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.8.4</Number_DWB>
+<Label>Tickle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.8.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.9</Number_DWB>
+<Label>Leg</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.9</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.9.1</Number_DWB>
+<Label>Thigh</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.9.2</Number_DWB>
+<Label>Shin/Tibia</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.9.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.9.3</Number_DWB>
+<Label>Calf</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.9.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.9.4</Number_DWB>
+<Label>Lower Leg</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.10</Number_DWB>
+<Label>Wing</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.10</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.10.1</Number_DWB>
+<Label>Fin</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.10.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.11</Number_DWB>
+<Label>Joint</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.11</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.11.1</Number_DWB>
+<Label>Wrist</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.11.2</Number_DWB>
+<Label>Ankle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.11.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.11.3</Number_DWB>
+<Label>Elbow</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.11.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.11.4</Number_DWB>
+<Label>Knee</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.11.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.11.4</Number_DWB>
+<Label>Knee-deep</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>5.11.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.11.5</Number_DWB>
+<Label>Knuckle/Phalanx</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.11.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.12</Number_DWB>
+<Label>Right</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.13</Number_DWB>
+<Label>Left</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.14</Number_DWB>
+<Label>Cubit</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.14</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.15</Number_DWB>
+<Label>Span/Handspan</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.15</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.16</Number_DWB>
+<Label>Fathom/Cord</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.16</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.17</Number_DWB>
+<Label>Nail</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.17</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.5.17.1</Number_DWB>
+<Label>Fingernail</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.17.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.17.2</Number_DWB>
+<Label>Toenail</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.17.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.17.3</Number_DWB>
+<Label>Cuticle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.17.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.17.4</Number_DWB>
+<Label>Claw/Talon/Pincer</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.17.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.18</Number_DWB>
+<Label>Numb/Paralyzed</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.18</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.18</Number_DWB>
+<Label>Paralysed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>5.18</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.19</Number_DWB>
+<Label>Lame/Limp</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>5.19</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.5.19</Number_DWB>
+<Label>Lame</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>5.19</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6</Number_DWB>
+<Label>Diffuse Organs</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.1</Number_DWB>
+<Label>Body Hair/Fur</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.1</Number_DWB>
+<Label>Bristle</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.1.1</Number_DWB>
+<Label>Feather</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.1.2</Number_DWB>
+<Label>Mane</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.1.3</Number_DWB>
+<Label>Wool</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.2</Number_DWB>
+<Label>Blood/Bleed</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.2</Number_DWB>
+<Label>Bleed</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.2.1</Number_DWB>
+<Label>Blood Vessel/Vein/Artery</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.2.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.3</Number_DWB>
+<Label>Bone</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.3.1</Number_DWB>
+<Label>Skeleton</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.3.2</Number_DWB>
+<Label>Breastbone/Sternum</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.3.3</Number_DWB>
+<Label>Spine/Backbone</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.3.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.3.4</Number_DWB>
+<Label>Cartilage/Gristle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.3.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.3.5</Number_DWB>
+<Label>Marrow</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.3.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.4</Number_DWB>
+<Label>Fat</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.4</Number_DWB>
+<Label>Chubby</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.4.1</Number_DWB>
+<Label>Oil/Grease</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.4.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5</Number_DWB>
+<Label>Skin</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5</Number_DWB>
+<Label>Molt</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.5</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.1</Number_DWB>
+<Label>Hide/Leather</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.2</Number_DWB>
+<Label>Scale (of fish, snake)</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.3</Number_DWB>
+<Label>Skin Blemish/Freckle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.3</Number_DWB>
+<Label>Blistered</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.5.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.3.1</Number_DWB>
+<Label>Boil (n.)</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.4</Number_DWB>
+<Label>Itch/Scratch</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.5.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.5.4</Number_DWB>
+<Label>Itching</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.5.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.6</Number_DWB>
+<Label>Obscure Internal Channels</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.6</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.6.6.1</Number_DWB>
+<Label>Sinew/Tendon/Ligament</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.6.2</Number_DWB>
+<Label>Muscle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.6.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.6.2</Number_DWB>
+<Label>Cramped</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>6.6.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.6.3</Number_DWB>
+<Label>Nerve</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.6.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.6.6.4</Number_DWB>
+<Label>Lymph</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>6.6.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7</Number_DWB>
+<Label>Internal Organs</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.1</Number_DWB>
+<Label>Heart</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.1.1</Number_DWB>
+<Label>Heartbeat/Pulse</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.1.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.2</Number_DWB>
+<Label>Lung</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.2.1</Number_DWB>
+<Label>Tuberculosis</Label>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.3</Number_DWB>
+<Label>Liver</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.3.1</Number_DWB>
+<Label>Gall/Bile</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.3.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.4</Number_DWB>
+<Label>Spleen</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.4.1</Number_DWB>
+<Label>Swollen Spleen</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.5</Number_DWB>
+<Label>Kidney</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.6</Number_DWB>
+<Label>Stomach</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.6</Number_DWB>
+<Label>Digest</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>7.6</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.6.1</Number_DWB>
+<Label>Gizzard/Crop</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.6.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.7</Number_DWB>
+<Label>Intestines/Bowels/Guts</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.7</Number_DWB>
+<Label>Constipated</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>7.7</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.7.7.1</Number_DWB>
+<Label>Appendix</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.7.2</Number_DWB>
+<Label>Pancreas</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.7.8</Number_DWB>
+<Label>Bladder</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>7.8</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8</Number_DWB>
+<Label>Secretions and Somatophonics</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.2</Number_DWB>
+<Label>Sweat</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.2</Number_DWB>
+<Label>Perspire</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.2.1</Number_DWB>
+<Label>Pore</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.2.2</Number_DWB>
+<Label>Body Dirt</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.3</Number_DWB>
+<Label>Snot/Nasal Mucus</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.3.1</Number_DWB>
+<Label>Sneeze</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.3.2</Number_DWB>
+<Label>Snore</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.4</Number_DWB>
+<Label>Spit/Saliva</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.4.1</Number_DWB>
+<Label>Phlegm</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.4.2</Number_DWB>
+<Label>Vomit</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.4.3</Number_DWB>
+<Label>Cough</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.4.4</Number_DWB>
+<Label>Belch/Burp</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.4.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.4.5</Number_DWB>
+<Label>Hiccup</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.4.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.5</Number_DWB>
+<Label>Urine/Piss</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.6</Number_DWB>
+<Label>Feces/Shit/Dung/Filth/Excrement</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.6</Number_DWB>
+<Label>Defecate</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.6</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.6.1</Number_DWB>
+<Label>Meconium</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.6.2</Number_DWB>
+<Label>Fart</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.6.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.6.2</Number_DWB>
+<Label>Flatulate</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.6.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.7</Number_DWB>
+<Label>Pus/Gleet</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.7</Number_DWB>
+<Label>Discharge</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.7</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.7.1</Number_DWB>
+<Label>Abcess/Ulcer</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.7.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.8</Number_DWB>
+<Label>Speak/Say/Tell</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.8</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.8.1</Number_DWB>
+<Label>Mute/Dumb</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.8.2</Number_DWB>
+<Label>Stutter/Stammer</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.8.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.9</Number_DWB>
+<Label>Laugh/Smile</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>8.9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.9</Number_DWB>
+<Label>Chuckle</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.9</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.8.9.1</Number_DWB>
+<Label>Cry/Weep</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.9.2</Number_DWB>
+<Label>Tears</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>2.6.7</Chapter_old1>
+<Note>also exists in 1.2.6.7</Note>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.9.3</Number_DWB>
+<Label>Whistle</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.8.9.4</Number_DWB>
+<Label>Bark (of dog)</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>8.9.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9</Number_DWB>
+<Label>Reproduce</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9</Number_DWB>
+<Label>Reproductive System</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.1</Number_DWB>
+<Label>Egg</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.1.1</Number_DWB>
+<Label>Bred</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.3.3</Number_DWB>
+<Label>Brood on egg</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.3.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.2</Number_DWB>
+<Label>Birth</Label>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>1.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.2.1.1</Number_DWB>
+<Label>Circumcise</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.2.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.2.2</Number_DWB>
+<Label>Sterile</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.2.2.4</Number_DWB>
+<Label>Castrate</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.2.2.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.3</Number_DWB>
+<Label>Navel</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.3.1</Number_DWB>
+<Label>Umbilical Cord</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.4.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.4</Number_DWB>
+<Label>Breast</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.4.1</Number_DWB>
+<Label>Milk</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.4.2</Number_DWB>
+<Label>Wean</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.5</Number_DWB>
+<Label>Vagina</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.5.1</Number_DWB>
+<Label>Vulva/Labia</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.5.2</Number_DWB>
+<Label>Clitoris</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.6</Number_DWB>
+<Label>Womb</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.6.1</Number_DWB>
+<Label>Pregnant</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.6.2</Number_DWB>
+<Label>Amniotic sac/Amniotic fluid</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.6.3</Number_DWB>
+<Label>Placenta/Afterbirth</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.3.4.1</Number_DWB>
+<Label>Barren</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.3.4.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.7</Number_DWB>
+<Label>Penis</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.7.1</Number_DWB>
+<Label>Testicle</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.7.2</Number_DWB>
+<Label>Scrotum/Pouch</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.7.3</Number_DWB>
+<Label>Foreskin/Prepuce</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.7.4</Number_DWB>
+<Label>Glans penis</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.1.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.8</Number_DWB>
+<Label>Copulate</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.9</Number_DWB>
+<Label>Body Fluids</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.9.1</Number_DWB>
+<Label>Sperm/Semen</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.9.2</Number_DWB>
+<Label>Ejaculate</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.2.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Genitals/Pudenda</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Menstruation</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.3.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>1.9.3.4</Number_DWB>
+<Label>Menstrual</Label>
+<Semcat_old1>Vbp</Semcat_old1>
+<V.F_old1>1b</V.F_old1>
+<Chapter_old1>9.3.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Female</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Female Pubic Hair</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.3.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Male</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Male Pubic Hair</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>9.2.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.9.x</Number_DWB>
+<Label>Other Reproductive System</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>1.10</Number_DWB>
+<Label>Mind</Label>
+<Semcat_old1>Nbp</Semcat_old1>
+<V.F_old1>1a</V.F_old1>
+<Chapter_old1>10</Chapter_old1>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>2</Number_DWB>
+<Label>Animals and Animal Verbs</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>2.1</Number_DWB>
+<Label>Animals</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>2.1.1</Number_DWB>
+<Label>Bovine</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.2</Number_DWB>
+<Label>Equine</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.3</Number_DWB>
+<Label>Porcine</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.4</Number_DWB>
+<Label>Ovine and Hircine</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.5</Number_DWB>
+<Label>Pachyderms</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.6</Number_DWB>
+<Label>Canine</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.7</Number_DWB>
+<Label>Feline</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.8</Number_DWB>
+<Label>Cervidae</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.9</Number_DWB>
+<Label>Ursine</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.10</Number_DWB>
+<Label>Simian</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.11</Number_DWB>
+<Label>Birds (in general)</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>11</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>2.1.11.1</Number_DWB>
+<Label>Fowl (i.e. Domestic Birds)</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.11.2</Number_DWB>
+<Label>Particular birds</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>11.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.12</Number_DWB>
+<Label>Reptiles and amphibians</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>12</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.13</Number_DWB>
+<Label>Fish &amp; Mollusks</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>13</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.14</Number_DWB>
+<Label>Insects, Arachnids, &amp; Worm</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>14</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.15</Number_DWB>
+<Label>Other Mammals</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>15</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.16</Number_DWB>
+<Label>Rodents and Lagomorphs</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>16</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.17</Number_DWB>
+<Label>Mythical animals</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>17</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.1.18</Number_DWB>
+<Label>Associated Animal Terms</Label>
+<Semcat_old1>Nanim</Semcat_old1>
+<V.F_old1>2a.1</V.F_old1>
+<Chapter_old1>18</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.2</Number_DWB>
+<Label>Animate verbs</Label>
+<Semcat_old1>Vanim</Semcat_old1>
+<V.F_old1>2a.2</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>2.2.1</Number_DWB>
+<Label>Caponize</Label>
+<Semcat_old1>Vanim</Semcat_old1>
+<V.F_old1>2a.2</V.F_old1>
+<Chapter_old1>11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.2.2</Number_DWB>
+<Label>Sting</Label>
+<Semcat_old1>Vanim</Semcat_old1>
+<V.F_old1>2a.2</V.F_old1>
+<Chapter_old1>14</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>2.2.3</Number_DWB>
+<Label>Animal Qualities</Label>
+<Semcat_old1>Vanim</Semcat_old1>
+<V.F_old1>2a.2</V.F_old1>
+<Chapter_old1>18</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>3</Number_DWB>
+<Label>Natural Objects, Plants, Foods</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>3.1</Number_DWB>
+<Label>Plants</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>3.1.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>3.1.1.1</Number_DWB>
+<Label>Names of trees and shrubs</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.1.2</Number_DWB>
+<Label>Plant parts and types</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>1.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.1</Number_DWB>
+<Label>Seeds and flowers, nuts</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.2</Number_DWB>
+<Label>Fruits and vegetables</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.2.1</Number_DWB>
+<Label>Leafy vegetables</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.2.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.3</Number_DWB>
+<Label>Extracts and processed forms</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.3.1</Number_DWB>
+<Label>Spices</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.3.2</Number_DWB>
+<Label>Other ground and milled food</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.3.3</Number_DWB>
+<Label>Juices, beers, etc.</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.3.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.3.4</Number_DWB>
+<Label>Building, Non-edible</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.3.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.3.4</Number_DWB>
+<Label>Leaves</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>3.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.4</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>3.1.4.1</Number_DWB>
+<Label>Fungi</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.4.2</Number_DWB>
+<Label>Other wild plants</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>4.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.5</Number_DWB>
+<Label>Vegetative/Agricultural activity</Label>
+<Semcat_old1>Nveg</Semcat_old1>
+<V.F_old1>2b.1</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.1.6</Number_DWB>
+<Label>Verbs involving plants</Label>
+<Semcat_old1>Vveg</Semcat_old1>
+<V.F_old1>2b.2</V.F_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3</Number_DWB>
+<Label>Natural Objects</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>3.3.1</Number_DWB>
+<Label>Weather and seasons</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.3</Number_DWB>
+<Label>Planets/Meteorological objects/Sky</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.4</Number_DWB>
+<Label>Water and other liquids</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.5</Number_DWB>
+<Label>Elements, metals, alloys</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.6</Number_DWB>
+<Label>Landforms and geographical features</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.7</Number_DWB>
+<Label>Natural disasters</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.8</Number_DWB>
+<Label>Cracks/Chasms/Crevices</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.9</Number_DWB>
+<Label>Organic matter/Organic compounds</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.10</Number_DWB>
+<Label>Rocks and minerals</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.11</Number_DWB>
+<Label>Light or lack of light</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>11</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.3.12</Number_DWB>
+<Label>Ground/Earth/Soil/Dirt</Label>
+<Semcat_old1>Nnat</Semcat_old1>
+<V.F_old1>2c.1</V.F_old1>
+<Chapter_old1>12</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.4</Number_DWB>
+<Label>Burn, illuminate</Label>
+<Semcat_old1>Vburn</Semcat_old1>
+<V.F_old1>2c.2</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>3.4.1</Number_DWB>
+<Label>Objects associated with fire</Label>
+<Semcat_old1>Nfire</Semcat_old1>
+<V.F_old1>2c.3</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.4.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.4.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>3.4.3.1</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.4.3.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>3.4.3.3</Number_DWB>
+<Label>Fire, flames, and burnt things</Label>
+<Semcat_old1>Nfire</Semcat_old1>
+<V.F_old1>2c.3</V.F_old1>
+<Chapter_old1>3.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>4</Number_DWB>
+<Label>Kinship Terms, Ethnonyms, Social Roles</Label>
+<DEFAULT item="y">
+<Number_DWB>4.1</Number_DWB>
+<Label>Ethnonyms/Place names</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>4.1.1</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.2</Number_DWB>
+<Label>Pronouns</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3</Number_DWB>
+<Label>Roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1</Number_DWB>
+<Label>Occupations</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.1</Number_DWB>
+<Label>Agriculture/Husbandry/Hunting</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.2</Number_DWB>
+<Label>Commercial Roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.3</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.4</Number_DWB>
+<Label>Artists and Artisans</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.5</Number_DWB>
+<Label>Health-care</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.6</Number_DWB>
+<Label>Ceremonial</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.1.7</Number_DWB>
+<Label>General</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.1.7</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.2</Number_DWB>
+<Label>Teacher-Student roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.3.3</Number_DWB>
+<Label>General roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>3.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.4</Number_DWB>
+<Label>Religious Roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.5</Number_DWB>
+<Label>Nobility</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>4.1.5.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>4.1.5.1.1</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.5.1.2</Number_DWB>
+<Label>Titles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>5.1.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.5.2</Number_DWB>
+<Label>Civil leaders</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.5.3</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.5.4</Number_DWB>
+<Label>Owners</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>5.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.6</Number_DWB>
+<Label>Military roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.7</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>4.1.7.1</Number_DWB>
+<Label>Challenged</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.7.2</Number_DWB>
+<Label>Marital roles</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>7.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.8</Number_DWB>
+<Label>Sporting</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.9</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>4.1.9.1</Number_DWB>
+<Label>Stages of growth</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.9.2</Number_DWB>
+<Label>People</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>9.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.10</Number_DWB>
+<Label>Servants</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.11</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>4.1.11.1</Number_DWB>
+<Label>Criminals</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.11.2</Number_DWB>
+<Label>Scary things</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>11.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.11.3</Number_DWB>
+<Label>Insulting names</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>11.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.12</Number_DWB>
+<Label>Groups</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>12</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>4.1.12.1</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.12.2</Number_DWB>
+<Label>Clans and neighbors</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>12.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.12.3</Number_DWB>
+<Label>Outsiders</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>12.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.12.4</Number_DWB>
+<Label>Friends and Acquaintances</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>12.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.1.13</Number_DWB>
+<Label>Other Collective terms</Label>
+<Semcat_old1>Nhum</Semcat_old1>
+<V.F_old1>3a</V.F_old1>
+<Chapter_old1>13</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.2</Number_DWB>
+<Label>Kinship Terms</Label>
+<Semcat_old1>Nkin</Semcat_old1>
+<V.F_old1>3b</V.F_old1>
+<Chapter_old1>0</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>4.2.1</Number_DWB>
+<Label>Previous generation</Label>
+<Semcat_old1>Nkin</Semcat_old1>
+<V.F_old1>3b</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.2.2</Number_DWB>
+<Label>Same generation</Label>
+<Semcat_old1>Nkin</Semcat_old1>
+<V.F_old1>3b</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.2.3</Number_DWB>
+<Label>Later generation</Label>
+<Semcat_old1>Nkin</Semcat_old1>
+<V.F_old1>3b</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.2.4</Number_DWB>
+<Label>Related by marriage</Label>
+<Semcat_old1>Nkin</Semcat_old1>
+<V.F_old1>3b</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>4.2.5</Number_DWB>
+<Label>General</Label>
+<Semcat_old1>Nkin</Semcat_old1>
+<V.F_old1>3b</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>5</Number_DWB>
+<Label>Culture, Artifacts, Religion</Label>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Waste products</Label>
+<Semcat_old1>Nwast</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Writing Implements</Label>
+<Semcat_old1>Nwrit</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.1</Number_DWB>
+<Label>Diseases</Label>
+<Semcat_old1>Nmed</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.2</Number_DWB>
+<Label>Instruments and therapies</Label>
+<Semcat_old1>Nmed</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.2</Number_DWB>
+<Label>Cooking Implements</Label>
+<Semcat_old1>Ncook</Semcat_old1>
+<V.F_old1>9b</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.2</Number_DWB>
+<Label>Culinary nouns</Label>
+<Semcat_old1>Nfood</Semcat_old1>
+<V.F_old1>9b</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.2</Number_DWB>
+<Label>Culinary verbs</Label>
+<Semcat_old1>Vfood</Semcat_old1>
+<V.F_old1>9b</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6</Number_DWB>
+<Label>Religion</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>5.6.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>5.6.1.1</Number_DWB>
+<Label>Deities/Spiritual Beings</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.1.2</Number_DWB>
+<Label>Spiritual Beings</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.1.3</Number_DWB>
+<Label>General/Other Religious</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>5.6.2.1</Number_DWB>
+<Label>Occupations</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.2.2</Number_DWB>
+<Label>Group appellation</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.2.3</Number_DWB>
+<Label>Religious persons/things</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>2.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>5.6.3.1</Number_DWB>
+<Label>Religious Events</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.3.2</Number_DWB>
+<Label>Magical</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.6.4</Number_DWB>
+<Label>Heaven/Hell</Label>
+<Semcat_old1>Nrel</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.7</Number_DWB>
+<Label>Monetary Tems</Label>
+<Semcat_old1>N$</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.7</Number_DWB>
+<Label>Items of Culture</Label>
+<Semcat_old1>Ncult</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.8</Number_DWB>
+<Label>Artifacts (unclassified as yet)</Label>
+<Semcat_old1>Nart</Semcat_old1>
+<V.F_old1>9f</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Containers</Label>
+<Semcat_old1>Ncont</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Conveyances</Label>
+<Semcat_old1>Nconv</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Musical objects</Label>
+<Semcat_old1>Nmus</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Rope</Label>
+<Semcat_old1>Nrope</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Tools</Label>
+<Semcat_old1>Ntool</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>5.1.1</Number_DWB>
+<Label>Agricultural use</Label>
+<Semcat_old1>Ntool</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.2</Number_DWB>
+<Label>Home/Non-specialized use</Label>
+<Semcat_old1>Ntool</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.3</Number_DWB>
+<Label>Cutting/Boring</Label>
+<Semcat_old1>Ntool</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.4</Number_DWB>
+<Label>Workshop use/Equipment</Label>
+<Semcat_old1>Ntool</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.5</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1.6</Number_DWB>
+<Label>Equipment</Label>
+<Semcat_old1>Ntool</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.1</Number_DWB>
+<Label>Textile</Label>
+<Semcat_old1>Ntxtl</Semcat_old1>
+<V.F_old1>9a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3</Number_DWB>
+<Label>Ornaments</Label>
+<Semcat_old1>Norn</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3</Number_DWB>
+<Label>Ornamentation</Label>
+<Semcat_old1>Vorn</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>5.3.1</Number_DWB>
+<Label>Footwear</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>5.3.2.1</Number_DWB>
+<Label>Clothes (general)</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>5.3.2.1.1</Number_DWB>
+<Label>Head</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>2.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.2.1.2</Number_DWB>
+<Label>Upper body</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>2.1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.2.1.3</Number_DWB>
+<Label>Lower body</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>2.1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.2.2</Number_DWB>
+<Label>Special clothes and equipment</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.2.3</Number_DWB>
+<Label>Parts of clothing</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>2.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.3</Number_DWB>
+<Label>Jewelry and Accessories</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.3.4</Number_DWB>
+<Label>Toiletries</Label>
+<Semcat_old1>Npers</Semcat_old1>
+<V.F_old1>3c</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4</Number_DWB>
+<Label>Dwellings</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>5.4.1</Number_DWB>
+<Label>Kinds of dwellings</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4.2</Number_DWB>
+<Label>Rooms</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4.3</Number_DWB>
+<Label>Parts of the structure</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>5.4.3.1</Number_DWB>
+<Label>Internal</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4.3.2</Number_DWB>
+<Label>External</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4.4</Number_DWB>
+<Label>Furnishings</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4.5</Number_DWB>
+<Label>Outdoor/Temporary structures</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4.6</Number_DWB>
+<Label>General</Label>
+<Semcat_old1>Ndwel</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.4</Number_DWB>
+<Label>Fasteners</Label>
+<Semcat_old1>Nfast</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.5</Number_DWB>
+<Label>Construction</Label>
+<Semcat_old1>Ncstr</Semcat_old1>
+<V.F_old1>9c</V.F_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.9</Number_DWB>
+<Label>Leisure</Label>
+<Semcat_old1>Nleis</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.9</Number_DWB>
+<Label>Social interactions</Label>
+<Semcat_old1>Nsoc</Semcat_old1>
+<V.F_old1>9d</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.10</Number_DWB>
+<Label>Husbandry</Label>
+<Semcat_old1>Nhusb</Semcat_old1>
+<V.F_old1>9e</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>5.10</Number_DWB>
+<Label>War and violence</Label>
+<Semcat_old1>Nwar</Semcat_old1>
+<V.F_old1>9e</V.F_old1>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>6</Number_DWB>
+<Label>Verbs of Motion, of Manipulation, and of Production</Label>
+<DEFAULT item="y">
+<Number_DWB>6.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.1.1</Number_DWB>
+<Label>Affect</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.1</Number_DWB>
+<Label>To do/act</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.1.2</Number_DWB>
+<Label>Redo, repeat</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.1.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.3</Number_DWB>
+<Label>Play</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.4</Number_DWB>
+<Label>Lie</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.4.1</Number_DWB>
+<Label>Sit</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.4.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.4.2.1</Number_DWB>
+<Label>Sprawl</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.4.2.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.4.4</Number_DWB>
+<Label>Fall</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.4.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.5</Number_DWB>
+<Label>Hang</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.1.1.6</Number_DWB>
+<Label>Wait</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>1.6</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2</Number_DWB>
+<Label>Action Verbs with Patient</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>6.2.1</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.1</Number_DWB>
+<Label>Assorted action verbs</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.2</Number_DWB>
+<Label>Move an object</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.2.1</Number_DWB>
+<Label>Carry</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.2.3</Number_DWB>
+<Label>Bring</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.2.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.3.1</Number_DWB>
+<Label>Push</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.3.2</Number_DWB>
+<Label>Pull</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.3.4</Number_DWB>
+<Label>Kick</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.3.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.4</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.5</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.5.1</Number_DWB>
+<Label>Clear</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.5.2</Number_DWB>
+<Label>Wash (v.i./v.t.)</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.5.3</Number_DWB>
+<Label>Sweep</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.5.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.6.1</Number_DWB>
+<Label>Open</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.6.2</Number_DWB>
+<Label>Close</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.6.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.7</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.7.1</Number_DWB>
+<Label>Use</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.7.2</Number_DWB>
+<Label>Practice</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.7.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.8</Number_DWB>
+<Label>Show</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.9</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.9.1</Number_DWB>
+<Label>Write</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.9.2</Number_DWB>
+<Label>Draw</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.9.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.2.2.9.3</Number_DWB>
+<Label>Read</Label>
+<Semcat_old1>Vact</Semcat_old1>
+<V.F_old1>4a</V.F_old1>
+<Chapter_old1>2.9.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.3</Number_DWB>
+<Label>Friction</Label>
+<Semcat_old1>Vrub</Semcat_old1>
+<V.F_old1>4a.2</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.4</Number_DWB>
+<Label>Harm</Label>
+<Semcat_old1>Vharm</Semcat_old1>
+<V.F_old1>4b.1</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.4</Number_DWB>
+<Label>Fighting</Label>
+<Semcat_old1>Vfigh</Semcat_old1>
+<V.F_old1>4b.2</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.5</Number_DWB>
+<Label>Verbs requiring liquids</Label>
+<Semcat_old1>Vliq</Semcat_old1>
+<V.F_old1>4b.3</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>6.5.5</Number_DWB>
+<Label>Float</Label>
+<Semcat_old1>Vliq</Semcat_old1>
+<V.F_old1>4b.3</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.5.9</Number_DWB>
+<Label>Dissolve</Label>
+<Semcat_old1>Vliq</Semcat_old1>
+<V.F_old1>4b.3</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.6.1</Number_DWB>
+<Label>Inward</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.2</Number_DWB>
+<Label>Outward</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.3</Number_DWB>
+<Label>Awkwardly, Irregularly</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.4</Number_DWB>
+<Label>Regular, Cyclic, Smoothly</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.5</Number_DWB>
+<Label>Medium Primary (e.g. air)</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.6</Number_DWB>
+<Label>Circularly</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.7</Number_DWB>
+<Label>Up, etc.</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.8</Number_DWB>
+<Label>Downward</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.9</Number_DWB>
+<Label>Manner is primary</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.10</Number_DWB>
+<Label>Move with something else</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.6.11</Number_DWB>
+<Label>Movement (general)</Label>
+<Semcat_old1>Vmot</Semcat_old1>
+<V.F_old1>4b.4</V.F_old1>
+<Chapter_old1>11</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.7</Number_DWB>
+<Label>Striking, hitting verbs</Label>
+<Semcat_old1>Vhit</Semcat_old1>
+<V.F_old1>4c.1</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.8</Number_DWB>
+<Label>Undoing</Label>
+<Semcat_old1>Vundo</Semcat_old1>
+<V.F_old1>4c.5</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>6.8.1</Number_DWB>
+<Label>Carve, shave</Label>
+<Semcat_old1>Vcut</Semcat_old1>
+<V.F_old1>4c.4</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.8.2</Number_DWB>
+<Label>Chop, slice</Label>
+<Semcat_old1>Vcut</Semcat_old1>
+<V.F_old1>4c.4</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.8.3</Number_DWB>
+<Label>Mince, shred</Label>
+<Semcat_old1>Vcut</Semcat_old1>
+<V.F_old1>4c.4</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.9</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.9.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.9.1.1</Number_DWB>
+<Label>Unintentional loss -Misplace</Label>
+<Semcat_old1>Vsep</Semcat_old1>
+<V.F_old1>4c.7</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.9.1.2</Number_DWB>
+<Label>Intentional loss - Abandon</Label>
+<Semcat_old1>Vsep</Semcat_old1>
+<V.F_old1>4c.7</V.F_old1>
+<Chapter_old1>1.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.10</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.10.1</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.10.2</Number_DWB>
+<Label>Wide separation - Scatter</Label>
+<Semcat_old1>Vsep</Semcat_old1>
+<V.F_old1>4c.7</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.10.3</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.10.4</Number_DWB>
+<Label>Intentional separation - Sort</Label>
+<Semcat_old1>Vsep</Semcat_old1>
+<V.F_old1>4c.7</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.11</Number_DWB>
+<Label>Digging, excavation</Label>
+<Semcat_old1>Vdig</Semcat_old1>
+<V.F_old1>4c.8</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.12</Number_DWB>
+<Label>Throwing</Label>
+<Semcat_old1>Vthrw</Semcat_old1>
+<V.F_old1>4c.9</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.13.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>6.13.1.1</Number_DWB>
+<Label>Tying</Label>
+<Semcat_old1>Vjoin</Semcat_old1>
+<V.F_old1>4d.2</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13.1.2</Number_DWB>
+<Label>Adhesion</Label>
+<Semcat_old1>Vjoin</Semcat_old1>
+<V.F_old1>4d.2</V.F_old1>
+<Chapter_old1>1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13.1.3</Number_DWB>
+<Label>With Tools</Label>
+<Semcat_old1>Vjoin</Semcat_old1>
+<V.F_old1>4d.2</V.F_old1>
+<Chapter_old1>1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13.3</Number_DWB>
+<Label>Mix</Label>
+<Semcat_old1>Vjoin</Semcat_old1>
+<V.F_old1>4d.2</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13.4</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.13.5</Number_DWB>
+<Label>Join (general)</Label>
+<Semcat_old1>Vjoin</Semcat_old1>
+<V.F_old1>4d.2</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Construction</Label>
+<Semcat_old1>Vmake</Semcat_old1>
+<V.F_old1>4d.3</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Repair</Label>
+<Semcat_old1>Vmend</Semcat_old1>
+<V.F_old1>4d.4</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Holding</Label>
+<Semcat_old1>Vhold</Semcat_old1>
+<V.F_old1>4e.2</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Putting</Label>
+<Semcat_old1>Vput</Semcat_old1>
+<V.F_old1>4e.3</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Possession</Label>
+<Semcat_old1>Vhave</Semcat_old1>
+<V.F_old1>4e.4</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Social action</Label>
+<Semcat_old1>Vsoc</Semcat_old1>
+<V.F_old1>4f.1</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Helping</Label>
+<Semcat_old1>Vhelp</Semcat_old1>
+<V.F_old1>4f.2</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Acquisitions</Label>
+<Semcat_old1>Vacq</Semcat_old1>
+<V.F_old1>4f.3</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Exchanges</Label>
+<Semcat_old1>Vexch</Semcat_old1>
+<V.F_old1>4f.4</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>6.14</Number_DWB>
+<Label>Giving</Label>
+<Semcat_old1>Vgive</Semcat_old1>
+<V.F_old1>4f.5</V.F_old1>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>7</Number_DWB>
+<Label>Adjectival Verbs</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2</Number_DWB>
+<Label>Adjectives  and attributives</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>7.2.1</Number_DWB>
+<Label>Emotive</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.2.1</Number_DWB>
+<Label>Quantity - general</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.2.2</Number_DWB>
+<Label>Degree</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.2.4</Number_DWB>
+<Label>Temperature</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>2.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.3.1</Number_DWB>
+<Label>General  - other than appearance</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.3.2</Number_DWB>
+<Label>Appearance</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.4</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.4.1</Number_DWB>
+<Label>Sight</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.4.2</Number_DWB>
+<Label>Feel/Tactile/Texture</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.4.3</Number_DWB>
+<Label>Hear</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.4.4</Number_DWB>
+<Label>Taste</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>4.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.4.5</Number_DWB>
+<Label>Smell</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>4.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.5</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.5.1</Number_DWB>
+<Label>General - form</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.5.2</Number_DWB>
+<Label>Texture</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.5.3</Number_DWB>
+<Label>Position - high/low</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.5.4</Number_DWB>
+<Label>Position - front/back/side-side</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>5.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.6.1</Number_DWB>
+<Label>Single/part/few</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.6.2</Number_DWB>
+<Label>Accompanied/whole/many</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>6.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.7</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.7.1</Number_DWB>
+<Label>Unique/important/special</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.7.2</Number_DWB>
+<Label>Mundane/unimportant/same/routine</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>7.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.8</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.8.1</Number_DWB>
+<Label>Positive term</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>8.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.8.2</Number_DWB>
+<Label>Negative term</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>8.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.8.3</Number_DWB>
+<Label>Neutral term</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>8.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.9</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.10</Number_DWB>
+<Label>Abruptly</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.11</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>7.2.11.1</Number_DWB>
+<Label>Light</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>7.2.11.2</Number_DWB>
+<Label>Dark</Label>
+<Semcat_old1>Vadj</Semcat_old1>
+<V.F_old1>5c</V.F_old1>
+<Chapter_old1>11.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>8</Number_DWB>
+<Label>Abstract Nouns and Verbs, Psychological Verbs, Verbs of Utterance</Label>
+<DEFAULT item="y">
+<Number_DWB>8.</Number_DWB>
+<Label>Abstract Entities</Label>
+<Semcat_old1>Nabst</Semcat_old1>
+<V.F_old1>5a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.1</Number_DWB>
+<Label>Abstract verbs</Label>
+<Semcat_old1>Vabst</Semcat_old1>
+<V.F_old1>5b</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>8.1.1.2.3</Number_DWB>
+<Label>Be</Label>
+<Semcat_old1>Vabst</Semcat_old1>
+<V.F_old1>5b</V.F_old1>
+<Chapter_old1>1.2.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3</Number_DWB>
+<Label>Psychological verbs</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>8.3.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.1.1</Number_DWB>
+<Label>Like</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.1.2</Number_DWB>
+<Label>Dislike</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.1.3</Number_DWB>
+<Label>Satisfied</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.2.1</Number_DWB>
+<Label>Accept</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.2.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.3.2</Number_DWB>
+<Label>Blame</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.4</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.4.1</Number_DWB>
+<Label>Agree</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.4.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.1</Number_DWB>
+<Label>Happy</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.2.2</Number_DWB>
+<Label>Grief</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.2</Number_DWB>
+<Label>Sad</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.3</Number_DWB>
+<Label>Emotional</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.4</Number_DWB>
+<Label>Enthusiastic</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.6</Number_DWB>
+<Label>Excited</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.5.7</Number_DWB>
+<Label>Frustrated</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.5.7</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.6.1</Number_DWB>
+<Label>Angry</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.6.2</Number_DWB>
+<Label>Distress</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.6.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.7</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.7.1</Number_DWB>
+<Label>Positive</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.7.2</Number_DWB>
+<Label>Negative (e.g. dread)</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.7.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.7.3</Number_DWB>
+<Label>Neutral or ambiguous</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.7.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.7.5</Number_DWB>
+<Label>Relieved</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.7.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.8</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.8.3</Number_DWB>
+<Label>Willing</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.8.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.9</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.9.1</Number_DWB>
+<Label>Surprised</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.9.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.9.2</Number_DWB>
+<Label>Worry</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.9.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.10</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.10.2</Number_DWB>
+<Label>Fear</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.10.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.10.4</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.10.4.1</Number_DWB>
+<Label>Positive</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.10.4.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.10.5</Number_DWB>
+<Label>Hesitate</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.10.5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.11</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.11.1</Number_DWB>
+<Label>Alert</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.11.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.11.10</Number_DWB>
+<Label>Tired</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.11.10</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.11.11</Number_DWB>
+<Label>Thrilled, Dizzy</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.11.11</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.12</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.12.1</Number_DWB>
+<Label>Know, Believe</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.12.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.13</Number_DWB>
+<Label>Think/plan</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.13</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.13.1</Number_DWB>
+<Label>Think</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.13.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.13.2</Number_DWB>
+<Label>Plan</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.13.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.13.8</Number_DWB>
+<Label>Imagination</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.13.8</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.14</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.14.1</Number_DWB>
+<Label>Longing</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.14.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.14.2</Number_DWB>
+<Label>Avarice</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.14.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.14.3</Number_DWB>
+<Label>Desirable</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.14.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.15</Number_DWB>
+<Label>Awe</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.15</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.16</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.1.16.1</Number_DWB>
+<Label>Forget</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>1.16.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.1.1</Number_DWB>
+<Label>Friendly</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.1.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.2.1</Number_DWB>
+<Label>Appease</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.2.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.3.1</Number_DWB>
+<Label>Comfort</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.3.2</Number_DWB>
+<Label>Pity</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.3.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.3.3</Number_DWB>
+<Label>Encourage</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.3.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.4</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.1</Number_DWB>
+<Label>Defer</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.2</Number_DWB>
+<Label>Honor</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.3</Number_DWB>
+<Label>Flatter</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.4</Number_DWB>
+<Label>Tolerate</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.5</Number_DWB>
+<Label>Ignore</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.6</Number_DWB>
+<Label>Disobedient</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.5.7</Number_DWB>
+<Label>Trust</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.5.7</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.6.1</Number_DWB>
+<Label>Admire</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.6.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.6.2</Number_DWB>
+<Label>Envy</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.6.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.7</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.7.1</Number_DWB>
+<Label>Flirt, seduce</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.7.2</Number_DWB>
+<Label>Entice, tempt</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.7.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.8</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.9</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.2.9.1</Number_DWB>
+<Label>Forgive</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>2.9.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.1</Number_DWB>
+<Label>Correct</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.2.1</Number_DWB>
+<Label>Kind</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.2.2</Number_DWB>
+<Label>Cruel</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.3.1</Number_DWB>
+<Label>Discern</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.3.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.4</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.4.1</Number_DWB>
+<Label>Honest</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.4.3</Number_DWB>
+<Label>Earnest/sincere</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.4.4</Number_DWB>
+<Label>Deceive</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.4.4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.4.4.1</Number_DWB>
+<Label>Positive/neutral</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.4.4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.4.4.2</Number_DWB>
+<Label>Negative</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.4.4.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.5</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.6.2</Number_DWB>
+<Label>Guilty</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.6.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.7</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.8</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.8.1</Number_DWB>
+<Label>Modest</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.8.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.3.3.8.3</Number_DWB>
+<Label>Ashamed</Label>
+<Semcat_old1>Vpsi</Semcat_old1>
+<V.F_old1>5d</V.F_old1>
+<Chapter_old1>3.8.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.4</Number_DWB>
+<Label>Feeling</Label>
+<Semcat_old1>Vfeel</Semcat_old1>
+<V.F_old1>5e</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5</Number_DWB>
+<Label>Utterance</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>8.5.1</Number_DWB>
+<Label>Scold</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.5.2.1</Number_DWB>
+<Label>Complain</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.2.2</Number_DWB>
+<Label>Complement, praise</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.3</Number_DWB>
+<Label>Declare</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.4</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.5.4.1</Number_DWB>
+<Label>Loud</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>4.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.4.2</Number_DWB>
+<Label>Soft</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>4.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.4.3</Number_DWB>
+<Label>Accented</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>4.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.4.6</Number_DWB>
+<Label>Glottal sound</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>4.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.4.7</Number_DWB>
+<Label>Choppy</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>4.7</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.5</Number_DWB>
+<Label>Sounds</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.6</Number_DWB>
+<Label>Answer</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.7</Number_DWB>
+<Label>Bid</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>7</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>8.5.7.1</Number_DWB>
+<Label>Ask</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.7.2</Number_DWB>
+<Label>Implore/Coax</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>7.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.7.3</Number_DWB>
+<Label>Coax</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>7.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.8</Number_DWB>
+<Label>Banter/Discourse</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.9</Number_DWB>
+<Label>Jest</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>9</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.10</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.5.10.1</Number_DWB>
+<Label>Talk, say</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>10.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.10.2</Number_DWB>
+<Label>Garrulosity, verbosity</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>10.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.10.3</Number_DWB>
+<Label>Talk with purpose of convincing</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>10.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.10.4</Number_DWB>
+<Label>Falsehood</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>10.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.11</Number_DWB>
+<Label>Formulaic</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>11</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>8.5.11.2</Number_DWB>
+<Label>Introduction</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>11.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.11.3</Number_DWB>
+<Label>Farewells</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>11.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.11.5</Number_DWB>
+<Label>Apology/excuse</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>11.5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.11.6</Number_DWB>
+<Label>Invite</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>11.6</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.12</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.13</Number_DWB>
+<Label>Beckon</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>13</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.14</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>8.5.14.1</Number_DWB>
+<Label>Spread information, present ideas</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>14.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.14.2</Number_DWB>
+<Label>Reveal or give information</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>14.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.14.3</Number_DWB>
+<Label>Explain</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>14.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.15</Number_DWB>
+<Label>Boast</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>15</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>8.5.16</Number_DWB>
+<Label>Dedicate</Label>
+<Semcat_old1>Vutt</Semcat_old1>
+<V.F_old1>5f</V.F_old1>
+<Chapter_old1>16</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>9</Number_DWB>
+<Label>Shape, Size, Color, Measure, Number, Time, Space</Label>
+<DEFAULT item="y">
+<Number_DWB>9.1</Number_DWB>
+<Label>Adverbial uses</Label>
+<Semcat_old1>Ntime</Semcat_old1>
+<V.F_old1>6i</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>9.1.1</Number_DWB>
+<Label>Months and Years</Label>
+<Semcat_old1>Ntime</Semcat_old1>
+<V.F_old1>6i</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.1.2</Number_DWB>
+<Label>Days</Label>
+<Semcat_old1>Ntime</Semcat_old1>
+<V.F_old1>6i</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.1.3</Number_DWB>
+<Label>Hours</Label>
+<Semcat_old1>Ntime</Semcat_old1>
+<V.F_old1>6i</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.1.4</Number_DWB>
+<Label>Other Intervals</Label>
+<Semcat_old1>Ntime</Semcat_old1>
+<V.F_old1>6i</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.1.5</Number_DWB>
+<Label>Years</Label>
+<Semcat_old1>Ntime</Semcat_old1>
+<V.F_old1>6i</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2</Number_DWB>
+<Label>Spatial terms</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>9.2.1</Number_DWB>
+<Label>Up</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.2</Number_DWB>
+<Label>Down</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.3</Number_DWB>
+<Label>Sideways</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.4</Number_DWB>
+<Label>Apart</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.5</Number_DWB>
+<Label>Amid</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.6</Number_DWB>
+<Label>Around</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.7</Number_DWB>
+<Label>Extent</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>7</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.2.8</Number_DWB>
+<Label>Directions</Label>
+<Semcat_old1>Spat</Semcat_old1>
+<V.F_old1>6j</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.3</Number_DWB>
+<Label>Sounds</Label>
+<Semcat_old1>Sound</Semcat_old1>
+<V.F_old1>6a</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.3</Number_DWB>
+<Label>Colors</Label>
+<Semcat_old1>Col</Semcat_old1>
+<V.F_old1>6b</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.3</Number_DWB>
+<Label>Change of state</Label>
+<Semcat_old1>Vcos</Semcat_old1>
+<V.F_old1>6c</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.3</Number_DWB>
+<Label>Shape and size</Label>
+<Semcat_old1>Nshiz</Semcat_old1>
+<V.F_old1>6e</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.3</Number_DWB>
+<Label>Verbs referring to size/shape</Label>
+<Semcat_old1>Vshiz</Semcat_old1>
+<V.F_old1>6f</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>9.3.1</Number_DWB>
+<Label>Positive/Desirable qualities</Label>
+<Semcat_old1>Vqual</Semcat_old1>
+<V.F_old1>6d</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.3.2</Number_DWB>
+<Label>Neutral and Negative qualities</Label>
+<Semcat_old1>Vqual</Semcat_old1>
+<V.F_old1>6d</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.4</Number_DWB>
+<Label>Measure Words</Label>
+<Semcat_old1>Meas</Semcat_old1>
+<V.F_old1>6g</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.4</Number_DWB>
+<Label>Numbers and numeric expression</Label>
+<Semcat_old1>Num</Semcat_old1>
+<V.F_old1>6h</V.F_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.5</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>9.5.1</Number_DWB>
+<Label>Roads and Ways</Label>
+<Semcat_old1>Nloc</Semcat_old1>
+<V.F_old1>6k</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.5.2</Number_DWB>
+<Label>Waterways/Having to do with water</Label>
+<Semcat_old1>Nloc</Semcat_old1>
+<V.F_old1>6k</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.5.3</Number_DWB>
+<Label>Governable units (towns, parts of towns)</Label>
+<Semcat_old1>Nloc</Semcat_old1>
+<V.F_old1>6k</V.F_old1>
+<Chapter_old1>3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.5.4</Number_DWB>
+<Label>Farm/Agricultural places</Label>
+<Semcat_old1>Nloc</Semcat_old1>
+<V.F_old1>6k</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.5.4</Number_DWB>
+<Label>Places in general, countries</Label>
+<Semcat_old1>Nloc</Semcat_old1>
+<V.F_old1>6k</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>9.5.5</Number_DWB>
+<Label>Functional buildings/places</Label>
+<Semcat_old1>Nloc</Semcat_old1>
+<V.F_old1>6k</V.F_old1>
+<Chapter_old1>5</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>10</Number_DWB>
+<Label>Grammatical Words</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<DEFAULT item="y">
+<Number_DWB>10.1</Number_DWB>
+<Label>Ontological</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>10.1.1</Number_DWB>
+<Label>Prepositions</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.1.2</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>10.1.2.1</Number_DWB>
+<Label>Compound</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>1.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.1.2.2</Number_DWB>
+<Label>Subordination</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>1.2.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.1.3</Number_DWB>
+<Label>Classifiers</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>1.3</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.2</Number_DWB>
+<Label>Articles</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>10.2.1</Number_DWB>
+<Label>Grammatical identifiers</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>2.1</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>10.2.1.1</Number_DWB>
+<Label>Phonological entities</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>2.1.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.2.2</Number_DWB>
+<Label>Morphological identifiers</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>2.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.2.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>10.2.3.1</Number_DWB>
+<Label>Nominative-accusative</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>2.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.2.3.2</Number_DWB>
+<Label>Possessive</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>2.3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.3</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4</Number_DWB>
+<Label>Affixes</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>10.4.1</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>10.4.1.1</Number_DWB>
+<Label>Grammatical case</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.1.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.1.2</Number_DWB>
+<Label>Animacy</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.1.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.1.3</Number_DWB>
+<Label>Diminutivizer, intensifier, etc.</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.1.3</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.1.4</Number_DWB>
+<Label>Person, #, gender</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.1.4</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2</Number_DWB>
+<Label>Verbal</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.2</Chapter_old1>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.1</Number_DWB>
+<Label>Mood</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.2.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.2</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.3</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.4</Number_DWB>
+<Label>Aspect, (in)transitivity, ergativity, ca</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.2.4</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.5</Number_DWB>
+<Label>?</Label>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.6</Number_DWB>
+<Label>Participles, gerunds, etc.</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.2.6</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.2.7</Number_DWB>
+<Label>Nominalizers</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.2.7</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.3</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>10.4.3.1</Number_DWB>
+<Label>Degrees of comparison</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.3.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.4.3.2</Number_DWB>
+<Label>Demonstrators</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>4.3.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.5</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>10.5.1</Number_DWB>
+<Label>Structuring Words</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>5.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.5.2</Number_DWB>
+<Label>Grammatical functions</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>5.2</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.5.3</Number_DWB>
+<Label>WH words</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>6.1</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.6</Number_DWB>
+<Label>?</Label>
+<DEFAULT item="y">
+<Number_DWB>10.6.1</Number_DWB>
+<Label>Affirmative</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>7.1</Chapter_old1>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.6.2</Number_DWB>
+<Label>Negative</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>7.2</Chapter_old1>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Number_DWB>10.7</Number_DWB>
+<Label>Ejaculations</Label>
+<Semcat_old1>G</Semcat_old1>
+<V.F_old1>8</V.F_old1>
+<Chapter_old1>8</Chapter_old1>
+</DEFAULT>
+</VOLUME>
+<VOLUME item="y">
+<Number_DWB>x.x</Number_DWB>
+<Label>Errors and apocrypha</Label>
+<Semcat_old1>Error</Semcat_old1>
+<V.F_old1>x</V.F_old1>
+</VOLUME>
+</ROOT>

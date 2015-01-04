@@ -1,0 +1,74 @@
+	  table { 
+	    padding-left: 18pt;
+	    width: 90%; }
+
+	  html,td { 
+	    font-family: Gentium, "STEDTU", 
+              "TITUS Cyberbit Basic", SILDoulosUnicodeIPA, 
+              Thryomanes,Cardo, "Arial Unicode MS",  
+              font-size: 12pt;
+              "Lucida Sans Unicode"; }
+
+	  hr { 
+	    width: 100%;
+	    text-align: left; }
+
+	  th {
+	    text-align: center;
+	    vertical-align: center;
+	    color: white;
+	    background-color: Green;
+	    font-family: Arial, Helvetica, sans; 
+            font-size: 10pt;
+	    font-weight: normal; }
+
+	  h1 {
+	    font-family: Arial, Helvetica, sans;
+	    font-size: 24pt;
+	    font-weight: bold; }
+
+	  h2 {
+	    text-align: center;
+	    font-size: 18pt;
+	    font-weight: bold;
+	    margin-left: 12pt;
+	    }
+
+	  h3 {
+	    font-family: Arial, Helvetica, sans;
+	    font-size: 16pt;
+	    font-weight: bold;
+	    margin-left: 16pt; }
+
+	  h4 {
+	    font-family: Arial, Helvetica, sans;
+	    font-size: 14pt;
+	    font-weight: normal;
+	    margin-left: 18pt; }
+	    /* default links */
+a:link 
+	{ 
+	color:		white;
+	text-decoration:none;
+	font-weight: normal;
+	}
+a:active 
+	{ 
+	color:		white;
+	text-decoration:none;
+	font-weight: normal;
+	}
+a:visited 
+	{ 
+	color:		white;
+	text-decoration:none;
+	font-weight: normal;
+	}
+a:hover
+	{
+	color:		#A68C53;
+	text-decoration:underline;
+	font-weight: normal;
+	}
+	
+

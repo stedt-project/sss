@@ -1,0 +1,63 @@
+﻿[% PROCESS header.tt title="Progress Log - STEDT Database" %]
+
+<h3>Tagging and Etyma, by user</h3>
+<p>[% etymaused.size %] users have tagged something:
+<a href="[% self_url %]/admin/progress_detail">[Details]</a>
+</p>
+
+<table class="sortable resizable" style="table-layout:fixed">
+<col style="width:4em">
+<col style="width:3em">
+<col style="width:4em">
+<col style="width:4em">
+<tr>
+	<th>username</th>
+	<th>uid</th>
+	<th>etyma</th>
+	<th>reflexes</th>
+	<th>accepted</th>
+	<th>total</th>
+</tr>
+[% FOREACH row IN etymaused -%]
+<tr>
+[% FOREACH col IN row -%]
+<td>[% col | html %]</td>
+[% END -%]
+</tr>
+[% END -%]
+</table>
+
+<h3>Breakdown: etyma tagged by user (except user stedt)</h3>
+<p>[% tagging.size %] reconstructions:</p>
+
+<table class="sortable resizable" style="table-layout:fixed">
+<col style="width:8em">
+<col style="width:4em">
+<col style="width:4em">
+<col style="width:10em">
+<col style="width:15em">
+<col style="width:3em">
+<tr>
+	<th>username</th>
+	<th>tag</th>
+	<th>plg</th>
+	<th>protoform</th>
+	<th>protogloss</th>
+	<th>reflexes</th>
+	[% IF c.has_privs(8) -%]<th class="nosort">approve?</th>[% END %]
+</tr>
+[% FOREACH row IN tagging -%]
+<tr>
+<td>[% row.0 | html %]</td>
+<td><a href="[% self_url %]/etymon/[% row.2 %]/[% row.1 %]#[% row.2 %]" target="stedt_etymon">#[% row.2 | html %]</a></td>
+<td>[% row.3 | html %]</td>
+<td>[% row.4 | html %]</td>
+<td>[% row.5 | html %]</td>
+<td>[% row.6 | html %]</td>
+[% IF c.has_privs(8) -%]<td><a href="[% self_url %]/tags/accept?tag=[% row.2 %]&uid=[% row.1 %]" target="stedt_etymon">approve</a></td>[% END %]
+</tr>
+[% END -%]
+</table>
+
+</body>
+</html>

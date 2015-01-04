@@ -1,0 +1,86 @@
+﻿[% PROCESS header.tt title="STEDT Semtree Tweaker" -%]
+
+<h1>Semkeys and Glosswords</h1>
+
+Volumes:
+<ol>
+[% FOREACH v IN vols -%]
+<li><a href="#[% v.0 | uri %]">[% v.1 %]</a></li>
+[% END -%]
+</ol>
+
+<p>[% ch.size %] nodes (took [% time_elapsed %] seconds to retrieve)</p>
+<table id="ch" class="sortable resizable" style="table-layout:fixed">
+<thead><tr>
+	<th id="chapters.semkey">semkey</th>
+	<th id="chapters.chaptertitle">Title</th>
+	<th id="etyma">etyma</th>
+	<th id="wcount">forms</th>
+	<th id="tagged">tagged</th>
+	<th id="pct">pct</th>
+	<th id="notecount">notes</th>
+	<th id="haschart">flowchart?</th>
+	<th id="num_glosswords">#</th>
+	<th id="some_glosswords">list of words</th>
+[%- IF c.has_privs(8) # restrict eDiss functions to approvers %]
+	<th id="eDiss">eDiss</th>
+	<th id="eDiss">eDiss</th>
+[% END # privs check -%]
+	<th id="chapters.indent">indent</th>
+	<th id="chapters.id">id</th>
+</tr></thead>
+<tbody>
+[% FOREACH r IN ch -%]
+<tr>
+<td><a name="[% r.0 | uri %]"></a><a target="notes" href="[% self_url %]/chap/[% r.0 | uri %]">[% r.0 %]</a></td>
+<td>[% IF r.14 %]<b>[% ELSIF r.15 %]<i>[% END %][% r.1 | html %][% IF r.14 %]</b>[% ELSIF r.15 %]</i>[% END %]</td>
+<td>[% IF r.3 %]<a target="centerstage" href="[% self_url %]/edit/etyma?etyma.chapter=[% r.0 | uri %]">[% r.3 %][% END %]</td>
+<td>[% IF r.13 %]<a target="centerstage" href="[% self_url %]/edit/lexicon?lexicon.semkey=[% r.0 | uri %]">[% r.13 %][% END %]</td>
+<td>[% IF r.16 %]<a target="centerstage" href="[% self_url %]/edit/etyma?etyma.chapter=[% r.0 | uri %]">[% r.16 %][% END %]</td>
+<td>[% r.17 %]%</td>
+<td>[% r.4 || '' %]</td>
+<td>[% IF r.5 %]✓[% END %]</td>
+<td>[% r.11 %]</td>
+<td>[% r.12 | html %]</td>
+[%- IF c.has_privs(8) # restrict eDiss functions to approvers %]
+<td><a target="eDiss" href="https://corpus.linguistics.berkeley.edu/~stedt-cgi-ssl/makefasc.pl?semkey=[% r.0 | uri %]">Draft</a></td>
+<td><a target="eDiss" href="https://corpus.linguistics.berkeley.edu/~stedt-cgi-ssl/makefasc.pl?semkey=[% r.0 | uri %]&final=true">Final</a></td>
+[% END # approver privs check -%]
+<td id='indent_[% r.10 %]'>[% r.18 %]</td>
+<td>[% r.10 %]</td>
+</tr>
+[% END -%]
+</tbody>
+</table>
+
+<script src="[% self_base %]js/tbl/chapters.js"></script>
+<script>
+TableKit.Raw.init('ch', 'chapters', setup['chapters'][% IF c.has_privs(8) %], '[% self_url %]/update'[% END %]);
+
+// indentation of semkey and title
+var tweak_table = $('ch').getElementsByTagName('tbody')[0];
+
+// get value of indent level and setup spaces
+for (var i = 0, row; row = tweak_table.rows[i]; i++) {
+	var row_id = $('ch').getElementsByTagName('tbody')[0].rows[i].cells[$('ch').getElementsByTagName('tbody')[0].rows[i].cells.length-1].textContent;
+	var indent_level = $('indent_'+row_id).textContent;
+	var spaces = '';
+	for (var j = 0; j < indent_level; j++) {
+		spaces += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+	}
+
+// don't indent x.x row
+if ($('ch_'+row_id).children[0].lastChild.innerHTML === 'x.x') {
+	spaces = '';
+}
+
+// indent semkey
+$('ch_'+row_id).children[0].lastChild.innerHTML = spaces + $('ch_'+row_id).children[0].lastChild.innerHTML;
+
+// indent title
+$('ch_'+row_id).children[1].innerHTML = spaces + $('ch_'+row_id).children[1].innerHTML;
+
+}
+</script>
+</body>
+</html>

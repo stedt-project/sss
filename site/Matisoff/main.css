@@ -1,0 +1,27 @@
+body {
+  margin : 10px 10px 0px 10px;
+}
+#top {
+  background:#fff;
+  border:1px solid #000;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top:0px;
+  border:0px none;
+}
+#left {
+  position: absolute;
+  left:10px;
+  top:150px;
+  width:200px;
+  background:#fff;
+  border:1px solid #000;
+}
+#main {
+  background:#fff;
+  border:1px solid #000;
+  position: absolute;
+  top: 115px;
+  left: 215px;
+}

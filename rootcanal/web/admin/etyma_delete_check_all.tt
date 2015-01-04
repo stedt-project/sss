@@ -1,0 +1,32 @@
+[% PROCESS header.tt title="Etyma Delete Check (Overview)" %]
+
+<table>
+<tr>
+<th>#</th>
+<th>meso</th>
+<th>recs</th>
+<th>protoform</th>
+<th>protogloss</th>
+<th>plg</th>
+<th>notes</th>
+<th>referring notes</th>
+<th>notes containing tag as string</th>
+</tr>
+[% FOR e IN etyma -%]
+<tr>
+<td align="right"><a href="[% self_url %]/edit/etyma?etyma.tag=[% e.tag %]+%26+d">[% e.tag %]</a></td>
+<td align="right">[% e.num_mesoroots %]</td>
+<td align="right">[% e.num_recs %]</td>
+<td>[% e.protoform %]</td>
+<td>[% e.protogloss %]</td>
+<td>[% e.plg %]</td>
+<td align="right">[% e.num_notes %]</td>
+<td align="right">[% e.num_xrefs %]</td>
+<td align="right">[% e.other_notes %]
+[%- IF e.other_notes || e.num_xrefs %] <a href="[% self_url %]/tags/delete_check?tag=[% e.tag %]">check</a>[% END %]</td>
+</tr>
+[% END -%]
+</table>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+body { background-color: white; }
+
+td, .editable-cell-form textarea /* table cells and their editable versions should look the same */
+{
+	font-family: "STEDTU", "Doulos SIL", "Charis SIL", "Gentium",
+		"TITUS Cyberbit Basic", "SILDoulosUnicodeIPA", "Thryomanes",
+		"Cardo", "Lucida Grande", "Arial Unicode MS", "Lucida Sans Unicode";
+	font-size: medium;
+}
+
+tr { vertical-align: top; }
+
+/* input { background-color: white;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px } */
+
+.cognate {
+	background-color:yellow; /* #99ff99*/
+}
+
+.left
+{
+	float: left;
+	padding: 0 1em 0 0;
+}
+
+.right
+{
+	float: right;
+	padding: 0 0 1ex 1em;
+}
+
+.notepreview
+{
+	overflow/**/: auto;
+	height: 1%;
+	line-height: 1.2;
+}
+/* overflow: auto establishes a new block formatting context.
+1% is a hack for IE.
+see http://www.pupinc.com/boxflowhack/ */
+
+.footnote { font-size: smaller; }
+
+hr { 
+     width: 100%;
+     text-align: left; 
+     clear: both; }
+
+th {
+     text-align: left;
+     color: white;
+     background-color: navy;
+     font-family: "Gill Sans", Futura, Helvetica, Arial, sans;
+     /*font-size: smaller;*/
+     font-weight: normal; }
+
+th A:link     		{ color: white; }
+th A:visited   		{ color: white; }
+th A:hover   		{ color: teal; text-decoration: underline; }
+
+h1 {
+     font-family: Helvetica, Arial, sans;
+     font-weight: bold; }
+
+h2 {
+     font-weight: bold;
+     margin-left: 12pt;
+     }
+
+h3 {
+     font-family: Arial, Helvetica, sans;
+     font-weight: bold;
+     margin-left: 16pt;
+}
+
+h4 {
+     font-family: Arial, Helvetica, sans;
+     font-size: 10pt;
+     font-weight: normal;
+     margin-left: 18pt; }
+
+/* TableKit styles */
+tr.rowodd { background-color: #FFFFFF; }
+tr.roweven { background-color: #F2F2F2; }
+.sortcol {
+	cursor: pointer;
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.sortasc {
+	background-color: blue;
+	background-image: url("../styles/up.gif");
+}
+.sortdesc
+{
+	background-color: blue;
+	background-image: url("../styles/down.gif");
+}
+.nosort {
+	cursor: default;
+}
+
+/* resizing */
+th.resize-handle-active { cursor: e-resize; }
+div.resize-handle {
+	cursor: e-resize;
+	width: 2px;
+	border-right: 1px dashed #1E90FF;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+th.moveOnHandle { cursor: move; }
+div.move-handle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fc6;
+	cursor: move;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+}
+
+/* Editable Cells */ 
+
+.editable-cell-form
+{
+	position: absolute;
+	z-index: 5;		/* stick the form on top of the table in another layer! */
+	background-color: silver;
+	border: 1px;
+} 
+
+.editable-cell-form textarea
+{
+	padding: 0px;
+	width: 103%;	/* same width as the form, which was set in tablekit.js */
+	/* height is set in tablekit */
+	margin-left: -4px;
+	margin-top: -1px;
+} 

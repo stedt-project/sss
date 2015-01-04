@@ -1,0 +1,5 @@
+STEDT-semcats_20110909.xml
+-matches scheme in semcats.xls and GlossWordsOrig.txt
+
+STEDT-semcats_20110913.xml
+-matches existing scheme in lexicon table

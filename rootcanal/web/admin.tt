@@ -1,0 +1,78 @@
+﻿[% PROCESS header.tt title="STEDT Database: Tools Page" %]
+[% IF c.has_privs(1) %]<!-- svnversion -->[% END %]
+Edit/Browse tables:
+<table border="0">
+<tr>
+<td style="padding-right:1em;"><ul>
+	<li><a href="[% self_url %]/edit/etyma">etyma</a></li>
+	<li><a href="[% self_url %]/edit/lexicon">lexicon</a></li>
+	<li><a href="[% self_url %]/edit/languagenames">languagenames</a></li>
+	<li><a href="[% self_url %]/edit/srcbib">srcbib</a></li>
+	<li><a href="[% self_url %]/edit/chapters">chapters</a></li>
+</ul></td>
+<td style="padding-right:1em;"><ul>
+	<li><a href="[% self_url %]/edit/glosswords">glosswords</a></li>
+	<li><a href="[% self_url %]/edit/hptb">hptb</a></li>
+	<li><a href="[% self_url %]/edit/morphemes">morphemes</a></li>
+	<li><a href="[% self_url %]/edit/soundlaws">soundlaws</a></li>
+	<li><a href="[% self_url %]/subgroups/view">language groups</a></li>
+</ul></td>
+<td><ul>
+	[% IF c.has_privs(1) -%]<li><a href="[% self_url %]/edit/notes">notes</a></li>[% END -%]
+	<li><a href="[% self_url %]/edit/mesoroots">mesoroots</a> ("Dependent Mesoroots" only)</li>
+	<li><a href="[% self_url %]/edit/etymologies">etymologies</a> (including all user-tagged etymologies)</li>
+	[% IF c.has_privs(8) -%]<li><a href="[% self_url %]/edit/projects">projects</a></li>[% END -%]
+	[% IF c.has_privs(16) -%]<li><a href="[% self_url %]/admin/deletedata">delete source and/or language data</a></li>[% END %]
+</ul></td>
+</tr></table>
+
+
+Semantic categorization stuff:
+<ul>
+<li><a href="[% self_url %]/chapters">chapter browser</a></li>
+<li><a href="[% self_url %]/chapters/tweak">semkeys and their glosswords</a></li>
+<li><a href="[% self_url %]/chapters/grid">grid view: volumes <span style="font-family: Times, 'Times New Roman', 'Segoe UI Symbol', 'Cambria Math'">⨉</span> fascicles</a></li>
+</ul>
+
+[% IF c.has_privs(1) -%]
+Activity:
+<ul>
+<li><a href="[% self_url %]/admin/changes">change log</a></li>
+<li><a href="[% self_url %]/admin/queries">recent queries (public interface)</a></li>
+<li><a href="[% self_url %]/admin/progress">progress report, tagging awaiting approval, etc.</a></li>
+[% IF c.has_privs(8) -%]<li><a href="[% self_url %]/admin/bulkapproval">bulk approval of tagging</a></li>[% END -%]
+[% IF c.has_privs(16) -%]<li><a href="[% self_url %]/contribution">contributions</a></li>[% END %]
+</ul>
+[% END %]
+
+Accounts:
+<ul>
+[% IF user!="guest" # don't allow users to edit the guest account %]<li><a href="[% self_url %]/account">my account</a></li>[% END %]
+<li><a href="[% self_url %]/account/gsarpa">create new account</a></li>
+[% IF c.has_privs(1) -%]
+<li><a href="[% self_url %]/account/users">view/edit users</a></li>
+[% END %]
+</ul>
+
+[% IF c.has_privs(8) -%]
+Tools:
+<ul>
+<li><a href="[% self_url %]/admin/deviants">view records with deviant glosses (violating gloss conventions)</a></li>
+<li><a href="[% self_url %]/admin/updateprojects">update stats</a> (for "projects" - takes a while!)</li>
+<li><a href="[% self_url %]/admin/updatesequence">update sequence numbers</a> (in etyma table)</li>
+<li><a href="[% self_base %]dev/rootcanal-dev.pl/admin">switch to the test environment</a></li>
+[% IF c.has_privs(16) -%]
+<br>
+<li><a href="[% self_url %]/admin/expire_sessions">expire sessions older than 1 month</a> ([% num_sessions %] currently in sessions table)</li>
+<li><a href="https://corpus.linguistics.berkeley.edu/~stedt-cgi-ssl/phpmyadmin/">DB admin</a></li>
+[% END -%]
+</ul>
+[% END -%]
+
+Stuff for the public:
+<ul>
+<li><a href="[% self_url %]/admin/lg_stats">STEDT Database Language Statistics</a></li>
+<li><a href="[% self_url %]/admin/db_stats">STEDT Database Statistics</a></li>
+<li><a href="[% self_url %]">public interface (main page)</a></li>
+</ul>
+</body></html>

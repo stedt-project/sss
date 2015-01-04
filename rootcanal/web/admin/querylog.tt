@@ -1,0 +1,30 @@
+[% PROCESS header.tt title="Query Log - STEDT Database" %]
+<p>[% queries.size %] most recent queries:</p>
+
+<table class="sortable resizable">
+<tr>
+	<th>table</th>
+	<th>form</th>
+	<th>gloss</th>
+	<th>language</th>
+	<th>language group</th>
+	<th>results</th>
+	<th>ip</th>
+	<th>time</th>
+</tr>
+[% FOREACH row IN queries -%]
+<tr>
+<td>[% row.0 %]</td>
+<td>[% row.1 | html %]</td>
+<td>[% row.2 | html %]</td>
+<td>[% row.3 | html %]</td>
+<td>[% row.4 %]</td>
+<td><a href="[% self_url %]/gnis?f=[% row.1 | html %]&t=[% row.2 | html %]&lg=[% row.3 | html %]&lggrp=[% row.4 %]" target="stedt_sss">(results)</td>
+<td><a href="http://whatismyipaddress.com/ip/[% row.5 | url %]" target="stedt_iptrace">[% row.5 %]</a></td>
+<td>[% row.6 %]</td>
+</tr>
+[% END -%]
+</table>
+
+</body>
+</html>

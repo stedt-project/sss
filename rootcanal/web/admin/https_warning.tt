@@ -1,0 +1,31 @@
+[% PROCESS header.tt title="STEDT Database: Login Page" %]
+[%- IF !c.query.cookie('stsec') %]
+<p>Oops. You must be using a secure connection to do that. Please follow the link below if you are not redirected within 3 seconds:</p>
+[%- new_url = c.query.url('-path',1,'-query',1).replace('^http:', 'https:') -%]
+<p><a href="[% new_url | url %]">[% new_url | html %]</a></p>
+<script>
+setTimeout(function(){location.href = "[% new_url | url %]"}, 3000);
+</script>
+[%- ELSIF !c.param('user') -%]
+<center>
+<h2>Welcome!</h2>
+<form method="post" action="[% self_url %]/account/login">
+<input type="hidden" name="user" value="guest">
+<input type="hidden" name="pwd" value="guest">
+<input type="hidden" name="url" value="[% c.query.url('-path',1,'-query',1) %]">
+<input type="submit" value="Click here for free, unlimited access to the database as a guest*">&nbsp;&nbsp;
+</form>
+<p><b>OR</b></p>
+<p>...if you already have an account please login:</p>
+<form method="post" action="[% self_url %]/account/login">
+username: <input type="text" size="10" name="user">
+password: <input type="password" size="10" name="pwd">
+<input type="hidden" name="url" value="[% c.query.url('-path',1,'-query',1) %]">
+<input type="submit" value="log in">
+<p><b>OR</b></p>
+<p><a href="[% self_url %]/account/gsarpa">create a new account</a></p>
+</form>
+</center>
+[% END %]
+</body>
+</html>

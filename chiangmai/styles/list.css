@@ -1,0 +1,14 @@
+h1 { font-weight: bold }
+
+h2, td { font-family: Gentium, "STEDTU", 
+         "TITUS Cyberbit Basic", SILDoulosUnicodeIPA, 
+         Thryomanes,Cardo, "Arial Unicode MS", 
+         "Lucida Sans Unicode"; 
+         font-weight: normal;}
+
+h2 { font-size: 12pt; }
+
+table { width: 80%; }
+
+td { width: 25%;
+     font-size: 10pt;}

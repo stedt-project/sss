@@ -1,0 +1,38 @@
+﻿<form id="addnoteform" method="post" action="[% self_url %]/notes/add" style="display:none">
+<div class="right">
+<p>notetype: <select name="notetype"></select></p>
+<textarea name="xmlnote"  rows="15" cols="50"></textarea>
+<br>
+<input type="submit" name="btn" value="Add Note">
+<input type="button" value="Cancel" onclick="$('addnoteform').hide()">
+[% IF c.has_privs(8) -%]
+<div class="right">username: <select name="uid">
+<option value="8">stedt</option>
+<option selected="selected" value="[% c.param('uid') %]">[% user %]</option>
+</select></div>
+[% END -%]
+</div>
+<input type="hidden" name="spec">
+<input type="hidden" name="id">
+<input type="hidden" name="id2">
+<input type="hidden" name="ord">
+<input type="hidden" name="fn_counter">
+<h1>New Note</h1>
+<p>The following markup codes will be converted to XML tags:</p>
+<pre id="cheat_source">&lt;return&gt;&lt;return&gt; - paragraph break
+&lt;return&gt; - line break
+[[_subscript]]
+[[^superscript]]
+[[~emphasis]] (italic)
+[[@strong]] (bold)
+[[:gloss]] (deprecated)
+[[*reconstruction]]
+[[#76 ALT GLOSS]] (tag reference)
+[[漢字]]
+[[stɛt ⪤ fɑnt]] (plain)
+[[+stɛt ⪤ fɑnt]] (bold)
+{{%footnote}}
+[[!http://www.myURL.com link_text_here]]
+[[=2AA4]] (hex unicode codepoint)
+</pre>
+</form>

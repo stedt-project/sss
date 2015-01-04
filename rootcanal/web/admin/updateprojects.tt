@@ -1,0 +1,31 @@
+[% PROCESS header.tt title="Update Project Status - STEDT Database" %]
+<p>[% projects.size %] projects (took [% time_elapsed | format("%0.3g") %] seconds):</p>
+
+<table class="sortable resizable" width="100%" style="table-layout:fixed">
+<col style="width:6em">
+<col style="width:7em">
+<col>
+<col style="width:6em">
+<col style="width:6em">
+<col style="width:4em">
+<col style="width:4em">
+<tr>
+	<th>project</th>
+	<th>subproject</th>
+	<th>gloss</th>
+	<th>pct done</th>
+	<th>tagged</th>
+	<th>total</th>
+	<th>etyma</th>
+</tr>
+[% FOREACH row IN projects -%]
+<tr>
+[% FOREACH col IN row -%]
+<td>[% col | html %]</td>
+[% END -%]
+</tr>
+[% END -%]
+</table>
+
+</body>
+</html>

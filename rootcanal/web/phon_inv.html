@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Phonological Inventories</title>
+	<link rel="stylesheet" href="styles/rootcanal.css">
+	<script src="scriptaculous/lib/prototype.js"></script>
+</head>
+​<body>
+<center>
+<h3 style="margin-top:0;">Phonological Inventories</h3><h4>(Namkung, ed. 1996)</h4>
+<table border=0>
+<tr>
+	<td><a id="link_prev">&larr; Prev</a></td>
+	<td style="width:600px"></td>
+	<td><a id="link_next">Next &rarr;</a></td>
+</tr>
+</table>
+
+<img id="pi_page" border=1><br>
+<h4>View or download the <a href="http://docs.google.com/viewer?url=http%3A%2F%2Fstedt.berkeley.edu%2Fpubs_and_prods%2FSTEDT_Monograph3_Phonological-Inv-TB.pdf" target="_blank">entire monograph</a> | Powered by the <a href="http://docs.google.com/viewer" target="_blank">Google Docs Viewer</a></h4>
+</center>
+</body>​
+<script>
+var google_img_url = 'https://docs.google.com/viewer?url=http%3A%2F%2Fstedt.berkeley.edu%2Fpubs_and_prods%2FSTEDT_Monograph3_Phonological-Inv-TB.pdf&a=bi&pagenumber=';
+var cur_url = 'http://' + window.location.hostname + window.location.pathname;
+var cur_page = document.location.href.toQueryParams().page;
+
+var intRegex = /^\d+$/; // test for non-negative integer value of page parameter
+if (!cur_page || !intRegex.test(cur_page) || cur_page < 1) { // page parameter too low, not an integer, or blank
+	window.location.href = cur_url + '?page=1';
+}
+else if (cur_page >  533) { // page parameter too high
+	window.location.href = cur_url + '?page=533';
+}
+
+$('pi_page').src=google_img_url + cur_page; // grab the page image from the google pdf converter
+
+// create links for next and previous pages
+if (cur_page !=1) {
+	$('link_prev').href=cur_url + '?page=' + (parseInt(cur_page,10) - 1);
+}
+if (cur_page !=533) {
+	$('link_next').href=cur_url + '?page=' + (parseInt(cur_page,10) + 1);
+}
+
+</script>
+</html>

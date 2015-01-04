@@ -1,0 +1,37 @@
+[% PROCESS header.tt title="STEDT Database: Delete Source or Language Data" %]
+<body>
+<p><b>Directions</b></p>
+<ul>
+<li>You'll need to have <b>both</b> the lgid and srcabbr values to delete data.</li>
+<li>You can use this utility to delete "orphaned" source bibliography entries (i.e. that have no language or lexical data associated with them). But only if they are really orphans. In this case, all you need is the srcabbr.</li>
+<li>Select a source abbreviation from the dropdown.</li>
+<li>Enter a "lgid" value in the lgid field (if needed). If none is entered, no data will be deleted, but the first lgid for this source will be returned.</li>
+<li>This is a way to find out the lgid to use if all you know is the source.</li>
+<li>So, to delete all data for a multilingual source, you'll need to execute this function for each lgid until you've deleted all of them.</li>
+<li>Then, once all the lexical and language data is gone, you can delete the bibliography entry as well.</li>
+<li>If you've checked the "delete source bibligraphy entry, too?" checkbox, the bibliographic entry will be deleted as well, but only if there is no data associated with it.</li>
+<li>Only the data for the provided lgid will be deleted. However, you must still provide the corresponding source abbreviation.</li>
+<li>Once you've understood all this and entered values, click the Delete button.</li>
+<li>Yes, it is a bit complicated, but this tool is really only to be used for pretty specific maintainance functions.</li>
+<li><span style="color:red">There is no undo! Make a backup if you need to!</span></li>
+</ul>
+<hr/>
+<form action="[% self_url %]/admin/deletedata" method="post">
+<p><select id="src" name="srcabbr">
+<option value="">Please select a source...</option>
+[% FOREACH s IN srcabbrs %]
+<option value="[% s.0 %]" [% IF selected_src == s.0 %]selected[% END %] >[% s.0 %]</option>[% END -%]
+</select></p>
+<p>lgid:
+<input type="text" name="lgid" id="lgid">
+<input type="checkbox" name="delsrc" id="delsrc">
+delete source bibligraphy entry, too?
+</p>
+</p>
+<p><input name="btn" type="submit" value="Delete"></p>
+</form>
+[% IF msg %]
+<h2><span style="color:red">[% msg %]</span></h4>
+[% END %]
+</body>
+</html>

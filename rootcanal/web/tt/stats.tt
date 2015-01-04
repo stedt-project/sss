@@ -1,0 +1,4 @@
+[% PROCESS header.tt title="STEDT Database Statistics" %]
+[% text %]
+</body>
+</html>

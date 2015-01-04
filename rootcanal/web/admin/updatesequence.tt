@@ -1,0 +1,5 @@
+[% PROCESS header.tt title="Update Sequence Numbers - STEDT Database" %]
+<p>Completed in [% time_elapsed | format("%0.3g") %] seconds!</p>
+
+</body>
+</html>

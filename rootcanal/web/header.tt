@@ -1,0 +1,100 @@
+﻿[% # PROCESS, don't INCLUDE this file to keep these variables defined -%]
+[% self_url = c.query.url('-absolute',1).remove('/$') -%]
+[% self_base = self_url.replace('[^/]+$', '') -%]
+[% https_base = c.query.url('-base',1).replace('^http:', 'https:') -%]
+[% user = c.param('user') -%]
+[% pi_pdf_offset = 26 # page offset for linking inventories to PI monograph %]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>[% title %]</title>
+	<link rel="stylesheet" href="[% self_base %]styles/rootcanal.css">
+	<link rel="stylesheet" href="[% self_base %]styles/autoSuggest.css">
+	<link rel="stylesheet" href="[% self_base %]styles/opentip.css">
+[% IF cognates.size -%]
+	<style type="text/css">
+[%- FOREACH n IN cognates %].r[% n %] { background-color:yellow; } [% END -%]
+[%- FOREACH n IN cognates %].u[% n %] { background-color:#6FF; } [% END %]</style>
+[% END # cognates -%]
+	<script src="[% self_base %]scriptaculous/lib/prototype.js"></script>
+	<script src="[% self_base %]scriptaculous/src/scriptaculous.js?load=effects,dragdrop,controls"></script>
+	<script src="[% self_base %]js/opentip.js"></script>
+	<script src="[% self_base %]js/excanvas.js"></script>
+	<script src="[% self_base %]js/tablekit.js"></script>
+	<script src="[% self_base %]js/jquery-1.8.0.js"></script>
+	<script src="[% self_base %]js/jquery.autoSuggest.js"></script>
+</head>
+<body>
+<div id="header"[% IF !user %] style="display:none;"[% END %]>
+<span class="right">
+[% IF vert_tog -%]
+<img id="spinner" src="[% self_base %]img/spinner.gif" style="display:none;">&nbsp;
+<a href="#" onclick="return vert_tog()"><img title="Rotate View" src="[% self_base %]img/toggle.png" alt="toggle" id="tog-img" border="0"></a>&nbsp;
+[% END -%]
+<script>
+$.noConflict();[% # tell jquery to set $ back to the prototype $ %]
+var baseRef = '[% self_url %]/';
+</script>
+[% IF user # check for logged-in user -%]
+<script>
+var stedtuserprivs = [% c.param('userprivs') %];
+[% IF c.has_privs(16) -%]
+var rootcanal_t0 = Date.now();
+[% END -%]
+</script>
+logged in as <b>[% user %]</b>
+[%- IF c.has_privs(16) %] <i>(superuser)</i>[% ELSIF c.has_privs(8) %] <i>(approver)</i>[% ELSIF c.has_privs(1) %] <i>(tagger)</i>[% END %]
+[%- IF c.has_privs(2) %]. &nbsp; <a href="[% self_url %]/admin">tools</a>&nbsp;[% END %]
+<form name="dropdown" method="POST" style="display:inline">
+<select name="DDMenu" onchange="location.href=(form.DDMenu.options[form.DDMenu.selectedIndex].value)">
+<option value="#">Select...</option>
+[% IF c.has_privs(2) # anyone with an account, including "casual users", should be able to access these pages -%]
+<option value="[% self_url %]/edit/etyma">Etyma</option>
+<option value="[% self_url %]/edit/lexicon">Lexicon</option>
+<option value="[% self_url %]/edit/languagenames">LgNames</option>
+<option value="[% self_url %]/subgroups/view">LgGroups</option>
+<option value="[% self_url %]/edit/srcbib">SrcBib</option>
+<option value="[% self_url %]/edit/chapters">Chapters</option>
+<option value="[% self_url %]/edit/glosswords">Glosses</option> 
+<option value="[% self_url %]/edit/etymologies">Etymologies</option> 
+[% END # has_privs(2) -%]
+[% IF c.has_privs(1) # for read-only users, these options are accessible (except for edit/notes) but shouldn't clutter up the dropdown box %]
+<option value="[% self_url %]/edit/mesoroots">Mesoroots</option>
+<option value="[% self_url %]/edit/morphemes">Morphemes</option>
+<option value="[% self_url %]/edit/notes">Notes</option>
+<option value="[% self_url %]/edit/soundlaws">Sound Laws</option> 
+[% END # has_privs(1) %]
+[% IF c.has_privs(8) -%]
+<option value="[% self_url %]/edit/projects">Projects</option>
+<option value="[% self_url %]/admin/progress">Progress</option> 
+[% END # has_privs(8) -%]
+[% IF user!="guest" # don't allow users to edit the guest account %]<option value="[% self_url %]/account">My Account</option>[% END %]
+</select>
+</form>
+&nbsp;&nbsp;<a href="[% self_url %]/logout">log out</a>
+[% ELSE # user not logged in -%]
+<form style="display:none;" id="guest_tools_header" method="post" action="[% https_base _ self_url %]/account/login"><input type="hidden" name="user" value="guest"><input type="hidden" name="pwd" value="guest"><input type="hidden" name="url" value="[% https_base _ self_url %]/admin"></form>
+&nbsp;<a href="#" onclick="$('guest_tools_header').submit();">tools</a>
+[% IF c.param('https') -%]
+&nbsp;&nbsp;
+[%- IF c.query.url('-path',-1).search('account') # if this is an account-related page, exclude url parameter (creates problems) -%]
+<a href="[% self_url %]/account/login">
+[%- ELSE # otherwise, okay to include url parameter and redirect after logging in -%]
+<a href="[% self_url %]/account/login?url=[% c.query.url('-path',1,'-query',1) | url %]">
+[%- END # end check for login page -%]log in</a>
+[%- END # end https param check -%]
+<script>
+var stedtuserprivs = 0;
+[% UNLESS suppress_header %]$('header').show();
+[% END -%]
+</script>
+[% END # user check -%]
+﻿[% # by including a zero-width no-break space (U+FEFF) here, and saving this file with a utf-8 BOM, we can force Template Toolkit to generate all pages as utf-8 instead of latin-whatever. I think we could also try using {binmode=>':utf8'} in the Template::process() call, but since for our purposes that's wrapped up inside the C::A::P::TT module there's no easy way to access that. -%]
+&nbsp;&nbsp;<a href="http://stedt.berkeley.edu/documentation" target="_blank">help</a>
+<script src="[% self_base %]js/stedtconfig.js"></script>
+</span>
+<a href="[% self_url %]" title="Search Home"><img src="[% self_base %]img/splashy32x32.gif" alt="STEDT Logo" width="32" height="32" class="left" border=0></a>
+<b>[% title %]</b>
+<hr style="clear:both; margin-left:45px">
+</div>

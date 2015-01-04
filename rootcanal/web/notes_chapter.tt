@@ -1,0 +1,46 @@
+<div class="reord" id="reorddiv_[% n.noteid %]">
+<form id="form[% n.noteid %]" class="noteform right">
+<input type="hidden" name="noteid" value="[% n.noteid %]">
+<input type="hidden" name="mod" value="[% n.lastmod %]">
+<input type="hidden" name="ord" value="[% n.ord %]">
+[% IF c.has_privs(8) # only approvers can edit chapter notes %]
+notetype:<select name="notetype">
+<option [% IF n.type=='T' %]selected="selected" [% END %]value="T">Text</option>
+<option [% IF n.type=='I' %]selected="selected" [% END %]value="I">Internal</option>
+<option [% IF n.type=='G' %]selected="selected" [% END %]value="G">Graphic</option>
+</select>
+last modified: <span id="lastmod[% n.noteid %]"><a href="[% self_url %]/admin/changes?t=notes&id=[% n.noteid %]" target="stedt_changelog">[% n.lastmod %]</a></span>
+<br>
+[% IF n.type == 'G' -%]
+<p>[<a href="[% self_base %]pdf/[% n.noteid %].pdf">Link to graphics file [% n.noteid %].pdf.</a><br>
+Delete the file if you delete this note.]</p>
+[% ELSE -%]
+<textarea name="xmlnote" rows="[% n.num_lines %]" cols="54">
+[%- n.markup -%]
+</textarea>
+<br>
+<input type="submit" value="Save Note">
+[% END -%]
+<input type="button" name="delete_btn" value="Delete Note">
+[% IF c.has_privs(8) && n.uid != 8 -%]
+user: <select name="uid">
+<option value="8">stedt</option>
+<option selected="selected" value="[% n.uid %]">[% n.username %]</option>
+</select>
+[% END -%]
+<a href="#" class="cheatsheet_link">markup</a>
+[% END # check for approver privs -%]
+</form>
+<div id="preview[% n.noteid %]" class="notepreview">
+[% IF n.type == 'G' -%]
+<div>
+<a href="[% self_base %]pdf/[% n.noteid %].pdf">
+<img src="http://docs.google.com/viewer?url=[% c.query.url.replace('[^/]+$', '') %]pdf/[% n.noteid %].pdf&a=bi&pagenumber=1">
+</a></div>
+[% ELSE -%]
+[% IF n.type == 'I' %][Internal Note:] <i>[% END -%]
+[% n.text -%]
+[% IF n.type == 'I' %]</i>[% END -%]
+[% IF n.uid != 8 %] [[% n.username %]][% END %]
+[% END -%]
+</div><hr class="edit" style="clear:right"></div>

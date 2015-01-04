@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT Name="STEDT Semantic Categorization">
+   <VOLUME Number_DWB="1" Label="The Body" Num_auto="1" glosses_old1="aged,broken-hearted,esophogus,eyelashes,index,strand" Semcat_old1="Nbp" V.F_old1="1a" glosses_old2="paralytic,sleepwalking,somnambulize" Semcat_old2="Vbp" V.F_old2="1b">
+      <DEFAULT Number_DWB="1.1" Label="Body Parts" Num_auto="1.1" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1">
+         <DEFAULT Number_DWB="1.1.1" Label="Body" Num_auto="1.1.1" glosses_old1="body,lower body,naked,nudity,physique" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.1" glosses_old2="lean" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.1">
+            <DEFAULT Number_DWB="1.1.1.1" Label="Flesh/Meat" Num_auto="1.1.1.1" glosses_old1="carrion,flesh,flesh-meat,livestock,meat" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.1.2" Label="Lean (Meat)" Num_auto="1.1.1.2" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.1.2" Note="No lexicon records"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.1.2" Label="Life/Breathe/Exist" Num_auto="1.1.2">
+            <DEFAULT Number_DWB="1.1.2.1" Label="Life/Live/Alive" Num_auto="1.1.2.1" glosses_old1="life,lifespan,life-span,lifetime,long life,shine" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.2.1" glosses_old2="alive,live,lively,living,long-lived,survive" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.2.2" Label="Breath/Breathe" Num_auto="1.1.2.2" glosses_old1="air,asthma,breath" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.2.2" glosses_old2="breathe,breathe (infiinitive verb),breathless,exhale,gasp,inhale,pant,panting,respiration" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.2.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.2.3" Label="Existence" Num_auto="1.1.2.3" glosses_old1="exist,existence" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.2.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.2.3" Label="Be able" Num_auto="1.1.2.4" glosses_old1="be able" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="1.2.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.1.3" Label="Hungry" Num_auto="1.1.3" glosses_old1="appetite,famine,hunger,hungry,starve,starving" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.3" glosses_old2="be hungry,painful" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.3">
+            <DEFAULT Number_DWB="1.1.3.1" Label="Thirsty" Num_auto="1.1.3.1" glosses_old1="thirst,thirsty" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.3.1" glosses_old2="be thirsty,quench" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.3.2" Label="Satiated/Full/Enough" Num_auto="1.1.3.2" glosses_old1="full,sated,satiated" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.3.2" glosses_old2="enough,sufficient" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.3.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.1.4" Label="Wake/Conscious/Alert" Num_auto="1.1.4" glosses_old1="alert,arise,awake,awaken,be awake,get up,revive,rise,sober,sober up" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="1.4" glosses_old2="arouse,aroused,consciousness,delirium,energy,wake,waken" Semcat_old2="Nbp" V.F_old2="1a" Chapter_old2="1.4">
+            <DEFAULT Number_DWB="1.1.4.1" Label="Sleep/Be asleep" Num_auto="1.1.4.1" glosses_old1="asleep,insomnia" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.4.1" glosses_old2="doze,lie down,repose,rest,sleep,sleeping,sleepy" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.4.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.4.2" Label="Dream" Num_auto="1.1.4.2" glosses_old1="dream,nightmare" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.4.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.1.5" Label="Strength" Num_auto="1.1.5" glosses_old1="overcome,power,powerful,strength,strengthen,tough,weak,weakness" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.5" glosses_old2="get,solid" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.5">
+            <DEFAULT Number_DWB="1.1.5.1" Label="Sick/Hurt/Ache" Num_auto="1.1.5.1" glosses_old1="disease,dysentry,epidemic,fever,fomentation,germs,hurt,ill,illness,infection,injury,pain,sad,sick,sickly,sickness,sore,symptom" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.5.1" glosses_old2="ache,ail,ailing,cure,cured,faint,feeble,feverish,heal,healer,hot,infect,infected,recover,swoon" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.5.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.1.5.2" Label="Swollen/Swell/Bloated" Num_auto="1.1.5.2" glosses_old1="node,plump,tumor" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.5.2" glosses_old2="bloated,distended,swell,swelling,swollen" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.5.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.1.6" Label="Die/Deathly" Num_auto="1.1.6" glosses_old1="dead,death,perish" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.6" glosses_old2="die,died,suffocate" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.6">
+            <DEFAULT Number_DWB="1.1.6.1" Label="Carcass/Dead Body" Num_auto="1.1.6.1" glosses_old1="carcass,corpse,dead body" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.6.1"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.2" Label="Head and Face" Num_auto="1.2" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2">
+         <DEFAULT Number_DWB="1.2.1" Label="Head/Headed" Num_auto="1.2.1" glosses_old1="back of head,behead,caul,head,headache,head-ache,headcold,head-first,pillow" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.1" glosses_old2="nod,wear on head" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="2.1">
+            <DEFAULT Number_DWB="1.2.1.1" Label="Skull" Num_auto="1.2.1.1" glosses_old1="occiput,skull" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.1.2" Label="Crown/Pate" Num_auto="1.2.1.2" glosses_old1="crown,crown of head,pate,top of head" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.1.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.1.3" Label="Fontanel" Num_auto="1.2.1.3" glosses_old1="fontanel,fontanelle,top" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.1.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.1.4" Label="Caul" Num_auto="1.2.1.4" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.1.4" Note="No lexicon records"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.1.5" Label="Scalp" Num_auto="1.2.1.5" glosses_old1="dandruff,scalp" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.1.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.2.2" Label="Horn(ed)/Antler" Num_auto="1.2.2" glosses_old1="antenna,antler,buffalo-horn,horn,horns" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.2" glosses_old2="horned" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="2.2">
+            <DEFAULT Number_DWB="1.2.2.1" Label="Comb/Crest" Num_auto="1.2.2.1" glosses_old1="cock's comb,cockscomb,comb,coxcomb,summit" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.2.2" Label="Comb (Hair)" Num_auto="1.2.2.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.2.3" Label="Hair of Head" Num_auto="1.2.3" glosses_old1="forelock,hair,hair of head,head hair,lock,white-haired" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.3">
+            <DEFAULT Number_DWB="1.2.3.1" Label="Cowlick/Flexure" Num_auto="1.2.3.1" glosses_old1="cowlick,hair-parting" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.3.2" Label="Queue/Braid" Num_auto="1.2.3.2" glosses_old1="braid,hair-knot,pigtail,plait,queue,topknot" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.3.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.3" Label="Long-haired" Num_auto="1.2.3.3" glosses_old1="long-haired" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.3.3" Label="Bald" Num_auto="1.2.3.4" glosses_old1="baldhead,meningitis" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.3.3" glosses_old2="bald,bald-headed,balding" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="2.3.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.2.4" Label="Brain" Num_auto="1.2.4" glosses_old1="brain,brains,cerebellum,cerebrum,meninges" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.4"></DEFAULT>
+         <DEFAULT Number_DWB="1.2.5" Label="Face" Num_auto="1.2.5" glosses_old1="complexion,countenance,dimple,face,facial hair,visage" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.5">
+            <DEFAULT Number_DWB="1.2.5.1" Label="Forehead/Temples" Num_auto="1.2.5.1" glosses_old1="forehead,temple,temples" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.5.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.5.2" Label="Jaw/Cheek" Num_auto="1.2.5.2" glosses_old1="cheek,cheekbone,cheeks,jaw,jawbone,jaw-bone,lower jaw,mandible,muzzle,rim" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.5.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.5.3" Label="Chin" Num_auto="1.2.5.3" glosses_old1="chin" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.5.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.5.4" Label="Dimple" Num_auto="1.2.5.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.5.5" Label="Beard/Moustache/Facial Hair" Num_auto="1.2.5.5" glosses_old1="beard,goatee,moustache,mustache,sideburns,whisker,whiskers" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.5.5" Note="BP Verb was &quot;Bearded Vbp 1b/2.5&quot;" glosses_old2="bearded,blush" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="2.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.2.6" Label="Eye" Num_auto="1.2.6" glosses_old1="eye,eye socket,eyeball,eyes,eye-socket,spittle" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6" glosses_old2="sharp-eyed" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="2.6">
+            <DEFAULT Number_DWB="1.2.6.1" Label="Eyeball" Num_auto="1.2.6.1" glosses_old1="cornea,eyeball" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.2" Label="Iris/Pupil" Num_auto="1.2.6.2" glosses_old1="iris,pupil" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.2">
+               <DEFAULT Number_DWB="1.2.6.2" Label="Dilate" Num_auto="1.2.6.2.1" glosses_old1="dilate" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.6.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.3" Label="White of Eye" Num_auto="1.2.6.3" glosses_old1="white of eye" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.4" Label="Eyelid" Num_auto="1.2.6.4" glosses_old1="eye lid,eyelid" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.5" Label="Eyelash" Num_auto="1.2.6.5" glosses_old1="eyelash,lashes" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.5"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.6" Label="Eyebrow" Num_auto="1.2.6.6" glosses_old1="brow ridge; supraorbital ridge,eye-bone,eyebrow,eyebrow (cp. no. 220-221)" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.6"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.7" Label="Tears" Num_auto="1.2.6.7" glosses_old1="tears" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.7" Note="also exists in 1.8.8.2 (under Secretions and Somatophonics)"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.8" Label="Eye Sand" Num_auto="1.2.6.8" glosses_old1="eye sand" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.8"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.7" Label="Watch" Num_auto="1.2.6.9" glosses_old1="watch" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.6.7"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.9" Label="See/Look" Num_auto="1.2.6.10" glosses_old1="eyesight,see,sight" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.9"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.9" Label="Behold" Num_auto="1.2.6.11" glosses_old1="behold,gaze,invisible,look,look~for,looks,observe,peek,stare,staring" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.6.9"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.10" Label="Blink/Wink" Num_auto="1.2.6.12" glosses_old1="blink,blinking,wink" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.10"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.10" Label="Squint" Num_auto="1.2.6.13" glosses_old1="squint" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.6.10"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.6.11" Label="Eye Illness" Num_auto="1.2.6.14" glosses_old1="cataract,conjuctivitis,pinkeye,strabismus,sty" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.11">
+               <DEFAULT Number_DWB="1.2.6.11" Label="Cross-eyed" Num_auto="1.2.6.14.1" glosses_old1="cross-eyed,nearsighted" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.6.11"></DEFAULT>
+               <DEFAULT Number_DWB="1.2.6.11.1" Label="Blind" Num_auto="1.2.6.14.2" glosses_old1="blind,blind (adj. / n.),blind (human),blind (human, male),blind (not polite),blind for shooting / ambush,blind in one eye,blind man,blind n.,blind person,blind person (both eyes),blind person (half-blind),blind person (one eye),blind snake,blind, be,blind, be (acquired / postnatally),blind, be (congenitally),blind, without pupils,blind; lose eyesight,blind; lose eye-sight,blind; vision goes black as in,blinded / confused,blinded, confused, desolate, d,blinded, confused, desoloate,,blindly; in darkness,blindness" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.6.11." Note="Lexicon records have truncated category (should be 2.6.11.1)"></DEFAULT>
+               <DEFAULT Number_DWB="1.2.6.11.2" Label="Sty of Eye" Num_auto="1.2.6.14.3" Semcat_old1="Nbp"></DEFAULT>
+            </DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.2.7" Label="Ear" Num_auto="1.2.7" glosses_old1="ear,earhole,earplug,earwig,otorrhoea" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.7">
+            <DEFAULT Number_DWB="1.2.7.1" Label="Earlobe" Num_auto="1.2.7.1" glosses_old1="earlobe" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.7.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.7.2" Label="Eardrum" Num_auto="1.2.7.2" glosses_old1="eardrum" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.7.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.7.3" Label="Earwax" Num_auto="1.2.7.3" glosses_old1="earwax" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.7.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.7.4" Label="Hear/Listen" Num_auto="1.2.7.4" glosses_old1="hear" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.7.4" Note="BP Verb was &quot;Audible&quot;" glosses_old2="audible,listen,overhear" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="2.7.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.7.5" Label="Deaf" Num_auto="1.2.7.5" glosses_old1="deaf,deafness" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.7.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.2.8" Label="Nose" Num_auto="1.2.8" glosses_old1="nose,nosebleed,snout,stench" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.8">
+            <DEFAULT Number_DWB="1.2.8.1" Label="Nostril" Num_auto="1.2.8.1" glosses_old1="nostril,sinus" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.8.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.8.2" Label="Alae Nasi" Num_auto="1.2.8.2" glosses_old1="alae nasi" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.8.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.8.3" Label="Snout" Num_auto="1.2.8.3" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.8.4" Label="Snot: See Secretions" Num_auto="1.2.8.4" Note="delete?"></DEFAULT>
+            <DEFAULT Number_DWB="1.2.8.5" Label="Smell" Num_auto="1.2.8.5" glosses_old1="smell,smelling,smelly,sniff,snuff" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="2.8.5"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.3" Label="Mouth and Throat" Num_auto="1.3" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3">
+         <DEFAULT Number_DWB="1.3.1" Label="Mouth" Num_auto="1.3.1" glosses_old1="maw,mouth,mouth / nozzle / beak,wry-mouth" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.1">
+            <DEFAULT Number_DWB="1.3.1.1" Label="Palate" Num_auto="1.3.1.1" glosses_old1="palate" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.1.2" Label="Beak/Bill" Num_auto="1.3.1.2" glosses_old1="beak,bill" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.1.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.1.3" Label="Yawn/Gape" Num_auto="1.3.1.3" glosses_old1="yawn" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.1.3" glosses_old2="gape,mouthful" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="3.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.1.4" Label="Blow" Num_auto="1.3.1.4" glosses_old1="blow,blow with mouth,blowpipe" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.1.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.3.2" Label="Lip" Num_auto="1.3.2" glosses_old1="harelip,lip,lips,lobe,mouth" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.2">
+            <DEFAULT Number_DWB="1.3.2.1" Label="Suck/Suckle" Num_auto="1.3.2.1" glosses_old1="suck,suckle" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.2.1" glosses_old2="sucking" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="3.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.2.2" Label="Kiss" Num_auto="1.3.2.2" glosses_old1="a kiss,kiss,kiss (&quot;have a kiss&quot;),kissed (he kissed)" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.2.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.3.3" Label="Tongue" Num_auto="1.3.3" glosses_old1="tongue" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.3">
+            <DEFAULT Number_DWB="1.3.3.1" Label="Lick" Num_auto="1.3.3.1" glosses_old1="lick,licking" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.3.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.3.4" Label="Tooth" Num_auto="1.3.4" glosses_old1="bucktooth,dental,incisor,tartar,teeth,tooth,toothache" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.4">
+            <DEFAULT Number_DWB="1.3.4.1" Label="Eyetooth/Tusk/Canine Tooth" Num_auto="1.3.4.1" glosses_old1="canine tooth,eyetooth,eye-tooth,fang,ivory,tusk,tusks" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.4.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.4.2" Label="Molar" Num_auto="1.3.4.2" glosses_old1="molar,molars" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.4.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.4.3" Label="Gums" Num_auto="1.3.4.3" glosses_old1="gum,gums,six" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.4.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.4.4" Label="Bite/Hold in Mouth" Num_auto="1.3.4.4" glosses_old1="bite,bite (past),bite down on,biting,bitten,gnash,gnaw,hold in mouth,hold in the mouth" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.4.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.4.5" Label="Chew" Num_auto="1.3.4.5" glosses_old1="chewing,masticate,munch,nibble" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.4.5" Note="Some forms in lexicon table are categorized as 1a/3.4.5 (Nbp)" glosses_old2="chew" Semcat_old2="Nbp" V.F_old2="1a" Chapter_old2="3.4.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.3.5" Label="Throat/Pharanx" Num_auto="1.3.5" glosses_old1="epiglottis,throat,tonsil" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.5">
+            <DEFAULT Number_DWB="1.3.5.1" Label="Uvula" Num_auto="1.3.5.1" glosses_old1="uvula" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.5.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.2" Label="Windpipe/Trachea" Num_auto="1.3.5.2" glosses_old1="tracheitis,windpipe,wind-pipe" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.5.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.3" Label="Gill" Num_auto="1.3.5.3" glosses_old1="gill,gills" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.5.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.4" Label="Adam's Apple/Larynx" Num_auto="1.3.5.4" glosses_old1="Adam's apple,glottis,larynx" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.5.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.5" Label="Gullet/Esophagus" Num_auto="1.3.5.5" glosses_old1="esophagus,gullet" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="3.5.5"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.6" Label="Swallow" Num_auto="1.3.5.6" Semcat_old1="Vbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.6" Label="Choke" Num_auto="1.3.5.7" glosses_old1="choke,choked,choking,gargle,gulp,gulping,swallow,swallowing" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.5.6"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.7" Label="Eat/Devour" Num_auto="1.3.5.8" glosses_old1="devour,eat,eat!,eater,eating,eats,feed,ingest,taste,tasty" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.5.7"></DEFAULT>
+            <DEFAULT Number_DWB="1.3.5.8" Label="Drink" Num_auto="1.3.5.9" glosses_old1="drinkable,drinking,drunk,imbibe" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="3.5.8" Note="BP Noun was &quot;Drunkedness Nbp 1a/3.5.8&quot;" glosses_old2="drink,drunkard" Semcat_old2="Nbp" V.F_old2="1a" Chapter_old2="3.5.8"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.4" Label="Torso" Num_auto="1.4" glosses_old1="torso" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4">
+         <DEFAULT Number_DWB="1.4.1" Label="Torso/Trunk" Num_auto="1.4.1" glosses_old1="trunk" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.1"></DEFAULT>
+         <DEFAULT Number_DWB="1.4.2" Label="Neck" Num_auto="1.4.2" glosses_old1="dewlap,neck" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.2" Note="BP Verb was &quot;Neck-shaped&quot;" glosses_old2="neck-shaped" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="4.2">
+            <DEFAULT Number_DWB="1.4.2.1" Label="Nape of Neck" Num_auto="1.4.2.1" glosses_old1="nape,nape of neck" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.2.2" Label="Goiter" Num_auto="1.4.2.2" glosses_old1="goiter" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.2.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.4.3" Label="Shoulder" Num_auto="1.4.3" glosses_old1="shoulder,shoulders" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.3">
+            <DEFAULT Number_DWB="1.4.3.1" Label="Collarbone/Clavicle" Num_auto="1.4.3.1" glosses_old1="clavicle,collar,collarbone" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.3.2" Label="Shoulderblade/Scapula" Num_auto="1.4.3.2" glosses_old1="blade,shoulderblade" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.3.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.3" Label="Carry on shoulder" Num_auto="1.4.3.3" glosses_old1="carry on shoulder" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="4.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.4.4" Label="Front" Num_auto="1.4.4" glosses_old1="forepart,front" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.4">
+            <DEFAULT Number_DWB="1.4.4.1" Label="Folded" Num_auto="1.4.4.1" glosses_old1="folded,folding" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="4.4.1" Note="Should this be moved?"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.4.1" Label="Bosom/Lap" Num_auto="1.4.4.2" glosses_old1="bosom,fold,lap,to fold" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.4.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.4.2" Label="Chest" Num_auto="1.4.4.3" glosses_old1="breast,breastplate,cage,chest,rib" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.4.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.4.3" Label="Ribs/Ribcage" Num_auto="1.4.4.4" glosses_old1="ribs" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.4.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.4.4" Label="Chest Hair" Num_auto="1.4.4.5" glosses_old1="chest hair" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.4.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.4.5" Label="Sides" Num_auto="1.4.5" glosses_old1="side" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.5"></DEFAULT>
+         <DEFAULT Number_DWB="1.4.6" Label="Waist" Num_auto="1.4.6" glosses_old1="waist" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.6"></DEFAULT>
+         <DEFAULT Number_DWB="1.4.7" Label="Belly/Abdomen" Num_auto="1.4.7" glosses_old1="abdomen,belly,belly; stomach,belly-stomach,epigastrium,paunch,peritoneum" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.7"></DEFAULT>
+         <DEFAULT Number_DWB="1.4.8" Label="Back" Num_auto="1.4.8" glosses_old1="back,back (direction),back (of body),backside" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.8" Note="BP Verb was &quot;Spinal&quot;" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="4.8">
+            <DEFAULT Number_DWB="1.4.8.1" Label="Lower Back/Small of Back" Num_auto="1.4.8.1" glosses_old1="lower back,small of back" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.8.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.8.2" Label="Spine/Backbone" Num_auto="1.4.8.2" glosses_old1="backbone,spine" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.8.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.8.3" Label="Hunchback" Num_auto="1.4.8.3" glosses_old1="hump,hunchback" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.8.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.8.3" Label="Crouch" Num_auto="1.4.8.4" glosses_old1="humpbacked,hunchbacked" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="4.8.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.4.9" Label="Loins/Groin" Num_auto="1.4.9" glosses_old1="groin,loin,loins" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.9">
+            <DEFAULT Number_DWB="1.4.9.1" Label="Crotch/Fork" Num_auto="1.4.9.1" glosses_old1="crotch,fork" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.9.1" glosses_old2="forked" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="4.9"></DEFAULT>
+            <DEFAULT Number_DWB="1.4.9.2" Label="Hips/Pelvis/Haunches" Num_auto="1.4.9.2" glosses_old1="buttock,haunches,hip,hipbone,hips,pelvis,sacrum" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.9.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.4.10" Label="Buttocks/Rump" Num_auto="1.4.10" glosses_old1="bum,bump,butt,buttocks,rump" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.10">
+            <DEFAULT Number_DWB="1.4.10.1" Label="Tail" Num_auto="1.4.10.1" glosses_old1="tail" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.10.1">
+               <DEFAULT Number_DWB="1.4.10.1" Label="Short-tailed" Num_auto="1.4.10.1.1" glosses_old1="wag" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="4.10.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.4.10.2" Label="Anus/Rectum" Num_auto="1.4.10.2" glosses_old1="anus,fundament,hemorrhoids,rectum" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="4.10.2"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.5" Label="Limbs, Joints, &amp; Body Measures" Num_auto="1.5" glosses_old1="left,right" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5." Note="Forms in lexicon table are categorized as 1a/5. with trailing dot (for some unknown reason)">
+         <DEFAULT Number_DWB="1.5.1" Label="Hand, Arm, Wing" Num_auto="1.5.1">
+            <DEFAULT Number_DWB="1.5.1" Label="Hand" Num_auto="1.5.1.1" glosses_old1="back of hand,hand,hand-right,hands,left-handed,right hand,right-hand" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.1">
+               <DEFAULT Number_DWB="1.5.1.1" Label="Fist" Num_auto="1.5.1.1.1" glosses_old1="fist" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.1.1"></DEFAULT>
+               <DEFAULT Number_DWB="1.5.1.2" Label="Back of Hand" Num_auto="1.5.1.1.2"></DEFAULT>
+               <DEFAULT Number_DWB="1.5.1" Label="Four-handed" Num_auto="1.5.1.1.3" glosses_old1="four-handed" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="5.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.5.8" Label="Arm" Num_auto="1.5.1.2" glosses_old1="arm,armful,armlet,armpits,arms,forearm,handarm,wing" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.8">
+               <DEFAULT Number_DWB="1.5.8.1" Label="Bicep/Upper Arm" Num_auto="1.5.1.2.1" glosses_old1="upper arm,upperarm" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.8.1"></DEFAULT>
+               <DEFAULT Number_DWB="1.5.8.2" Label="Forearm" Num_auto="1.5.1.2.2" glosses_old1="forearm,fore-arm" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.8.2"></DEFAULT>
+               <DEFAULT Number_DWB="1.5.8.3" Label="Underarm/Armpit" Num_auto="1.5.1.2.3" glosses_old1="armpit,armpit (&quot;tickle-hole&quot;),tickle,underarm" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.8.3"></DEFAULT>
+               <DEFAULT Number_DWB="1.5.8.4" Label="Tickle" Num_auto="1.5.1.2.4" glosses_old1="tickle,tickled,tickling,ticklish" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.8.4"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.5.10" Label="Wing" Num_auto="1.5.1.3" glosses_old1="wing,wing, feather, fin,wings" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.10">
+               <DEFAULT Number_DWB="1.5.10.1" Label="Fin" Num_auto="1.5.1.3.1" glosses_old1="fin" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.10.1"></DEFAULT>
+            </DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.2" Label="Foot" Num_auto="1.5.2" glosses_old1="feet,foot" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.2" glosses_old2="stand,standing" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="5.2">
+            <DEFAULT Number_DWB="1.5.2.1" Label="Heel" Num_auto="1.5.2.1" glosses_old1="heel,heel (&quot;foot-chicken-egg&quot;),heels,knee" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.2.2" Label="Instep" Num_auto="1.5.2.2" glosses_old1="instep" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.2.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.2.3" Label="Arch" Num_auto="1.5.2.3" glosses_old1="arch,arched" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.2.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.2.4" Label="Ball of Foot" Num_auto="1.5.2.4" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.2.5" Label="Footprint" Num_auto="1.5.2.5" glosses_old1="ball of foot,barefoot,barefooted,foothold,footprint" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.2.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.3" Label="Hands and Feet/Arms and Legs" Num_auto="1.5.3" glosses_old1="hands and feet" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.3">
+            <DEFAULT Number_DWB="1.5.3.1" Label="Limb/Branch" Num_auto="1.5.3.1" glosses_old1="branch,brow,extremity,limb,limbs" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.3.2" Label="Five" Num_auto="1.5.3.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.3" Label="Bandy-legged" Num_auto="1.5.3.3" glosses_old1="cross-legged,long-limbed" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="5.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.4" Label="Hoof/Paw" Num_auto="1.5.4" glosses_old1="hoof,paw" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.4"></DEFAULT>
+         <DEFAULT Number_DWB="1.5.6" Label="Palm/Sole" Num_auto="1.5.5" glosses_old1="handprint,palm,sole" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.6"></DEFAULT>
+         <DEFAULT Number_DWB="1.5.7" Label="Finger/Toe" Num_auto="1.5.6" glosses_old1="digit,finger,fingerless,fingerring,fingers,fingersbreadth,finger-tip,toe,toe-jam,toes" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.7">
+            <DEFAULT Number_DWB="1.5.7.1" Label="Thumb/Big Toe" Num_auto="1.5.6.1" glosses_old1="big toe,fingerprint,thumb" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.7.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.7.2" Label="Other Specific Digits" Num_auto="1.5.6.2" glosses_old1="forefinger,ring finger" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.7.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.7.3" Label="Fingerprint" Num_auto="1.5.6.3" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.7.3" Note="No lexicon records"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.9" Label="Leg" Num_auto="1.5.7" glosses_old1="calf,hindleg,hind-leg,leg,legs,lower leg,shank,shin" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.9">
+            <DEFAULT Number_DWB="1.5.9.1" Label="Thigh" Num_auto="1.5.7.1" glosses_old1="femur,thigh,thighbone" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.9.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.9.2" Label="Shin/Tibia" Num_auto="1.5.7.2" glosses_old1="foreleg,shin,shinbone,shin-bone,tibia" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.9.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.9.3" Label="Calf" Num_auto="1.5.7.3" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.9.3" Note="No lexicon records"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.9.4" Label="Lower Leg" Num_auto="1.5.7.4" Semcat_old1="Nbp"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.11" Label="Joint" Num_auto="1.5.8" glosses_old1="angle,joint,joints" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.11">
+            <DEFAULT Number_DWB="1.5.11.1" Label="Wrist" Num_auto="1.5.8.1" glosses_old1="wrist,wristbone" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.11.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.11.2" Label="Ankle" Num_auto="1.5.8.2" glosses_old1="ankle,anklebone" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.11.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.11.3" Label="Elbow" Num_auto="1.5.8.3" glosses_old1="elbow" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.11.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.11.4" Label="Knee" Num_auto="1.5.8.4" glosses_old1="knee,kneecap,knee-cap,knee-cover,kneecovers,kneepan,knees" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.11.4">
+               <DEFAULT Number_DWB="1.5.11.4" Label="Knee-deep" Num_auto="1.5.8.4.1" glosses_old1="knee-deep,kneel" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="5.11.4"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.5.11.5" Label="Knuckle/Phalanx" Num_auto="1.5.8.5" glosses_old1="knuckle,knuckles" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.11.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.12" Label="Body Measures" Num_auto="1.5.9">
+            <DEFAULT Number_DWB="1.5.12" Label="Right" Num_auto="1.5.9.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.13" Label="Left" Num_auto="1.5.9.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.14" Label="Cubit" Num_auto="1.5.9.3" glosses_old1="cubit" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.14"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.15" Label="Span/Handspan" Num_auto="1.5.9.4" glosses_old1="hand span,handspan,span" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.15"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.16" Label="Fathom/Cord" Num_auto="1.5.9.5" glosses_old1="cord" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.16"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.17" Label="Nail" Num_auto="1.5.10" glosses_old1="nail,nails" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.17">
+            <DEFAULT Number_DWB="1.5.17.1" Label="Fingernail" Num_auto="1.5.10.1" glosses_old1="fingernail,finger-nail,fingernails" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.17.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.17.2" Label="Toenail" Num_auto="1.5.10.2" glosses_old1="toenail,toe-nail" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.17.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.17.3" Label="Cuticle" Num_auto="1.5.10.3" glosses_old1="cuticle" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.17.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.5.17.4" Label="Claw/Talon/Pincer" Num_auto="1.5.10.4" glosses_old1="claw,cockspur,dewclaw,pincers,talon" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.17.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.5.18" Label="Numb/Paralyzed" Num_auto="1.5.11" glosses_old1="numb" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.18" glosses_old2="paralysis,paralyzed" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="5.18"></DEFAULT>
+         <DEFAULT Number_DWB="1.5.19" Label="Lame/Limp" Num_auto="1.5.12" glosses_old1="limp" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="5.19" glosses_old2="lame,limping,maimed,sprain,sprained" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="5.19"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.6" Label="Diffuse Organs" Num_auto="1.6" glosses_old1="diffuse,diffuse organs" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.0" Note="Chapter has trailing zero for some reason">
+         <DEFAULT Number_DWB="1.6.1" Label="Body Hair/Fur" Num_auto="1.6.1" glosses_old1="body hair,body-hair,fur,furious,hair of body,hairless,hairs,hairy,long hair,mane" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.1">
+            <DEFAULT Number_DWB="1.6.1.1" Label="Feather" Num_auto="1.6.1.1" glosses_old1="feather,feathers" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.1.2" Label="Mane" Num_auto="1.6.1.2" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.1.3" Label="Wool" Num_auto="1.6.1.3" glosses_old1="wool,woolly" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.1.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.1" Label="Bristle" Num_auto="1.6.1.4" glosses_old1="bristle" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="6.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.6.2" Label="Blood/Bleed" Num_auto="1.6.2" glosses_old1="anemia,blood,bruise,hemorrhage" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.2" glosses_old2="bleed,bleed ,bleeding,bloody" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="6.2">
+            <DEFAULT Number_DWB="1.6.2.1" Label="Blood Vessel/Vein/Artery" Num_auto="1.6.2.1" glosses_old1="artery,blood vessel,vein" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.2.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.6.3" Label="Bone" Num_auto="1.6.3" glosses_old1="bone,bone [lit. one's bone],bones,fishbone,fracture" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.3">
+            <DEFAULT Number_DWB="1.6.3.1" Label="Skeleton" Num_auto="1.6.3.1" glosses_old1="skeleton" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.3.1" glosses_old2="skeletal,vertebral" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="6.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.3.2" Label="Breastbone/Sternum" Num_auto="1.6.3.2" glosses_old1="breastbone,sternum" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.3.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.3.3" Label="Spine/Backbone" Num_auto="1.6.3.3" glosses_old1="coccyx,tailbone,vertebra,vertebrae" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.3.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.3.4" Label="Cartilage/Gristle" Num_auto="1.6.3.4" glosses_old1="cartilage,gristle" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.3.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.3.5" Label="Marrow" Num_auto="1.6.3.5" glosses_old1="marrow" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.3.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.6.4" Label="Fat/Be fat" Num_auto="1.6.4" glosses_old1="blubber,fat" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.4" Note="BP verb was &quot;Chubby&quot;" glosses_old2="chubby,fatten,oily" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="6.4">
+            <DEFAULT Number_DWB="1.6.4.1" Label="Oil/Grease" Num_auto="1.6.4.1" glosses_old1="butter,ghee,grease,lard,oil" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.4.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.6.5" Label="Skin" Num_auto="1.6.5" glosses_old1="gooseflesh,hide, skin,membrane,pellicle,scabies,septum,skin,skin (v.),skin, to,to skin" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.5">
+            <DEFAULT Number_DWB="1.6.5.1" Label="Hide/Leather" Num_auto="1.6.5.1" glosses_old1="hide,leather,quill" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.5.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.5.2" Label="Scale (of fish, snake)" Num_auto="1.6.5.2" glosses_old1="fish scale,fish scales,fish-scale,scale,scales,scales (fish),scales, a balance" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.5.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.5.3" Label="Skin Blemish/Freckle" Num_auto="1.6.5.3" glosses_old1="blister,callus,cyst,eczema,freckle,freckles,pimple,pimples,pockmarks,rash,scab,scar,tinea,wart,warts,wen" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.5.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.5.3" Label="Blistered" Num_auto="1.6.5.4" glosses_old1="bruised,sunbathe" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="6.5.3">
+               <DEFAULT Number_DWB="1.6.5.3.1" Label="Boil (n.)" Num_auto="1.6.5.4.1" Semcat_old1="Nbp"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.6.5.4" Label="Itch/Scratch" Num_auto="1.6.5.5" glosses_old1="itch,scratch,scratches" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.5.4" glosses_old2="itching,itchy" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="6.5.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.5" Label="Molt" Num_auto="1.6.5.6" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="6.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.6.6" Label="Obscure Internal Channels" Num_auto="1.6.6" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.6" Note="No lexicon records (at this level)">
+            <DEFAULT Number_DWB="1.6.6.1" Label="Sinew/Tendon/Ligament" Num_auto="1.6.6.1" glosses_old1="ligament,sinew,tendon" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.6.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.6.2" Label="Muscle" Num_auto="1.6.6.2" glosses_old1="4 principle muscles (calves and biceps),cramp,cramps,diaphragm,hamstring,muscle,muscles,muscular,spasm" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.6.2">
+               <DEFAULT Number_DWB="1.6.6.2" Label="Cramped" Num_auto="1.6.6.2.1" glosses_old1="shiver,shudder" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="6.6.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="1.6.6.3" Label="Nerve" Num_auto="1.6.6.3" glosses_old1="nerve,nerves,neuropathy" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.6.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.6.6.4" Label="Lymph" Num_auto="1.6.6.4" glosses_old1="swollen lymph nodes,swollen lymph nodes in neck" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="6.6.4"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.7" Label="Internal Organs" Num_auto="1.7" glosses_old1="gland,internal organs,viscera" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.0" Note="Chapter has trailing zero for some reason">
+         <DEFAULT Number_DWB="1.7.1" Label="Heart" Num_auto="1.7.1" glosses_old1="auricle,heart" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.1">
+            <DEFAULT Number_DWB="1.7.1.1" Label="Heartbeat/Pulse" Num_auto="1.7.1.1" glosses_old1="heartbeat,pulse" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.1.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.7.2" Label="Lung" Num_auto="1.7.2" glosses_old1="lung,lungs" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.2">
+            <DEFAULT Number_DWB="1.7.2.1" Label="Tuberculosis" Num_auto="1.7.2.1" glosses_old1="pleura,tuberculosis" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.2.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.7.3" Label="Liver" Num_auto="1.7.3" glosses_old1="gall bladder,gallbladder,gall-bladder,hepatitis,liver" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.3">
+            <DEFAULT Number_DWB="1.7.3.1" Label="Gall/Bile" Num_auto="1.7.3.1" glosses_old1="bile,gall,to burp with a sour taste" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.3.1" glosses_old2="biliary" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="7.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.7.4" Label="Spleen" Num_auto="1.7.4" glosses_old1="spleen,swollen spleen" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.4">
+            <DEFAULT Number_DWB="1.7.4.1" Label="Swollen Spleen" Num_auto="1.7.4.1" Semcat_old1="Nbp"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.7.5" Label="Kidney" Num_auto="1.7.5" glosses_old1="kidney,kidneys,small of the back" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.5"></DEFAULT>
+         <DEFAULT Number_DWB="1.7.6" Label="Stomach" Num_auto="1.7.6" glosses_old1="intestine,stomach,stomachache,stomach-ache,stomache-ache" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.6">
+            <DEFAULT Number_DWB="1.7.6.1" Label="Gizzard/Crop" Num_auto="1.7.6.1" glosses_old1="crop,crops,gizzard" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.6.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.7.6" Label="Digest" Num_auto="1.7.6.2" glosses_old1="digest,gastric" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="7.6"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.7.7" Label="Intestines/Bowels/Guts" Num_auto="1.7.7" glosses_old1="appendix,bowels,colon,constipation,duodenum,dysentery,entrails,guts,intestines,large intestine,mesentery,pancreas" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.7">
+            <DEFAULT Number_DWB="1.7.7.1" Label="Appendix" Num_auto="1.7.7.1" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.7.7.2" Label="Pancreas" Num_auto="1.7.7.2" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.7.7" Label="Constipated" Num_auto="1.7.7.3" glosses_old1="constipated" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="7.7"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.7.8" Label="Bladder" Num_auto="1.7.8" glosses_old1="bladder,urethra,urinary bladder,urination" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="7.8"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.8" Label="Secretions and Somatophonics" Num_auto="1.8" glosses_old1="musk" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8">
+         <DEFAULT Number_DWB="1.8.2" Label="Sweat/Perspire" Num_auto="1.8.1" glosses_old1="sweat,sweat (&quot;black sweat&quot;),sweat (sweat-hot)" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.2" glosses_old2="perspire" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="8.2">
+            <DEFAULT Number_DWB="1.8.2.1" Label="Pore" Num_auto="1.8.1.1" glosses_old1="perspiration,pore" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.2.2" Label="Body Dirt" Num_auto="1.8.1.2" glosses_old1="bodily dirt,body dirt,body filth,body-dirt" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.2.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.8.3" Label="Snot/Nasal Mucus" Num_auto="1.8.2" glosses_old1="mucus,nasal mucus,rheum,snot" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.3">
+            <DEFAULT Number_DWB="1.8.3.1" Label="Sneeze" Num_auto="1.8.2.1" glosses_old1="sneeze" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.3.2" Label="Snore" Num_auto="1.8.2.2" glosses_old1="snore,snoring" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.3.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.8.4" Label="Spit/Saliva" Num_auto="1.8.3" glosses_old1="burp,expectorate,phlegm,saliva,spit,spit (past),spitting,sputum,tooth-water" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.4">
+            <DEFAULT Number_DWB="1.8.4.1" Label="Phlegm" Num_auto="1.8.3.1" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.4.2" Label="Vomit" Num_auto="1.8.3.2" glosses_old1="vomit,vomit (JAM),vomit [lit. 'make froth'],vomiting" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.4.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.4.3" Label="Cough" Num_auto="1.8.3.3" glosses_old1="cough,retch,slabber" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.4.4" Label="Belch/Burp" Num_auto="1.8.3.4" glosses_old1="belch,belching" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.4.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.4.5" Label="Hiccup" Num_auto="1.8.3.5" glosses_old1="hiccough,hiccoughs,hiccup,hiccups" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.4.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.8.5" Label="Urine/Piss" Num_auto="1.8.4" glosses_old1="pee,piss,urine" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.5" glosses_old2="urinate" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="8"></DEFAULT>
+         <DEFAULT Number_DWB="1.8.6" Label="Feces/Shit/Dung/Filth/Excrement" Num_auto="1.8.5" glosses_old1="diarrhea,diarrhoea,dung,excrement,excreta,feces,filth,manure,shit" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.6">
+            <DEFAULT Number_DWB="1.8.6.1" Label="Meconium" Num_auto="1.8.5.1" Semcat_old1="Nbp"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.6.2" Label="Fart" Num_auto="1.8.5.2" glosses_old1="fart,flatulence" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.6.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.6.2" Label="Flatulate" Num_auto="1.8.5.3" glosses_old1="flatulent" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.6.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.6" Label="Defecate" Num_auto="1.8.5.4" glosses_old1="defecate,defecating,filthy,manuring" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.6"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.8.7" Label="Discharge" Num_auto="1.8.6" glosses_old1="discharge,suppurate" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.7">
+            <DEFAULT Number_DWB="1.8.7" Label="Pus/Gleet" Num_auto="1.8.6.1" glosses_old1="blood (cf. pus),gleet,pus,pustule" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.7"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.7.1" Label="Abcess/Ulcer" Num_auto="1.8.6.2" glosses_old1="abscess,ulcer,ulcers,wound,wounded" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.7.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.8.8" Label="Speak/Say/Tell" Num_auto="1.8.7" glosses_old1="say,speech,tell" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.8">
+            <DEFAULT Number_DWB="1.8.8.1" Label="Mute/Dumb" Num_auto="1.8.7.1" glosses_old1="mute" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.8"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.8.2" Label="Stutter/Stammer" Num_auto="1.8.7.2" glosses_old1="stammer,stammerer" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.8.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.8.8" Label="Emotional Somatophonics" Num_auto="1.8.8">
+            <DEFAULT Number_DWB="1.8.9" Label="Laugh/Smile" Num_auto="1.8.8.1" glosses_old1="laugh,tear" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="8.9" Note="BP Verb was &quot;Chuckle&quot;" glosses_old2="chuckle,frown,grimace,laughter,smile" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="8.9"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.9.1" Label="Cry/Weep" Num_auto="1.8.8.2" glosses_old1="cry,moan,snivel,sniveller,weep,weeper,weeping" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.9.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.9.2" Label="Tears" Num_auto="1.8.8.3" glosses_old1="tears" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="2.6.7" Note="also exists in 1.2.6.7"></DEFAULT>
+            <DEFAULT Number_DWB="1.8.9.3" Label="Whistle" Num_auto="1.8.8.4" Semcat_old1="Vbp"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.9" Label="Reproductive System" Num_auto="1.9" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.0" Note="Vbp chapter has trailing zero; no forms in lexicon table categorized as 1a/9(.0)" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="9.0">
+         <DEFAULT Number_DWB="1.9.1" Label="Egg" Num_auto="1.9.1" glosses_old1="egg,egg (&quot;bird-egg&quot;),eggs,eggshell,eggyolk,genitalia,genitals,hen's egg,louse egg,menses,menstruate,menstruation,nit,nit (&quot;louse-egg&quot;),ovary,perineum,private,pudenda,spawn,yolk" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.1">
+            <DEFAULT Number_DWB="1.9.1.1" Label="Bred" Num_auto="1.9.1.1" glosses_old1="breed,copulate,masturbate,mating" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.3.3" Label="Brood on egg" Num_auto="1.9.1.2" glosses_old1="incubate,lay eggs,sit on" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.3.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.2" Label="Birth" Num_auto="1.9.2" glosses_old1="life,lifespan,life-span,lifetime,long life,shine" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="1.2" glosses_old2="bear a child,beget,born,give birth,hatching,miscarriage" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="1.2">
+            <DEFAULT Number_DWB="1.9.2.2" Label="Sterile" Num_auto="1.9.2.1" glosses_old1="sterilize" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.2.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.2.1.1" Label="Circumcise" Num_auto="1.9.2.2" glosses_old1="circumcise,circumcised penis" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.2.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.2.2.4" Label="Castrate" Num_auto="1.9.2.3" glosses_old1="&lt;castrate&gt; wooden tool for castrating cattle,castrate,castrate  (bulls),castrate (a pig),castrate (caponize),castrate (cocks),castrate (goats),castrate (goats, sheep),castrate (pig),castrate (v.),castrate a bull,castrate bulls,castrate goats,castrate, caponize,castrate; trim (cut off tobacc,castrated,castrated animal,castrated bull,castrated pig,castrator of pig" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.2.2.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.3" Label="Navel" Num_auto="1.9.3" glosses_old1="belly button,center,female pubic hair,female pubic hair (female),middle,milk,navel,navel-(diminutive),navel, umbilical cord,umbilical cord" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.3">
+            <DEFAULT Number_DWB="1.9.3.1" Label="Umbilical Cord" Num_auto="1.9.3.1" Note="Lexicon table has 'umbilical cord' records as 1a/9.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.4" Label="Breast" Num_auto="1.9.4" glosses_old1="breast,breastfeed,breasts,buttermilk,colostrum,cream,nipple,teat,udder,wean,whey" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.4" glosses_old2="mammary" Semcat_old2="Vbp" V.F_old2="1b" Chapter_old2="9.3">
+            <DEFAULT Number_DWB="1.9.4.1" Label="Milk" Num_auto="1.9.4.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.4.2" Label="Wean" Num_auto="1.9.4.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.5" Label="Vagina" Num_auto="1.9.5" glosses_old1="clitoris,hymen,labia,vagina,vulva" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.5">
+            <DEFAULT Number_DWB="1.9.5.1" Label="Vulva/Labia" Num_auto="1.9.5.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.5.2" Label="Clitoris" Num_auto="1.9.5.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.6" Label="Womb" Num_auto="1.9.6" glosses_old1="afterbirth,amniotic,amniotic fluid,amniotic sac,fetus,foetus,placenta,placenta (&quot;child-nest&quot;),pregnancy,uterus,womb,womb (resp.)" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.6">
+            <DEFAULT Number_DWB="1.9.6.1" Label="Pregnant" Num_auto="1.9.6.1" glosses_old1="abort,abortion,conceive,pregnant" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.3.4.1" Label="Barren" Num_auto="1.9.6.2" glosses_old1="&lt;conceive,bear&gt; be conceived (a child),barren,barren (animal),barren (hill),barren (land),barren (sterile),barren (woman),barren / fruitless,barren / sterile,barren bull / cow (inferior; used for meat only),barren cow,barren, treeless mountain (sec-,barren; be impotent,barren; impotent,barren; purely fictitious; for,conceived (of a child)" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.3.4.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.6.2" Label="Amniotic sac/Amniotic fluid" Num_auto="1.9.6.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.6.3" Label="Placenta/Afterbirth" Num_auto="1.9.6.4"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.6.4" Label="Fertility" Num_auto="1.9.6.5" glosses_old1="fertile,unfertile,viviparityfertile,unfertile,viviparity" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.9.5" Note="Can't seem to locate this category outside of the lexicon table"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.7" Label="Penis" Num_auto="1.9.7" glosses_old1="bag,circumcision,ejaculate,foreskin,foreskin (&quot;penis-skin&quot;),glans,glans penis,impotence,impotent,male pubic hair,penis,sperm,tube" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.7">
+            <DEFAULT Number_DWB="1.9.7.1" Label="Testicle" Num_auto="1.9.7.1" glosses_old1="male,man,pouch,scrotum,semen,smegma,testicle,testicle (&quot;penis-egg&quot;),testicles" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.7.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.7.2" Label="Scrotum/Pouch" Num_auto="1.9.7.2"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.7.3" Label="Foreskin/Prepuce" Num_auto="1.9.7.3"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.7.4" Label="Glans penis" Num_auto="1.9.7.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.8" Label="Copulate" Num_auto="1.9.8" glosses_old1="fuck,masturbation,mate,onanism,venereal" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.8"></DEFAULT>
+         <DEFAULT Number_DWB="1.9.9" Label="Body Fluids" Num_auto="1.9.9" Semcat_old1="Nbp">
+            <DEFAULT Number_DWB="1.9.9.1" Label="Sperm/Semen" Num_auto="1.9.9.1"></DEFAULT>
+            <DEFAULT Number_DWB="1.9.9.2" Label="Ejaculate" Num_auto="1.9.9.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.x" Label="Genitals/Pudenda" Num_auto="1.9.10" Note="see glosses for 1a/9.1 Egg"></DEFAULT>
+         <DEFAULT Number_DWB="1.9.x" Label="Menstruation" Num_auto="1.9.11">
+            <DEFAULT Number_DWB="1.9.3.4" Label="Menstrual" Num_auto="1.9.11.1" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="9.3.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.x" Label="Female" Num_auto="1.9.12" glosses_old1="female,female; female organ,girl,girlfriend,girls,woman,women" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.9.3">
+            <DEFAULT Number_DWB="1.9.x" Label="Female Pubic Hair" Num_auto="1.9.12.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.x" Label="Male" Num_auto="1.9.13" glosses_old1="boy,boyfriend,boys,mantis" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="9.9.4">
+            <DEFAULT Number_DWB="1.9.x" Label="Male Pubic Hair" Num_auto="1.9.13.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="1.9.x" Label="Other Reproductive System" Num_auto="1.9.14" glosses_old1="fertilizer" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="xxx"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="1.10" Label="Mind" Num_auto="1.10" glosses_old1="mind,mood,soul,talent" Semcat_old1="Nbp" V.F_old1="1a" Chapter_old1="10.0" Note="Chapter has a trailing zero for some reason"></DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="2" Label="Animals and Animal Verbs" Num_auto="2" Semcat_old1="Nanim" V.F_old1="2">
+      <DEFAULT Number_DWB="2.1.1" Label="Bovine" Num_auto="2.1" glosses_old1="beef,bison,bovine,buffalo,bull,bullock,cattle,cow,cows,cud,gaur,herd,milch,mithun,ox,steer,water-buffalo,yak" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="1"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.2" Label="Equine" Num_auto="2.2" glosses_old1="colt,donkey,donkey-(diminutive),foal,geld,gelding,horse,mare,mule,pony,stallion" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="2"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.3" Label="Porcine" Num_auto="2.3" glosses_old1="bacon,boar,hog,oink,pig,pig-food,piglet,pigs,pork,sow,swine" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="3"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.4" Label="Ovine and Hircine" Num_auto="2.4" glosses_old1="billy,ewe,goat,goat (castrated),goats,he-goat,kid,lamb,lamb (diminutive),mutton,ram,serow,sheep,sheepskin,she-goat,stag,wether" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="4"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.5" Label="Pachyderms" Num_auto="2.5" glosses_old1="elephant,rhino,rhinoceros" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="5"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.6" Label="Canine" Num_auto="2.6" glosses_old1="bitch,dhole,dog,dogs,fox,hound,hyaena,hyena,jackal,puppy,terrier,wolf" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="6">
+         <DEFAULT Number_DWB="1.8.9.4" Label="Bark (of dog)" Num_auto="2.6.1" glosses_old1="bark,growl" Semcat_old1="Vbp" V.F_old1="1b" Chapter_old1="8.9.4"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="2.1.7" Label="Feline" Num_auto="2.7" glosses_old1="cat,civet,kitten,leopard,lion,lioness,lynx,panther,tiger,tigress,wildcat" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="7"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.8" Label="Cervidae" Num_auto="2.8" glosses_old1="antelope,deer,doe,fawn,muskdeer,roebuck,sambar,sambhur" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="8"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.9" Label="Ursine" Num_auto="2.9" glosses_old1="bear,cub" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="9"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.10" Label="Simian" Num_auto="2.10" glosses_old1="ape,gibbon,langur,lemur,loris,monkey,rhesus" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="10"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.11" Label="Birds (in general)" Num_auto="2.11" glosses_old1="bird,birdname,birds,bird's-nest,brood,nest,perch" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="11">
+         <DEFAULT Number_DWB="2.1.11.1" Label="Fowl (i.e. Domestic Birds)" Num_auto="2.11.1" glosses_old1="capon,chick,chicken,chickens,chicks,cock,drake,duck,duckling,fowl,fowl-water,gander,goose,hen,hen coop,poultry,pullet,rooster,turkey,water-hen" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="11.1"></DEFAULT>
+         <DEFAULT Number_DWB="2.1.11.2" Label="Particular birds" Num_auto="2.11.2" glosses_old1="barbet,bat,blackbird,bulbul,buzzard,cormorant,crane,crow,cuckoo,dove,eagle,falcon,flamingo,flock,hawk,heron,hoopoe,hornbill,kaliy-pheasant,kingfisher,ladybird,lark,magpie,mynah,owl,owlet,parakeet,parrot,partridge,peacock,peafowl,pelican,pheasant,pigeon,ptarmigan,quail,raven,snipe,sparrow,spoonbill,starling,stork,swan,turtledove,vulture,wagtail,woodpecker" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="11.2"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="2.1.12" Label="Reptiles and Amphibians" Num_auto="2.12" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="12"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.13" Label="Fish &amp; Mollusks" Num_auto="2.13" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="13"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.14" Label="Insects, Arachnids, &amp; Worm" Num_auto="2.14" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="14"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.15" Label="Other Mammals" Num_auto="2.15" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="15"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.16" Label="Rodents" Num_auto="2.16" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="16" Note="glosses need to be split among this (Rodents) and new Lagomorphs chapter"></DEFAULT>
+      <DEFAULT Number_DWB="2.17" Label="Lagomorphs" Num_auto="2.17"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.17" Label="Dragon" Num_auto="2.18" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="17" Note="Glosses that aren't &quot;dragon&quot; need to be put into &quot;Other Mythical Animals&quot;"></DEFAULT>
+      <DEFAULT Label="Other Mythical Animals" Num_auto="2.19"></DEFAULT>
+      <DEFAULT Number_DWB="2.1.18" Label="Associated Animal Terms" Num_auto="2.20" Semcat_old1="Nanim" V.F_old1="2a.1" Chapter_old1="18"></DEFAULT>
+      <DEFAULT Number_DWB="2.2" Label="Animate verbs" Num_auto="2.21" Semcat_old1="Vanim" V.F_old1="2a.2">
+         <DEFAULT Number_DWB="2.2.1" Label="Caponize" Num_auto="2.21.1" Semcat_old1="Vanim" V.F_old1="2a.2" Chapter_old1="11.1"></DEFAULT>
+         <DEFAULT Number_DWB="2.2.2" Label="Sting" Num_auto="2.21.2" Semcat_old1="Vanim" V.F_old1="2a.2" Chapter_old1="14"></DEFAULT>
+         <DEFAULT Number_DWB="2.2.3" Label="Animal Qualities" Num_auto="2.21.3" Semcat_old1="Vanim" V.F_old1="2a.2" Chapter_old1="18"></DEFAULT>
+         <DEFAULT Number_DWB="2.2.4" Label="Peck" Num_auto="2.21.4" glosses_old1="peck" V.F_old1="2a.2" Chapter_old1="11"></DEFAULT>
+      </DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="3" Label="Natural Objects, Plants, Foods" Num_auto="3" Semcat_old1="Nveg" V.F_old1="2b" Chapter_old1="1.1" Note="No actual lexicon records categorized as 2b/1.1">
+      <DEFAULT Number_DWB="3.1" Label="Plants" Num_auto="3.1" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="1.1" Note="Duplicate category: &quot;Names of trees and shrubs&quot;">
+         <DEFAULT Number_DWB="3.1.1.1" Label="Names of trees and shrubs" Num_auto="3.1.1" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="1.1" Note="Duplicate category: &quot;Plants&quot;"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.1.2" Label="Plant parts and types" Num_auto="3.1.2" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="1.2"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.3.4" Label="Leaves" Num_auto="3.1.3" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.4"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.3.1" Label="Seeds and flowers, nuts" Num_auto="3.1.4" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.1"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.3.2" Label="Fruits and vegetables" Num_auto="3.1.5" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.2">
+            <DEFAULT Number_DWB="3.1.3.2.1" Label="Leafy vegetables" Num_auto="3.1.5.1" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.2.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="3.1.3.3" Label="Extracts and processed forms" Num_auto="3.1.6" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.3">
+            <DEFAULT Number_DWB="3.1.3.3.1" Label="Spices" Num_auto="3.1.6.1" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="3.1.3.3.2" Label="Other ground and milled food" Num_auto="3.1.6.2" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.3.2"></DEFAULT>
+            <DEFAULT Number_DWB="3.1.3.3.3" Label="Juices, beers, etc." Num_auto="3.1.6.3" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.3.3"></DEFAULT>
+            <DEFAULT Number_DWB="3.1.3.3.4" Label="Building, Non-edible" Num_auto="3.1.6.4" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="3.3.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="3.1.4.1" Label="Fungi" Num_auto="3.1.7" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="4.1"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.4.2" Label="Other wild plants" Num_auto="3.1.8" glosses_old1="arum,awn,chess,cutch,grass,hybrid,ramie,reed,sapling,seedling,seedlings,uproot,uprooted" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="4.2"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.5" Label="Vegetative/Agricultural activity" Num_auto="3.1.9" Semcat_old1="Nveg" V.F_old1="2b.1" Chapter_old1="5"></DEFAULT>
+         <DEFAULT Number_DWB="3.1.6" Label="Verbs involving plants" Num_auto="3.1.10" Semcat_old1="Vveg" V.F_old1="2b.2"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="3.3" Label="Natural Objects" Num_auto="3.2" Semcat_old1="Nnat" V.F_old1="2c">
+         <DEFAULT Number_DWB="3.3.1" Label="Weather and seasons" Num_auto="3.2.1" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.3" Label="Planets/Meteorological objects/Sky" Num_auto="3.2.2" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.4" Label="Water and other liquids" Num_auto="3.2.3" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.5" Label="Elements, metals, alloys" Num_auto="3.2.4" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="5"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.6" Label="Landforms and geographical features" Num_auto="3.2.5" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="6"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.7" Label="Natural disasters" Num_auto="3.2.6" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="7"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.8" Label="Cracks/Chasms/Crevices" Num_auto="3.2.7" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="8"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.9" Label="Organic matter/Organic compounds" Num_auto="3.2.8" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="9"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.10" Label="Rocks and minerals" Num_auto="3.2.9" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="10"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.11" Label="Light or lack of light" Num_auto="3.2.10" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="11"></DEFAULT>
+         <DEFAULT Number_DWB="3.3.12" Label="Ground/Earth/Soil/Dirt" Num_auto="3.2.11" Semcat_old1="Nnat" V.F_old1="2c.1" Chapter_old1="12"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="3.4" Label="Burn, illuminate" Num_auto="3.3" Semcat_old1="Vburn" V.F_old1="2c.2">
+         <DEFAULT Number_DWB="3.4.1" Label="Objects associated with fire" Num_auto="3.3.1" Semcat_old1="Nfire" V.F_old1="2c.3" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="3.4.3.3" Label="Fire, flames, and burnt things" Num_auto="3.3.3.3" Semcat_old1="Nfire" V.F_old1="2c.3" Chapter_old1="3.3"></DEFAULT>
+      </DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="4" Label="Kinship Terms, Ethnonyms, Social Roles" Num_auto="4">
+      <DEFAULT Number_DWB="4.1.2" Label="Pronouns" Num_auto="4.1" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="2"></DEFAULT>
+      <DEFAULT Number_DWB="4.1.3" Label="Roles" Num_auto="4.2" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3">
+         <DEFAULT Number_DWB="4.1.3.1" Label="Occupations" Num_auto="4.2.1" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1">
+            <DEFAULT Number_DWB="4.1.3.1.1" Label="Agriculture/Husbandry/Hunting" Num_auto="4.2.1.1" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.3.1.2" Label="Commercial Roles" Num_auto="4.2.1.2" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1.2"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.3.1.3" Label="?" Num_auto="4.2.1.3"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.3.1.4" Label="Artists and Artisans" Num_auto="4.2.1.4" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1.4"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.3.1.5" Label="Health-care" Num_auto="4.2.1.5" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1.5"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.3.1.6" Label="Ceremonial" Num_auto="4.2.1.6" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1.6"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.3.1.7" Label="General" Num_auto="4.2.1.7" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.1.7"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="4.1.3.2" Label="Teacher-Student roles" Num_auto="4.2.2" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.2"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.3.3" Label="General roles" Num_auto="4.2.3" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="3.3"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.4" Label="Religious Roles" Num_auto="4.2.4" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.5" Label="Nobility" Num_auto="4.2.5" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="5">
+            <DEFAULT Number_DWB="4.1.5.1.2" Label="Titles" Num_auto="4.2.5.1" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="5.1.2"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.5.2" Label="Civil leaders" Num_auto="4.2.5.2" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="5.2"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.5.4" Label="Owners" Num_auto="4.2.5.3" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="5.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="4.1.6" Label="Military roles" Num_auto="4.2.6" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="6"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.7.1" Label="Challenged" Num_auto="4.2.7" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="7.1"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.7.2" Label="Marital roles" Num_auto="4.2.8" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="7.2"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.8" Label="Sporting" Num_auto="4.2.9" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="8"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.10" Label="Servants" Num_auto="4.2.10" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="10"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.9.1" Label="Stages of growth" Num_auto="4.2.11" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="9.1"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.11" Label="Pejorative/Deprecated Roles" Num_auto="4.2.12">
+            <DEFAULT Number_DWB="4.1.11.1" Label="Criminals" Num_auto="4.2.12.1" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="11.1"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.11.2" Label="Scary things" Num_auto="4.2.12.2" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="11.2"></DEFAULT>
+            <DEFAULT Number_DWB="4.1.11.3" Label="Insulting names" Num_auto="4.2.12.3" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="11.3"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="4.1.9.2" Label="People" Num_auto="4.3.1" glosses_old1="orphan,manchild" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="9.2" Note="Not sure where to put this"></DEFAULT>
+      <DEFAULT Number_DWB="4.1.12" Label="Groups" Num_auto="4.4" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="12">
+         <DEFAULT Number_DWB="4.0" Label="Generic person terms" Num_auto="4.4.1" glosses_old1="acquaintance,member" V.F_old1="3a" Note="Should this go under &quot;Groups&quot;?"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.12.2" Label="Clans and neighbors" Num_auto="4.4.2" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="12.2"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.12.3" Label="Outsiders" Num_auto="4.4.3" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="12.3"></DEFAULT>
+         <DEFAULT Number_DWB="4.1.12.4" Label="Friends and Acquaintances" Num_auto="4.4.4" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="12.4" Note="No lexicon records with this category"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="4.1.13" Label="Other Collective terms" Num_auto="4.5" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="13"></DEFAULT>
+      <DEFAULT Number_DWB="4.1" Label="Ethnonyms/Place names" Num_auto="4.6" Semcat_old1="Nhum" V.F_old1="3a" Chapter_old1="1"></DEFAULT>
+      <DEFAULT Number_DWB="4.2" Label="Kinship Terms" Num_auto="4.7" Semcat_old1="Nkin" V.F_old1="3b" Chapter_old1="0">
+         <DEFAULT Number_DWB="4.2.1" Label="Previous generation" Num_auto="4.7.1" Semcat_old1="Nkin" V.F_old1="3b" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="4.2.2" Label="Same generation" Num_auto="4.7.2" Semcat_old1="Nkin" V.F_old1="3b" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="4.2.3" Label="Later generation" Num_auto="4.7.3" Semcat_old1="Nkin" V.F_old1="3b" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="4.2.4" Label="Related by marriage" Num_auto="4.7.4" Semcat_old1="Nkin" V.F_old1="3b" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="4.2.5" Label="General" Num_auto="4.7.5" Semcat_old1="Nkin" V.F_old1="3b" Chapter_old1="5"></DEFAULT>
+      </DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="5" Label="Culture, Artifacts, Religion" Num_auto="5">
+      <DEFAULT Number_DWB="5.1" Label="Waste products" Num_auto="5.1" Semcat_old1="Nwast" V.F_old1="9a"></DEFAULT>
+      <DEFAULT Number_DWB="5.1" Label="Writing Implements" Num_auto="5.2" Semcat_old1="Nwrit" V.F_old1="9a"></DEFAULT>
+      <DEFAULT Number_DWB="5.1.1" Label="Diseases" Num_auto="5.3" Semcat_old1="Nmed" V.F_old1="9a" Chapter_old1="1"></DEFAULT>
+      <DEFAULT Number_DWB="5.1.2" Label="Instruments and therapies" Num_auto="5.4" Semcat_old1="Nmed" V.F_old1="9a" Chapter_old1="2"></DEFAULT>
+      <DEFAULT Number_DWB="5.2" Label="Cooking Implements" Num_auto="5.5" Semcat_old1="Ncook" V.F_old1="9b"></DEFAULT>
+      <DEFAULT Number_DWB="5.2" Label="Culinary nouns" Num_auto="5.6" Semcat_old1="Nfood" V.F_old1="9b"></DEFAULT>
+      <DEFAULT Number_DWB="5.2" Label="Culinary verbs" Num_auto="5.7" Semcat_old1="Vfood" V.F_old1="9b"></DEFAULT>
+      <DEFAULT Number_DWB="5.6" Label="Religion" Num_auto="5.8" Semcat_old1="Nrel" V.F_old1="9d">
+         <DEFAULT Number_DWB="5.6.1" Label="?" Num_auto="5.8.1">
+            <DEFAULT Number_DWB="5.6.1.1" Label="Deities/Spiritual Beings" Num_auto="5.8.1.1" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="1.1"></DEFAULT>
+            <DEFAULT Number_DWB="5.6.1.2" Label="Spiritual Beings" Num_auto="5.8.1.2" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="1.2"></DEFAULT>
+            <DEFAULT Number_DWB="5.6.1.3" Label="General/Other Religious" Num_auto="5.8.1.3" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="1.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="5.6.2" Label="Categories of people ?" Num_auto="5.8.2" glosses_old1="unbeliever" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="2">
+            <DEFAULT Number_DWB="5.6.2.1" Label="Occupations" Num_auto="5.8.2.1" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="2.1"></DEFAULT>
+            <DEFAULT Number_DWB="5.6.2.2" Label="Group appellation" Num_auto="5.8.2.2" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="2.2"></DEFAULT>
+            <DEFAULT Number_DWB="5.6.2.3" Label="Religious persons/things" Num_auto="5.8.2.3" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="2.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="5.6.3" Label="?" Num_auto="5.8.3">
+            <DEFAULT Number_DWB="5.6.3.1" Label="Religious Events" Num_auto="5.8.3.1" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="3.1"></DEFAULT>
+            <DEFAULT Number_DWB="5.6.3.2" Label="Magical" Num_auto="5.8.3.2" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="3.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="5.6.4" Label="Heaven/Hell" Num_auto="5.8.4" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="5.6.5" Label="Sin ?" Num_auto="5.8.5" glosses_old1="sinful" Semcat_old1="Nrel" V.F_old1="9d" Chapter_old1="8.2"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="5.7" Label="Monetary Tems" Num_auto="5.9" Semcat_old1="N$" V.F_old1="9d"></DEFAULT>
+      <DEFAULT Number_DWB="5.7" Label="Items of Culture" Num_auto="5.10" Semcat_old1="Ncult" V.F_old1="9d"></DEFAULT>
+      <DEFAULT Number_DWB="5.8" Label="Artifacts (unclassified as yet)" Num_auto="5.11" Semcat_old1="Nart" V.F_old1="9f">
+         <DEFAULT Number_DWB="5.1" Label="Containers" Num_auto="5.11.1" Semcat_old1="Ncont" V.F_old1="9a"></DEFAULT>
+         <DEFAULT Number_DWB="5.1" Label="Conveyances" Num_auto="5.11.2" Semcat_old1="Nconv" V.F_old1="9a"></DEFAULT>
+         <DEFAULT Number_DWB="5.1" Label="Musical objects" Num_auto="5.11.3" Semcat_old1="Nmus" V.F_old1="9a"></DEFAULT>
+         <DEFAULT Number_DWB="5.1" Label="Rope" Num_auto="5.11.4" Semcat_old1="Nrope" V.F_old1="9a"></DEFAULT>
+         <DEFAULT Number_DWB="5.1" Label="Tools" Num_auto="5.11.5" Semcat_old1="Ntool" V.F_old1="9a">
+            <DEFAULT Number_DWB="5.1.1" Label="Agricultural use" Num_auto="5.11.5.1" Semcat_old1="Ntool" V.F_old1="9a" Chapter_old1="1"></DEFAULT>
+            <DEFAULT Number_DWB="5.1.2" Label="Home/Non-specialized use" Num_auto="5.11.5.2" Semcat_old1="Ntool" V.F_old1="9a" Chapter_old1="2"></DEFAULT>
+            <DEFAULT Number_DWB="5.1.3" Label="Cutting/Boring" Num_auto="5.11.5.3" Semcat_old1="Ntool" V.F_old1="9a" Chapter_old1="3"></DEFAULT>
+            <DEFAULT Number_DWB="5.1.4" Label="Workshop use/Equipment" Num_auto="5.11.5.4" Semcat_old1="Ntool" V.F_old1="9a" Chapter_old1="4"></DEFAULT>
+            <DEFAULT Number_DWB="5.1.5" Label="?" Num_auto="5.11.5.5"></DEFAULT>
+            <DEFAULT Number_DWB="5.1.6" Label="Equipment" Num_auto="5.11.5.6" Semcat_old1="Ntool" V.F_old1="9a" Chapter_old1="6"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="5.1" Label="Textile" Num_auto="5.11.6" Semcat_old1="Ntxtl" V.F_old1="9a"></DEFAULT>
+         <DEFAULT Number_DWB="5.3" Label="Ornaments" Num_auto="5.11.7" Semcat_old1="Norn" V.F_old1="9d"></DEFAULT>
+         <DEFAULT Number_DWB="5.3" Label="Ornamentation" Num_auto="5.11.8" Semcat_old1="Vorn" V.F_old1="9d">
+            <DEFAULT Number_DWB="5.3.1" Label="Footwear" Num_auto="5.11.8.1" glosses_old1="boot,legging,puttee,sandal(s),shoe(s)" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="1" glosses_old2="footwear" Semcat_old2="Npers" V.F_old2="3c"></DEFAULT>
+            <DEFAULT Number_DWB="5.3.2" Label="?" Num_auto="5.11.8.2">
+               <DEFAULT Number_DWB="5.3.2.1" Label="Clothes (general)" Num_auto="5.11.8.2.1" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="2.1">
+                  <DEFAULT Number_DWB="5.3.2.1.1" Label="Head" Num_auto="5.11.8.2.1.1" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="2.1.1"></DEFAULT>
+                  <DEFAULT Number_DWB="5.3.2.1.2" Label="Upper body" Num_auto="5.11.8.2.1.2" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="2.1.2"></DEFAULT>
+                  <DEFAULT Number_DWB="5.3.2.1.3" Label="Lower body" Num_auto="5.11.8.2.1.3" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="2.1.3"></DEFAULT>
+               </DEFAULT>
+               <DEFAULT Number_DWB="5.3.2.2" Label="Special clothes and equipment" Num_auto="5.11.8.2.2" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="2.2"></DEFAULT>
+               <DEFAULT Number_DWB="5.3.2.3" Label="Parts of clothing" Num_auto="5.11.8.2.3" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="2.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="5.3.3" Label="Jewelry and Accessories" Num_auto="5.11.8.3" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="3"></DEFAULT>
+            <DEFAULT Number_DWB="5.3.4" Label="Toiletries" Num_auto="5.11.8.4" Semcat_old1="Npers" V.F_old1="3c" Chapter_old1="4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="5.4" Label="Dwellings" Num_auto="5.11.9" Semcat_old1="Ndwel" V.F_old1="9c">
+            <DEFAULT Number_DWB="5.4.1" Label="Kinds of dwellings" Num_auto="5.11.9.1" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="1"></DEFAULT>
+            <DEFAULT Number_DWB="5.4.2" Label="Rooms" Num_auto="5.11.9.2" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="2"></DEFAULT>
+            <DEFAULT Number_DWB="5.4.3" Label="Parts of the structure" Num_auto="5.11.9.3" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="3">
+               <DEFAULT Number_DWB="5.4.3.1" Label="Internal" Num_auto="5.11.9.3.1" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="3.1"></DEFAULT>
+               <DEFAULT Number_DWB="5.4.3.2" Label="External" Num_auto="5.11.9.3.2" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="3.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="5.4.4" Label="Furnishings" Num_auto="5.11.9.4" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="4"></DEFAULT>
+            <DEFAULT Number_DWB="5.4.5" Label="Outdoor/Temporary structures" Num_auto="5.11.9.5" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="5"></DEFAULT>
+            <DEFAULT Number_DWB="5.4.6" Label="General" Num_auto="5.11.9.6" Semcat_old1="Ndwel" V.F_old1="9c" Chapter_old1="6"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="5.4" Label="Fasteners" Num_auto="5.11.10" Semcat_old1="Nfast" V.F_old1="9c"></DEFAULT>
+         <DEFAULT Number_DWB="5.5" Label="Construction" Num_auto="5.11.11" Semcat_old1="Ncstr" V.F_old1="9c"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="5.9" Label="Leisure" Num_auto="5.12" Semcat_old1="Nleis" V.F_old1="9d"></DEFAULT>
+      <DEFAULT Number_DWB="5.9" Label="Social interactions" Num_auto="5.13" Semcat_old1="Nsoc" V.F_old1="9d"></DEFAULT>
+      <DEFAULT Number_DWB="5.10" Label="Husbandry" Num_auto="5.14" Semcat_old1="Nhusb" V.F_old1="9e"></DEFAULT>
+      <DEFAULT Number_DWB="5.10" Label="War and violence" Num_auto="5.15" Semcat_old1="Nwar" V.F_old1="9e"></DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="6" Label="Verbs of Motion, of Manipulation, and of Production" Num_auto="6">
+      <DEFAULT Number_DWB="6.1" Label="?" Num_auto="6.1">
+         <DEFAULT Number_DWB="6.1.1" Label="Affect" Num_auto="6.1.1" glosses_old1="work(er),labor,fail,labourer,undress,rebel,hidden,affectation,affected,toil,subside" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1">
+            <DEFAULT Number_DWB="6.1.1.1" Label="To do/act" Num_auto="6.1.1.1" glosses_old1="do,undertake,try,perform,commit,did,does" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.1">
+               <DEFAULT Number_DWB="6.1.1.1.2" Label="Redo, repeat" Num_auto="6.1.1.1.1" glosses_old1="copy,imitate," Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.1.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.1.1.2" Label="?" Num_auto="6.1.1.2"></DEFAULT>
+            <DEFAULT Number_DWB="6.1.1.3" Label="Play" Num_auto="6.1.1.3" glosses_old1="play" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.3"></DEFAULT>
+            <DEFAULT Number_DWB="6.1.1.4" Label="Lie" Num_auto="6.1.1.4" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.4">
+               <DEFAULT Number_DWB="6.1.1.4.1" Label="Sit" Num_auto="6.1.1.4.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.4.1">
+                  <DEFAULT Number_DWB="6.1.1.4.2.1" Label="Sprawl" Num_auto="6.1.1.4.1.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.4.2.1"></DEFAULT>
+               </DEFAULT>
+               <DEFAULT Number_DWB="6.1.1.4.4" Label="Fall" Num_auto="6.1.1.4.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.4.4"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.1.1.5" Label="Hang" Num_auto="6.1.1.5" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.5"></DEFAULT>
+            <DEFAULT Number_DWB="6.1.1.6" Label="Wait" Num_auto="6.1.1.6" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="1.6"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.2" Label="Action Verbs with Patient" Num_auto="6.2" glosses_old1="achieve,miss,shrink,stop,action,alight,anoint,apoortion,avenge,avoid,block,bother,close,detain,dismiss,dwell,earn,endure" Semcat_old1="Vact" V.F_old1="4a">
+         <DEFAULT Number_DWB="6.2.1" Label="?" Num_auto="6.2.1"></DEFAULT>
+         <DEFAULT Number_DWB="6.2.2" Label="?" Num_auto="6.2.2">
+            <DEFAULT Number_DWB="6.2.2.1" Label="Assorted action verbs" Num_auto="6.2.2.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.1"></DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.2" Label="Move an object" Num_auto="6.2.2.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.2">
+               <DEFAULT Number_DWB="6.2.2.2.1" Label="Carry" Num_auto="6.2.2.2.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.2.1"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.2.3" Label="Bring" Num_auto="6.2.2.2.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.2.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.3" Label="?" Num_auto="6.2.2.3">
+               <DEFAULT Number_DWB="6.2.2.3.1" Label="Push" Num_auto="6.2.2.3.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.3.1"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.3.2" Label="Pull" Num_auto="6.2.2.3.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.3.2"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.3.4" Label="Kick" Num_auto="6.2.2.3.3" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.3.4"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.4" Label="?" Num_auto="6.2.2.4"></DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.5" Label="?" Num_auto="6.2.2.5">
+               <DEFAULT Number_DWB="6.2.2.5.1" Label="Clear" Num_auto="6.2.2.5.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.5.1"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.5.2" Label="Wash (v.i./v.t.)" Num_auto="6.2.2.5.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.5.2"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.5.3" Label="Sweep" Num_auto="6.2.2.5.3" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.5.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.6" Label="?" Num_auto="6.2.2.6">
+               <DEFAULT Number_DWB="6.2.2.6.1" Label="Open" Num_auto="6.2.2.6.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.6.1"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.6.2" Label="Close" Num_auto="6.2.2.6.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.6.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.7" Label="?" Num_auto="6.2.2.7">
+               <DEFAULT Number_DWB="6.2.2.7.1" Label="Use" Num_auto="6.2.2.7.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.7.1"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.7.2" Label="Practice" Num_auto="6.2.2.7.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.7.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.8" Label="Show" Num_auto="6.2.2.8" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.8"></DEFAULT>
+            <DEFAULT Number_DWB="6.2.2.9" Label="?" Num_auto="6.2.2.9">
+               <DEFAULT Number_DWB="6.2.2.9.1" Label="Write" Num_auto="6.2.2.9.1" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.9.1"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.9.2" Label="Draw" Num_auto="6.2.2.9.2" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.9.2"></DEFAULT>
+               <DEFAULT Number_DWB="6.2.2.9.3" Label="Read" Num_auto="6.2.2.9.3" Semcat_old1="Vact" V.F_old1="4a" Chapter_old1="2.9.3"></DEFAULT>
+            </DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.3" Label="Friction" Num_auto="6.3" Semcat_old1="Vrub" V.F_old1="4a.2"></DEFAULT>
+      <DEFAULT Number_DWB="6.4" Label="Harm" Num_auto="6.4" Semcat_old1="Vharm" V.F_old1="4b.1"></DEFAULT>
+      <DEFAULT Number_DWB="6.4" Label="Fighting" Num_auto="6.5" Semcat_old1="Vfigh" V.F_old1="4b.2">
+         <DEFAULT Number_DWB="6.4.1" Label="Opposition" Num_auto="6.5.1" glosses_old1="opposite,opposition" V.F_old1="4b.2" Chapter_old1="8"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.5" Label="Verbs requiring liquids" Num_auto="6.6" Semcat_old1="Vliq" V.F_old1="4b.3">
+         <DEFAULT Number_DWB="6.5.5" Label="Float" Num_auto="6.6.1" Semcat_old1="Vliq" V.F_old1="4b.3" Chapter_old1="5"></DEFAULT>
+         <DEFAULT Number_DWB="6.5.9" Label="Dissolve" Num_auto="6.6.2" Semcat_old1="Vliq" V.F_old1="4b.3" Chapter_old1="9"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.6" Label="?" Num_auto="6.7">
+         <DEFAULT Number_DWB="6.6.1" Label="Inward" Num_auto="6.7.1" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.2" Label="Outward" Num_auto="6.7.2" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.3" Label="Awkwardly, Irregularly" Num_auto="6.7.3" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.4" Label="Regular, Cyclic, Smoothly" Num_auto="6.7.4" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.5" Label="Medium Primary (e.g. air)" Num_auto="6.7.5" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="5"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.6" Label="Circularly" Num_auto="6.7.6" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="6"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.7" Label="Up, etc." Num_auto="6.7.7" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="7"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.8" Label="Downward" Num_auto="6.7.8" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="8"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.9" Label="Manner is primary" Num_auto="6.7.9" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="9"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.10" Label="Move with something else" Num_auto="6.7.10" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="10"></DEFAULT>
+         <DEFAULT Number_DWB="6.6.11" Label="Movement (general)" Num_auto="6.7.11" Semcat_old1="Vmot" V.F_old1="4b.4" Chapter_old1="11"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.7" Label="Striking, hitting verbs" Num_auto="6.8" Semcat_old1="Vhit" V.F_old1="4c.1"></DEFAULT>
+      <DEFAULT Number_DWB="6.8" Label="Undoing" Num_auto="6.9" glosses_old1="abolish,demolish,cancel,destroy,dislocate,effaced,erase,unfold,unravel" Semcat_old1="Vundo" V.F_old1="4c.5">
+         <DEFAULT Number_DWB="6.8.0" Label="Peel" Num_auto="6.9.1" glosses_old1="peel" V.F_old1="4c.4"></DEFAULT>
+         <DEFAULT Number_DWB="6.8.1" Label="Carve, shave" Num_auto="6.9.2" Semcat_old1="Vcut" V.F_old1="4c.4" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="6.8.2" Label="Chop, slice" Num_auto="6.9.3" Semcat_old1="Vcut" V.F_old1="4c.4" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="6.8.3" Label="Mince, shred" Num_auto="6.9.4" Semcat_old1="Vcut" V.F_old1="4c.4" Chapter_old1="3"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.9" Label="Loss, separation" Num_auto="6.10" glosses_old1="detached" Semcat_old1="Vsep" V.F_old1="4c.7">
+         <DEFAULT Number_DWB="6.9.1.1" Label="Unintentional loss -Misplace" Num_auto="6.10.1" Semcat_old1="Vsep" V.F_old1="4c.7" Chapter_old1="1.1"></DEFAULT>
+         <DEFAULT Number_DWB="6.9.1.2" Label="Intentional loss - Abandon" Num_auto="6.10.2" Semcat_old1="Vsep" V.F_old1="4c.7" Chapter_old1="1.2"></DEFAULT>
+         <DEFAULT Number_DWB="6.10.2" Label="Wide separation - Scatter" Num_auto="6.10.3" Semcat_old1="Vsep" V.F_old1="4c.7" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="6.10.4" Label="Intentional separation - Sort" Num_auto="6.10.4" Semcat_old1="Vsep" V.F_old1="4c.7" Chapter_old1="4"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.11" Label="Digging, excavation" Num_auto="6.11" Semcat_old1="Vdig" V.F_old1="4c.8"></DEFAULT>
+      <DEFAULT Number_DWB="6.12" Label="Throwing" Num_auto="6.12" Semcat_old1="Vthrw" V.F_old1="4c.9"></DEFAULT>
+      <DEFAULT Number_DWB="6.13" Label="Convergence" Num_auto="6.13" glosses_old1="converge" Semcat_old1="Vjoin" V.F_old1="4d.2">
+         <DEFAULT Number_DWB="6.13.1.1" Label="Tying" Num_auto="6.13.1" Semcat_old1="Vjoin" V.F_old1="4d.2" Chapter_old1="1.1"></DEFAULT>
+         <DEFAULT Number_DWB="6.13.1.2" Label="Adhesion" Num_auto="6.13.2" Semcat_old1="Vjoin" V.F_old1="4d.2" Chapter_old1="1.2"></DEFAULT>
+         <DEFAULT Number_DWB="6.13.1.3" Label="With Tools" Num_auto="6.13.3" Semcat_old1="Vjoin" V.F_old1="4d.2" Chapter_old1="1.3"></DEFAULT>
+         <DEFAULT Number_DWB="6.13.3" Label="Mix" Num_auto="6.13.4" Semcat_old1="Vjoin" V.F_old1="4d.2" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="6.13.5" Label="Join (general)" Num_auto="6.13.5" Semcat_old1="Vjoin" V.F_old1="4d.2" Chapter_old1="5"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Construction" Num_auto="6.14" Semcat_old1="Vmake" V.F_old1="4d.3"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Repair" Num_auto="6.15" Semcat_old1="Vmend" V.F_old1="4d.4"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Holding" Num_auto="6.16" Semcat_old1="Vhold" V.F_old1="4e.2"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Putting" Num_auto="6.17" Semcat_old1="Vput" V.F_old1="4e.3"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Possession" Num_auto="6.18" Semcat_old1="Vhave" V.F_old1="4e.4"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Social action" Num_auto="6.19" Semcat_old1="Vsoc" V.F_old1="4f.1"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Helping" Num_auto="6.20" Semcat_old1="Vhelp" V.F_old1="4f.2"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Acquisitions" Num_auto="6.21" Semcat_old1="Vacq" V.F_old1="4f.3"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Exchanges" Num_auto="6.22" Semcat_old1="Vexch" V.F_old1="4f.4"></DEFAULT>
+      <DEFAULT Number_DWB="6.14" Label="Giving" Num_auto="6.23" Semcat_old1="Vgive" V.F_old1="4f.5"></DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="7" Label="Adjectival Verbs" Num_auto="7">
+      <DEFAULT Number_DWB="7.2" Label="Adjectives  and attributives" Num_auto="7.1" Semcat_old1="Vadj" V.F_old1="5c">
+         <DEFAULT Number_DWB="7.2.1" Label="Emotive" Num_auto="7.1.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="7.2.2" Label="?" Num_auto="7.1.2">
+            <DEFAULT Number_DWB="7.2.2.1" Label="Quantity - general" Num_auto="7.1.2.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="2.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.2.2" Label="Degree" Num_auto="7.1.2.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="2.2"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.2.4" Label="Temperature" Num_auto="7.1.2.3" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="2.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.3" Label="?" Num_auto="7.1.3">
+            <DEFAULT Number_DWB="7.2.3.1" Label="General  - other than appearance" Num_auto="7.1.3.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="3.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.3.2" Label="Appearance" Num_auto="7.1.3.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="3.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.4" Label="?" Num_auto="7.1.4">
+            <DEFAULT Number_DWB="7.2.4.1" Label="Sight" Num_auto="7.1.4.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="4.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.4.2" Label="Feel/Tactile/Texture" Num_auto="7.1.4.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="4.2"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.4.3" Label="Hear" Num_auto="7.1.4.3" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="4.3"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.4.4" Label="Taste" Num_auto="7.1.4.4" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="4.4"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.4.5" Label="Smell" Num_auto="7.1.4.5" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="4.5"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.5" Label="?" Num_auto="7.1.5">
+            <DEFAULT Number_DWB="7.2.5.1" Label="General - form" Num_auto="7.1.5.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="5.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.5.2" Label="Texture" Num_auto="7.1.5.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="5.2"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.5.3" Label="Position - high/low" Num_auto="7.1.5.3" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="5.3"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.5.4" Label="Position - front/back/side-side" Num_auto="7.1.5.4" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="5.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.6" Label="?" Num_auto="7.1.6">
+            <DEFAULT Number_DWB="7.2.6.1" Label="Single/part/few" Num_auto="7.1.6.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="6.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.6.2" Label="Accompanied/whole/many" Num_auto="7.1.6.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="6.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.7" Label="?" Num_auto="7.1.7">
+            <DEFAULT Number_DWB="7.2.7.1" Label="Unique/important/special" Num_auto="7.1.7.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="7.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.7.2" Label="Mundane/unimportant/same/routine" Num_auto="7.1.7.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="7.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.8" Label="?" Num_auto="7.1.8">
+            <DEFAULT Number_DWB="7.2.8.1" Label="Positive term" Num_auto="7.1.8.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="8.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.8.2" Label="Negative term" Num_auto="7.1.8.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="8.2"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.8.3" Label="Neutral term" Num_auto="7.1.8.3" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="8.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="7.2.9" Label="?" Num_auto="7.1.9"></DEFAULT>
+         <DEFAULT Number_DWB="7.2.10" Label="Abruptly" Num_auto="7.1.10" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="10"></DEFAULT>
+         <DEFAULT Number_DWB="7.2.11" Label="?" Num_auto="7.1.11">
+            <DEFAULT Number_DWB="7.2.11.1" Label="Light" Num_auto="7.1.11.1" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="11.1"></DEFAULT>
+            <DEFAULT Number_DWB="7.2.11.2" Label="Dark" Num_auto="7.1.11.2" Semcat_old1="Vadj" V.F_old1="5c" Chapter_old1="11.2"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="8" Label="Abstract Nouns and Verbs, Psychological Verbs, Verbs of Utterance" Num_auto="8">
+      <DEFAULT Number_DWB="8." Label="Abstract Entities" Num_auto="8.1" Semcat_old1="Nabst" V.F_old1="5a"></DEFAULT>
+      <DEFAULT Number_DWB="8.1" Label="Abstract verbs" Num_auto="8.2" Semcat_old1="Vabst" V.F_old1="5b">
+         <DEFAULT Number_DWB="8.1.1.2.3" Label="Be" Num_auto="8.2.1" Semcat_old1="Vabst" V.F_old1="5b" Chapter_old1="1.2.3"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="8.3" Label="Psychological verbs" Num_auto="8.3" Semcat_old1="Vpsi" V.F_old1="5d">
+         <DEFAULT Number_DWB="8.3.1" Label="?" Num_auto="8.3.1">
+            <DEFAULT Number_DWB="8.3.1.1" Label="?" Num_auto="8.3.1.1">
+               <DEFAULT Number_DWB="8.3.1.1.1" Label="Like" Num_auto="8.3.1.1.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.1.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.1.2" Label="Dislike" Num_auto="8.3.1.1.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.1.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.1.3" Label="Satisfied" Num_auto="8.3.1.1.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.1.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.2" Label="?" Num_auto="8.3.1.2">
+               <DEFAULT Number_DWB="8.3.1.2.1" Label="Accept" Num_auto="8.3.1.2.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.2.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.3" Label="Commend" Num_auto="8.3.1.3" glosses_old1="commend" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.3">
+               <DEFAULT Number_DWB="8.3.1.3.2" Label="Blame" Num_auto="8.3.1.3.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.3.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.4" Label="?" Num_auto="8.3.1.4">
+               <DEFAULT Number_DWB="8.3.1.4.1" Label="Agree" Num_auto="8.3.1.4.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.4.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.5" Label="?" Num_auto="8.3.1.5">
+               <DEFAULT Number_DWB="8.3.1.5.1" Label="Happy" Num_auto="8.3.1.5.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.1">
+                  <DEFAULT Number_DWB="8.3.1.5.2.2" Label="Grief" Num_auto="8.3.1.5.1.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.2.2"></DEFAULT>
+               </DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.5.2" Label="Sad" Num_auto="8.3.1.5.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.5.3" Label="Emotional" Num_auto="8.3.1.5.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.3"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.5.4" Label="Enthusiastic" Num_auto="8.3.1.5.4" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.4"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.5.6" Label="Excited" Num_auto="8.3.1.5.5" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.6"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.5.7" Label="Frustrated" Num_auto="8.3.1.5.6" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.5.7"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.6" Label="?" Num_auto="8.3.1.6">
+               <DEFAULT Number_DWB="8.3.1.6.1" Label="Angry" Num_auto="8.3.1.6.1" glosses_old1="angrily,angry,annoy,fury,resent,vexed" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.6.1" glosses_old2="anger" Semcat_old2="Vpsi" V.F_old2="5d" Chapter_old2="1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.6.2" Label="Distress" Num_auto="8.3.1.6.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.6.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.7" Label="Procrastinate?" Num_auto="8.3.1.7" glosses_old1="procrastinate" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.7" Note="Only one gloss for this category">
+               <DEFAULT Number_DWB="8.3.1.7.1" Label="Positive" Num_auto="8.3.1.7.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.7.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.7.2" Label="Negative (e.g. dread)" Num_auto="8.3.1.7.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.7.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.7.3" Label="Neutral or ambiguous" Num_auto="8.3.1.7.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.7.3"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.7.5" Label="Relieved" Num_auto="8.3.1.7.4" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.7.5"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.8" Label="?" Num_auto="8.3.1.8">
+               <DEFAULT Number_DWB="8.3.1.8.3" Label="Willing" Num_auto="8.3.1.8.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.8.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.9" Label="?" Num_auto="8.3.1.9">
+               <DEFAULT Number_DWB="8.3.1.9.1" Label="Surprised" Num_auto="8.3.1.9.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.9.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.9.2" Label="Worry" Num_auto="8.3.1.9.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.9.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.10" Label="?" Num_auto="8.3.1.10">
+               <DEFAULT Number_DWB="8.3.1.10.2" Label="Fear" Num_auto="8.3.1.10.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.10.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.10.4" Label="?" Num_auto="8.3.1.10.2">
+                  <DEFAULT Number_DWB="8.3.1.10.4.1" Label="Positive" Num_auto="8.3.1.10.2.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.10.4." Note="Category is truncated in lexicon table (should be 1.10.4.1)"></DEFAULT>
+               </DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.10.5" Label="Hesitate" Num_auto="8.3.1.10.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.10.5"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.11" Label="?" Num_auto="8.3.1.11">
+               <DEFAULT Number_DWB="8.3.1.11.1" Label="Alert" Num_auto="8.3.1.11.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.11.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.11.10" Label="Tired" Num_auto="8.3.1.11.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.11.10"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.11.11" Label="Thrilled, Dizzy" Num_auto="8.3.1.11.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.11.11"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.12" Label="?" Num_auto="8.3.1.12">
+               <DEFAULT Number_DWB="8.3.1.12.1" Label="Know, Believe" Num_auto="8.3.1.12.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.12.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.13" Label="Think/plan" Num_auto="8.3.1.13" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.13">
+               <DEFAULT Number_DWB="8.3.1.13.1" Label="Think" Num_auto="8.3.1.13.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.13.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.13.2" Label="Plan" Num_auto="8.3.1.13.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.13.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.13.8" Label="Imagination" Num_auto="8.3.1.13.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.13.8"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.14" Label="?" Num_auto="8.3.1.14">
+               <DEFAULT Number_DWB="8.3.1.14.1" Label="Longing" Num_auto="8.3.1.14.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.14.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.14.2" Label="Avarice" Num_auto="8.3.1.14.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.14.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.1.14.3" Label="Desirable" Num_auto="8.3.1.14.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.14.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.15" Label="Awe" Num_auto="8.3.1.15" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.15"></DEFAULT>
+            <DEFAULT Number_DWB="8.3.1.16" Label="?" Num_auto="8.3.1.16">
+               <DEFAULT Number_DWB="8.3.1.16.1" Label="Forget" Num_auto="8.3.1.16.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="1.16.1"></DEFAULT>
+            </DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.3.2" Label="?" Num_auto="8.3.2">
+            <DEFAULT Number_DWB="8.3.2.1" Label="?" Num_auto="8.3.2.1">
+               <DEFAULT Number_DWB="8.3.2.1.1" Label="Friendly" Num_auto="8.3.2.1.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.1.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.2" Label="?" Num_auto="8.3.2.2">
+               <DEFAULT Number_DWB="8.3.2.2.1" Label="Appease" Num_auto="8.3.2.2.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.2.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.3" Label="?" Num_auto="8.3.2.3">
+               <DEFAULT Number_DWB="8.3.2.3.1" Label="Comfort" Num_auto="8.3.2.3.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.3.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.3.2" Label="Pity" Num_auto="8.3.2.3.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.3.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.3.3" Label="Encourage" Num_auto="8.3.2.3.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.3.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.4" Label="Conspire" Num_auto="8.3.2.4" glosses_old1="conspire" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.4"></DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.5" Label="?" Num_auto="8.3.2.5">
+               <DEFAULT Number_DWB="8.3.2.5.1" Label="Defer" Num_auto="8.3.2.5.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.5.2" Label="Honor" Num_auto="8.3.2.5.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.2"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.5.3" Label="Flatter" Num_auto="8.3.2.5.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.3"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.5.4" Label="Tolerate" Num_auto="8.3.2.5.4" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.4"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.5.5" Label="Ignore" Num_auto="8.3.2.5.5" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.5"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.5.6" Label="Disobedient" Num_auto="8.3.2.5.6" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.6"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.5.7" Label="Trust" Num_auto="8.3.2.5.7" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.5.7"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.6" Label="?" Num_auto="8.3.2.6">
+               <DEFAULT Number_DWB="8.3.2.6.1" Label="Admire" Num_auto="8.3.2.6.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.6.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.6.2" Label="Envy" Num_auto="8.3.2.6.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.6.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.7" Label="?" Num_auto="8.3.2.7">
+               <DEFAULT Number_DWB="8.3.2.7.1" Label="Flirt, seduce" Num_auto="8.3.2.7.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.7.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.2.7.2" Label="Entice, tempt" Num_auto="8.3.2.7.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.7.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.8" Label="Grudge" Num_auto="8.3.2.8" glosses_old1="grudge" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.8"></DEFAULT>
+            <DEFAULT Number_DWB="8.3.2.9" Label="?" Num_auto="8.3.2.9">
+               <DEFAULT Number_DWB="8.3.2.9.1" Label="Forgive" Num_auto="8.3.2.9.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="2.9.1"></DEFAULT>
+            </DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.3.3" Label="?" Num_auto="8.3.3">
+            <DEFAULT Number_DWB="8.3.3.1" Label="Conscience/Vengeance" Num_auto="8.3.3.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.1" Note="3 lexical items in db with this SemCat"></DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.2" Label="?" Num_auto="8.3.3.2">
+               <DEFAULT Number_DWB="8.3.3.2.1" Label="Kind" Num_auto="8.3.3.2.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.2.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.3.2.2" Label="Cruel" Num_auto="8.3.3.2.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.2.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.3" Label="?" Num_auto="8.3.3.3">
+               <DEFAULT Number_DWB="8.3.3.3.1" Label="Discern" Num_auto="8.3.3.3.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.3.1"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.4" Label="?" Num_auto="8.3.3.4">
+               <DEFAULT Number_DWB="8.3.3.4.1" Label="Honest" Num_auto="8.3.3.4.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.4.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.3.4.3" Label="Earnest/sincere" Num_auto="8.3.3.4.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.4.3"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.3.4.4" Label="Deceive" Num_auto="8.3.3.4.3" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.4.4">
+                  <DEFAULT Number_DWB="8.3.3.4.4.1" Label="Positive/neutral" Num_auto="8.3.3.4.3.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.4.4.1"></DEFAULT>
+                  <DEFAULT Number_DWB="8.3.3.4.4.2" Label="Negative" Num_auto="8.3.3.4.3.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.4.4.2"></DEFAULT>
+               </DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.5" Label="?" Num_auto="8.3.3.5"></DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.6" Label="?" Num_auto="8.3.3.6">
+               <DEFAULT Number_DWB="8.3.3.6.2" Label="Guilty" Num_auto="8.3.3.6.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.6.2"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.7" Label="?" Num_auto="8.3.3.7"></DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.8" Label="Pride" Num_auto="8.3.3.8" glosses_old1="pride" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.8">
+               <DEFAULT Number_DWB="8.3.3.8.1" Label="Modest" Num_auto="8.3.3.8.1" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.8.1"></DEFAULT>
+               <DEFAULT Number_DWB="8.3.3.8.3" Label="Ashamed" Num_auto="8.3.3.8.2" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.8.3"></DEFAULT>
+            </DEFAULT>
+            <DEFAULT Number_DWB="8.3.3.10" Label="Correct" Num_auto="8.3.3.9" Semcat_old1="Vpsi" V.F_old1="5d" Chapter_old1="3.10"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="8.4" Label="Feeling" Num_auto="8.4" Semcat_old1="Vfeel" V.F_old1="5e"></DEFAULT>
+      <DEFAULT Number_DWB="8.5" Label="Utterance" Num_auto="8.5" Semcat_old1="Vutt" V.F_old1="5f">
+         <DEFAULT Number_DWB="8.5.1" Label="Scold" Num_auto="8.5.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.2" Label="?" Num_auto="8.5.2">
+            <DEFAULT Number_DWB="8.5.2.1" Label="Complain" Num_auto="8.5.2.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="2.1"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.2.2" Label="Complement, praise" Num_auto="8.5.2.2" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="2.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.5.3" Label="Declare" Num_auto="8.5.3" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.4" Label="?" Num_auto="8.5.4">
+            <DEFAULT Number_DWB="8.5.4.1" Label="Loud" Num_auto="8.5.4.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="4.1"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.4.2" Label="Soft" Num_auto="8.5.4.2" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="4.2"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.4.3" Label="Accented" Num_auto="8.5.4.3" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="4.3"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.4.6" Label="Glottal sound" Num_auto="8.5.4.4" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="4.6"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.4.7" Label="Choppy" Num_auto="8.5.4.5" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="4.7"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.5.5" Label="Sounds" Num_auto="8.5.5" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="5"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.6" Label="Answer" Num_auto="8.5.6" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="6"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.7" Label="Bid" Num_auto="8.5.7" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="7">
+            <DEFAULT Number_DWB="8.5.7.1" Label="Ask" Num_auto="8.5.7.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="7.1"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.7.2" Label="Implore/Coax" Num_auto="8.5.7.2" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="7.2"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.7.3" Label="Coax" Num_auto="8.5.7.3" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="7.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.5.8" Label="Banter/Discourse" Num_auto="8.5.8" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="8"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.9" Label="Jest" Num_auto="8.5.9" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="9"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.10" Label="?" Num_auto="8.5.10">
+            <DEFAULT Number_DWB="8.5.10.1" Label="Talk, say" Num_auto="8.5.10.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="10.1"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.10.2" Label="Garrulosity, verbosity" Num_auto="8.5.10.2" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="10.2"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.10.3" Label="Talk with purpose of convincing" Num_auto="8.5.10.3" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="10.3"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.10.4" Label="Falsehood" Num_auto="8.5.10.4" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="10.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.5.11" Label="Formulaic" Num_auto="8.5.11" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="11">
+            <DEFAULT Number_DWB="8.5.11.2" Label="Introduction" Num_auto="8.5.11.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="11.2"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.11.3" Label="Farewells" Num_auto="8.5.11.2" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="11.3"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.11.5" Label="Apology/excuse" Num_auto="8.5.11.3" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="11.5"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.11.6" Label="Invite" Num_auto="8.5.11.4" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="11.6"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.5.12" Label="?" Num_auto="8.5.12"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.13" Label="Beckon" Num_auto="8.5.13" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="13"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.14" Label="?" Num_auto="8.5.14">
+            <DEFAULT Number_DWB="8.5.14.1" Label="Spread information, present ideas" Num_auto="8.5.14.1" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="14.1"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.14.2" Label="Reveal or give information" Num_auto="8.5.14.2" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="14.2"></DEFAULT>
+            <DEFAULT Number_DWB="8.5.14.3" Label="Explain" Num_auto="8.5.14.3" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="14.3"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="8.5.15" Label="Boast" Num_auto="8.5.15" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="15"></DEFAULT>
+         <DEFAULT Number_DWB="8.5.16" Label="Dedicate" Num_auto="8.5.16" Semcat_old1="Vutt" V.F_old1="5f" Chapter_old1="16"></DEFAULT>
+      </DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="9" Label="Shape, Size, Color, Measure, Number, Time, Space" Num_auto="9">
+      <DEFAULT Number_DWB="9.1" Label="Time" Num_auto="9.1">
+         <DEFAULT Number_DWB="9.1" Label="Adverbial uses" Num_auto="9.1.1" Semcat_old1="Ntime" V.F_old1="6i"></DEFAULT>
+         <DEFAULT Number_DWB="9.1.1" Label="Months and Years" Num_auto="9.1.2" Semcat_old1="Ntime" V.F_old1="6i" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="9.1.2" Label="Days" Num_auto="9.1.3" Semcat_old1="Ntime" V.F_old1="6i" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="9.1.3" Label="Hours" Num_auto="9.1.4" Semcat_old1="Ntime" V.F_old1="6i" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="9.1.4" Label="Other Intervals" Num_auto="9.1.5" Semcat_old1="Ntime" V.F_old1="6i" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="9.1.5" Label="Years" Num_auto="9.1.6" Semcat_old1="Ntime" V.F_old1="6i" Chapter_old1="5"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="9.2" Label="Spatial terms" Num_auto="9.2" Semcat_old1="Spat" V.F_old1="6j">
+         <DEFAULT Number_DWB="9.2.1" Label="Up" Num_auto="9.2.1" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.2" Label="Down" Num_auto="9.2.2" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.3" Label="Sideways" Num_auto="9.2.3" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.4" Label="Apart" Num_auto="9.2.4" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.5" Label="Amid" Num_auto="9.2.5" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="5"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.6" Label="Around" Num_auto="9.2.6" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="6"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.7" Label="Extent" Num_auto="9.2.7" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="7"></DEFAULT>
+         <DEFAULT Number_DWB="9.2.8" Label="Directions" Num_auto="9.2.8" Semcat_old1="Spat" V.F_old1="6j" Chapter_old1="8"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="9.3" Label="Sounds" Num_auto="9.3" Semcat_old1="Sound" V.F_old1="6a"></DEFAULT>
+      <DEFAULT Number_DWB="9.3" Label="Colors" Num_auto="9.4" Semcat_old1="Col" V.F_old1="6b"></DEFAULT>
+      <DEFAULT Number_DWB="9.3" Label="Change of state" Num_auto="9.5" Semcat_old1="Vcos" V.F_old1="6c"></DEFAULT>
+      <DEFAULT Number_DWB="9.3" Label="Qualities" Num_auto="9.6">
+         <DEFAULT Number_DWB="9.3.1" Label="Positive/Desirable qualities" Num_auto="9.6.1" Semcat_old1="Vqual" V.F_old1="6d" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="9.3.2" Label="Neutral and Negative qualities" Num_auto="9.6.2" Semcat_old1="Vqual" V.F_old1="6d" Chapter_old1="2"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="9.3" Label="Shape/Size" Num_auto="9.7">
+         <DEFAULT Number_DWB="9.3" Label="Shape and size" Num_auto="9.7.1" Semcat_old1="Nshiz" V.F_old1="6e"></DEFAULT>
+         <DEFAULT Number_DWB="9.3" Label="Verbs referring to size/shape" Num_auto="9.7.2" Semcat_old1="Vshiz" V.F_old1="6f"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="9.4" Label="Measure Words" Num_auto="9.8" Semcat_old1="Meas" V.F_old1="6g"></DEFAULT>
+      <DEFAULT Number_DWB="9.4" Label="Numbers and numeric expression" Num_auto="9.9" Semcat_old1="Num" V.F_old1="6h"></DEFAULT>
+      <DEFAULT Number_DWB="9.5" Label="Locations" Num_auto="9.10">
+         <DEFAULT Number_DWB="9.5.1" Label="Roads and Ways" Num_auto="9.10.1" Semcat_old1="Nloc" V.F_old1="6k" Chapter_old1="1"></DEFAULT>
+         <DEFAULT Number_DWB="9.5.2" Label="Waterways/Having to do with water" Num_auto="9.10.2" Semcat_old1="Nloc" V.F_old1="6k" Chapter_old1="2"></DEFAULT>
+         <DEFAULT Number_DWB="9.5.3" Label="Governable units (towns, parts of towns)" Num_auto="9.10.3" Semcat_old1="Nloc" V.F_old1="6k" Chapter_old1="3"></DEFAULT>
+         <DEFAULT Number_DWB="9.5.4" Label="Farm/Agricultural places" Num_auto="9.10.4" Semcat_old1="Nloc" V.F_old1="6k" Chapter_old1="4"></DEFAULT>
+         <DEFAULT Number_DWB="9.5.4" Label="Places in general, countries" Num_auto="9.10.5" Semcat_old1="Nloc" V.F_old1="6k" Chapter_old1="4.0" Note="Chapter has trailing zero (records don't seem to be totally consistent with this, though)"></DEFAULT>
+         <DEFAULT Number_DWB="9.5.5" Label="Functional buildings/places" Num_auto="9.10.6" Semcat_old1="Nloc" V.F_old1="6k" Chapter_old1="5"></DEFAULT>
+      </DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="10" Label="Grammatical Words" Num_auto="10" Semcat_old1="G" V.F_old1="8">
+      <DEFAULT Number_DWB="10.1" Label="Ontological" Num_auto="10.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="1">
+         <DEFAULT Number_DWB="10.1.1" Label="Prepositions" Num_auto="10.1.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="1.1"></DEFAULT>
+         <DEFAULT Number_DWB="10.1.2" Label="?" Num_auto="10.1.2">
+            <DEFAULT Number_DWB="10.1.2.1" Label="Compound" Num_auto="10.1.2.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="1.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="10.1.2.2" Label="Subordination" Num_auto="10.1.2.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="1.2.2"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="10.1.3" Label="Classifiers" Num_auto="10.1.3" Semcat_old1="G" V.F_old1="8" Chapter_old1="1.3"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="10.2" Label="Articles" Num_auto="10.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="2">
+         <DEFAULT Number_DWB="10.2.1" Label="Grammatical identifiers" Num_auto="10.2.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="2.1">
+            <DEFAULT Number_DWB="10.2.1.1" Label="Phonological entities" Num_auto="10.2.1.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="2.1.1"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="10.2.2" Label="Morphological identifiers" Num_auto="10.2.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="2.2"></DEFAULT>
+         <DEFAULT Number_DWB="10.2.3" Label="?" Num_auto="10.2.3">
+            <DEFAULT Number_DWB="10.2.3.1" Label="Nominative-accusative" Num_auto="10.2.3.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="2.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="10.2.3.2" Label="Possessive" Num_auto="10.2.3.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="2.3.2"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="10.3" Label="?" Num_auto="10.3"></DEFAULT>
+      <DEFAULT Number_DWB="10.4" Label="Affixes" Num_auto="10.4" Semcat_old1="G" V.F_old1="8" Chapter_old1="4">
+         <DEFAULT Number_DWB="10.4.1" Label="?" Num_auto="10.4.1">
+            <DEFAULT Number_DWB="10.4.1.1" Label="Grammatical case" Num_auto="10.4.1.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.1.1"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.1.2" Label="Animacy" Num_auto="10.4.1.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.1.2"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.1.3" Label="Diminutivizer, intensifier, etc." Num_auto="10.4.1.3" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.1.3"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.1.4" Label="Person, #, gender" Num_auto="10.4.1.4" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.1.4"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="10.4.2" Label="Verbal" Num_auto="10.4.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.2">
+            <DEFAULT Number_DWB="10.4.2.1" Label="Mood" Num_auto="10.4.2.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.2.1"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.2.2" Label="?" Num_auto="10.4.2.2"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.2.3" Label="?" Num_auto="10.4.2.3"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.2.4" Label="Aspect, (in)transitivity, ergativity, ca" Num_auto="10.4.2.4" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.2.4" Note="Category name appears to have been truncated"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.2.5" Label="?" Num_auto="10.4.2.5"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.2.6" Label="Participles, gerunds, etc." Num_auto="10.4.2.6" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.2.6"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.2.7" Label="Nominalizers" Num_auto="10.4.2.7" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.2.7"></DEFAULT>
+         </DEFAULT>
+         <DEFAULT Number_DWB="10.4.3" Label="?" Num_auto="10.4.3">
+            <DEFAULT Number_DWB="10.4.3.1" Label="Degrees of comparison" Num_auto="10.4.3.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.3.1"></DEFAULT>
+            <DEFAULT Number_DWB="10.4.3.2" Label="Demonstrators" Num_auto="10.4.3.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="4.3.2"></DEFAULT>
+         </DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="10.5" Label="?" Num_auto="10.5">
+         <DEFAULT Number_DWB="10.5.1" Label="Structuring Words" Num_auto="10.5.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="5.1"></DEFAULT>
+         <DEFAULT Number_DWB="10.5.2" Label="Grammatical functions" Num_auto="10.5.2" Semcat_old1="G" V.F_old1="8" Chapter_old1="5.2"></DEFAULT>
+         <DEFAULT Number_DWB="10.5.3" Label="WH words" Num_auto="10.5.3" Semcat_old1="G" V.F_old1="8" Chapter_old1="6.1"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="10.6" Label="Not, yes ?" Num_auto="10.6" glosses_old1="not,yes" Semcat_old1="G" V.F_old1="8" Chapter_old1="7">
+         <DEFAULT Number_DWB="10.6.1" Label="Affirmative" Num_auto="10.6.1" Semcat_old1="G" V.F_old1="8" Chapter_old1="7.1" Note="No lexicon records"></DEFAULT>
+         <DEFAULT Number_DWB="10.6.2" Label="Negative" Num_auto="10.6.2" glosses_old1="NEG,negative,neither,no" Semcat_old1="G" V.F_old1="8" Chapter_old1="7.2"></DEFAULT>
+      </DEFAULT>
+      <DEFAULT Number_DWB="10.7" Label="Ejaculations" Num_auto="10.7" Semcat_old1="G" V.F_old1="8" Chapter_old1="8"></DEFAULT>
+   </VOLUME>
+   <VOLUME Number_DWB="x.x" Label="Errors and apocrypha" Num_auto="11" Semcat_old1="Error" V.F_old1="x">
+      <DEFAULT Number_DWB="2.1" Label="Animals" Num_auto="11.1" Semcat_old1="Nanim" V.F_old1="2a.1"></DEFAULT>
+   </VOLUME>
+</ROOT>

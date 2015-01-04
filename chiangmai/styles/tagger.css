@@ -1,0 +1,129 @@
+body { background-color: white; }
+
+html { font-family: Arial, Helvetica; }
+/* font-family: "Comic Sans", font-size: 10pt; */
+
+td, input { font-family: "STEDTU", "Doulos SIL", "Charis SIL", Gentium,
+    "TITUS Cyberbit Basic", SILDoulosUnicodeIPA,
+    Thryomanes,Cardo, "Lucida Grande",
+    "Arial Unicode MS", "Lucida Sans Unicode"; 
+    background-color: #F2F2F2;
+    font-size: 10pt;}
+
+tr { vertical-align: top; }
+
+/* input { background-color: white;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px } */
+
+.cognate {
+	background-color:yellow; /* #99ff99*/
+}
+
+.left
+{
+	float: left;
+	padding: 0 1em 0 0;
+}
+
+.notepreview
+{
+	overflow/**/: auto;
+	height: 1%;
+}
+/* overflow: auto establishes a new block formatting context.
+1% is a hack for IE.
+see http://www.pupinc.com/boxflowhack/ */
+
+.footnote { font-size: smaller; }
+
+hr { 
+     width: 100%;
+     text-align: left; 
+     clear: both; }
+
+th {
+     text-align: left;
+     color: white;
+     background-color: DarkBlue;
+     font-family: Helvetica, Arial, sans;
+     font-weight: normal; }
+
+th A:link     		{ color: white; }
+th A:visited   		{ color: white; }
+th A:hover   		{ color: teal; text-decoration: underline; }
+
+h1 {
+     font-size: 24pt;
+     font-weight: bold; }
+
+h2 {
+     font-size: 14pt;
+     font-weight: bold;
+     margin-left: 12pt;
+     }
+
+h3 {
+     font-size: 12pt;
+     font-weight: bold;
+     margin-left: 16pt; }
+
+h4 {
+     font-size: 10pt;
+     font-weight: normal;
+     margin-left: 18pt; }
+
+/* TableKit styles */
+
+tr.rowodd {
+	background-color: #FFFFFF;
+}
+
+tr.roweven {
+	background-color: #F2F2F2;
+}
+
+.sortcol {
+	cursor: pointer;
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.sortasc {
+	background-color: #B9DDFF;
+	background-image: url("../styles/up.gif");
+}
+.sortdesc {
+	background-color: #DDFFAC;
+	background-image: url("../styles/down.gif");
+}
+.nosort {
+	cursor: default;
+}
+
+th.resize-handle-active {
+	cursor: e-resize;
+}
+
+div.resize-handle {
+	cursor: e-resize;
+	width: 2px;
+	border-right: 1px dashed #1E90FF;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+th.moveOnHandle {
+	cursor: move;
+}
+div.move-handle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fc6;
+	cursor: move;
+	/* filter: alpha(opacity=50);
+	-moz-opacity: 0.5; */
+}

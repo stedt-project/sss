@@ -1,0 +1,36 @@
+[% PROCESS header.tt title="STEDT Database: Account Info" %]
+[%- user = c.param('user') -%]
+[% IF reset -%]
+<pre>
+[% message %]
+</pre>
+A new password has been generated and sent to the email address in your account record.
+<hr>
+Once you receive this email, please click on the link below and login with your new password.
+
+<a href="[% self_url %]/account/login">Login</a>
+
+[% ELSIF user -%]
+[% IF updated %]<p>Information updated successfully.</p>[% END -%]
+
+<p>Logged in as [% user %]. You can change your account info below.</p>
+
+<form method="post" name="acct_form" action="[% self_url %]/account/update">
+<table>
+<tr><td>username: </td><td><input type="text" size="10" name="newuser" maxlength="15" value="[% username %]">[% err.newuser %]</td></tr>
+<tr><td>new password: </td><td><input type="password" size="10" name="newpwd">[% err.newpwd %]</td></tr>
+<tr><td>confirm new password: </td><td><input type="password" size="10" name="newpwd2">[% err.newpwd2 %]</td></tr>
+<tr><td>email: </td><td><input type="text" size="30" name="email" value="[% email %]">[% err.email %]</td></tr>
+
+<hr>
+<tr><td colspan="2"><i>for security, enter the following</i></td></tr> 
+<tr><td>your current password:</td><td><input type="password" size="10" name="oldpwd">[% err.oldpwd %]</td></tr>
+<tr><td colspan="2"><input name="btn" type="submit" value="Update"></td></tr>
+</table>
+</form>
+[% ELSE -%]
+You are not logged in. Try <a href="[% self_url %]/account/gsarpa">creating a new account</a>.
+[% END -%]
+
+</body>
+</html>

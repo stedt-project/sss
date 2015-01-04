@@ -1,0 +1,53 @@
+﻿[% PROCESS header.tt title="STEDT Language Groups" -%]
+
+<form action="[% self_url %]/subgroups/add" method="get">
+<table id="lggrps">
+[% FOR sec IN ['thead','tfoot'] -%]
+<[% sec %]><tr>
+<th class="noedit">grpno</th>
+<th id="grp" [% IF !c.has_privs(8) %]class="noedit"[% END %]>grp</th>
+<th id="plg" [% IF !c.has_privs(8) %]class="noedit"[% END %]>plg</th>
+<th id="genetic" [% IF !c.has_privs(8) %]class="noedit"[% END %]>genetic?</th>
+<th class="noedit">num. lgs</th>
+<th class="noedit">grpid</th>
+</tr></[% sec %]>
+[% END -%]
+<tbody>
+[% FOREACH r IN result -%]
+<tr id="gr_[% r.0 %]">
+<td>[% r.1 %]</td>
+<td>[% r.2 | html %]</td>
+<td[% IF (!r.5 && !r.4) %] class="noedit"[% END %]>[% r.4 | html %]</td>
+<td align="center">[% r.5 %]</td>
+<td align="right">[% IF r.3 %]<a href="[% self_url %]/edit/languagenames?languagenames.grpid=[% r.0 %]" target="edit_lgs">[% r.3 %] lgs</a>[% ELSE %]0 lgs[% END %]</td>
+<td align="right"><small>[% r.0 %]</small></td>
+</tr>
+[% END # FOREACH row -%]
+[% IF c.has_privs(8) -%]
+<tr>
+<td class="noedit"><input name="add_grpno" type="text" size="7" maxlength="15"></td>
+<td class="noedit"><input name="add_grp" type="text" size="25" maxlength="41"></td>
+<td class="noedit"><input name="add_plg" type="text" size="5" maxlength="7"></td>
+<td class="noedit"><input name="add_genetic" type="text" size="1" maxlength="1" value="0"></td>
+<td align="center" colspan="2"><input type="submit" value="Add Record"></td>
+</tr>
+[% END -%]
+</tbody>
+</table>
+</form>
+<h2>Cheat sheet</h2>
+<dl>
+<dt>grpno</dt>
+	<dd>a unique, hierarchical "number"</dd>
+<dt>grp</dt>
+	<dd>name of the language group</dd>
+<dt>plg</dt>
+	<dd>name of the protolanguage associated with this node, or (at least) some kind of label to be shown next to roots from the etyma table (e.g. "IA <b>*jan</b>")</dd>
+<dt>genetic</dt>
+	<dd>set to 0 if this is not a genetically valid subgroup (like "Naga" or "Kamarupan"). Mesoroots will not be allowed at these nodes, and etyma identified with these "subgroups" will not be allowed to be converted to mesoroots.</dd>
+</dl>
+<script>
+TableKit.Editable.init('lggrps', {editAjaxURI:'[% self_url %]/subgroups/update'});
+</script>
+</body>
+</html>

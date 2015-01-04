@@ -1,0 +1,63 @@
+body { margin:10px 10px 0px 10px;
+       padding:0px;
+       }
+
+#leftcontent { position: absolute;
+               left:10px;
+               width:200px;
+               background:#fff;
+               border:1px solid #000;
+               }
+
+#centercontent { background:#fff;
+                 margin-left: 199px;
+                 margin-right:199px;
+                 border:1px solid #000;
+                 voice-family: "\"}\"";
+                 voice-family: inherit;
+                 margin-left: 201px;
+                 margin-right:201px;
+               }
+
+html>body #centercontent { margin-left: 201px;
+                           margin-right:201px;
+                           }
+
+#rightcontent { position: absolute;
+                right:10px;
+                width:200px;
+                top:130px;
+                background:#fff;
+                border:1px solid #000;
+                }
+
+#banner { background:#fff;
+          height:120px;
+          border-top:1px solid #000;
+          border-right:1px solid #000;
+          border-left:1px solid #000;
+          voice-family: "\"}\"";
+          voice-family: inherit;
+          height:139px;
+        }
+
+html>body #banner { height:119px;
+                  }
+
+#banner h1 { font-size:50px;
+             padding:40px 10px 0px 10px;
+             margin:0px;
+             border-bottom: none;
+             }
+
+#banner p { float:right;
+            text-align:right;
+            padding:10px 10px 10px 0px;
+            font-size:10px }
+
+#rightcontent p { font-size:10px
+                  }
+
+#centercontent p,li,h1,h2 { margin-right:10px }
+
+#centercontent table { padding:0px 10px 10px 10px; }

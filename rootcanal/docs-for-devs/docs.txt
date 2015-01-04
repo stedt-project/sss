@@ -1,0 +1,39 @@
+General comments for developers that don't really fit anywhere else.
+
+notes table
+===========
+
+Rn (integer)        # rn from lex, 0 if etyma or chapter
+tag (smallint)		# tag from etyma, 0 otherwise
+Id (text)           # chapter (with dots) ***(*(*)) but see below.
+Spec (enum)    L for lexicon, E for etymon, C for chapter, S for source. Mostly redundant with rn !=0, tag !=0, and id LIKE '_%', but see note on "id" below.
+
+Notetype (enum) # T:text I:internal (N:new) O:orig/source G:graphics F:final H:hptb-ref
+T and N are essentially the same. Originally T was for text and N was for footnotes,
+but all etyma notes are text (with embedded footnotes) and all lexicon notes
+are footnotes. (Now standardized to T(text) [dwbruhn].)
+I means notes for internal STEDT use only.
+G is a reference to graphics file (4 digits, with implied .pdf and .gif versions)
+O means notes from the source, which we should never modify. Copy into a new note instead.
+H means the note contains an HPTB ref and suppresses generation of an automatic HPTB note.
+F means 'final', which for etyma means it's a Chinese comparandum [NOW DEPRECATED: and for chapters means text that should appear at the end of the chapter.]
+
+To see which types are associated with each spec, you can run the following sql command.
+SELECT `spec`, `notetype`, count(*) FROM `notes` group by spec, notetype order by 1, 3 desc
+	E: I T F H
+	C: I T F G
+	L: I T O
+	S: I T
+
+Order (integer)       # order of note if more than one for a certain etymon/chapter.
+DateTime (datetime)	when note was modified
+noteid               # arbitrary unique key
+uid:    user id of the note author
+xmlnote              # actual note in xml, utf8. You can see the list of xml markup in the current Notes.pm module, under xml2markup, along with some comments in the notes adding interface (addnoteform.tt).
+
+*** "id" actually does double duty for certain lexicon notes; in these cases, rn specifies lexicon.rn as usual, but id stores a *tag number* that the note is associated with. When showing footnotes in the etymon view or in the printed PDF's, these notes will only show up when the lexicon record is displayed under that tag. This was a hack to hide certain notes in TBRS, and perhaps should be deprecated, or even reworked so it specifies a tag number where it does *not* show up.
+
+**** "id" actually does triple duty for certain etyma notes. In these cases, the grpid is stored in the id column to indicate that these should show up as subgroup notes underneath an etymon.
+
+**** "id" actually does quadruple duty for source notes: when spec='S' (srcbib), the srcabbr is stored in the id column [dwbruhn]
+

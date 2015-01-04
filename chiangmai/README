@@ -1,0 +1,31 @@
+This is the "chiangmai" version of the STEDT database interface.
+
+It uses the "legacy" approach: basic CGI, TableKit, and a minimal amount 
+of javascript.
+
+From a coding point of view it is nice because:
+
+ * the tagging facilities have been removed. It is a read-only, browsing interface.
+ * simple to code: everything is pretty much self-contained.
+ * shows complete metadata tables (but has the nice joins to other tables)
+
+To deploy it, just check out the repository to the server you want to run it one, copy the 
+files into a web-server accessible, executable directory, and e.g.:
+
+# check out working directory
+$ svn co https://stedt.sourcerepo.com/stedt/sss/chiangmai chiangmai
+[...]
+# put the files someplace executable by the server
+$ svn export chiangmai ~/public_html/chiangmai 
+Export complete.
+#
+# we need SyllabificationStation.pm...
+#
+svn co https://stedt.sourcerepo.com/stedt/sss/printutils printutils
+cp printutils/SyllabificationStation.pm public_html/chiangmai/
+#
+# optional: remove working directory
+rm -rf printutils
+rm -rf chiangmai
+
+It should just work!

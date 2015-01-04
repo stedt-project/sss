@@ -1,0 +1,62 @@
+[% PROCESS header.tt title="Sequence and Allofam Tool - STEDT Database" %]
+<style type="text/css">
+@import url([% self_base %]styles/sequencer.css);
+</style>
+
+[% IF msg -%]
+<p class="message">[% msg %]</p>
+[% END -%]
+
+<p>This is a list of all the roots in chapter [% c.query.param('c') %].
+Drag to reorder them and/or group them into word families.
+Items in the "n/a" box will be included ONLY in <i>draft</i> PDF's not <i>final</i> PDF's, etc.
+Click on a checkbox to designate a root as that word family's pan-allofamic formula.
+Note: weird things may happen if you have more than 9 allofams in a word family.</p>
+
+<form method="post" onsubmit="return self_serialize()">
+<input name="c" type="hidden" value="[% c.query.param('c') | url %]" />
+<input name="seqs" type="hidden" id="seqs_input" />
+<input name="save" type="submit" value="Save Changes!" />
+</form>
+
+<p>Be sure to save your changes when you're done!</p>
+
+[% f = fams.shift -%]
+<div class="allofam-noseq" id="fam_0">
+	<div class="tag-handle">n/a</div>
+	<div class="etymon-container" id="allofams_0">
+	[% FOR e IN f.allofams -%]
+		<div class="etymon" id="etymon_[% e.tag %]">
+		<input type="checkbox" class="paf-btn" id="paf_[% e.tag %]" disabled />
+		(<span class="seq-str">0</span>)
+		#[% e.tag %] [% e.plg %] <b>[% e.form %]</b> [% e.gloss %] ([% e.num_recs %] reflexes)
+		</div>
+	[% END -%]
+	</div>
+	<div class="uncontainer" id="deallofam_0"></div>
+</div>
+<div id="all_tags">
+[% FOR f IN fams -%]
+<div class="allofam" id="fam_[% f.seq %]">
+	<div class="tag-handle">(<span class="seq-num">[% f.seq %]</span>)</div>
+	<div class="etymon-container" id="allofams_[% f.seq %]">
+	[% FOR e IN f.allofams %]
+		[% is_paf = !(e.seq || f.allofams.size==1) %]
+		<div class="[% is_paf ? 'paf' : 'etymon' %]" id="etymon_[% e.tag %]">
+		<input type="checkbox" class="paf-btn" id="paf_[% e.tag %]" [% is_paf ? 'checked' : f.allofams.size==1 ? 'disabled' : '' %]/>
+		(<span class="seq-str">[% f.seq %][% e.seq %]</span>)
+		#[% e.tag %] [% e.plg %] <b>[% e.form %]</b> [% e.gloss %] ([% e.num_recs %] reflexes)
+		</div>
+	[% END %]
+	</div>
+	<div class="uncontainer" id="deallofam_[% f.seq %]"></div>
+</div>
+[% END %]
+</div>
+
+<script>
+var last_fam_seq = [% f.seq %];
+</script>
+<script src="[% self_base %]js/sequencer.js"></script>
+</body>
+</html>

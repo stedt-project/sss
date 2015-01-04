@@ -1,0 +1,83 @@
+lgabbr	language	srcabbr	lgsort	grpid	silcode
+--see AHI	Axi	--05	AXI	47	yix
+--see AHI, DAFANG, LOLOPHO, MILE, MOJIANG, NANHUA, NANJIAN, SANI, WEISHAN, XIDE	Yi	--70	YI	0	
+--see AKA	Hruso	--17	HRUSO	5	hru
+--see ANONG	Nung (Rawang)	--45	NUNG	38	raw
+--see ASH	Sho	--55	SHO	8	csh
+--see ATSI	Zaiwa	--72	YOGLI	12	atb
+--see BURMESE	Myanmar	--42	HAKA	44	mya
+--see CHAMLING	Rodong	--53	RODONG	31	rab
+--see CHOKRI	Chakrü	--08	HAKA	11	nri
+--see DAOFU	Horpa, Stau	--80	YOGLI	0	ero
+--see DARANG	Taraon	--59	TARAON	6	mhu
+--see DARANG, GEMAN	Deng	--11	DENG	6	
+--see DULONG	Anong	--04	NUNG	38	nun
+--see GAZHUO	Katso	--23	KATSO	46	kaf
+--see HANI	Khatu	--25	KHATU	48	ktp
+--see HANI (BIYUE)	Pijo	--50	PIJO	48	byo
+--see HANI (SHUIKUI)	Haoni	--16	HANI (HAONI)	48	how
+--see HAYU	Vayu	--67	VAYU	31	vay
+--see HPUN	Phön	--49	PHON	44	hpo
+--see HPUN	Phun	--48	YOGLI	44	hpo
+--see IDU, BOKAR	Lhoba	--29	LHOBA	6	
+--see JINGPHO	Kachin	--81	YOGLI	0	kac
+--see KAMAN	Miju Mishmi	--35	MIJU	6	mxj
+--see KANAURI	Kanawari	--21	HAKA	20	kfk
+--see KHEZHA	Kezhama	--24	KEZHAMA	11	nkh
+--see KHUMI	K'umi	--20	K'UMI	8	cnk
+--see KOKBOROK	Tripuri	--65	TRIPURI	16	trp
+--see LAI	Hakha	--15	HAKA	8	cnh
+--see LAI	Haka	--14	HAKA	8	cnh
+--see LALUNG	Tiwa	--63	LALUNG	16	lax
+--see LASHI	Leqi	--28	LEQI	44	lsi
+--see LUSHAI	Mizo	--39	LALUNG	8	lus
+--see MARU	Langsu	--27	LANGSU	44	mhx
+--see MEITHEI	Manipuri	--33	MANIPURI	13	mni
+--see MENBA	Moinba	--78	YOGLI	0	
+--see MISING	Miri	--38	LALUNG	5	mrg
+--see MONPA	Menba	--75	YOGLI	7	
+--see MONPA	Tsangla Monpa	--66	TSANGLA	7	kkf
+--see MUYA	Minyag	--36	MINYAK	34	mvm
+--see MUYA	Minyak	--37	MINYAK	34	mvm
+--see NISHI	Dafla	--10	DAFLA	5	dap
+--see NISHI	Tagen	--58	TAGEN	5	dap
+--see NISHI	Nyisu	--47	NYISU	5	dap
+--see NOCTE	Namsang	--43	NAMSANG	12	njb
+--see NUNG	Lungmi	--30	LUNGMI	38	raw
+--see NUNG	Rawang	--52	RAWANG	38	raw
+--see NUNG	Metu	--34	METU	38	duu
+--see NUNG	Mutwang	--41	MUTWANG	38	raw
+--see PA-O	Taungthu	--60	TAUNGTHU	50	blk
+--see PADAM	Abor	--01	YOGLI	5	adi
+--see PADAM-MISING	Abor-Miri	--02	YOGLI	5	adi
+--see PATTANI	Manchati	--32	MANCHAD (MANCHATI)	20	lae
+--see PATTANI	Manchad	--31	MANCHAD (MANCHATI)	20	lae
+--see PUMI	Primi	--77	YOGLI	34	
+--see PYU	Tircul	--62	HAKA	44	pyx
+--see QUEYU (YAJIANG), ZHABA (DAOFU)	Zhaba	--74	YOGLI	34	zhb
+--see RANGLOI	Tinan	--61	TINAN	20	lbf
+--see rGYALRONG	rGyarong	--79	YOGLI	35	jya
+--see rGYALRONG	Jiarong	--76	YOGLI	35	jya
+--see RONGMEI	Nruanghmei	--44	NRUANG	11	nbu
+--see SANI	Nyi	--46	YOGLI	47	ysn
+--see SEMA	Simi, Sumi, Sümi	--56	YOGLI	34	
+--see SULONG	Puhgut	--51	PUHGUT	5	suv
+--see TANGSA	Yogli	--71	YOGLI	12	nst
+--see TANGSA	Moshang	--40	YOGLI	12	nmh
+--see TANGUT	Hsi Hsia	--18	XIXIA	33	txg
+--see TANGUT	Xixia	--68	LALUNG	33	txg
+--see TIBETAN	Zeku	--73	TIBETAN (ZEKU)	24	adx
+--see TIBETAN	Spiti	--57	SPITI	24	spt
+--see TIBETAN	Amdo	--03	TIBETAN (ZEKU)	24	adx
+--see TIBETAN	Balti	--06	TIBETAN (ZEKU)	24	bft
+--see TIBETAN	Batang	--07	BATANG	24	khq
+--see TIBETAN	Jirel	--19	JIREL	24	jul
+--see TIBETAN	Ladakhi	--26	LADAKHI	24	lbj
+--see TIBETAN	Bla-brang	--73	TIBETAN (ZEKU)	24	adx
+--see TIBETAN	Sherpa	--54	SHERPA	24	xsr
+--see TRUNG	Dulong	--12	DULONG	38	duu
+--see TSANGLA	Cangla	--82	YOGLI	7	tsj
+--see TSHONA	Cuona Menba	--09	CUONA	22	twm
+--see UGONG	Kanburi Lawa	--22	KANBURI LAWA	48	ugo
+--see YAKHA	Yakkhaba	--69	YAKHA	31	ybh
+--see ZEME	Empeo	--13	EMPEO	11	nzm

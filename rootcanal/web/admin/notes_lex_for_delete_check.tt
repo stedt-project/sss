@@ -1,0 +1,29 @@
+<div class="lexnote" id="reorddiv_[% n.noteid %]">
+<form id="form[% n.noteid %]" class="noteform right">
+<input type="hidden" name="noteid" value="[% n.noteid %]">
+<input type="hidden" name="mod" value="[% n.lastmod %]">
+notetype:<select name="notetype">
+<option [% IF n.type=='N' %]selected="selected" [% END %]value="N">New</option>
+<option [% IF n.type=='I' %]selected="selected" [% END %]value="I">Internal</option>
+<option [% IF n.type=='O' %]selected="selected" [% END %]value="O">Orig/src-DON'T MODIFY</option>
+</select>
+last mod: <span id="lastmod[% n.noteid %]">[% n.lastmod %]</span>
+<br>
+<textarea name="xmlnote" rows="[% n.num_lines %]" cols="54">
+[%- n.markup -%]
+</textarea>
+<br>
+<input type="submit" value="Save Note">
+<input type="button" name="delete_btn" value="Delete Note">
+(tag: <input name="id" type="text" value="[% n.id %]" size="4">)
+[% IF c.has_privs(8) && n.uid != 8 -%]
+user: <select name="uid">
+<option value="8">stedt</option>
+<option selected="selected" value="[% n.uid %]">[% n.username %]</option>
+</select>
+[% END -%]
+</form>
+<div id="preview[% n.noteid %]" class="notepreview">
+[%- n.text -%]
+[% IF n.uid != 8 %] [[% n.username %]][% END %]
+</div><hr class="edit" style="clear:right"></div>

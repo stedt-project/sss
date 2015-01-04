@@ -1,0 +1,37 @@
+body
+{
+	font-family: myAllofam, Times, "Times New Roman", "Doulos SIL Compact", "Charis SIL Compact";
+	line-height: 1;
+}
+
+.allofam
+{
+	background-color: #EEE;
+	overflow:hidden; /* use this instead of inserting a dummy cleared element like <br style="clear:both"/> */
+}
+.allofam-noseq
+{
+	background-color: #FEB;
+	overflow:hidden;
+}
+.tag-handle {
+	float: left;
+	background-color: #CA7;
+	padding:1em;
+	font-weight: bold;
+}
+.etymon-container
+{
+	float: left;
+	min-width:50%; min-height:3em; /* need this to maintain a Droppable target! */
+}
+.uncontainer
+{
+	background-color: white;
+	width:100%; min-height:1em;
+	overflow:hidden;
+	padding-left:3em;
+}
+.etymon { padding:1ex; }
+.paf { background-color: #CA7; padding:1ex; }
+.message { background-color:#B88; }

@@ -1,0 +1,28 @@
+﻿[% PROCESS header.tt title="Progress Detail - STEDT Database" %]
+
+<h3>Tagging accepted, by user, over time</h3>
+<p>[% users.size %] users have tags which have been approved:
+</p>
+<style>
+td.num {text-align:right;}
+</style>
+<table class="sortable resizable" style="table-layout:fixed">
+<col style="width:10em">
+<tr><th>month</th>
+[%- FOREACH u IN users %]<th>[% u %]</th>[% END -%]
+<th>Subtotal</th>
+</tr>
+[% FOREACH d IN months -%]
+<tr><td>[% d %]</td>
+[% FOREACH u IN users %]<td class="num">[% stats.$d.$u || '' %]</td>[% END -%]
+<td class="num">[% m_totals.$d %]</td>
+</tr>
+[% END -%]
+<tr><td>Subtotal</td>
+[% FOREACH u IN users %]<td class="num">[% u_totals.$u || 0 %]</td>[% END -%]
+<td class="num">[% total %]</td>
+</tr>
+</table>
+
+</body>
+</html>
