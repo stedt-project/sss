@@ -17,5 +17,3 @@ The content included, by directory:
 * semcats :: Semantic Classification project files
 * singapore :: experimental browser, written in PHP and jQuery ("easier, clearer, faster")
 * site :: partial content from STEDT web site
-=======
-The project website is at <http://stedt.berkeley.edu/>.
