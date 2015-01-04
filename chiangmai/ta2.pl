@@ -29,8 +29,13 @@ sub browseDB {
     
     my $host = 'localhost';
     my $db = 'stedt';
+<<<<<<< HEAD
     my $db_user = 'stedtadmin';
     my $db_password = 'j1bur1sh';
+=======
+    my $db_user = 'root';
+    my $db_password = '';
+>>>>>>> e427d349a7e8075426aa62634d1d5222f4593d41
 
     #my $db_user = 'root';
     #my $db_password = '';
