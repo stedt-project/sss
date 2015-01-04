@@ -5,7 +5,6 @@ All STEDT source code
 This repository contains software and other components used in the
 STEDT project, 1987-2014.
 
-<<<<<<< HEAD
 The project website is at: http://stedt.berkeley.edu
 
 The content included, by directory:
