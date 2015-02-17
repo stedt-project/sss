@@ -12,7 +12,7 @@ then
 fi
 rm lexicon.csv temp1.csv morphemes.txt 
 # extract lexicon records
-mysql -D stedt --default-character-set=utf8 -u $1 -p$2 -e "SELECT rn,reflex,gloss,gfn,gloss as glosshandle,language,grp,grpno,languagenames.srcabbr,lexicon.srcid,semkey,lexicon.lgid,(SELECT GROUP_CONCAT(tag_str ORDER BY ind) FROM lx_et_hash WHERE rn=lexicon.rn AND uid=8) AS analysis FROM lexicon,languagenames,languagegroups WHERE lexicon.lgid=languagenames.lgid AND languagenames.grpid=languagegroups.grpid ORDER BY gloss,language,reflex;" > lexicon.csv
+mysql -D stedt --default-character-set=utf8 -u $1 -p$2 -e "SELECT rn,reflex,gloss,gfn,gloss as glosshandle,language,grp,grpno,languagenames.srcabbr,lexicon.srcid,semkey,lexicon.lgid,(SELECT GROUP_CONCAT(tag_str ORDER BY ind) FROM lx_et_hash WHERE rn=lexicon.rn AND uid=8) AS analysis FROM lexicon,languagenames,languagegroups WHERE lexicon.status = '' AND lexicon.lgid=languagenames.lgid AND languagenames.grpid=languagegroups.grpid ORDER BY gloss,language,reflex;" > lexicon.csv
 # split into "morphemes"
 perl morphemes.pl < lexicon.csv > temp1.csv 
 # split "morphemes" into syllabic constituents (needs to be .txt for mysql import)

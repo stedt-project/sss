@@ -76,11 +76,13 @@ setup.morphemes = {
     'morphemes.handle' : {
 	label: 'handle',
 	noedit: true,
+	hide: true,
 	size: 40
     },
     'morphemes.glosshandle' : {
 	label: 'glosshandle',
 	noedit: true,
+	hide: true,
 	size: 40
     },
     'morphemes.gloss' : {
@@ -104,6 +106,7 @@ setup.morphemes = {
     'morphemes.grpno' : {
 	label: 'group',
 	noedit: true,
+	hide: true,
 	size: 70
 //	transform : function (v, key, rec, n) {
 //	    return v + ' - ' + rec[n+1];
