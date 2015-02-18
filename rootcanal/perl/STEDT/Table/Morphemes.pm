@@ -144,7 +144,6 @@ $t->wheres(
 	},
 	'morphemes.gloss' => 'word',
 	'morphemes.glosshandle' => 'value',
-	'morphemes.handle' => 'value',
 	'morphemes.prefx' => 'value',
 	'morphemes.initial' => 'value',
 	'morphemes.rhyme' => 'value',
