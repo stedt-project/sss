@@ -7,7 +7,7 @@ sub connectdb {
   my $host = 'localhost';
   my $db = 'stedt';
   my $db_user = 'stedtuser';
-  my $db_password = 'l0l0ish';
+  my $db_password = '';
 
   my $dbh = DBI->connect("dbi:mysql:$db:$host", "$db_user",
 			 "$db_password",

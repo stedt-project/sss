@@ -1,0 +1,4 @@
+webdir = /home/stedt-cgi/public_html
+modulesdir = /home/stedt-cgi/pm
+minify = 0
+minifyjar = /home/stedt-cgi/lib/bin/compiler.jar
