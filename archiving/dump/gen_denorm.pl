@@ -45,7 +45,7 @@ $dbh->do("CREATE TABLE stedt_tags (PRIMARY KEY (rn)) AS
 print "Generating denormalized lexicon table...\n";
 
 # generate denormalized lexicon table as tab-delimited file with column headers
-my @lex_rows = `mysql --defaults-extra-file=db_creds -D stedt -e "SELECT rn, languagenames.language, reflex AS form, gloss, gfn, semkey, tagging AS analysis, CONCAT_WS(' - ',grpno,grp) AS subgroup, srcabbr, citation, srcid FROM lexicon LEFT JOIN stedt_tags USING (rn) LEFT JOIN languagenames USING (lgid) LEFT JOIN languagegroups USING (grpid) LEFT JOIN srcbib USING (srcabbr) WHERE lexicon.status != 'DELETED' AND lexicon.status != 'HIDE' ORDER BY rn;"`;
+my @lex_rows = `mysql --defaults-extra-file=db_creds -D stedt -e "SELECT rn, languagenames.language, reflex AS form, gloss, gfn, semkey, tagging AS analysis, grpno as groupnode, grp AS subgroup, srcabbr, citation, srcid FROM lexicon LEFT JOIN stedt_tags USING (rn) LEFT JOIN languagenames USING (lgid) LEFT JOIN languagegroups USING (grpid) LEFT JOIN srcbib USING (srcabbr) WHERE lexicon.status != 'DELETED' AND lexicon.status != 'HIDE' ORDER BY rn;"`;
 
 # replace NULL with empty strings
 foreach (@lex_rows) {
