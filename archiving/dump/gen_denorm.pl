@@ -36,11 +36,11 @@ $dbh->do("DROP TABLE IF EXISTS stedt_tags;");
 
 # create temporary stedt_tags table of just stedt tagging
 $dbh->do("CREATE TABLE stedt_tags (PRIMARY KEY (rn)) AS
-	SELECT rn, GROUP_CONCAT(tag_str) AS tagging
-	FROM lx_et_hash
-	WHERE uid=8
-	GROUP BY rn
-	ORDER BY rn;");
+        SELECT lexicon.rn,
+	(SELECT GROUP_CONCAT(tag_str ORDER BY ind) FROM lx_et_hash WHERE rn=lexicon.rn AND uid=8) AS tagging
+        FROM lexicon
+        WHERE lexicon.rn IN (SELECT rn FROM lx_et_hash WHERE uid=8)
+        GROUP BY lexicon.rn;");
 
 print "Generating denormalized lexicon table...\n";
 
