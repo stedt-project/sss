@@ -6,7 +6,7 @@
 <table>
 <tr><th>proto-form</th><th>proto-gloss</th></tr>
 <tr><td><input type="text" title="Type a proto-form" name="f" id="etyma_searchform" size="15" maxlength="128"></td>
-<td><input name="s" type="text" title="Type an English word" size="20" id="etyma_searchgloss" [% IF c.query.param('t').defined %] value="[% c.query.param('t') %]"[% END %] maxlength="128"></td>
+<td><input name="s" type="text" title="Type an English word" size="20" id="etyma_searchgloss" [% IF c.query.param('t').defined %] value="[% c.query.param('t') | html %]"[% END %] maxlength="128"></td>
 <td><input name="btn" type="submit" value="Search"></td></tr></table>
 [%- IF 0 && c.has_privs(16) %]<a href="#" onclick="return show_advanced_search('etyma')">Advanced Search</a>[% END %]
 </form>
