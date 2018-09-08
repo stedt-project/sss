@@ -15,7 +15,7 @@
 [% FOREACH n IN notes -%]
 [% IF n.type == 'G' -%]
 <div><a href="[% self_base %]pdf/[% n.noteid %].pdf">
-<img src="http://docs.google.com/viewer?url=[% c.query.url.replace('[^/]+$', '') %]pdf/[% n.noteid %].pdf&a=bi&pagenumber=1">
+<img src="[% self_base %]png/[% n.noteid %].png">
 </a></div>
 [% ELSE -%]
 <p>[% n.text %]</p>
