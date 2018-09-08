@@ -23,7 +23,7 @@ Once you're set up, you can run the deploy script to install most of the files,
 then copy over and configure the main CGI script:
 
 ```
-./make.sh
+./gitdeploy.sh
 cp ../rootcanal.pl your-web-directory-here
 cp ../rootcanal.conf wherever-you-like
 # need to configure the app just a little bit...
@@ -39,5 +39,5 @@ update the code on your server to match:
 
 ```
 cd sss/rootcanal/deployment
-./make.sh;
+./gitdeploy.sh;
 ```
