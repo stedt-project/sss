@@ -18,3 +18,6 @@ nytprof.out
 /pm_to_blib
 *.o
 *.bs
+/rootcanal/deployment/deploy.cfg
+/rootcanal/deployment/deployed.txt
+/rootcanal/deployment/lastminified.store

@@ -16,7 +16,7 @@ def opendb(options):
 
     try:
         options.db = MySQLdb.connect(user="root", db="stedt",use_unicode=True,charset="utf8" )
-        #options.db = MySQLdb.connect(passwd="l0l0ish", user="stedtuser", host="192.168.100.222", db="stedt")
+        #options.db = MySQLdb.connect(passwd="PASSWORD", user="stedtuser", host="192.168.100.222", db="stedt")
         #options.cursor=options.db.cursor()
 
         cursor = options.db.cursor()

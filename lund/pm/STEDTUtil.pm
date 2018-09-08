@@ -6,8 +6,8 @@ use DBI;
 sub connectdb {
   my $host = 'localhost';
   my $db = 'stedt';
-  my $db_user = 'stedtadmin';
-  my $db_password = 'j1bur1sh';
+  my $db_user = 'root';
+  my $db_password = '';
 
   my $dbh = DBI->connect("dbi:mysql:$db:$host", "$db_user",
 			 "$db_password",
