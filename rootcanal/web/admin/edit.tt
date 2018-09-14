@@ -9,7 +9,7 @@
 [%- IF t.search_form_items(col) %]
 [%- sub(c.query) %]
 [%- ELSE -%]
-<input type="text" name="[% col %]"[% IF c.query.param(col).defined %] value="[% c.query.param(col) %]"[% END %] style="width:100%">
+<input type="text" name="[% col %]"[% IF c.query.param(col).defined %] value="[% c.query.param(col) | html %]"[% END %] style="width:100%">
 [%- END %]</td>
 [% END -%]
 </tr>
@@ -50,7 +50,7 @@ View tagging by [% IF c.has_privs(1) %](A) [% END %]<select id="uid1" name="uid1
 <form target="tableedit_print" method="post">
 [% result.data.size %] found. (WHERE [% result.debug | html %]; [% time_elapsed %]s[% IF c.has_privs(16) %]; js:<span id="time_elapsed_js"></span>s[% END %].)
 [%- FOREACH col IN t.searchable -%]
-[%- IF c.query.param(col) %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) %]">[% END -%]
+[%- IF c.query.param(col) %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) | html %]">[% END -%]
 [%- END -%]
 [%# <input name="print" type="submit" value="Print"> %]
 </form>
@@ -58,7 +58,7 @@ View tagging by [% IF c.has_privs(1) %](A) [% END %]<select id="uid1" name="uid1
 [%- IF manual -%]
 <form method="post" id="manual_paging_f1">
 [% FOREACH col IN t.searchable.merge(['sortkey']) -%]
-[%- IF c.query.param(col).defined %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) %]">[% END -%]
+[%- IF c.query.param(col).defined %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) | html %]">[% END -%]
 [%- END -%]
 <input name="pagenum" type="hidden" value="[% pagenum %]">
 [% IF t.table == "lexicon" -%]
@@ -116,7 +116,7 @@ No records found. (WHERE [% result.debug | html %])
 [%- IF manual -%]
 <form method="post" align="right">
 [% FOREACH col IN t.searchable.merge(['sortkey']) -%]
-[%- IF c.query.param(col) %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) %]">[% END -%]
+[%- IF c.query.param(col) %]<input name="[% col %]" type="hidden" value="[% c.query.param(col) | html %]">[% END -%]
 [%- END -%]
 <input name="pagenum" type="hidden" value="[% pagenum %]">
 [% UNLESS pagenum == 0 %]<input name="prev" type="submit" value="Previous Page">[% END %]
