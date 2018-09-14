@@ -85,7 +85,7 @@ function stedt_simplesearch_init() {
 	// persist search terms in language field from splash page
 	// fill in gloss values
 	if(document.URL.toQueryParams().t) {
-		$('lexicon_searchgloss').value = document.URL.toQueryParams().t;
+		$('lexicon_searchgloss').value = document.URL.toQueryParams().t.replace(/\+/g,' ');
 	}
 	// fill in auto-suggested lg values
 	var pItems = [];	// array to hold preFill objects for autosuggest setup below
