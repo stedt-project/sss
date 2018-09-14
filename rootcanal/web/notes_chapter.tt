@@ -33,10 +33,7 @@ user: <select name="uid">
 </form>
 <div id="preview[% n.noteid %]" class="notepreview">
 [% IF n.type == 'G' -%]
-<div>
-<a href="[% self_base %]pdf/[% n.noteid %].pdf">
-<img src="http://docs.google.com/viewer?url=[% c.query.url.replace('[^/]+$', '') %]pdf/[% n.noteid %].pdf&a=bi&pagenumber=1">
-</a></div>
+<div><img src="[% self_base %]png/[% n.noteid %].png"></div>
 [% ELSE -%]
 [% IF n.type == 'I' %][Internal Note:] <i>[% END -%]
 [% n.text -%]
