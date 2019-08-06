@@ -455,9 +455,9 @@ TableKit.Raw = {
 			row.id = prefix + id;	// set this for TableKit.Editable
 			rawData[id] = rec;
 			for (j=0, m=rec.length; j<m; ++j) {
-				v = (rec[j]||'').escapeHTML();
-				// everything we get from the server is a string, so even "0" is truthy
-				// but we might get null values, in which case we change it to ""
+				v = rec[j] === null ? '' : rec[j].toString().escapeHTML();
+				// each value is a number, a string, or null
+				// numbers need to be converted to strings first
 				cell = row.insertCell(-1);
 				xform = config[tabledata.fields[j]].transform;
 				cell.innerHTML = xform	? xform(v, id, rec, j) : v;
