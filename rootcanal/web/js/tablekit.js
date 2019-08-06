@@ -1258,9 +1258,9 @@ TableKit.Editable.CellEditor.prototype = {
 					rowdata = raw.data[rowid];
 					$A(row.cells).each(function (c,i) {
 						if (raw.config[colheads[i].id].transform) {
-							c.innerHTML = raw.config[colheads[i].id].transform((rowdata[i]||'').escapeHTML(), rowid, rowdata, i); // see note in initByAjax about null
+							c.innerHTML = raw.config[colheads[i].id].transform(rowdata[i] === null ? '' : rowdata[i].toString().escapeHTML(), rowid, rowdata, i); // see note in initByAjax about null
 						} else if (rowdata[i] !== undefined) {
-							c.innerHTML = (rowdata[i]||'').escapeHTML();
+							c.innerHTML = rowdata[i] === null ? '' : rowdata[i].toString().escapeHTML();
 						}
 					});
 					if (raw.config._postprocess_each) raw.config._postprocess_each(row);
