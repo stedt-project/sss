@@ -16,7 +16,7 @@ sub splash : StartRunmode {
 sub elink : Runmode {
 	my $self = shift;
 	my @etyma;
-	for my $t ($self->query->param('t')) { # array context, so param returns the whole list!
+	for my $t ($self->query->multi_param('t')) { # array context, so param returns the whole list!
 		next unless $t =~ /^\d+$/;
 		my %e;
 		@e{qw/plg chap sequence pform pgloss/} = $self->dbh->selectrow_array("SELECT languagegroups.plg, chapter, sequence, protoform, protogloss FROM etyma LEFT JOIN languagegroups USING (grpid) WHERE tag=? AND status != 'DELETE'", undef, $t);

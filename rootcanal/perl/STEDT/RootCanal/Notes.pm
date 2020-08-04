@@ -14,10 +14,10 @@ sub add : RunMode {
 	}
 	my $dbh = $self->dbh;
 	my $q = $self->query;
-	my ($spec, $id, $ord, $type, $xml, $uid, $id2) = ($q->param('spec'), $q->param('id'),
-		$q->param('ord'), $q->param('notetype'),
+	my ($spec, $id, $ord, $type, $xml, $uid, $id2) = (scalar $q->param('spec'), scalar $q->param('id'),
+		scalar $q->param('ord'), scalar $q->param('notetype'),
 		decode_utf8(markup2xml($q->param('xmlnote'))),
-		$q->param('uid') || -1, $q->param('id2'));
+		$q->param('uid') || -1, scalar $q->param('id2'));
 	# $q->param('uid') only exists for "approvers"; if it doesn't exist it will
 	# return an empty list here since it's list context, and id2 will unfortunately
 	# get assigned to $uid. Hence, ||ing with -1 to give a scalar value.
@@ -41,7 +41,7 @@ sub add : RunMode {
 	# so we have to explcitly set them to the empty string)
 	$self->dbh->do("INSERT changelog (uid, change_type, `table`, id, oldval, newval, time)
 					VALUES (?,?,?,?,?,?,NOW())", undef,
-					$self->param('uid'), 'new_rec', 'notes', $noteid, '', '');
+					scalar $self->param('uid'), 'new_rec', 'notes', $noteid, '', '');
 
 	my $kind = $spec eq 'L' ? 'lex' : $spec eq 'C' ? 'chapter' : # special handling for comparanda
 		$spec eq 'S' ? 'source' : $type eq 'F' ? 'comparanda' : $id2 ? 'et_subgroup' : 'etyma';
@@ -112,14 +112,14 @@ sub save : RunMode {
 
 		# get ready to write changes		
 		my $sql = "UPDATE notes SET notetype=?, xmlnote=? WHERE noteid=?";
-		my @args = ($q->param('notetype'), markup2xml($q->param('xmlnote')));
+		my @args = (scalar $q->param('notetype'), markup2xml($q->param('xmlnote')));
 		if ($q->param('id')) { # actually an optional tag number, for lexicon notes
 			$sql =~ s/ WHERE/, id=? WHERE/;
-			push @args, $q->param('id');
+			push @args, scalar $q->param('id');
 		}
 		if ($q->param('uid')) {
 			$sql =~ s/ WHERE/, uid=? WHERE/;
-			push @args, $q->param('uid');
+			push @args, scalar $q->param('uid');
 		}
 
 		# write changes
@@ -145,7 +145,7 @@ sub save : RunMode {
 		if ($orig_vals{$_} ne $new_vals{$_}) {
 			$dbh->do("INSERT changelog (uid, change_type, `table`, id, col, oldval, newval, time)
 				VALUES (?,?,?,?,?,?,?,NOW())", undef,
-				$self->param('uid'), '-', 'notes', $noteid, $_, $orig_vals{$_}, $new_vals{$_});
+				scalar $self->param('uid'), '-', 'notes', $noteid, $_, $orig_vals{$_}, $new_vals{$_});
 		}		
 	}
 					
@@ -157,7 +157,7 @@ sub save : RunMode {
 sub reorder : RunMode {
 	my $self = shift;
 	$self->require_privs(8);
-	my @ids = map {/(\d+)$/} split /\&/, $self->query->param('ids');
+	my @ids = map {/(\d+)$/} split /\&/, $self->query->multi_param('ids');
 	# change the order, but don't update the modification time for something so minor.
 	my $sth = $self->dbh->prepare("UPDATE notes SET ord=?, datetime=datetime WHERE noteid=?");
 	my $i = 0;
@@ -173,7 +173,7 @@ sub reorder : RunMode {
 		if ($old_ord != $i) {
 			$self->dbh->do("INSERT changelog (uid, change_type, `table`, id, col, oldval, newval, time)
 				VALUES (?,?,?,?,?,?,?,NOW())", undef,
-				$self->param('uid'), '-', 'notes', $_, 'ord', $old_ord, $i);	
+				scalar $self->param('uid'), '-', 'notes', $_, 'ord', $old_ord, $i);	
 		}
 	}
 	return '';
@@ -215,7 +215,7 @@ sub guess_num_lines {
 # markup2xml returns encoded (binary) utf8, you may need to decode
 my $LEFT_BRACKET = encode_utf8('⟦');
 my $RIGHT_BRACKET = encode_utf8('⟧');
-sub markup2xml {
+sub markup2xml : prototype($) {
 	my $s = shift;
 	$s =~ s/&/&amp;/g;
 	$s =~ s/</&lt;/g;
@@ -234,7 +234,7 @@ sub markup2xml {
 		#	while ($s =~ s/\[\[([^\[\]]*?)\]\]/_markup2xml($1)/ge) {}
 	$s =~ s/$LEFT_BRACKET/[/go; # restore single square brackets
 	$s =~ s/$RIGHT_BRACKET/]/go;
-	$s =~ s|{{%(.*?)}}|<footnote>$1</footnote>|g;
+	$s =~ s|\{\{%(.*?)}}|<footnote>$1</footnote>|g;
 	$s =~ s|^[\r\n]+||g;
 	$s =~ s|[\r\n]+$||g;
 	$s =~ s#(\r\n){2,}|\r{2,}|\n{2,}#</par><par>#g;

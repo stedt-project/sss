@@ -133,7 +133,8 @@ sub deletedata : Runmode {
 sub changes : Runmode {
 	my $self = shift;
 	$self->require_privs(1);
-	my ($tbl, $id) = ($self->query->param('t'), $self->query->param('id'));
+	my $tbl = $self->query->param('t');
+	my $id = $self->query->param('id');
 	my $where = '';
 	if ($tbl && $id) {
 		$where = "WHERE `table`=? AND id=?";

@@ -63,7 +63,7 @@ sub table : StartRunmode {
 		my $fakeq = $q->new();
 		for my $fld ($t->searchable()) {
 			# copy in the old, non-empty parameters
-			$fakeq->param($fld, $q->param($fld)) if $q->param($fld);
+			$fakeq->param($fld, scalar $q->param($fld)) if $q->param($fld);
 		}
 		for my $fld (@{$result->{fields}}) {
 			$fakeq->param('sortkey',$fld);
@@ -107,7 +107,7 @@ sub table : StartRunmode {
 		# find the users who have tagged something, plus the current user if no tags
 		my $u = $self->dbh->selectall_arrayref("SELECT username, users.uid
 			FROM users LEFT JOIN lx_et_hash USING (uid)
-			WHERE tag != 0 OR users.uid=? GROUP BY uid", undef, $self->param('uid'));
+			WHERE tag != 0 OR users.uid=? GROUP BY uid", undef, scalar $self->param('uid'));
 		foreach (@$u) {
 			push @users, {uid=>$_->[1], username=>$_->[0]};
 		}
@@ -160,7 +160,7 @@ sub add : Runmode {
 	# so we have to explcitly set them to the empty string)
 	$self->dbh->do("INSERT changelog (uid, change_type, `table`, id, oldval, newval, time)
 					VALUES (?,?,?,?,?,?,NOW())", undef,
-		       $self->param('uid'), 'new_rec', $tblname, $id, '', '');
+		       scalar $self->param('uid'), 'new_rec', $tblname, $id, '', '');
 	
 	# now retrieve it and send back some html
 	$id =~ s/"/\\"/g;
@@ -238,8 +238,8 @@ sub update : Runmode {
 	# in which case the changelog reflects the actual user as the changer and records
 	# the 'pilfered' tags by storing the uid of the original tagger under owner_uid
 	# and recording the field as "user_an" (or "analysis" if changing the stedt tags).
-	my ($tblname, $field, $id, $value) = ($q->param('tbl'), $q->param('field'),
-		$q->param('id'), decode_utf8($q->param('value')));
+	my ($tblname, $field, $id, $value) = (scalar $q->param('tbl'), scalar $q->param('field'),
+		scalar $q->param('id'), decode_utf8($q->param('value')));
 
 	$value =~ s/\t//g;	# strip out any tab characters
 	
@@ -293,7 +293,7 @@ sub update : Runmode {
 		if ($oldval ne $value) {
 			$self->dbh->do("INSERT changelog (uid, `table`, id, col, oldval, newval, owner_uid, time)
 							VALUES (?,?,?,?,?,?,?,NOW())", undef,
-				$self->param('uid'), $tblname, $id, $field =~ /([^.]+)$/,
+				scalar $self->param('uid'), $tblname, $id, $field =~ /([^.]+)$/,
 				$oldval || '', $value || '',  # $oldval might be undefined (and interpreted as NULL by mysql)
 				$fake_uid || 0);
 		}
@@ -352,7 +352,7 @@ sub single_record : Runmode {
 		# update successful! now update the "changes" table
 		for my $col (@keys) {
 			$self->dbh->do("INSERT changelog (uid, `table`, id, col, oldval, newval, time) VALUES (?,?,?,?,?,?,NOW())", undef,
-				$self->param('uid'), $tbl, $id, $col, $result->[$colname2num{$col}], $updated{$col});
+				scalar $self->param('uid'), $tbl, $id, $col, $result->[$colname2num{$col}], $updated{$col});
 		}
 		$sth->execute($id);
 		$result = $sth->fetchrow_arrayref;

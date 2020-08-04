@@ -1,4 +1,5 @@
 ﻿[% # PROCESS, don't INCLUDE this file to keep these variables defined -%]
+[% USE scalar -%]
 [% self_url = c.query.url('-absolute',1).remove('/$') -%]
 [% self_base = self_url.replace('[^/]+$', '') -%]
 [% https_base = c.query.url('-base',1).replace('^http:', 'https:') -%]

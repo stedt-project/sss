@@ -63,7 +63,7 @@ sub acct_dfv_profile {
 				return $secret_codes{$val};
 			},
 			oldpwd => sub { my ($dfv, $val) = @_; $dfv->name_this('password_correct');
-				my ($p1, $p2) = $self->dbh->selectrow_array("SELECT password, SHA1(?) FROM users WHERE uid=?", undef, $val, $self->param('uid'));
+				my ($p1, $p2) = $self->dbh->selectrow_array("SELECT password, SHA1(?) FROM users WHERE uid=?", undef, $val, scalar $self->param('uid'));
 				return $p1 eq $p2;
 			},
 		},
@@ -108,7 +108,7 @@ sub create : Runmode {
 		. join(',', qw|username password email privs|)
 		. ") VALUES (?, SHA1(?), ?, ?)");
 	my $privs = $secret_codes{$q->param('secret_code')};
-	eval { $sth->execute($u, $q->param('newpwd'), $q->param('email'), $privs)	};
+	eval { $sth->execute($u, scalar $q->param('newpwd'), scalar $q->param('email'), $privs)	};
 	if ($@) {
 		my $err = "Can't create new account: $@";
 		die $err; # give unexpected error page!
@@ -174,7 +174,7 @@ sub login : Runmode {
 		return $self->tt_process("login.tt", { blank => 1 });
 	}
 	my ($uid, $pwd, $pwd2, $privs) =
-		$self->dbh->selectrow_array("SELECT uid, password, SHA1(?), privs FROM users WHERE username=?", undef, $q->param('pwd'), $u);
+		$self->dbh->selectrow_array("SELECT uid, password, SHA1(?), privs FROM users WHERE username=?", undef, scalar $q->param('pwd'), $u);
 	if (defined($uid) && $pwd eq $pwd2) {
 		# success!
 

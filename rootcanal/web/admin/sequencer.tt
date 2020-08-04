@@ -7,14 +7,14 @@
 <p class="message">[% msg %]</p>
 [% END -%]
 
-<p>This is a list of all the roots in chapter [% c.query.param('c') %].
+<p>This is a list of all the roots in chapter [% c.query.scalar.param('c') %].
 Drag to reorder them and/or group them into word families.
 Items in the "n/a" box will be included ONLY in <i>draft</i> PDF's not <i>final</i> PDF's, etc.
 Click on a checkbox to designate a root as that word family's pan-allofamic formula.
 Note: weird things may happen if you have more than 9 allofams in a word family.</p>
 
 <form method="post" onsubmit="return self_serialize()">
-<input name="c" type="hidden" value="[% c.query.param('c') | url %]" />
+<input name="c" type="hidden" value="[% c.query.scalar.param('c') | url %]" />
 <input name="seqs" type="hidden" id="seqs_input" />
 <input name="save" type="submit" value="Save Changes!" />
 </form>
