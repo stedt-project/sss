@@ -419,19 +419,8 @@ sub get_stats {
 	my $self = shift;
 
 	my $sql = "show table status";
-	#my $sth = $self->dbh->selectall_arrayref($sql);
-
 	my $sth = $self->dbh->prepare($sql);
-
 	$sth->execute();
-
-	my ($Name,$Engine,$Version,$Row_format,$Rows,$Avg_row_length,$Data_length,
-	    $Max_data_length,$Index_length,$Data_free,$Auto_increment,$Create_time,
-	    $Update_time,$Check_time,$Collation,$Checksum,$Create_options,$Comment);
-
-	$sth->bind_columns(\$Name,\$Engine,\$Version,\$Row_format,\$Rows,\$Avg_row_length,\$Data_length,
-			   \$Max_data_length,\$Index_length,\$Data_free,\$Auto_increment,\$Create_time,
-			   \$Update_time,\$Check_time,\$Collation,\$Checksum,\$Create_options,\$Comment);
 
 	my %tables = (
 		      'chapters' =>  'Chapters',
@@ -445,22 +434,15 @@ sub get_stats {
 		      'srcbib' => 'Sources (of lexical data)'
 		     ) ;
 
-	while ( (my $key, my $value) = each %tables) {
-	  #print "$key = $value\n";
-	}
-
 	my $result;
-	#my $result = "<table border=\"1\"><tr><th>Table Name<th>Rows";
-	#my $result = "<table border=\"1\"><tr><th>Table Name<th>Rows<th>Avg. Row Length";
-	while ($sth->fetch()) {
+	while (my $row = $sth->fetchrow_hashref()) {
+	  my $Name = $row->{Name};
+	  my $Rows = $row->{Rows};
 	  if ($tables{$Name}) {
 	    my $table =  $tables{$Name} . " </td><td><a href=\"../edit/$Name\" target=\"_new\">" . $Name . "</a>" ;
-	    #$result .= "<tr><td>" . join("<td>",($table,$Rows,$Avg_row_length));
 	    $result .= "<tr><td>" . join("<td>",($table,$Rows));
 	  }
 	}
-	#$result .= "</table>";
-
 	return $result ;
 }
 
