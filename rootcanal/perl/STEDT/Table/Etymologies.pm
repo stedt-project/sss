@@ -112,18 +112,7 @@ $t->wheres(
 		if ($v =~ s/^=//) { # do an exact match if it starts with '=' (e.g. from autosuggest)
 			return "$k='$v'";
 		}
-		# see STEDT::Table::Languagenames.pm for comments
-		if ($v =~ s/^\*/\\\*/) { # escape initial *
-			STEDT::Table::prep_regex $v;
-			return "$k RLIKE '^$v'";
-		}
-		$v =~ s/\(/\\\(/g; # escape parens
-		$v =~ s/\)/\\\)/g;
-		$v =~ s/\[/\\\[/g; # escape square brackets
-		$v =~ s/\]/\\\]/g;
-		STEDT::Table::prep_regex $v;
-		$v =~ s/(\w)/[[:<:]]$1/;
-		return "$k RLIKE '$v'";
+		return STEDT::Table::where_languagename($k, $v);
 	},
 	'Lgrps.grp' => sub {
 		my ($k,$v,$cgi) = @_;

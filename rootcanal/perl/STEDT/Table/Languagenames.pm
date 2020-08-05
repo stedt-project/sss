@@ -95,20 +95,7 @@ $t->wheres(
 		$v =~ s/(\.0)+$//;
 		return "languagegroups.grpno='$v' OR languagegroups.grpno LIKE '$v.\%'" # make it search all subgroups as well
 	},
-	'languagenames.language' => sub {
-		my ($k,$v) = @_;
-		if ($v =~ s/^\*/\\\*/) { # escape initial *
-			STEDT::Table::prep_regex $v;
-			return "$k RLIKE '^$v'";
-		}
-		$v =~ s/\(/\\\(/g; # escape all parens
-		$v =~ s/\)/\\\)/g;
-		$v =~ s/\[/\\\[/g; # escape square brackets
-		$v =~ s/\]/\\\]/g;
-		STEDT::Table::prep_regex $v;
-		$v =~ s/(\w)/[[:<:]]$1/; # put a word boundary before the first \w char
-		return "$k RLIKE '$v'";
-	}
+	'languagenames.language' => 'languagename',
 );
 
 

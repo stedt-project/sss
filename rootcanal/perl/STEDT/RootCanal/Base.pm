@@ -7,6 +7,8 @@ use CGI::Application::Plugin::AutoRunmode;
 use CGI::Application::Plugin::DBH qw/dbh_config dbh/;
 use CGI::Application::Plugin::ConfigAuto qw/cfg/;
 
+our $ICU_REGEX;
+
 sub dummy : StartRunMode {'This space intentionally left blank.'} # do nothing instead of generating an error
 
 # This is the base class for different STEDT::RootCanal modules.
@@ -33,6 +35,9 @@ sub cgiapp_init {
 
 	# set the database connection to use unicode, or you'll be sorry
 	$self->dbh->do("SET NAMES 'utf8';");
+
+	# test if the database uses ICU regex vs. Henry Spencer (MySQL 8.0.4 and later uses ICU)
+	$ICU_REGEX = $self->dbh()->selectrow_array('select "hi there" regexp "\\\\bthere"');
 	
 	# this tells CGI::App to set the HTTP headers correctly
 	$self->header_props(-charset => 'UTF-8');

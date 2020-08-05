@@ -160,7 +160,8 @@ $t->wheres(
 			if ($v =~ s/^\*(?=.)//) {
 				return "$k RLIKE '$v'";
 			}
-			return "$k RLIKE '[[:<:]]$v'";
+			my $wb = $STEDT::RootCanal::Base::ICU_REGEX ? '\\\\b' : '[[:<:]]';
+			return "$k RLIKE '$wb$v'";
 		}
 	},
 );

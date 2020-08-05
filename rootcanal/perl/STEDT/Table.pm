@@ -60,6 +60,7 @@ my %preset_wheres = (
 	'beginvalue' => \&where_beginvalue,
 	'beginword' => \&where_beginword,
 	'rlike' => \&where_rlike,
+	languagename => \&where_languagename,
 );
 
 # METHODS
@@ -232,11 +233,17 @@ sub get_query {
 #    by an even number of backslashes)
 sub prep_regex ($) {
 	for ($_[0]) {
-		s/(?<!\\)((?:\\\\)*)\\b/$1([[:<:]]|[[:>:]])/g;
+		if (!$STEDT::RootCanal::Base::ICU_REGEX) {
+			s/(?<!\\)((?:\\\\)*)\\b/$1([[:<:]]|[[:>:]])/g;
+		}
 		# s/^([+*?|{])/\\$1/g; # try to escape initial +*?|{; we'll need to switch the order of this with s/^\*(?=.)//
 		s/\\/\\\\/g;
 	}
 }
+
+# word boundary regex codes
+# these can be initialized when `wheres` is called
+my ($wb1, $wb2);
 
 # helper WHERE bits
 # $v has single quotes escaped already, so they should be
@@ -248,14 +255,30 @@ sub where_value { my ($k,$v) = @_; "$k='$v'" }
 sub where_beginvalue { my ($k,$v) = @_; prep_regex $v; $v =~ s/^\*(?=.)// ? "$k RLIKE '$v'" : "$k RLIKE '^$v'" }
 sub where_int { my ($k,$v) = @_; $v =~ s/[^\d<>]//g; return "'bad int!'='0'" unless $v =~ /\d/; $v =~ /^([<>])(.+)/ ? "$k$1$2" : "$k=$v" }
 sub where_rlike {     my ($k,$v) = @_; prep_regex $v; "$k RLIKE '$v'" }
-sub where_word {      my ($k,$v) = @_; prep_regex $v; $v =~ s/^\*(?=.)// ? "$k RLIKE '$v'" : "$k RLIKE '[[:<:]]${v}[[:>:]]'" }
-sub where_beginword { my ($k,$v) = @_; prep_regex $v; $v =~ s/^\*(?=.)// ? "$k RLIKE '$v'" : "$k RLIKE '[[:<:]]$v'" }
+sub where_word {      my ($k,$v) = @_; prep_regex $v; $v =~ s/^\*(?=.)// ? "$k RLIKE '$v'" : "$k RLIKE '$wb1$v$wb2'" }
+sub where_beginword { my ($k,$v) = @_; prep_regex $v; $v =~ s/^\*(?=.)// ? "$k RLIKE '$v'" : "$k RLIKE '$wb1$v'" }
+sub where_languagename {
+	my ($k,$v) = @_;
+	if ($v =~ s/^\*/\\\*/) { # escape initial *
+		prep_regex $v;
+		return "$k RLIKE '^$v'";
+	}
+	$v =~ s/([()\[\]])/\\$1/g; # escape all parens and square brackets
+	prep_regex $v;
+	$v =~ s/(\w)/$wb1$1/; # put a word boundary before the first \w char
+	return "$k RLIKE '$v'";
+}
 
 sub wheres {
 	my $self = shift;
 	if (scalar @_ == 1) {
 		return $self->{wheres}{$_[0]};	# return value by key
 	} elsif (@_) {
+		if ($STEDT::RootCanal::Base::ICU_REGEX) {
+			$wb1 = $wb2 = '\\\\b';
+		} else {
+			($wb1, $wb2) = ('[[:<:]]', '[[:>:]]');
+		}
 		while (@_) {
 			my $key = shift;
 			my $val = shift;

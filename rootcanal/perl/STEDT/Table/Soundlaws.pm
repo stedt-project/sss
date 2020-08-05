@@ -84,7 +84,8 @@ $t->wheres(
 		$v =~ s/\(/\\\(/g; # escape all parens
 		$v =~ s/\)/\\\)/g;
 		STEDT::Table::prep_regex $v;
-		$v =~ s/(\w)/[[:<:]]$1/; # put a word boundary before the first \w char
+		my $wb = $STEDT::RootCanal::Base::ICU_REGEX ? '\\\\b' : '[[:<:]]';
+		$v =~ s/(\w)/$wb$1/; # put a word boundary before the first \w char
 		return "$k RLIKE '$v'";
 	}
 );

@@ -569,13 +569,19 @@ sub delete_check : Runmode {
 	$self->require_privs(8);
 	my $tag = $self->query->param('tag');
 	die "invalid tag '$tag'!\n" unless $tag =~ s/^(\d+)$/$1/;
+	my ($wb1, $wb2);
+	if ($STEDT::RootCanal::Base::ICU_REGEX) {
+		$wb1 = $wb2 = '\\\\b';
+	} else {
+		($wb1, $wb2) = ('[[:<:]]', '[[:>:]]');
+	}
 	my $sql = qq#SELECT tag, 
 			(SELECT COUNT(DISTINCT id) FROM mesoroots WHERE tag = e.tag) AS num_mesoroots,
 			(SELECT COUNT(DISTINCT rn) FROM lx_et_hash WHERE tag=e.tag AND uid=8) AS num_recs,
 			protoform, protogloss, plg,
 			(SELECT COUNT(DISTINCT notes.noteid) FROM notes WHERE tag=e.tag) AS num_notes,
 			(SELECT GROUP_CONCAT(DISTINCT notes.noteid) FROM notes WHERE tag != e.tag AND xmlnote RLIKE CONCAT('<xref ref="',e.tag,'">')) AS xref_notes,
-			(SELECT GROUP_CONCAT(DISTINCT notes.noteid) FROM notes WHERE tag != e.tag AND xmlnote NOT RLIKE CONCAT('<xref ref="',e.tag,'">') AND xmlnote RLIKE CONCAT('[[:<:]]',e.tag,'[[:>:]]')) AS other_notes
+			(SELECT GROUP_CONCAT(DISTINCT notes.noteid) FROM notes WHERE tag != e.tag AND xmlnote NOT RLIKE CONCAT('<xref ref="',e.tag,'">') AND xmlnote RLIKE CONCAT('$wb1',e.tag,'$wb2')) AS other_notes
 		FROM `etyma` AS e LEFT JOIN languagegroups USING (grpid)
 		WHERE e.tag=$tag#;
 
@@ -662,13 +668,19 @@ sub soft_delete : Runmode {
 sub delete_check_all : Runmode {
 	my $self = shift;
 	$self->require_privs(16);
+	my ($wb1, $wb2);
+	if ($STEDT::RootCanal::Base::ICU_REGEX) {
+		$wb1 = $wb2 = '\\\\b';
+	} else {
+		($wb1, $wb2) = ('[[:<:]]', '[[:>:]]');
+	}
 	my $sql = qq#SELECT tag, 
 			(SELECT COUNT(DISTINCT id) FROM mesoroots WHERE tag = e.tag) AS num_mesoroots,
 			(SELECT COUNT(DISTINCT rn) FROM lx_et_hash WHERE tag=e.tag AND uid=8) AS num_recs,
 			protoform, protogloss, plg,
 			(SELECT COUNT(DISTINCT notes.noteid) FROM notes WHERE tag=e.tag) AS num_notes,
 			(SELECT COUNT(DISTINCT notes.noteid) FROM notes WHERE tag != e.tag AND xmlnote RLIKE CONCAT('<xref ref="',e.tag,'">')) AS num_xrefs,
-			(SELECT COUNT(DISTINCT notes.noteid) FROM notes WHERE tag != e.tag AND xmlnote NOT RLIKE CONCAT('<xref ref="',e.tag,'">') AND xmlnote RLIKE CONCAT('[[:<:]]',e.tag,'[[:>:]]')) AS other_notes
+			(SELECT COUNT(DISTINCT notes.noteid) FROM notes WHERE tag != e.tag AND xmlnote NOT RLIKE CONCAT('<xref ref="',e.tag,'">') AND xmlnote RLIKE CONCAT('$wb1',e.tag,'$wb2')) AS other_notes
 		FROM `etyma` AS `e` LEFT JOIN languagegroups ON (e.grpid=languagegroups.grpid)
 		WHERE status='DELETE' HAVING num_mesoroots > 0 OR num_recs > 0 OR num_notes > 0 OR num_xrefs > 0 OR other_notes > 0#;
 	my $etyma = $self->dbh->selectall_arrayref($sql, {Slice=>{}});

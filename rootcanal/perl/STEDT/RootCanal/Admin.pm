@@ -153,8 +153,6 @@ sub changes : Runmode {
 	return $self->tt_process("admin/changelog.tt", {changes=>$a});
 }
 
-sub where_word { my ($k,$v) = @_; $v =~ s/^\*(?=.)// ? "$k RLIKE '$v'" : "$k RLIKE '[[:<:]]${v}[[:>:]]'" }
-
 sub updateprojects : Runmode {
 	my $self = shift;
 	$self->require_privs(8);
@@ -162,6 +160,12 @@ sub updateprojects : Runmode {
 	require STEDT::RootCanal::stopwords;
 	import STEDT::RootCanal::stopwords;
 
+	my ($wb1, $wb2);
+	if ($STEDT::RootCanal::Base::ICU_REGEX) {
+		$wb1 = $wb2 = '\\\\b';
+	} else {
+		($wb1, $wb2) = ('[[:<:]]', '[[:>:]]');
+	}
 	my $a = $self->dbh->selectall_arrayref("SELECT id,project,subproject,querylex FROM projects LIMIT 500");
 	# the loop below will add values for percent_done, tagged_reflexes, count_reflexes, and count_etyma
 
@@ -177,7 +181,7 @@ sub updateprojects : Runmode {
 		$other_words = join '|', @$other_words;
 		if ($other_words) {
 			$other_words = "($other_words)" if $other_words =~ /\|/;
-			$other_words = qq#OR gloss RLIKE "[[:<:]]${other_words}[[:>:]]"#;
+			$other_words = qq#OR gloss RLIKE "$wb1$other_words$wb2"#;
 		} # otherwise it's empty and doesn't affect the search
 		# $row->[3] = $other_words; # debugging - see how many "left over" glosses there are
 		# count a lx_et_hash record as "ambiguous" below if it's '', 'm', or if any other lx_et_hash entries with the same rn are '' or 'm'
@@ -207,7 +211,7 @@ sub updateprojects : Runmode {
 						: '')
 			: "0.0"; # no dividing by zero!
 		
-		$row->[7] = $self->dbh->selectrow_array(qq#SELECT count(*) FROM etyma WHERE protogloss RLIKE "[[:<:]]($words)[[:>:]]" AND status != 'DELETE'#);
+		$row->[7] = $self->dbh->selectrow_array(qq#SELECT count(*) FROM etyma WHERE protogloss RLIKE "$wb1($words)$wb2" AND status != 'DELETE'#);
 		$self->dbh->do("UPDATE projects SET tagged_reflexes=?,ambig_reflexes=?,count_reflexes=?,count_etyma=? WHERE id=?", undef,
 			$tagged, $sorta_tagged, $total_found, $row->[7], $row->[0]);
 		shift @$row;

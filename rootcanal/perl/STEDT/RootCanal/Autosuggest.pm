@@ -3,6 +3,7 @@ use strict;
 use base 'STEDT::RootCanal::Base';
 use JSON;
 use Encode;
+use STEDT::Table;
 
 sub dummy : Startrunmode {
 	my $self = shift;
@@ -12,7 +13,10 @@ sub dummy : Startrunmode {
 
 sub lgs : Runmode {
 	my $self = shift;
-	my $q = '[[:<:]]' . decode_utf8($self->query->param('q'));
+	my $wb = $STEDT::RootCanal::Base::ICU_REGEX ? '\\b' : '[[:<:]]';
+	my $q = $wb . decode_utf8($self->query->param('q'));
+	$self->dbh()->{RaiseError} = 0;
+	$self->dbh()->{PrintError} = 0; # ignore any errors, such as malformed regex in our search string
 	my $result = $self->dbh->selectall_arrayref("SELECT DISTINCT language AS s, CONCAT('=', language) AS v FROM languagenames WHERE language RLIKE ?", {Slice=>{}}, $q);
 	$self->header_add('-type' => 'application/json');
 	return to_json($result);
@@ -41,7 +45,8 @@ sub tags : Runmode {
 		$s =~ s/(?<!\\)((?:\\\\)*)\\('|$)/$1$2/g;
 		$s =~ s/'/''/g;
 		$s =~ s/\\/\\\\/g;
-		$a = $self->dbh->selectall_arrayref("SELECT tag, protogloss, CONCAT('*',protoform) FROM etyma WHERE protogloss RLIKE '[[:<:]]$s' AND status != 'DELETE' $skip ORDER BY tag LIMIT 30");
+		my $wb = $STEDT::RootCanal::Base::ICU_REGEX ? '\\\\b' : '[[:<:]]';
+		$a = $self->dbh->selectall_arrayref("SELECT tag, protogloss, CONCAT('*',protoform) FROM etyma WHERE protogloss RLIKE '$wb$s' AND status != 'DELETE' $skip ORDER BY tag LIMIT 30");
 		unless (@$a) {
 			$a = $self->dbh->selectall_arrayref("SELECT tag, protogloss, CONCAT('*',protoform) FROM etyma WHERE protoform RLIKE '$s' AND status != 'DELETE' $skip ORDER BY tag LIMIT 30");
 		}
