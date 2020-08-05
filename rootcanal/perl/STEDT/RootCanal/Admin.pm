@@ -19,18 +19,7 @@ sub updatesequence : Runmode {
 	my $self = shift;
 	$self->require_privs(8);
 	my $t0 = time();
-	my @commands = ( 'update etyma set sequence = 0 where seqlocked = 0;',
-			 'UPDATE etyma SET refcount = 0;',
-			 'UPDATE etyma SET refcount = (SELECT COUNT(tag) FROM lx_et_hash WHERE lx_et_hash.tag = etyma.tag  AND uid = 8 GROUP by tag);',
-			 'UPDATE etyma SET refcount = 0 where refcount is NULL;',
-			 # sorts on protogloss
-			 'update etyma set sequence = (select @rownum:=@rownum+1 rownum FROM (SELECT @rownum:=1000) r) where seqlocked = 0 order by protogloss;' );
-	                 # below is the 'old' autosequencer -- based on attestation.
-			 # 'update etyma set sequence = (select @rownum:=@rownum+1 rownum FROM (SELECT @rownum:=1000) r) where seqlocked = 0 order by refcount desc;' );
-	foreach my $cmd (@commands) {
-	  $self->dbh->do($cmd);
-	}
-	
+	$self->dbh->do( 'update etyma set sequence = (select @rownum:=@rownum+1 rownum FROM (SELECT @rownum:=1000) r) where seqlocked = 0 order by protogloss;' );
 	return $self->tt_process("admin/updatesequence.tt", {
 		time_elapsed=>time()-$t0,
 	});

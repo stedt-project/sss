@@ -38,7 +38,7 @@ Semantic categorization stuff:
 Activity:
 <ul>
 <li><a href="[% self_url %]/admin/changes">change log</a></li>
-<li><a href="[% self_url %]/admin/queries">recent queries (public interface)</a></li>
+<li><a href="[% self_url %]/admin/queries">recent queries (public interface, up to Aug. 2020)</a></li>
 <li><a href="[% self_url %]/admin/progress">progress report, tagging awaiting approval, etc.</a></li>
 [% IF c.has_privs(8) -%]<li><a href="[% self_url %]/admin/bulkapproval">bulk approval of tagging</a></li>[% END -%]
 [% IF c.has_privs(16) -%]<li><a href="[% self_url %]/contribution">contributions</a></li>[% END %]
@@ -60,11 +60,9 @@ Tools:
 <li><a href="[% self_url %]/admin/deviants">view records with deviant glosses (violating gloss conventions)</a></li>
 <li><a href="[% self_url %]/admin/updateprojects">update stats</a> (for "projects" - takes a while!)</li>
 <li><a href="[% self_url %]/admin/updatesequence">update sequence numbers</a> (in etyma table)</li>
-<li><a href="[% self_base %]dev/rootcanal-dev.pl/admin">switch to the test environment</a></li>
 [% IF c.has_privs(16) -%]
 <br>
 <li><a href="[% self_url %]/admin/expire_sessions">expire sessions older than 1 month</a> ([% num_sessions %] currently in sessions table)</li>
-<li><a href="https://corpus.linguistics.berkeley.edu/~stedt-cgi-ssl/phpmyadmin/">DB admin</a></li>
 [% END -%]
 </ul>
 [% END -%]

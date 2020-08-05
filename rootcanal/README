@@ -28,7 +28,7 @@ Steps:
 	- extract rootcanals folder to directory served by http server
 	- move rootcanal.pl from rootcanal/ to rootcanal/web/ folder
 	- modify rootcanal.conf w/ MySQL login info and set ignore_ssl to 1 (if not using ssl)
-		- note that some links that redirect to https pages don't work when ssl is not used (but no real functionality is lost)
+		- (e.g., if you're testing on your local machine and don't have https set up)
 	- modify rootcanal/web/rootcanal.pl:
 		2: use lib '../perl';
 		...

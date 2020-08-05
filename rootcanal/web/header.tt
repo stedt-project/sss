@@ -2,13 +2,13 @@
 [% USE scalar -%]
 [% self_url = c.query.url('-absolute',1).remove('/$') -%]
 [% self_base = self_url.replace('[^/]+$', '') -%]
-[% https_base = c.query.url('-base',1).replace('^http:', 'https:') -%]
+[% https_base = c.query.url('-base',1).replace('^http:', 'https:') IF !c.param('https') -%]
 [% user = c.param('user') -%]
-[% pi_pdf_offset = 26 # page offset for linking inventories to PI monograph %]
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+[% pi_pdf_offset = 26 # page offset for linking inventories to PI monograph -%]
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
 	<title>[% title %]</title>
 	<link rel="stylesheet" href="[% self_base %]styles/rootcanal.css">
 	<link rel="stylesheet" href="[% self_base %]styles/autoSuggest.css">

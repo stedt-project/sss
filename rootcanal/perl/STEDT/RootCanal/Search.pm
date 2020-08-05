@@ -189,10 +189,10 @@ sub combo : Runmode {
 	my $result;
 
 	if ($f || $s || $lg || $lggrp ne '' || $lgcode || !$q->param) {
-		if ($ENV{HTTP_REFERER} && ($f || $s || $lg || $lggrp ne '')) {
-			$self->dbh->do("INSERT querylog VALUES (?,?,?,?,?,?,NOW())", undef,
-				'simple', $f, $s, $lg, $lggrp, $ENV{REMOTE_ADDR});	# record search in query log (put table name, form, gloss, lg, lggroup, ip in separate fields)
-		}
+# 		if ($ENV{HTTP_REFERER} && ($f || $s || $lg || $lggrp ne '')) {
+# 			$self->dbh->do("INSERT querylog VALUES (?,?,?,?,?,?,NOW())", undef,
+# 				'simple', $f, $s, $lg, $lggrp, $ENV{REMOTE_ADDR});	# record search in query log (put table name, form, gloss, lg, lggroup, ip in separate fields)
+# 		}
 		$result->{etyma} = $self->searchresults_from_querystring($f, $s, 'etyma');
 		$result->{lexicon} = $self->searchresults_from_querystring($f, $s, 'lexicon', $lg, $lggrp, $lgcode);
 	} else {
@@ -221,8 +221,8 @@ sub ajax : Runmode {
 	my $lgcode = decode_utf8($self->query->param('lgcode'));
 	my $result; # hash ref for the results
 
-	$self->dbh->do("INSERT querylog VALUES (?,?,?,?,?,?,NOW())", undef,
-		$tbl, $f, $s, $lg, $lggrp, $ENV{REMOTE_ADDR}) if $s || $lg || $lggrp ne '' || $f;	# record search in query log (put table name, form, gloss, lg, lggroup, ip in separate fields)
+# 	$self->dbh->do("INSERT querylog VALUES (?,?,?,?,?,?,NOW())", undef,
+# 		$tbl, $f, $s, $lg, $lggrp, $ENV{REMOTE_ADDR}) if $s || $lg || $lggrp ne '' || $f;	# record search in query log (put table name, form, gloss, lg, lggroup, ip in separate fields)
 
 	if (defined($s) || defined($f)) {
 		if ($tbl eq 'lexicon' || $tbl eq 'etyma') {

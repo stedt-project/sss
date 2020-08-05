@@ -1,4 +1,4 @@
-[% PROCESS header.tt title="STEDT Database (Beta)" -%]
+[% PROCESS header.tt title="STEDT Database" -%]
 <div id="splash">
 <center>
 <br>

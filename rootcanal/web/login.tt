@@ -6,7 +6,7 @@
 <form id="guest_login" method="post" action="[% self_url %]/account/login">
 <input type="hidden" name="user" value="guest">
 <input type="hidden" name="pwd" value="guest">
-<input type="hidden" name="url" value="[% c.query.param('url') %]">
+<input type="hidden" name="url" value="[% c.query.scalar.param('url') %]">
 <input type="submit" value="Click here for free, unlimited access to the database as a guest*">&nbsp;&nbsp;
 </form>
 
@@ -16,7 +16,7 @@
 <p>...if you already have an account please login:</p>
 username: <input type="text" size="10" name="user">
 password: <input type="password" size="10" name="pwd">
-<input type="hidden" name="url" value="[% c.query.param('url') %]">
+<input type="hidden" name="url" value="[% c.query.scalar.param('url') %]">
 <input type="submit" value="log in">
 <p><b>OR</b></p>
 <p><a href="[% self_url %]/account/gsarpa">create a new account</a></p>
