@@ -3,6 +3,7 @@ use strict;
 use base 'STEDT::RootCanal::Base';
 use utf8;
 use Time::HiRes qw(time);
+use STEDT::RootCanal::Notes;
 
 sub main : StartRunmode {
 	my $self = shift;
@@ -124,22 +125,106 @@ sub changes : Runmode {
 	$self->require_privs(1);
 	my $tbl = $self->query->param('t');
 	my $id = $self->query->param('id');
+	my $mode = $self->query->param('mode');
+	my $limit = $self->query->param('limit');
 	my $where = '';
+	my $comment = '';
+	if ($limit !~ /^\d{1,4}$/) {
+		$limit = 500;
+	}
 	if ($tbl && $id) {
 		$where = "WHERE `table`=? AND id=?";
+	} elsif ($mode eq 'admins') {
+		$where = 'WHERE changelog.col != "user_an" ';
+		$comment = ' (excluding user_an)';
 	}
 	my $sth = $self->dbh->prepare("SELECT users.username,change_type,accepted_tag,`table`,id,col,oldval,newval,
 		owners.username,time FROM changelog LEFT JOIN users USING (uid)
 		LEFT JOIN users AS owners ON (owner_uid=owners.uid)
 		$where
-		ORDER BY time DESC LIMIT 500");
+		ORDER BY time DESC LIMIT $limit");
 	if ($tbl && $id) {
 		$sth->bind_param(1, $tbl);
 		$sth->bind_param(2, $id);
 	}
 	$sth->execute;
 	my $a = $sth->fetchall_arrayref;
-	return $self->tt_process("admin/changelog.tt", {changes=>$a});
+	foreach (@$a) {
+		@{$_}[6,7] = hilite_diffs(@{$_}[6,7,5]);
+	}
+	return $self->tt_process("admin/changelog.tt", {changes=>$a, comment=>$comment});
+}
+
+sub hilite_diffs {
+	require Algorithm::Diff;
+	my ($s1, $s2, $col) = @_;
+	my $is_xml = $col eq 'xmlnote';
+	# make sure any strings returned here have been html_filter'd!
+	# we can't do this in the template since we add <ins|del> html tags that shouldn't be escaped.
+	return html_filter($s1), html_filter($s2) if ($s1 eq '' || $s2 eq '');
+	my ($t1, $t2);
+	my @s1 = tokenize($s1, $is_xml);
+	my @s2 = tokenize($s2, $is_xml);
+	my $diff = Algorithm::Diff->new(\@s1, \@s2);
+	while($diff->Next()) {
+		my $bits = $diff->Diff();
+		if ($bits == 0) {
+			# ignore long stretches of sameness
+			# if the "same" hunks are longer than 80, only show ~30 of surrounding context
+			my $t = '';
+			my $len = $diff->Range(1);
+			if ($len < 80) {
+				$t = html_filter(join '', $diff->Items(1));
+			} else {
+				my $context = 30;
+				my $offset1 = $diff->Min(1);
+				my $offset2 = $diff->Min(2);
+				my $is_start = $offset1 == 0 && $offset2 == 0;
+				my $is_end = ($offset1 + $len == @s1) && ($offset2 + $len == @s2);
+				$t .= html_filter(join '', @s1[$offset1..($offset1+$context)]) unless $is_start;
+				$t .= '<p>' unless $is_start || $is_end;
+				$t .= ' . . . ';
+				my $i = $offset1 + $len - 1;
+				$t .= html_filter(join '', @s1[($i-$context)..$i]) unless $is_end;
+			}
+			$t1 .= $t;
+			$t2 .= $t;
+		} else {
+			if ($bits & 1) {
+				$t1 .= '<del>';
+				$t1 .= html_filter(join '', $diff->Items(1));
+				$t1 .= '</del>';
+			}
+			if ($bits & 2) {
+				$t2 .= '<ins>';
+				$t2 .= html_filter(join '', $diff->Items(2));
+				$t2 .= '</ins>';
+			}
+		}
+	}
+	return $t1, $t2;
+}
+
+sub tokenize {
+	my ($s, $is_xml) = @_;
+	if ($is_xml) {
+		# rough word diff for xmlnote
+		return xml2markup($s) =~ /([A-Za-z]+|\d+|.)/g;
+	} else {
+		# otherwise diff each character
+		return split '', $s;
+	}
+}
+
+sub html_filter {
+    my $text = shift;
+    for ($text) {
+        s/&/&amp;/g;
+        s/</&lt;/g;
+        s/>/&gt;/g;
+        s/"/&quot;/g;
+    }
+    return $text;
 }
 
 sub updateprojects : Runmode {

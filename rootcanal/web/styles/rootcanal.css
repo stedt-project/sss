@@ -365,3 +365,14 @@ div.autocomplete ul li {
   height:32px;
   cursor:pointer;
 }
+
+/* changelog */
+del {
+  background-color: #fbb;
+  text-decoration: none;
+}
+ins {
+  background-color: #d4fcbc;
+  text-decoration: none;
+}
+.forcebreak { overflow-wrap: break-word; }

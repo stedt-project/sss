@@ -1,5 +1,5 @@
 [% PROCESS header.tt title="Change Log - STEDT Database" %]
-<p>[% changes.size %] most recent changes:</p>
+<p>[% changes.size %] most recent changes[% comment %]:</p>
 
 <table class="sortable resizable hangindent" width="100%" style="table-layout:fixed">
 <col style="width:6em">
@@ -55,8 +55,8 @@
 [% END %]
 </td>
 <td>[% row.5 | html %]</td>
-<td>[% row.6 | html %]</td>
-<td>[% row.7 | html %]</td>
+<td class="forcebreak">[% row.6 %]</td>
+<td class="forcebreak">[% row.7 %]</td>
 <td>[% row.8 | html %]</td>
 <td>[% row.9 | html %]</td>
 </tr>
