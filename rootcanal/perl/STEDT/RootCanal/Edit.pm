@@ -341,8 +341,9 @@ sub single_record : Runmode {
 	my %updated;
 	for my $col ($q->param) {
 		next if $col eq 'rootcanal_btn';
-		if ($q->param($col) ne $result->[$colname2num{$col}]) {
-			$updated{$col} = $q->param($col);
+		my $newval = decode_utf8($q->param($col)); # always run decode_utf8 on CGI params!
+		if ($newval ne $result->[$colname2num{$col}]) {
+			$updated{$col} = $newval;
 		}
 	}
 	if (%updated) {

@@ -38,7 +38,7 @@ Semantic categorization stuff:
 Activity:
 <ul>
 <li><a href="[% self_url %]/admin/changes">change log</a></li>
-[% IF c.has_privs(8) %]<li><a href="[% self_url %]/admin/changes?mode=admins&limit=1400">change log (excl. user_an)</a></li>[% END -%]
+[% IF c.has_privs(8) %]<li><a href="[% self_url %]/admin/changes?mode=admins">change log (excl. user_an)</a></li>[% END -%]
 <li><a href="[% self_url %]/admin/queries">recent queries (public interface, up to Aug. 2020)</a></li>
 <li><a href="[% self_url %]/admin/progress">progress report, tagging awaiting approval, etc.</a></li>
 [% IF c.has_privs(8) -%]<li><a href="[% self_url %]/admin/bulkapproval">bulk approval of tagging</a></li>[% END -%]

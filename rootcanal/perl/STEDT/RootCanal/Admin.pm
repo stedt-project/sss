@@ -135,8 +135,9 @@ sub changes : Runmode {
 	if ($tbl && $id) {
 		$where = "WHERE `table`=? AND id=?";
 	} elsif ($mode eq 'admins') {
-		$where = 'WHERE changelog.col != "user_an" ';
+		$where = 'WHERE changelog.col != "user_an" AND time > "2016-04-26 09:08:45"';
 		$comment = ' (excluding user_an)';
+		$limit = 2000;
 	}
 	my $sth = $self->dbh->prepare("SELECT users.username,change_type,accepted_tag,`table`,id,col,oldval,newval,
 		owners.username,time FROM changelog LEFT JOIN users USING (uid)
