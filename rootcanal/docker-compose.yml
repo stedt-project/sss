@@ -1,0 +1,61 @@
+# ============================================================================
+# STEDT RootCanal – docker-compose.yml
+#
+# Usage:
+#   1. Copy your database dump to  ./docker-entrypoint-initdb.d/stedt.sql
+#      (or stedt.sql.gz for a compressed dump).
+#   2. Copy and edit the env file:
+#        cp docker/rootcanal.env.example rootcanal.env
+#        $EDITOR rootcanal.env
+#   3. Build and start:
+#        docker compose up --build -d
+#   4. Tail logs:
+#        docker compose logs -f
+#
+# The container is self-contained (Apache + MariaDB in one image).
+# Database files are persisted in a named Docker volume so that your
+# data survives container restarts and re-builds.
+# ============================================================================
+
+services:
+  rootcanal:
+    build:
+      context: .               # project root (where the Dockerfile lives)
+      dockerfile: docker/Dockerfile
+    platform: linux/arm64      # native ARM64 on Apple Silicon; remove on Intel
+    image: stedt/rootcanal:latest
+    container_name: rootcanal
+
+    # Pass credentials and options as environment variables.
+    # The entrypoint writes them into rootcanal.conf at startup.
+    env_file:
+      - rootcanal.env          # copy from docker/rootcanal.env.example
+
+    ports:
+      # Expose on localhost:8080 by default; change the left side as needed.
+      # Put a reverse proxy (nginx, Caddy, …) in front for production HTTPS.
+      - "8080:80"
+
+    volumes:
+      # Persist the MariaDB data directory
+      - mariadb_data:/var/lib/mysql
+
+      # Drop *.sql or *.sql.gz dumps here; they are loaded once on first run
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
+
+    # Restart automatically unless explicitly stopped
+    restart: unless-stopped
+
+    # Improve signal handling (zombie reaping) without requiring a full init system
+    init: true
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/rootcanal.pl"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s      # give MariaDB time to start and dumps time to load
+
+volumes:
+  mariadb_data:
+    driver: local
