@@ -137,8 +137,12 @@ chmod 640 "${CONF_FILE}"
 
 # ── Step 7: exec Apache in the foreground ─────────────────────────────────────
 # Sourcing envvars sets APACHE_RUN_DIR etc. required by apache2ctl.
+# Temporarily disable -u: envvars references ${APACHE_CONFDIR} before it is set,
+# which would trip the "unbound variable" check.
 # shellcheck source=/dev/null
+set +u
 source /etc/apache2/envvars
+set -u
 mkdir -p "${APACHE_RUN_DIR}" "${APACHE_LOCK_DIR}"
 
 log "Starting Apache2 …"
