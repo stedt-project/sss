@@ -1,5 +1,4 @@
 # STEDT RootCanal – Container Deployment Guide
-# STEDT RootCanal – Container Deployment Guide
 
 This guide explains how to build, configure, and run the STEDT RootCanal web
 application inside a Docker container on an Ubuntu server.
@@ -363,25 +362,25 @@ sudo usermod -aG docker ubuntu
 newgrp docker
 ```
 
-### Step 3 – Install and configure the host Apache2
+### Step 3 – Add the virtual host to the existing Apache2
+
+Apache2 is already running on port 80, serving other sites — that's fine.
+`apache-host-stedtdb.conf` adds a new `VirtualHost *:80` block with
+`ServerName stedtdb.johnblowe.com`.  Apache2 uses the `Host:` header to
+route each incoming request to the correct virtual host, so this site sits
+alongside any others without conflict.  The ALB does not need to change.
 
 ```bash
-sudo apt-get install -y apache2
-
-# Only these three modules are needed — no ssl, no rewrite
+# Enable the three proxy/header modules if not already on
 sudo a2enmod proxy proxy_http headers
-```
 
-Copy the virtual-host config from the repository:
-
-```bash
 git clone https://github.com/stedt-project/sss.git /home/ubuntu/stedtdb
 cd /home/ubuntu/stedtdb/rootcanal
 
 sudo cp docker/apache-host-stedtdb.conf /etc/apache2/sites-available/stedtdb.conf
 sudo a2ensite stedtdb
-sudo a2dissite 000-default          # remove the Apache placeholder page
 sudo apache2ctl configtest          # should print "Syntax OK"
+sudo systemctl reload apache2
 ```
 
 ### Step 4 – Deploy the container

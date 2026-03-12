@@ -43,6 +43,9 @@ fi
 
 # ── Step 2: start MariaDB in the background ───────────────────────────────────
 log "Starting MariaDB …"
+# The socket directory is not created by the package inside a container.
+mkdir -p /run/mysqld
+chown mysql:mysql /run/mysqld
 # Run as the mysql user; --console sends logs to stderr so they appear in
 # 'docker logs'.  The process is backgrounded so we can do setup below.
 /usr/sbin/mysqld --user=mysql --console &
