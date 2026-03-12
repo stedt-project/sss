@@ -79,7 +79,7 @@ $('lg_help').addTip('Values are from the "standardized" list of language names; 
 
 $('simple_search').observe('submit',function(e){e.stop();
 var s = Form.serializeElements(this.select('input:not(:submit,:button,:reset)','select').findAll(Form.Element.getValue));
-if (s) document.location = document.location.pathname + '/gnis' + '?'+s;
+if (s) document.location = '/gnis?' + s;
 else if (!$('example1').visible()) Effect.multiple(['example1', 'example2', 'example3'], function(el){Effect.toggle(el,'appear',{ duration: 0.25 });});
 });
 jQuery('input[name=lg]').autoSuggest('[% self_url %]/autosuggest/lgs',{

@@ -1,7 +1,7 @@
 ﻿[% # PROCESS, don't INCLUDE this file to keep these variables defined -%]
 [% USE scalar -%]
-[% self_url = c.query.url('-absolute',1).remove('/$') -%]
-[% self_base = self_url.replace('[^/]+$', '') -%]
+[% self_url = '' -%]
+[% self_base = '/' -%]
 [% https_base = c.query.url('-base',1).replace('^http:', 'https:') IF !c.param('https') -%]
 [% user = c.param('user') -%]
 [% pi_pdf_offset = 26 # page offset for linking inventories to PI monograph -%]
@@ -95,7 +95,7 @@ var stedtuserprivs = 0;
 &nbsp;&nbsp;<a href="http://stedt.berkeley.edu/documentation" target="_blank">help</a>
 <script src="[% self_base %]js/stedtconfig.js"></script>
 </span>
-<a href="[% self_url %]" title="Search Home"><img src="[% self_base %]img/splashy32x32.gif" alt="STEDT Logo" width="32" height="32" class="left" border=0></a>
+<a href="/" title="Search Home"><img src="[% self_base %]img/splashy32x32.gif" alt="STEDT Logo" width="32" height="32" class="left" border=0></a>
 <b>[% title %]</b>
 <hr style="clear:both; margin-left:45px">
 </div>
