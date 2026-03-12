@@ -22,7 +22,7 @@ services:
     build:
       context: .               # project root (where the Dockerfile lives)
       dockerfile: docker/Dockerfile
-    platform: linux/arm64      # native ARM64 on Apple Silicon; remove on Intel
+    # platform: linux/arm64   # uncomment this line when building on Apple Silicon
     image: stedt/rootcanal:latest
     container_name: rootcanal
 
@@ -32,9 +32,11 @@ services:
       - rootcanal.env          # copy from docker/rootcanal.env.example
 
     ports:
-      # Expose on localhost:8080 by default; change the left side as needed.
-      # Put a reverse proxy (nginx, Caddy, …) in front for production HTTPS.
-      - "8080:80"
+      # Bound to 127.0.0.1 so the container is NOT reachable from the internet
+      # directly.  The host Apache2 reverse-proxy (see docker/apache-host-stedtdb.conf)
+      # is the only thing that should talk to this port.
+      # For local Mac testing change this to "8080:80" temporarily.
+      - "127.0.0.1:8080:80"
 
     volumes:
       # Persist the MariaDB data directory
@@ -43,8 +45,8 @@ services:
       # Drop *.sql or *.sql.gz dumps here; they are loaded once on first run
       - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
 
-    # Restart automatically unless explicitly stopped
-    restart: unless-stopped
+    # Always restart — survives EC2 reboots and Docker daemon restarts
+    restart: always
 
     # Improve signal handling (zombie reaping) without requiring a full init system
     init: true

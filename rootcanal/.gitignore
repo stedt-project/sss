@@ -1,0 +1,9 @@
+# Runtime credentials – never commit these
+rootcanal.env
+
+# Database dumps loaded on first container run
+docker-entrypoint-initdb.d/
+
+# OS / editor noise
+.DS_Store
+*~

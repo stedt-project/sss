@@ -1,4 +1,5 @@
 # STEDT RootCanal – Container Deployment Guide
+# STEDT RootCanal – Container Deployment Guide
 
 This guide explains how to build, configure, and run the STEDT RootCanal web
 application inside a Docker container on an Ubuntu server.
@@ -246,40 +247,14 @@ docker exec rootcanal \
 
 ---
 
-## Putting HTTPS in Front (Recommended for Production)
+## HTTPS / TLS
 
-The container serves plain HTTP on port 8080. For production, put a
-TLS-terminating reverse proxy in front of it on the same host:
-
-### nginx example (`/etc/nginx/sites-available/rootcanal`)
-
-```nginx
-server {
-    listen 443 ssl;
-    server_name your-domain.example.com;
-
-    ssl_certificate     /etc/letsencrypt/live/your-domain.example.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/your-domain.example.com/privkey.pem;
-
-    location / {
-        proxy_pass         http://127.0.0.1:8080;
-        proxy_set_header   Host              $host;
-        proxy_set_header   X-Real-IP         $remote_addr;
-        proxy_set_header   X-Forwarded-For   $proxy_add_x_forwarded_for;
-        proxy_set_header   X-Forwarded-Proto $scheme;
-    }
-}
-
-# Redirect HTTP → HTTPS
-server {
-    listen 80;
-    server_name your-domain.example.com;
-    return 301 https://$host$request_uri;
-}
-```
-
-When running behind HTTPS set `IGNORE_SSL=0` in `rootcanal.env` so that the
-application correctly marks session cookies as `Secure`.
+TLS is terminated by the AWS Application Load Balancer before traffic
+reaches the EC2 instance. No certificate configuration is needed on the
+server itself. The ALB forwards `X-Forwarded-Proto: https` to the host
+Apache2, which passes it through to the container. The container's Apache
+converts that header into `HTTPS=on` for the CGI process, so the app
+generates correct `https://` links throughout.
 
 ---
 
@@ -332,18 +307,156 @@ build). The main `rootcanal.pl` application is not affected by this.
 
 ---
 
+---
+
+## Deploying to AWS EC2 (JB's setup)
+
+### Architecture on EC2
+
+```
+Browser → Route53 (CNAME) → ALB (HTTPS:443, SSL termination)
+                                  ↓ HTTP
+                             EC2 host Apache2 (:80)
+                                  ↓ HTTP proxy
+                             Docker container (127.0.0.1:8080)
+                                  └─ MariaDB (Unix socket, internal)
+```
+
+SSL is handled entirely by the AWS Application Load Balancer.
+The EC2 instance and Docker container deal only with plain HTTP.
+The ALB forwards `X-Forwarded-Proto: https` so the app generates
+correct `https://` links for things like password-reset emails.
+
+### Step 1 – Provision the EC2 instance
+
+Recommended: **Ubuntu 22.04 LTS**, t3.small or larger, at least 20 GB root volume.
+
+**EC2 Security Group** — the instance only needs to be reachable by the ALB:
+- Port **22** from your IP (SSH)
+- Port **80** from the ALB's security group (or `0.0.0.0/0` if the ALB is internet-facing)
+
+Port 443 does **not** need to be open on the EC2 instance — the ALB handles it.
+
+**ALB Target Group** — point it at the EC2 instance on port **80**, HTTP protocol.
+
+### Step 2 – Install Docker on the EC2 instance
+
+```bash
+ssh ubuntu@<ec2-public-ip>
+
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg lsb-release
+
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+  | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
+  https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
+  | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+sudo usermod -aG docker ubuntu
+newgrp docker
+```
+
+### Step 3 – Install and configure the host Apache2
+
+```bash
+sudo apt-get install -y apache2
+
+# Only these three modules are needed — no ssl, no rewrite
+sudo a2enmod proxy proxy_http headers
+```
+
+Copy the virtual-host config from the repository:
+
+```bash
+git clone https://github.com/stedt-project/sss.git /home/ubuntu/stedtdb
+cd /home/ubuntu/stedtdb/rootcanal
+
+sudo cp docker/apache-host-stedtdb.conf /etc/apache2/sites-available/stedtdb.conf
+sudo a2ensite stedtdb
+sudo a2dissite 000-default          # remove the Apache placeholder page
+sudo apache2ctl configtest          # should print "Syntax OK"
+```
+
+### Step 4 – Deploy the container
+
+```bash
+cd /home/ubuntu/stedtdb/rootcanal
+
+# Put your database dump in place
+cp /path/to/stedt.sql.gz docker-entrypoint-initdb.d/
+
+# Create credentials file
+cp docker/rootcanal.env.example rootcanal.env
+$EDITOR rootcanal.env    # at minimum, change DB_PASS
+
+# Build the image (~10 min on first run)
+docker compose build
+
+# Start detached
+docker compose up -d
+
+# Watch startup — wait for "Starting Apache2 …"
+docker compose logs -f
+```
+
+Once you see `[entrypoint] Starting Apache2 …`, visit
+**https://stedtdb.johnblowe.com** in your browser.
+
+### Step 5 – Enable Docker to start on EC2 reboot
+
+`restart: always` in `docker-compose.yml` handles the container, but
+Docker itself must be enabled as a system service:
+
+```bash
+sudo systemctl enable docker
+```
+
+### Updating the application after a code push
+
+```bash
+cd /home/ubuntu/stedtdb/rootcanal
+git pull
+docker compose build
+docker compose up -d
+```
+
+---
+
+## Local Mac Testing vs EC2 Production
+
+| Setting | Mac (local test) | EC2 (production) |
+|---------|-----------------|------------------|
+| `platform:` line | `linux/arm64` (uncomment) | commented out |
+| Port binding | `"8080:80"` | `"127.0.0.1:8080:80"` |
+| `restart:` | either | `always` |
+| `IGNORE_SSL` | `1` | `1` (proxy handles TLS) |
+| Host Apache | not needed | `apache-host-stedtdb.conf` |
+
+To switch to local testing, temporarily change the port in `docker-compose.yml`
+from `"127.0.0.1:8080:80"` to `"8080:80"` and uncomment the `platform` line.
+
+---
+
 ## Files Added by This Deployment Setup
 
 ```
 rootcanal/
 ├── docker/
-│   ├── Dockerfile                 ← Ubuntu 22.04 image definition
-│   ├── apache-rootcanal.conf      ← Apache VirtualHost
-│   ├── entrypoint.sh              ← Container startup script
-│   └── rootcanal.env.example      ← Template for credentials
-├── docker-compose.yml             ← Compose service definition
-├── docker-entrypoint-initdb.d/    ← Drop your *.sql dump here (git-ignored)
-└── DEPLOY.md                      ← This file
+│   ├── Dockerfile                    ← Ubuntu 22.04 image definition
+│   ├── apache-rootcanal.conf         ← Container-internal Apache VirtualHost
+│   ├── apache-host-stedtdb.conf      ← EC2 host Apache VirtualHost (HTTP proxy to container)
+│   ├── entrypoint.sh                 ← Container startup script
+│   └── rootcanal.env.example         ← Template for credentials
+├── docker-compose.yml                ← Compose service definition
+├── docker-entrypoint-initdb.d/       ← Drop your *.sql dump here (git-ignored)
+└── DEPLOY.md                         ← This file
 ```
 
 None of the original application files were modified.
