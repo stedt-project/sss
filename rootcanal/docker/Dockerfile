@@ -43,9 +43,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         mariadb-client \
     && rm -rf /var/lib/apt/lists/*
 
-# ── Apache: enable CGI + rewrite, disable the default placeholder site ────────
-RUN a2enmod cgi rewrite \
-    && a2dissite 000-default
+# ── Apache: switch to prefork MPM so mod_cgi (not mod_cgid) is used ──────────
+# mod_cgi (prefork) sets CWD to the script's directory, which the app requires
+# for Template Toolkit to find .tt files relative to the DocumentRoot.
+# mod_cgid (event/worker MPM) does NOT guarantee this, breaking TT lookups.
+RUN a2dismod mpm_event && \
+    a2enmod mpm_prefork cgi rewrite && \
+    a2dissite 000-default
 
 # ── Perl/CPAN modules ─────────────────────────────────────────────────────────
 # Install in waves so that failures are easier to pinpoint.
