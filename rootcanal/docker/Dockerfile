@@ -84,7 +84,8 @@ RUN cpanm --notest --quiet \
         Data::FormValidator \
         Mail::Sendmail \
         JSON \
-        Encode
+        Encode \
+        Algorithm::Diff
 
 # ── Directory layout ──────────────────────────────────────────────────────────
 RUN mkdir -p \
