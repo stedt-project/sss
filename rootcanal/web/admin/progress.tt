@@ -15,7 +15,7 @@
 	<th>uid</th>
 	<th>etyma</th>
 	<th>reflexes</th>
-	<th>accepted</th>
+	<th>past edits</th>
 	<th>total</th>
 </tr>
 [% FOREACH row IN etymaused -%]
@@ -44,7 +44,7 @@
 	<th>protoform</th>
 	<th>protogloss</th>
 	<th>reflexes</th>
-	[% IF c.has_privs(8) -%]<th class="nosort">approve?</th>[% END %]
+	[% IF c.has_privs(8) -%]<th class="nosort">action</th>[% END %]
 </tr>
 [% FOREACH row IN tagging -%]
 <tr>
@@ -54,7 +54,7 @@
 <td>[% row.4 | html %]</td>
 <td>[% row.5 | html %]</td>
 <td>[% row.6 | html %]</td>
-[% IF c.has_privs(8) -%]<td><a href="[% self_url %]/tags/accept?tag=[% row.2 %]&uid=[% row.1 %]" target="stedt_etymon">approve</a></td>[% END %]
+[% IF c.has_privs(8) -%]<td><a href="[% self_url %]/tags/accept?tag=[% row.2 %]&uid=[% row.1 %]" target="stedt_etymon">accept</a></td>[% END %]
 </tr>
 [% END -%]
 </table>

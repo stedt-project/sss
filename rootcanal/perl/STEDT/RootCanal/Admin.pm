@@ -333,14 +333,14 @@ sub progress : Runmode {
 	my $a = $self->dbh->selectall_arrayref("SELECT username, users.uid,
 			COUNT(DISTINCT tag), COUNT(DISTINCT rn)
 		FROM users LEFT JOIN lx_et_hash USING (uid) LEFT JOIN etyma USING (tag)
-		WHERE tag != 0 GROUP BY uid;");
+		WHERE tag != 0 OR tag IS NULL GROUP BY uid;");
 	my $b = $self->dbh->selectall_arrayref("SELECT username,users.uid,
 			tag, languagegroups.plg, protoform, protogloss, COUNT(DISTINCT rn) as num_recs
 		FROM users LEFT JOIN lx_et_hash USING (uid) LEFT JOIN etyma USING (tag) LEFT JOIN languagegroups USING (grpid)
 		WHERE users.uid !=8 AND tag != 0 GROUP BY uid,tag ORDER BY uid, num_recs DESC");
 	
 	# pull out "past work" from changelog and count what was done in the past, add these counts into table. Credit where credit is due!
-	my %c = @{$self->dbh->selectcol_arrayref("SELECT owner_uid, COUNT(*) FROM changelog WHERE change_type='approval' GROUP BY owner_uid",
+	my %c = @{$self->dbh->selectcol_arrayref("SELECT owner_uid, COUNT(*) FROM changelog GROUP BY owner_uid",
 		{Columns=>[1,2]})};
 	foreach my $row (@$a){
 	  my $uid = $row->[1];
@@ -356,12 +356,18 @@ sub progress_detail : Runmode {
 	my $self = shift;
 	$self->require_privs(1);
 
-	my $months = $self->dbh->selectcol_arrayref("SELECT CONCAT(YEAR(time), ' ', MONTHNAME(time)) FROM changelog WHERE change_type='approval' GROUP BY 1 ORDER BY YEAR(time) DESC, MONTH(time) DESC");
-	my $a = $self->dbh->selectall_arrayref("SELECT CONCAT(YEAR(time), ' ', MONTHNAME(time)), username ,COUNT(*) FROM changelog LEFT JOIN users ON (changelog.owner_uid=users.uid) WHERE change_type='approval' GROUP BY 1,2");
+	my $months = $self->dbh->selectcol_arrayref("SELECT CONCAT(YEAR(time), ' ', MONTHNAME(time)) FROM changelog GROUP BY 1 ORDER BY YEAR(time) DESC, MONTH(time) DESC");
+	my $a = $self->dbh->selectall_arrayref("SELECT CONCAT(YEAR(time), ' ', MONTHNAME(time)), username ,COUNT(*) FROM changelog LEFT JOIN users ON (changelog.owner_uid=users.uid) GROUP BY 1,2");
 	my (%u_totals, %m_totals, $grand_total);
 	my %stats; # hash of month/user -> count
+
+	# Pre-seed all users (including those with no changelog entries) so they appear in the table
+	my $all_users = $self->dbh->selectcol_arrayref("SELECT username FROM users ORDER BY username");
+	$u_totals{$_} = 0 for @$all_users;
+
 	foreach (@$a) {
 		my ($y_m, $u, $count) = @$_;
+		next unless defined $u && $u ne '';  # skip changelog entries with no matching user
 		$stats{"$y_m"}{$u} = $count;
 		$u_totals{$u} += $count;
 		$m_totals{$y_m} += $count;
@@ -369,8 +375,8 @@ sub progress_detail : Runmode {
 	}
 	return $self->tt_process("admin/progress_detail.tt", {
 		stats=>\%stats,
-		months=>$months,
-		users=>[sort keys %u_totals],
+		months=>[grep { $m_totals{$_} } @$months],  # omit months with no visible activity
+		users=>[sort grep { $u_totals{$_} > 0 } keys %u_totals],
 		u_totals=>\%u_totals,
 		m_totals=>\%m_totals,
 		total => $grand_total

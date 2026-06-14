@@ -1,7 +1,7 @@
 ﻿[% PROCESS header.tt title="Progress Detail - STEDT Database" %]
 
-<h3>Tagging accepted, by user, over time</h3>
-<p>[% users.size %] users have tags which have been approved:
+<h3>Tagging activity, by user, over time</h3>
+<p>[% users.size %] users have tagging activity:
 </p>
 <style>
 td.num {text-align:right;}
