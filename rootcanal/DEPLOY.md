@@ -428,6 +428,82 @@ docker compose up -d
 
 ---
 
+## Updating & Redeploying After a Code Change
+
+Use this when you've committed and pushed changes (application code, Perl
+modules, or a new CPAN dependency in `docker/Dockerfile`) and want the running
+container to pick them up.
+
+The MariaDB data lives in the `mariadb_data` named volume, so **none of these
+steps touch your database** — rebuilds and restarts preserve all data.
+
+### When do you need to rebuild vs. just restart?
+
+| What changed | Command |
+|--------------|---------|
+| `docker/Dockerfile` (e.g. a new CPAN module) | `docker compose build` then `up -d` |
+| Perl modules in `perl/`, or files in `web/` (copied at build time) | `docker compose build` then `up -d` |
+| Only `rootcanal.env` / runtime config | `docker compose up -d` (recreates container, no rebuild) |
+| Nothing changed; just bounce it | `docker compose restart` |
+
+> A plain `docker compose build` reuses Docker's layer cache, so only the
+> changed layer and everything after it rebuilds. You normally do **not** need
+> `--no-cache`; reach for it only if the cache is stale or a build is behaving
+> oddly (it forces a full ~10-min CPAN reinstall).
+
+### Local dev (Mac)
+
+The repo is at `~/GitHub/sss/rootcanal`. On Apple Silicon make sure the
+`platform: linux/arm64` line in `docker-compose.yml` is **uncommented** and the
+port is mapped to `"8080:80"` for direct browser access.
+
+```bash
+cd ~/GitHub/sss/rootcanal
+
+# If you're testing committed changes, pull them; if editing locally, skip this
+git pull
+
+# Rebuild the image and restart in one step
+docker compose up --build -d
+
+# Watch startup — wait for "[entrypoint] Starting Apache2 …"
+docker compose logs -f
+```
+
+Then open <http://localhost:8080/>.
+
+Optional sanity check that a newly-added CPAN module is present:
+
+```bash
+docker compose exec rootcanal perl -MAlgorithm::Diff -e 'print "Algorithm::Diff OK\n"'
+```
+
+### EC2 production
+
+The repo is at `/home/ubuntu/stedtdb/rootcanal`. The `platform:` line must stay
+**commented out** (the instance is x86, not ARM) and the port stays bound to
+`"127.0.0.1:8080:80"` so only the host Apache reverse-proxy can reach it.
+
+```bash
+ssh ubuntu@<ec2-public-ip>
+cd /home/ubuntu/stedtdb/rootcanal
+
+git pull
+docker compose build
+docker compose up -d
+
+# Watch startup — wait for "[entrypoint] Starting Apache2 …"
+docker compose logs -f
+```
+
+Then verify at <https://stedtdb.johnblowe.com>.
+
+> **Tip:** confirm `docker-compose.yml` was not committed with the Mac-only
+> `platform: linux/arm64` line uncommented, or the EC2 build will target the
+> wrong architecture.
+
+---
+
 ## Local Mac Testing vs EC2 Production
 
 | Setting | Mac (local test) | EC2 (production) |
